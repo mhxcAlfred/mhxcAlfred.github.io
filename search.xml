@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LeetCode (183) Customers Who Never Order]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(183)%20Customers%20Who%20Never%20Order%2F</url>
+    <content type="text"><![CDATA[题目描述SQL架构 12345678910Create table If Not Exists Customers (Id int, Name varchar(255))Create table If Not Exists Orders (Id int, CustomerId int)Truncate table Customersinsert into Customers (Id, Name) values (&apos;1&apos;, &apos;Joe&apos;)insert into Customers (Id, Name) values (&apos;2&apos;, &apos;Henry&apos;)insert into Customers (Id, Name) values (&apos;3&apos;, &apos;Sam&apos;)insert into Customers (Id, Name) values (&apos;4&apos;, &apos;Max&apos;)Truncate table Ordersinsert into Orders (Id, CustomerId) values (&apos;1&apos;, &apos;3&apos;)insert into Orders (Id, CustomerId) values (&apos;2&apos;, &apos;1&apos;) 某网站包含两个表，Customers 表和 Orders 表。编写一个 SQL 查询，找出所有从不订购任何东西的客户。 Customers 表： +—-+——-+| Id | Name |+—-+——-+| 1 | Joe || 2 | Henry || 3 | Sam || 4 | Max |+—-+——-+ Orders 表： +—-+————+| Id | CustomerId |+—-+————+| 1 | 3 || 2 | 1 |+—-+————+ 例如给定上述表格，你的查询应返回： +———–+| Customers |+———–+| Henry || Max |+———–+ MySQL 解决方法123# Write your MySQL query statement belowSELECT Name AS Customers FROM Customers WHERE Id NOT IN (SELECT CustomerId FROM Orders); 结果英文版Runtime: 297 ms, faster than 17.59% of MySQL online submissions for Customers Who Never Order. 中文版执行用时 :640 ms, 在所有 MySQL 提交中击败了45.65%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (182) Duplicate Emails]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(182)%20Duplicate%20Emails%2F</url>
+    <content type="text"><![CDATA[题目描述SQL架构 12345Create table If Not Exists Person (Id int, Email varchar(255))Truncate table Personinsert into Person (Id, Email) values (&apos;1&apos;, &apos;a@b.com&apos;)insert into Person (Id, Email) values (&apos;2&apos;, &apos;c@d.com&apos;)insert into Person (Id, Email) values (&apos;3&apos;, &apos;a@b.com&apos;) 编写一个 SQL 查询，查找 Person 表中所有重复的电子邮箱。 示例+—-+———+| Id | Email |+—-+———+| 1 | a@b.com || 2 | c@d.com || 3 | a@b.com |+—-+———+ 根据以上输入，你的查询应返回以下结果： +———+| Email |+———+| a@b.com |+———+ 说明: 所有电子邮箱都是小写字母。 MySQL 解决方法1234# Write your MySQL query statement belowSELECT DISTINCT p1.Email FROM Person p1JOIN Person p2 ON p1.Email = p2.EmailWHERE p1.Id &lt;&gt; p2.Id; 结果英文版Runtime: 223 ms, faster than 26.00% of MySQL online submissions for Duplicate Emails. 中文版执行用时 :512 ms, 在所有 MySQL 提交中击败了36.77%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (181) Employees Earning More Than Their Managers]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(181)%20Employees%20Earning%20More%20Than%20Their%20Managers%2F</url>
+    <content type="text"><![CDATA[题目描述SQL架构 123456Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, ManagerId int)Truncate table Employeeinsert into Employee (Id, Name, Salary, ManagerId) values (&apos;1&apos;, &apos;Joe&apos;, &apos;70000&apos;, &apos;3&apos;)insert into Employee (Id, Name, Salary, ManagerId) values (&apos;2&apos;, &apos;Henry&apos;, &apos;80000&apos;, &apos;4&apos;)insert into Employee (Id, Name, Salary, ManagerId) values (&apos;3&apos;, &apos;Sam&apos;, &apos;60000&apos;, &apos;None&apos;)insert into Employee (Id, Name, Salary, ManagerId) values (&apos;4&apos;, &apos;Max&apos;, &apos;90000&apos;, &apos;None&apos;) Employee 表包含所有员工，他们的经理也属于员工。每个员工都有一个 Id，此外还有一列对应员工的经理的 Id。 +—-+——-+——–+———–+| Id | Name | Salary | ManagerId |+—-+——-+——–+———–+| 1 | Joe | 70000 | 3 || 2 | Henry | 80000 | 4 || 3 | Sam | 60000 | NULL || 4 | Max | 90000 | NULL |+—-+——-+——–+———–+给定 Employee 表，编写一个 SQL 查询，该查询可以获取收入超过他们经理的员工的姓名。在上面的表格中，Joe 是唯一一个收入超过他的经理的员工。 +———-+| Employee |+———-+| Joe |+———-+ MySQL 解决方法1234# Write your MySQL query statement belowselect e1.Name as Employee from Employee e1, Employee e2 where e1.Salary &gt; e2.Salary and e1.ManagerId = e2.Id; 结果英文版Runtime: 652 ms, faster than 11.20% of MySQL online submissions for Employees Earning More Than Their Managers. 中文版执行用时 :676 ms, 在所有 MySQL 提交中击败了58.80%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode (180) Consecutive Numbers]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(180)%20Consecutive%20Numbers%2F</url>
     <content type="text"><![CDATA[题目描述SQL架构 123456789Create table If Not Exists Logs (Id int, Num int)Truncate table Logsinsert into Logs (Id, Num) values (&apos;1&apos;, &apos;1&apos;)insert into Logs (Id, Num) values (&apos;2&apos;, &apos;1&apos;)insert into Logs (Id, Num) values (&apos;3&apos;, &apos;1&apos;)insert into Logs (Id, Num) values (&apos;4&apos;, &apos;2&apos;)insert into Logs (Id, Num) values (&apos;5&apos;, &apos;1&apos;)insert into Logs (Id, Num) values (&apos;6&apos;, &apos;2&apos;)insert into Logs (Id, Num) values (&apos;7&apos;, &apos;2&apos;) 编写一个 SQL 查询，查找所有至少连续出现三次的数字。 +—-+—–+| Id | Num |+—-+—–+| 1 | 1 || 2 | 1 || 3 | 1 || 4 | 2 || 5 | 1 || 6 | 2 || 7 | 2 |+—-+—–+ 例如，给定上面的 Logs 表， 1 是唯一连续出现至少三次的数字。 +—————–+| ConsecutiveNums |+—————–+| 1 |+—————–+ MySQL 解决方法12345# Write your MySQL query statement belowselect distinct ConsecutiveNums from(select if(@no=num, @n, @n:=@n+1) ids, @no:=num ConsecutiveNums from logs,(select @no:=(select num from logs limit 1), @n:=1)a) bgroup by ids having count(ConsecutiveNums)&gt;=3; 结果英文版Runtime: 311 ms, faster than 93.34% of MySQL online submissions for Consecutive Numbers. 中文版执行用时 :1115 ms, 在所有 MySQL 提交中击败了15.35%的用户]]></content>

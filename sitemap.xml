@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(183)%20Customers%20Who%20Never%20Order/</loc>
+    
+    <lastmod>2019-06-21T15:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(182)%20Duplicate%20Emails/</loc>
+    
+    <lastmod>2019-06-21T09:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(181)%20Employees%20Earning%20More%20Than%20Their%20Managers/</loc>
+    
+    <lastmod>2019-06-21T03:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(180)%20Consecutive%20Numbers/</loc>
     
     <lastmod>2019-06-20T15:15:00.000Z</lastmod>
