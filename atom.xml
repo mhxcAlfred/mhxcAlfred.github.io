@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcAlfred.com/"/>
-  <updated>2019-06-21T15:15:00.000Z</updated>
+  <updated>2019-06-24T15:15:00.000Z</updated>
   <id>https://blog.mhxcAlfred.com/</id>
   
   <author>
@@ -15,6 +15,240 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode (192) Word Frequency</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(192)%20Word%20Frequency/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (192) Word Frequency/</id>
+    <published>2019-06-24T15:15:00.000Z</published>
+    <updated>2019-06-24T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>写一个 bash 脚本以统计一个文本文件 <code>words.txt</code> 中每个单词出现的频率。</p><p>为了简单起见，你可以假设：</p><ul><li><code>words.txt</code>只包括小写字母和 ‘ ‘ 。</li><li>每个单词只由小写字母组成。</li><li>单词间由一个或多个空格字符分隔。</li></ul><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>假设 <code>words.txt</code> 内容如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">the day is sunny the the</span><br><span class="line">the sunny is is</span><br></pre></td></tr></table></figure><p>你的脚本应当输出（以词频降序排列）：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">the 4</span><br><span class="line">is 3</span><br><span class="line">sunny 2</span><br><span class="line">day 1</span><br></pre></td></tr></table></figure><p><strong>说明:</strong></p><ul><li>不要担心词频相同的单词的排序问题，每个单词出现的频率都是唯一的。</li><li>你可以使用一行 <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-4.html" target="_blank" rel="noopener">Unix pipes</a> 实现吗？</li></ul><h1 id="Bash-解决方法"><a href="#Bash-解决方法" class="headerlink" title="Bash 解决方法"></a>Bash 解决方法</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Read from the file words.txt and output the word frequency list to stdout.</span></span><br><span class="line">grep -oE <span class="string">'[a-z]+'</span> words.txt | sort | uniq -c | sort -nr | awk <span class="string">'&#123;print $2" "$1&#125;'</span></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of Bash online submissions for Word Frequency.</p><p>Memory Usage: 3.3 MB, less than 81.02% of Bash online submissions for Word Frequency.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :4 ms, 在所有 Bash 提交中击败了84.93%的用户</p><p>内存消耗 :3.3 MB, 在所有 Bash 提交中击败了79.57%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      统计词频、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="Bash" scheme="https://blog.mhxcAlfred.com/tags/Bash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (191) Number of 1 Bits</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(191)%20Number%20of%201%20Bits/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (191) Number of 1 Bits/</id>
+    <published>2019-06-24T09:15:00.000Z</published>
+    <updated>2019-06-24T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>编写一个函数，输入是一个无符号整数，返回其二进制表达式中数字位数为 ‘1’ 的个数（也被称为<a href="http://en.wikipedia.org/wiki/Hamming_weight" target="_blank" rel="noopener">汉明重量</a>）。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> 00000000000000000000000000001011<br><strong>输出:</strong> 3<br><strong>解释:</strong> 输入的二进制串 00000000000000000000000000001011 中，共有三位为 ‘1’。</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> 00000000000000000000000010000000<br><strong>输出:</strong> 1<br><strong>解释:</strong> 输入的二进制串 00000000000000000000000010000000 中，共有一位为 ‘1’。</p><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><p><strong>输入:</strong> 11111111111111111111111111111101<br><strong>输出:</strong> 31<br><strong>解释:</strong> 输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 ‘1’。</p><p><strong>提示:</strong></p><ul><li>请注意，在某些语言（如 Java）中，没有无符号整数类型。在这种情况下，输入和输出都将被指定为有符号整数类型，并且不应影响您的实现，因为无论整数是有符号的还是无符号的，其内部的二进制表示形式都是相同的。</li><li>在 Java 中，编译器使用二进制补码记法来表示有符号整数。因此，在上面的 示例 3 中，输入表示有符号整数 -3。</li></ul><p><strong>进阶:</strong></p><p>如果多次调用这个函数，你将如何优化你的算法？</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">hammingWeight</span><span class="params">(<span class="keyword">uint32_t</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">32</span>; ++i) &#123;</span><br><span class="line">            res += (n &amp; <span class="number">1</span>);</span><br><span class="line">            n = n &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 84.13% of C++ online submissions for Number of 1 Bits.</p><p>Memory Usage: 8.2 MB, less than 22.15% of C++ online submissions for Number of 1 Bits.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :8 ms, 在所有 C++ 提交中击败了79.51%的用户</p><p>内存消耗 :8.2 MB, 在所有 C++ 提交中击败了27.22%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      位 1 的个数、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (190) Reverse Bits</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(190)%20Reverse%20Bits/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (190) Reverse Bits/</id>
+    <published>2019-06-24T03:15:00.000Z</published>
+    <updated>2019-06-24T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>颠倒给定的 32 位无符号整数的二进制位。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> 00000010100101000001111010011100<br><strong>输出:</strong> 00111001011110000010100101000000<br><strong>解释:</strong> 输入的二进制串 00000010100101000001111010011100 表示无符号整数 43261596，<br>      因此返回 964176192，其二进制表示形式为 00111001011110000010100101000000。</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> 11111111111111111111111111111101<br><strong>输出:</strong> 10111111111111111111111111111111<br><strong>解释:</strong> 输入的二进制串 11111111111111111111111111111101 表示无符号整数 4294967293，<br>      因此返回 3221225471 其二进制表示形式为 10101111110010110010011101101001。</p><p><strong>**提示:</strong></p><ul><li>请注意，在某些语言（如 Java）中，没有无符号整数类型。在这种情况下，输入和输出都将被指定为有符号整数类型，并且不应影响您的实现，因为无论整数是有符号的还是无符号的，其内部的二进制表示形式都是相同的。</li><li>在 Java 中，编译器使用二进制补码记法来表示有符号整数。因此，在上面的 示例 2 中，输入表示有符号整数 -3，输出表示有符号整数 -1073741825。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">uint32_t</span> reverseBits(<span class="keyword">uint32_t</span> n) &#123;</span><br><span class="line">        <span class="keyword">uint32_t</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">32</span>; ++i) &#123;</span><br><span class="line">            res = (res &lt;&lt; <span class="number">1</span>) + (n &gt;&gt; i &amp; <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of C++ online submissions for Reverse Bits.</p><p>Memory Usage: 8.1 MB, less than 24.40% of C++ online submissions for Reverse Bits.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :0 ms, 在所有 C++ 提交中击败了100.00%的用户</p><p>内存消耗 :8.2 MB, 在所有 C++ 提交中击败了7.61%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      颠倒二进制位、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (189) Rotate Array</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(189)%20Rotate%20Array/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (189) Rotate Array/</id>
+    <published>2019-06-23T15:15:00.000Z</published>
+    <updated>2019-06-23T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> [1,2,3,4,5,6,7] 和 k = 3<br><strong>输出:</strong> [5,6,7,1,2,3,4]<br><strong>解释:</strong><br>向右旋转 1 步: [7,1,2,3,4,5,6]<br>向右旋转 2 步: [6,7,1,2,3,4,5]<br>向右旋转 3 步: [5,6,7,1,2,3,4]</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> [-1,-100,3,99] 和 k = 2<br><strong>输出:</strong> [3,99,-1,-100]<br><strong>解释:</strong><br>向右旋转 1 步: [99,-1,-100,3]<br>向右旋转 2 步: [3,99,-1,-100]</p><p><strong>说明:</strong></p><ul><li>尽可能想出更多的解决方案，至少有三种不同的方法可以解决这个问题。</li><li>要求使用空间复杂度为 O(1) 的 <strong>原地</strong> 算法。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">rotate</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (nums.empty() || (k %= nums.size()) == <span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">int</span> n = nums.size();</span><br><span class="line">        reverse(nums.begin(), nums.begin() + n - k);</span><br><span class="line">        reverse(nums.begin() + n - k, nums.end());</span><br><span class="line">        reverse(nums.begin(), nums.end());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 16 ms, faster than 92.37% of C++ online submissions for Rotate Array.</p><p>Memory Usage: 9.5 MB, less than 47.71% of C++ online submissions for Rotate Array.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :24 ms, 在所有 C++ 提交中击败了94.33%的用户</p><p>内存消耗 :9.3 MB, 在所有 C++ 提交中击败了88.16%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      旋转数组、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (188) Best Time to Buy and Sell Stock IV</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(188)%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20IV/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (188) Best Time to Buy and Sell Stock IV/</id>
+    <published>2019-06-23T09:15:00.000Z</published>
+    <updated>2019-06-23T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个数组，它的第 i 个元素是一支给定的股票在第 i 天的价格。</p><p>设计一个算法来计算你所能获取的最大利润。你最多可以完成 k 笔交易。</p><p><strong>注意:</strong> 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> [2,4,1], k = 2<br><strong>输出:</strong> 2<br><strong>解释:</strong> 在第 1 天 (股票价格 = 2) 的时候买入，在第 2 天 (股票价格 = 4) 的时候卖出，这笔交易所能获得利润 = 4-2 = 2 。</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> [3,2,6,5,0,3], k = 2<br><strong>输出:</strong> 7<br><strong>解释:</strong> 在第 2 天 (股票价格 = 2) 的时候买入，在第 3 天 (股票价格 = 6) 的时候卖出, 这笔交易所能获得利润 = 6-2 = 4 。<br>     随后，在第 5 天 (股票价格 = 0) 的时候买入，在第 6 天 (股票价格 = 3) 的时候卖出, 这笔交易所能获得利润 = 3-0 = 3 。</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="keyword">int</span> k, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;prices)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (prices.empty()) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (k &gt;= prices.size()) <span class="keyword">return</span> solveMaxProfit(prices);</span><br><span class="line">        <span class="keyword">int</span> g[k + <span class="number">1</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span> l[k + <span class="number">1</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; prices.size() - <span class="number">1</span>; ++i) &#123;</span><br><span class="line">            <span class="keyword">int</span> diff = prices[i + <span class="number">1</span>] - prices[i];</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = k; j &gt;= <span class="number">1</span>; --j) &#123;</span><br><span class="line">                l[j] = max(g[j - <span class="number">1</span>] + max(diff, <span class="number">0</span>), l[j] + diff);</span><br><span class="line">                g[j] = max(g[j], l[j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> g[k];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">solveMaxProfit</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;prices)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; prices.size(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (prices[i] - prices[i - <span class="number">1</span>] &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                res += prices[i] - prices[i - <span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 99.25% of C++ online submissions for Best Time to Buy and Sell Stock IV.</p><p>Memory Usage: 8.9 MB, less than 88.76% of C++ online submissions for Best Time to Buy and Sell Stock IV.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :12 ms, 在所有 C++ 提交中击败了84.22%的用户</p><p>内存消耗 :8.8 MB, 在所有 C++ 提交中击败了91.50%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      买股票的最佳时机 IV、困难
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (187) Repeated DNA Sequences</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(187)%20Repeated%20DNA%20Sequences/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (187) Repeated DNA Sequences/</id>
+    <published>2019-06-23T03:15:00.000Z</published>
+    <updated>2019-06-23T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>所有 DNA 由一系列缩写为 A，C，G 和 T 的核苷酸组成，例如：“ACGAATTCCG”。在研究 DNA 时，识别 DNA 中的重复序列有时会对研究非常有帮助。</p><p>编写一个函数来查找 DNA 分子中所有出现超多一次的10个字母长的序列（子串）。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> s = “AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT”<br><strong>输出:</strong> [“AAAAACCCCC”, “CCCCCAAAAA”]</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; findRepeatedDnaSequences(<span class="built_in">string</span> s) &#123;</span><br><span class="line">        <span class="built_in">unordered_set</span>&lt;<span class="built_in">string</span>&gt; res;</span><br><span class="line">        <span class="built_in">unordered_set</span>&lt;<span class="keyword">int</span>&gt; st;</span><br><span class="line">        <span class="keyword">int</span> cur = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; ++i) cur = cur &lt;&lt; <span class="number">3</span> | (s[i] &amp; <span class="number">7</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">9</span>; i &lt; s.size(); ++i) &#123;</span><br><span class="line">            cur = ((cur &amp; <span class="number">0x7ffffff</span>) &lt;&lt; <span class="number">3</span>) | (s[i] &amp; <span class="number">7</span>);</span><br><span class="line">            <span class="keyword">if</span> (st.count(cur)) res.insert(s.substr(i - <span class="number">9</span>, <span class="number">10</span>));</span><br><span class="line">            <span class="keyword">else</span> st.insert(cur);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt;(res.begin(), res.end());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 36 ms, faster than 94.81% of C++ online submissions for Repeated DNA Sequences.</p><p>Memory Usage: 16.7 MB, less than 76.37% of C++ online submissions for Repeated DNA Sequences.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :48 ms, 在所有 C++ 提交中击败了97.96%的用户</p><p>内存消耗 :16.6 MB, 在所有 C++ 提交中击败了85.00%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      重复的 DNA 序列、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (186) Reverse Words in a String II</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(186)%20Reverse%20Words%20in%20a%20String%20II/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (186) Reverse Words in a String II/</id>
+    <published>2019-06-22T15:15:00.000Z</published>
+    <updated>2019-06-22T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      翻转字符串里的单词 II、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (185) Department Top Three Salaries</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(185)%20Department%20Top%20Three%20Salaries/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (185) Department Top Three Salaries/</id>
+    <published>2019-06-22T09:15:00.000Z</published>
+    <updated>2019-06-22T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>SQL架构</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, DepartmentId int)</span><br><span class="line">Create table If Not Exists Department (Id int, Name varchar(255))</span><br><span class="line">Truncate table Employee</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;1&apos;, &apos;Joe&apos;, &apos;85000&apos;, &apos;1&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;2&apos;, &apos;Henry&apos;, &apos;80000&apos;, &apos;2&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;3&apos;, &apos;Sam&apos;, &apos;60000&apos;, &apos;2&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;4&apos;, &apos;Max&apos;, &apos;90000&apos;, &apos;1&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;5&apos;, &apos;Janet&apos;, &apos;69000&apos;, &apos;1&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;6&apos;, &apos;Randy&apos;, &apos;85000&apos;, &apos;1&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;7&apos;, &apos;Will&apos;, &apos;70000&apos;, &apos;1&apos;)</span><br><span class="line">Truncate table Department</span><br><span class="line">insert into Department (Id, Name) values (&apos;1&apos;, &apos;IT&apos;)</span><br><span class="line">insert into Department (Id, Name) values (&apos;2&apos;, &apos;Sales&apos;)</span><br></pre></td></tr></table></figure><p><code>Employee</code> 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id 。</p><p>+—-+——-+——–+————–+<br>| Id | Name  | Salary | DepartmentId |<br>+—-+——-+——–+————–+<br>| 1  | Joe   | 70000  | 1            |<br>| 2  | Henry | 80000  | 2            |<br>| 3  | Sam   | 60000  | 2            |<br>| 4  | Max   | 90000  | 1            |<br>| 5  | Janet | 69000  | 1            |<br>| 6  | Randy | 85000  | 1            |<br>+—-+——-+——–+————–+</p><p><code>Department</code> 表包含公司所有部门的信息。</p><p>+—-+———-+<br>| Id | Name     |<br>+—-+———-+<br>| 1  | IT       |<br>| 2  | Sales    |<br>+—-+———-+</p><p>编写一个 SQL 查询，找出每个部门工资前三高的员工。例如，根据上述给定的表格，查询结果应返回：</p><p>+————+———-+——–+<br>| Department | Employee | Salary |<br>+————+———-+——–+<br>| IT         | Max      | 90000  |<br>| IT         | Randy    | 85000  |<br>| IT         | Joe      | 70000  |<br>| Sales      | Henry    | 80000  |<br>| Sales      | Sam      | 60000  |<br>+————+———-+——–+</p><h1 id="MySQL-解决方法"><a href="#MySQL-解决方法" class="headerlink" title="MySQL 解决方法"></a>MySQL 解决方法</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Write your MySQL query statement below</span><br><span class="line">SELECT d.Name AS Department, e.Name AS Employee, e.Salary FROM </span><br><span class="line">(SELECT Name, Salary, DepartmentId,</span><br><span class="line">@rank := IF(@pre_d = DepartmentId, @rank + (@pre_s &lt;&gt; Salary), 1) AS rank,</span><br><span class="line">@pre_d := DepartmentId, @pre_s := Salary </span><br><span class="line">FROM Employee, (SELECT @pre_d := -1, @pre_s := -1, @rank := 1) AS init</span><br><span class="line">ORDER BY DepartmentId, Salary DESC) e JOIN Department d ON e.DepartmentId = d.Id</span><br><span class="line">WHERE e.rank &lt;= 3 ORDER BY d.Name, e.Salary DESC;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 435 ms, faster than 93.72% of MySQL online submissions for Department Top Three Salaries.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :1581 ms, 在所有 MySQL 提交中击败了40.47%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      部门工资前三高的员工、困难
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="MySQL" scheme="https://blog.mhxcAlfred.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (184) Department Highest Salary</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(184)%20Department%20Highest%20Salary/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (184) Department Highest Salary/</id>
+    <published>2019-06-22T03:15:00.000Z</published>
+    <updated>2019-06-22T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>SQL架构</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, DepartmentId int)</span><br><span class="line">Create table If Not Exists Department (Id int, Name varchar(255))</span><br><span class="line">Truncate table Employee</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;1&apos;, &apos;Joe&apos;, &apos;70000&apos;, &apos;1&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;2&apos;, &apos;Jim&apos;, &apos;90000&apos;, &apos;1&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;3&apos;, &apos;Henry&apos;, &apos;80000&apos;, &apos;2&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;4&apos;, &apos;Sam&apos;, &apos;60000&apos;, &apos;2&apos;)</span><br><span class="line">insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;5&apos;, &apos;Max&apos;, &apos;90000&apos;, &apos;1&apos;)</span><br><span class="line">Truncate table Department</span><br><span class="line">insert into Department (Id, Name) values (&apos;1&apos;, &apos;IT&apos;)</span><br><span class="line">insert into Department (Id, Name) values (&apos;2&apos;, &apos;Sales&apos;)</span><br></pre></td></tr></table></figure><p><code>Employee</code> 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。</p><p>+—-+——-+——–+————–+<br>| Id | Name  | Salary | DepartmentId |<br>+—-+——-+——–+————–+<br>| 1  | Joe   | 70000  | 1            |<br>| 2  | Henry | 80000  | 2            |<br>| 3  | Sam   | 60000  | 2            |<br>| 4  | Max   | 90000  | 1            |<br>+—-+——-+——–+————–+</p><p><code>Department</code> 表包含公司所有部门的信息。</p><p>+—-+———-+<br>| Id | Name     |<br>+—-+———-+<br>| 1  | IT       |<br>| 2  | Sales    |<br>+—-+———-+</p><p>编写一个 SQL 查询，找出每个部门工资最高的员工。例如，根据上述给定的表格，Max 在 IT 部门有最高工资，Henry 在 Sales 部门有最高工资。</p><p>+————+———-+——–+<br>| Department | Employee | Salary |<br>+————+———-+——–+<br>| IT         | Max      | 90000  |<br>| Sales      | Henry    | 80000  |<br>+————+———-+——–+</p><h1 id="MySQL-解决方法"><a href="#MySQL-解决方法" class="headerlink" title="MySQL 解决方法"></a>MySQL 解决方法</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Write your MySQL query statement below</span><br><span class="line">SELECT d.Name AS Department, e.Name AS Employee, e.Salary FROM Employee e, Department d</span><br><span class="line">WHERE e.DepartmentId = d.Id AND e.Salary &gt;= ALL (SELECT Salary FROM Employee e2 WHERE e2.DepartmentId = d.Id);</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 396 ms, faster than 22.14% of MySQL online submissions for Department Highest Salary.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :778 ms, 在所有 MySQL 提交中击败了66.30%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      部门工资最高的员工、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="MySQL" scheme="https://blog.mhxcAlfred.com/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode (183) Customers Who Never Order</title>
@@ -288,240 +522,6 @@
     <summary type="html">
     
       二叉搜索树迭代器、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (172) Factorial Trailing Zeroes</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(172)%20Factorial%20Trailing%20Zeroes/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (172) Factorial Trailing Zeroes/</id>
-    <published>2019-06-18T03:15:00.000Z</published>
-    <updated>2019-06-18T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个整数 n，返回 n! 结果尾数中零的数量。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> 3<br><strong>输出:</strong> 0<br><strong>解释:</strong> 3! = 6, 尾数中没有零。</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> 5<br><strong>输出:</strong> 1<br><strong>解释:</strong> 5! = 120, 尾数中有 1 个零。</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">trailingZeroes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (n) &#123;</span><br><span class="line">            res += n / <span class="number">5</span>;</span><br><span class="line">            n /= <span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of C++ online submissions for Factorial Trailing Zeroes.</p><p>Memory Usage: 8.1 MB, less than 80.10% of C++ online submissions for Factorial Trailing Zeroes.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :8 ms, 在所有 C++ 提交中击败了77.84%的用户</p><p>内存消耗 :8.5 MB, 在所有 C++ 提交中击败了73.63%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      阶乘后的零、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (171) Excel Sheet Column Number</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(171)%20Excel%20Sheet%20Column%20Number/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (171) Excel Sheet Column Number/</id>
-    <published>2019-06-17T15:15:00.000Z</published>
-    <updated>2019-06-17T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个Excel表格中的列名称，返回其相应的列序号。</p><p>例如，</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">A -&gt; 1</span><br><span class="line">B -&gt; 2</span><br><span class="line">C -&gt; 3</span><br><span class="line">...</span><br><span class="line">Z -&gt; 26</span><br><span class="line">AA -&gt; 27</span><br><span class="line">AB -&gt; 28 </span><br><span class="line">...</span><br></pre></td></tr></table></figure><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> “A”<br><strong>输出:</strong> 1</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> “AB”<br><strong>输出:</strong> 28</p><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><p><strong>输入:</strong> “ZY”<br><strong>输出:</strong> 701</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">titleToNumber</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(s.empty())</span><br><span class="line">          <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">      <span class="keyword">int</span> num=<span class="number">0</span>;</span><br><span class="line">      <span class="keyword">int</span> c=<span class="number">0</span>;</span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> i=s.size()<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">      &#123;</span><br><span class="line">          num = num +(s[i]<span class="number">-64</span>)*<span class="built_in">pow</span>(<span class="number">26</span>,c); c++;</span><br><span class="line">                </span><br><span class="line">      &#125;</span><br><span class="line">        <span class="keyword">return</span> num;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 87.82% of C++ online submissions for Excel Sheet Column Number.</p><p>Memory Usage: 8.4 MB, less than 11.48% of C++ online submissions for Excel Sheet Column Number.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :8 ms, 在所有 C++ 提交中击败了85.41%的用户</p><p>内存消耗 :8.4 MB, 在所有 C++ 提交中击败了8.07%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      Excel 表列序号、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (170) Two Sum III - Data structure design</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(170)%20Two%20Sum%20III%20-%20Data%20structure%20design/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (170) Two Sum III - Data structure design/</id>
-    <published>2019-06-17T09:15:00.000Z</published>
-    <updated>2019-06-17T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
-    
-    <summary type="html">
-    
-      两数之和 III - 数据结构设计、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (169) Majority Element</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(169)%20Majority%20Element/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (169) Majority Element/</id>
-    <published>2019-06-17T03:15:00.000Z</published>
-    <updated>2019-06-17T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数<strong>大于</strong> <code>⌊ n/2 ⌋</code> 的元素。</p><p>你可以假设数组是非空的，并且给定的数组总是存在众数。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> [3,2,3]<br><strong>输出:</strong> 3</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> [2,2,1,1,1,2,2]<br><strong>输出:</strong> 2</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">majorityElement</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>, cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> num : nums) &#123;</span><br><span class="line">            <span class="keyword">if</span> (cnt == <span class="number">0</span>) &#123;res = num; ++cnt;&#125;</span><br><span class="line">            <span class="keyword">else</span> (num == res) ? ++cnt : --cnt;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 20 ms, faster than 88.56% of C++ online submissions for Majority Element.</p><p>Memory Usage: 11.1 MB, less than 53.62% of C++ online submissions for Majority Element.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :24 ms, 在所有 C++ 提交中击败了92.77%的用户</p><p>内存消耗 :11 MB, 在所有 C++ 提交中击败了88.30%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      求众数、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (168) Excel Sheet Column Title</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(168)%20Excel%20Sheet%20Column%20Title/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (168) Excel Sheet Column Title/</id>
-    <published>2019-06-16T15:15:00.000Z</published>
-    <updated>2019-06-16T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个正整数，返回它在 Excel 表中相对应的列名称。</p><p>例如，</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1 -&gt; A</span><br><span class="line">2 -&gt; B</span><br><span class="line">3 -&gt; C</span><br><span class="line">...</span><br><span class="line">26 -&gt; Z</span><br><span class="line">27 -&gt; AA</span><br><span class="line">28 -&gt; AB </span><br><span class="line">...</span><br></pre></td></tr></table></figure><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> 1<br><strong>输出:</strong> “A”</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> 28<br><strong>输出:</strong> “AB”</p><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><p><strong>输入:</strong> 701<br><strong>输出:</strong> “ZY”</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">convertToTitle</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">string</span> res = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">while</span> (n) &#123;</span><br><span class="line">            <span class="keyword">if</span> (n % <span class="number">26</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                res += <span class="string">'Z'</span>;</span><br><span class="line">                n -= <span class="number">26</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                res += n % <span class="number">26</span> - <span class="number">1</span> + <span class="string">'A'</span>;</span><br><span class="line">                n -= n % <span class="number">26</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            n /= <span class="number">26</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        reverse(res.begin(), res.end());</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of C++ online submissions for Excel Sheet Column Title.</p><p>Memory Usage: 8.1 MB, less than 41.83% of C++ online submissions for Excel Sheet Column Title.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :4 ms, 在所有 C++ 提交中击败了88.51%的用户</p><p>内存消耗 :8.1 MB, 在所有 C++ 提交中击败了47.17%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      Excel 表列名称、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (167) Two Sum II - Input array is sorted</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(167)%20Two%20Sum%20II%20-%20Input%20array%20is%20sorted/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (167) Two Sum II - Input array is sorted/</id>
-    <published>2019-06-16T09:15:00.000Z</published>
-    <updated>2019-06-16T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个已按照 <strong>升序排列</strong> 的有序数组，找到两个数使得它们相加之和等于目标数。</p><p>函数应该返回这两个下标值 index1 和 index2，其中 index1 必须小于 index2。</p><p><strong>说明:</strong></p><ul><li>返回的下标值（index1 和 index2）不是从零开始的。</li><li>你可以假设每个输入只对应唯一的答案，而且你不可以重复使用相同的元素。</li></ul><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> numbers = [2, 7, 11, 15], target = 9<br><strong>输出:</strong> [1,2]<br><strong>解释:</strong> 2 与 7 之和等于目标数 9 。因此 index1 = 1, index2 = 2 。</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; twoSum(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; numbers, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">int</span> l = <span class="number">0</span>, r = numbers.size() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (l &lt; r) &#123;</span><br><span class="line">            <span class="keyword">int</span> sum = numbers[l] + numbers[r];</span><br><span class="line">            <span class="keyword">if</span> (sum == target) <span class="keyword">return</span> &#123;l + <span class="number">1</span>, r + <span class="number">1</span>&#125;;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (sum &lt; target) ++l;</span><br><span class="line">            <span class="keyword">else</span> --r;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> &#123;&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 98.63% of C++ online submissions for Two Sum II - Input array is sorted.</p><p>Memory Usage: 9.4 MB, less than 74.77% of C++ online submissions for Two Sum II - Input array is sorted.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :12 ms, 在所有 C++ 提交中击败了79.10%的用户</p><p>内存消耗 :9.6 MB, 在所有 C++ 提交中击败了13.45%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      两数之和 II - 输入有序数组、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (166) Fraction to Recurring Decimal</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(166)%20Fraction%20to%20Recurring%20Decimal/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (166) Fraction to Recurring Decimal/</id>
-    <published>2019-06-16T03:15:00.000Z</published>
-    <updated>2019-06-16T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定两个整数，分别表示分数的分子 numerator 和分母 denominator，以字符串形式返回小数。</p><p>如果小数部分为循环小数，则将循环的部分括在括号内。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> numerator = 1, denominator = 2<br><strong>输出:</strong> “0.5”</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> numerator = 2, denominator = 1<br><strong>输出:</strong> “2”</p><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><p><strong>输入:</strong> numerator = 2, denominator = 3<br><strong>输出:</strong> “0.(6)”</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">fractionToDecimal</span><span class="params">(<span class="keyword">int</span> numerator, <span class="keyword">int</span> denominator)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> s1 = numerator &gt;= <span class="number">0</span> ? <span class="number">1</span> : <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">int</span> s2 = denominator &gt;= <span class="number">0</span> ? <span class="number">1</span> : <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> num = <span class="built_in">abs</span>( (<span class="keyword">long</span> <span class="keyword">long</span>)numerator );</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> den = <span class="built_in">abs</span>( (<span class="keyword">long</span> <span class="keyword">long</span>)denominator );</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> out = num / den;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> rem = num % den;</span><br><span class="line">        <span class="built_in">unordered_map</span>&lt;<span class="keyword">long</span> <span class="keyword">long</span>, <span class="keyword">int</span>&gt; m;</span><br><span class="line">        <span class="built_in">string</span> res = to_string(out);</span><br><span class="line">        <span class="keyword">if</span> (s1 * s2 == <span class="number">-1</span> &amp;&amp; (out &gt; <span class="number">0</span> || rem &gt; <span class="number">0</span>)) res = <span class="string">"-"</span> + res;</span><br><span class="line">        <span class="keyword">if</span> (rem == <span class="number">0</span>) <span class="keyword">return</span> res;</span><br><span class="line">        res += <span class="string">"."</span>;</span><br><span class="line">        <span class="built_in">string</span> s = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">int</span> pos = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (rem != <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (m.find(rem) != m.end()) &#123;</span><br><span class="line">                s.insert(m[rem], <span class="string">"("</span>);</span><br><span class="line">                s += <span class="string">")"</span>;</span><br><span class="line">                <span class="keyword">return</span> res + s;</span><br><span class="line">            &#125;</span><br><span class="line">            m[rem] = pos;</span><br><span class="line">            s += to_string((rem * <span class="number">10</span>) / den);</span><br><span class="line">            rem = (rem * <span class="number">10</span>) % den;</span><br><span class="line">            ++pos;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res + s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of C++ online submissions for Fraction to Recurring Decimal.</p><p>Memory Usage: 8.8 MB, less than 52.70% of C++ online submissions for Fraction to Recurring Decimal.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :4 ms, 在所有 C++ 提交中击败了94.25%的用户</p><p>内存消耗 :8.8 MB, 在所有 C++ 提交中击败了61.66%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      分数列小数、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (165) Compare Version Numbers</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(165)%20Compare%20Version%20Numbers/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (165) Compare Version Numbers/</id>
-    <published>2019-06-15T15:15:00.000Z</published>
-    <updated>2019-06-15T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>比较两个版本号 version1 和 version2。<br>如果 <code>version1 &gt; version2</code> 返回 1，如果 <code>version1 &lt; version2</code> 返回 -1， 除此之外返回 0。</p><p>你可以假设版本字符串非空，并且只包含数字和 . 字符。</p><p> . 字符不代表小数点，而是用于分隔数字序列。</p><p>例如，<code>2.5</code> 不是“两个半”，也不是“差一半到三”，而是第二版中的第五个小版本。</p><p>你可以假设版本号的每一级的默认修订版号为 <code>0</code>。例如，版本号 <code>3.4</code> 的第一级（大版本）和第二级（小版本）修订号分别为 <code>3</code> 和 <code>4</code>。其第三级和第四级修订号均为 <code>0</code>。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> version1 = “0.1”, version2 = “1.1”<br><strong>输出:</strong> -1</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> version1 = “1.0.1”, version2 = “1”<br><strong>输出:</strong> 1</p><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><p><strong>输入:</strong> version1 = “7.5.2.4”, version2 = “7.5.3”<br><strong>输出:</strong> -1</p><h1 id="示例-4"><a href="#示例-4" class="headerlink" title="示例 4"></a>示例 4</h1><p><strong>输入:</strong> version1 = “1.01”, version2 = “1.001”<br><strong>输出:</strong> 0<br><strong>解释:</strong> 忽略前导零，“01” 和 “001” 表示相同的数字 “1”。</p><h1 id="示例-5"><a href="#示例-5" class="headerlink" title="示例 5"></a>示例 5</h1><p><strong>输入:</strong> version1 = “1.0”, version2 = “1.0.0”<br><strong>输出:</strong> 0<br><strong>解释:</strong> version1 没有第三级修订号，这意味着它的第三级修订号默认为 “0”。</p><p><strong>提示：</strong></p><ol><li>版本字符串由以点 （<code>.</code>） 分隔的数字字符串组成。这个数字字符串 <strong>可能</strong> 有前导零。</li><li>版本字符串不以点开始或结束，并且其中不会有两个连续的点。</li></ol><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">compareVersion</span><span class="params">(<span class="built_in">string</span> version1, <span class="built_in">string</span> version2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n1 = version1.size(), n2 = version2.size();</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>, d1 = <span class="number">0</span>, d2 = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; n1 || j &lt; n2) &#123;</span><br><span class="line">            <span class="keyword">while</span> (i &lt; n1 &amp;&amp; version1[i] != <span class="string">'.'</span>) &#123;</span><br><span class="line">                d1 = d1 * <span class="number">10</span> + version1[i++] - <span class="string">'0'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">while</span> (j &lt; n2 &amp;&amp; version2[j] != <span class="string">'.'</span>) &#123;</span><br><span class="line">                d2 = d2 * <span class="number">10</span> + version2[j++] - <span class="string">'0'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (d1 &gt; d2) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (d1 &lt; d2) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">            d1 = d2 = <span class="number">0</span>;</span><br><span class="line">            ++i; ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of C++ online submissions for Compare Version Numbers.</p><p>Memory Usage: 8.5 MB, less than 40.49% of C++ online submissions for Compare Version Numbers.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :8 ms, 在所有 C++ 提交中击败了71.98%的用户</p><p>内存消耗 :8.3 MB, 在所有 C++ 提交中击败了56.60%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      比较版本号、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (164) Maximum Gap</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(164)%20Maximum%20Gap/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (164) Maximum Gap/</id>
-    <published>2019-06-15T09:15:00.000Z</published>
-    <updated>2019-06-15T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个无序的数组，找出数组在排序之后，相邻元素之间最大的差值。</p><p>如果数组元素个数小于 2，则返回 0。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> [3,6,9,1]<br><strong>输出:</strong> 3<br><strong>解释:</strong> 排序后的数组是 [1,3,6,9]<strong>_,_</strong> 其中相邻元素 (3,6) 和 (6,9) 之间都存在最大差值 3。</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> [10]<br><strong>输出:</strong> 0<br><strong>解释:</strong> 数组元素个数小于 2，因此返回 0。</p><p><strong>说明:</strong></p><ul><li>你可以假设数组中所有元素都是非负整数，且数值在 32 位有符号整数范围内。</li><li>请尝试在线性时间复杂度和空间复杂度的条件下解决此问题。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maximumGap</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (nums.size() &lt;= <span class="number">1</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> mx = INT_MIN, mn = INT_MAX, n = nums.size(), pre = <span class="number">0</span>, res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> num : nums) &#123;</span><br><span class="line">            mx = max(mx, num);</span><br><span class="line">            mn = min(mn, num);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> size = (mx - mn) / n + <span class="number">1</span>, cnt = (mx - mn) / size + <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; bucket_min(cnt, INT_MAX), bucket_max(cnt, INT_MIN);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> num : nums) &#123;</span><br><span class="line">            <span class="keyword">int</span> idx = (num - mn) / size;</span><br><span class="line">            bucket_min[idx] = min(bucket_min[idx], num);</span><br><span class="line">            bucket_max[idx] = max(bucket_max[idx], num);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; cnt; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (bucket_min[i] == INT_MAX || bucket_max[i] == INT_MIN) <span class="keyword">continue</span>;</span><br><span class="line">            res = max(res, bucket_min[i] - bucket_max[pre]);</span><br><span class="line">            pre = i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 99.75% of C++ online submissions for Maximum Gap.</p><p>Memory Usage: 9.3 MB, less than 69.17% of C++ online submissions for Maximum Gap.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :8 ms, 在所有 C++ 提交中击败了98.20%的用户</p><p>内存消耗 :9.4 MB, 在所有 C++ 提交中击败了50.00%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      最大间距、困难
     
     </summary>
     

@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(192)%20Word%20Frequency/</loc>
+    
+    <lastmod>2019-06-24T15:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(191)%20Number%20of%201%20Bits/</loc>
+    
+    <lastmod>2019-06-24T09:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(190)%20Reverse%20Bits/</loc>
+    
+    <lastmod>2019-06-24T03:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(189)%20Rotate%20Array/</loc>
+    
+    <lastmod>2019-06-23T15:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(188)%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20IV/</loc>
+    
+    <lastmod>2019-06-23T09:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(187)%20Repeated%20DNA%20Sequences/</loc>
+    
+    <lastmod>2019-06-23T03:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(186)%20Reverse%20Words%20in%20a%20String%20II/</loc>
+    
+    <lastmod>2019-06-22T15:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(185)%20Department%20Top%20Three%20Salaries/</loc>
+    
+    <lastmod>2019-06-22T09:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(184)%20Department%20Highest%20Salary/</loc>
+    
+    <lastmod>2019-06-22T03:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(183)%20Customers%20Who%20Never%20Order/</loc>
     
     <lastmod>2019-06-21T15:15:00.000Z</lastmod>

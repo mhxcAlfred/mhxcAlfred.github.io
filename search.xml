@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LeetCode (192) Word Frequency]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(192)%20Word%20Frequency%2F</url>
+    <content type="text"><![CDATA[题目描述写一个 bash 脚本以统计一个文本文件 words.txt 中每个单词出现的频率。 为了简单起见，你可以假设： words.txt只包括小写字母和 ‘ ‘ 。 每个单词只由小写字母组成。 单词间由一个或多个空格字符分隔。 示例假设 words.txt 内容如下： 12the day is sunny the thethe sunny is is 你的脚本应当输出（以词频降序排列）： 1234the 4is 3sunny 2day 1 说明: 不要担心词频相同的单词的排序问题，每个单词出现的频率都是唯一的。 你可以使用一行 Unix pipes 实现吗？ Bash 解决方法12# Read from the file words.txt and output the word frequency list to stdout.grep -oE '[a-z]+' words.txt | sort | uniq -c | sort -nr | awk '&#123;print $2" "$1&#125;' 结果英文版Runtime: 0 ms, faster than 100.00% of Bash online submissions for Word Frequency. Memory Usage: 3.3 MB, less than 81.02% of Bash online submissions for Word Frequency. 中文版执行用时 :4 ms, 在所有 Bash 提交中击败了84.93%的用户 内存消耗 :3.3 MB, 在所有 Bash 提交中击败了79.57%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>Bash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (191) Number of 1 Bits]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(191)%20Number%20of%201%20Bits%2F</url>
+    <content type="text"><![CDATA[题目描述编写一个函数，输入是一个无符号整数，返回其二进制表达式中数字位数为 ‘1’ 的个数（也被称为汉明重量）。 示例 1输入: 00000000000000000000000000001011输出: 3解释: 输入的二进制串 00000000000000000000000000001011 中，共有三位为 ‘1’。 示例 2输入: 00000000000000000000000010000000输出: 1解释: 输入的二进制串 00000000000000000000000010000000 中，共有一位为 ‘1’。 示例 3输入: 11111111111111111111111111111101输出: 31解释: 输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 ‘1’。 提示: 请注意，在某些语言（如 Java）中，没有无符号整数类型。在这种情况下，输入和输出都将被指定为有符号整数类型，并且不应影响您的实现，因为无论整数是有符号的还是无符号的，其内部的二进制表示形式都是相同的。 在 Java 中，编译器使用二进制补码记法来表示有符号整数。因此，在上面的 示例 3 中，输入表示有符号整数 -3。 进阶: 如果多次调用这个函数，你将如何优化你的算法？ C++解决方法1234567891011class Solution &#123;public: int hammingWeight(uint32_t n) &#123; int res = 0; for (int i = 0; i &lt; 32; ++i) &#123; res += (n &amp; 1); n = n &gt;&gt; 1; &#125; return res; &#125;&#125;; 结果英文版Runtime: 4 ms, faster than 84.13% of C++ online submissions for Number of 1 Bits. Memory Usage: 8.2 MB, less than 22.15% of C++ online submissions for Number of 1 Bits. 中文版执行用时 :8 ms, 在所有 C++ 提交中击败了79.51%的用户 内存消耗 :8.2 MB, 在所有 C++ 提交中击败了27.22%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (190) Reverse Bits]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(190)%20Reverse%20Bits%2F</url>
+    <content type="text"><![CDATA[题目描述颠倒给定的 32 位无符号整数的二进制位。 示例 1输入: 00000010100101000001111010011100输出: 00111001011110000010100101000000解释: 输入的二进制串 00000010100101000001111010011100 表示无符号整数 43261596， 因此返回 964176192，其二进制表示形式为 00111001011110000010100101000000。 示例 2输入: 11111111111111111111111111111101输出: 10111111111111111111111111111111解释: 输入的二进制串 11111111111111111111111111111101 表示无符号整数 4294967293， 因此返回 3221225471 其二进制表示形式为 10101111110010110010011101101001。 **提示: 请注意，在某些语言（如 Java）中，没有无符号整数类型。在这种情况下，输入和输出都将被指定为有符号整数类型，并且不应影响您的实现，因为无论整数是有符号的还是无符号的，其内部的二进制表示形式都是相同的。 在 Java 中，编译器使用二进制补码记法来表示有符号整数。因此，在上面的 示例 2 中，输入表示有符号整数 -3，输出表示有符号整数 -1073741825。 C++解决方法12345678910class Solution &#123;public: uint32_t reverseBits(uint32_t n) &#123; uint32_t res = 0; for (int i = 0; i &lt; 32; ++i) &#123; res = (res &lt;&lt; 1) + (n &gt;&gt; i &amp; 1); &#125; return res; &#125;&#125;; 结果英文版Runtime: 0 ms, faster than 100.00% of C++ online submissions for Reverse Bits. Memory Usage: 8.1 MB, less than 24.40% of C++ online submissions for Reverse Bits. 中文版执行用时 :0 ms, 在所有 C++ 提交中击败了100.00%的用户 内存消耗 :8.2 MB, 在所有 C++ 提交中击败了7.61%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (189) Rotate Array]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(189)%20Rotate%20Array%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。 示例 1输入: [1,2,3,4,5,6,7] 和 k = 3输出: [5,6,7,1,2,3,4]解释:向右旋转 1 步: [7,1,2,3,4,5,6]向右旋转 2 步: [6,7,1,2,3,4,5]向右旋转 3 步: [5,6,7,1,2,3,4] 示例 2输入: [-1,-100,3,99] 和 k = 2输出: [3,99,-1,-100]解释:向右旋转 1 步: [99,-1,-100,3]向右旋转 2 步: [3,99,-1,-100] 说明: 尽可能想出更多的解决方案，至少有三种不同的方法可以解决这个问题。 要求使用空间复杂度为 O(1) 的 原地 算法。 C++解决方法12345678910class Solution &#123;public: void rotate(vector&lt;int&gt;&amp; nums, int k) &#123; if (nums.empty() || (k %= nums.size()) == 0) return; int n = nums.size(); reverse(nums.begin(), nums.begin() + n - k); reverse(nums.begin() + n - k, nums.end()); reverse(nums.begin(), nums.end()); &#125;&#125;; 结果英文版Runtime: 16 ms, faster than 92.37% of C++ online submissions for Rotate Array. Memory Usage: 9.5 MB, less than 47.71% of C++ online submissions for Rotate Array. 中文版执行用时 :24 ms, 在所有 C++ 提交中击败了94.33%的用户 内存消耗 :9.3 MB, 在所有 C++ 提交中击败了88.16%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (188) Best Time to Buy and Sell Stock IV]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(188)%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20IV%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个数组，它的第 i 个元素是一支给定的股票在第 i 天的价格。 设计一个算法来计算你所能获取的最大利润。你最多可以完成 k 笔交易。 注意: 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。 示例 1输入: [2,4,1], k = 2输出: 2解释: 在第 1 天 (股票价格 = 2) 的时候买入，在第 2 天 (股票价格 = 4) 的时候卖出，这笔交易所能获得利润 = 4-2 = 2 。 示例 2输入: [3,2,6,5,0,3], k = 2输出: 7解释: 在第 2 天 (股票价格 = 2) 的时候买入，在第 3 天 (股票价格 = 6) 的时候卖出, 这笔交易所能获得利润 = 6-2 = 4 。 随后，在第 5 天 (股票价格 = 0) 的时候买入，在第 6 天 (股票价格 = 3) 的时候卖出, 这笔交易所能获得利润 = 3-0 = 3 。 C++解决方法1234567891011121314151617181920212223242526class Solution &#123;public: int maxProfit(int k, vector&lt;int&gt; &amp;prices) &#123; if (prices.empty()) return 0; if (k &gt;= prices.size()) return solveMaxProfit(prices); int g[k + 1] = &#123;0&#125;; int l[k + 1] = &#123;0&#125;; for (int i = 0; i &lt; prices.size() - 1; ++i) &#123; int diff = prices[i + 1] - prices[i]; for (int j = k; j &gt;= 1; --j) &#123; l[j] = max(g[j - 1] + max(diff, 0), l[j] + diff); g[j] = max(g[j], l[j]); &#125; &#125; return g[k]; &#125; int solveMaxProfit(vector&lt;int&gt; &amp;prices) &#123; int res = 0; for (int i = 1; i &lt; prices.size(); ++i) &#123; if (prices[i] - prices[i - 1] &gt; 0) &#123; res += prices[i] - prices[i - 1]; &#125; &#125; return res; &#125;&#125;; 结果英文版Runtime: 4 ms, faster than 99.25% of C++ online submissions for Best Time to Buy and Sell Stock IV. Memory Usage: 8.9 MB, less than 88.76% of C++ online submissions for Best Time to Buy and Sell Stock IV. 中文版执行用时 :12 ms, 在所有 C++ 提交中击败了84.22%的用户 内存消耗 :8.8 MB, 在所有 C++ 提交中击败了91.50%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (187) Repeated DNA Sequences]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(187)%20Repeated%20DNA%20Sequences%2F</url>
+    <content type="text"><![CDATA[题目描述所有 DNA 由一系列缩写为 A，C，G 和 T 的核苷酸组成，例如：“ACGAATTCCG”。在研究 DNA 时，识别 DNA 中的重复序列有时会对研究非常有帮助。 编写一个函数来查找 DNA 分子中所有出现超多一次的10个字母长的序列（子串）。 示例输入: s = “AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT”输出: [“AAAAACCCCC”, “CCCCCAAAAA”] C++解决方法123456789101112131415class Solution &#123;public: vector&lt;string&gt; findRepeatedDnaSequences(string s) &#123; unordered_set&lt;string&gt; res; unordered_set&lt;int&gt; st; int cur = 0; for (int i = 0; i &lt; 9; ++i) cur = cur &lt;&lt; 3 | (s[i] &amp; 7); for (int i = 9; i &lt; s.size(); ++i) &#123; cur = ((cur &amp; 0x7ffffff) &lt;&lt; 3) | (s[i] &amp; 7); if (st.count(cur)) res.insert(s.substr(i - 9, 10)); else st.insert(cur); &#125; return vector&lt;string&gt;(res.begin(), res.end()); &#125;&#125;; 结果英文版Runtime: 36 ms, faster than 94.81% of C++ online submissions for Repeated DNA Sequences. Memory Usage: 16.7 MB, less than 76.37% of C++ online submissions for Repeated DNA Sequences. 中文版执行用时 :48 ms, 在所有 C++ 提交中击败了97.96%的用户 内存消耗 :16.6 MB, 在所有 C++ 提交中击败了85.00%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (186) Reverse Words in a String II]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(186)%20Reverse%20Words%20in%20a%20String%20II%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (185) Department Top Three Salaries]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(185)%20Department%20Top%20Three%20Salaries%2F</url>
+    <content type="text"><![CDATA[题目描述SQL架构 12345678910111213Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, DepartmentId int)Create table If Not Exists Department (Id int, Name varchar(255))Truncate table Employeeinsert into Employee (Id, Name, Salary, DepartmentId) values (&apos;1&apos;, &apos;Joe&apos;, &apos;85000&apos;, &apos;1&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;2&apos;, &apos;Henry&apos;, &apos;80000&apos;, &apos;2&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;3&apos;, &apos;Sam&apos;, &apos;60000&apos;, &apos;2&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;4&apos;, &apos;Max&apos;, &apos;90000&apos;, &apos;1&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;5&apos;, &apos;Janet&apos;, &apos;69000&apos;, &apos;1&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;6&apos;, &apos;Randy&apos;, &apos;85000&apos;, &apos;1&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;7&apos;, &apos;Will&apos;, &apos;70000&apos;, &apos;1&apos;)Truncate table Departmentinsert into Department (Id, Name) values (&apos;1&apos;, &apos;IT&apos;)insert into Department (Id, Name) values (&apos;2&apos;, &apos;Sales&apos;) Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id 。 +—-+——-+——–+————–+| Id | Name | Salary | DepartmentId |+—-+——-+——–+————–+| 1 | Joe | 70000 | 1 || 2 | Henry | 80000 | 2 || 3 | Sam | 60000 | 2 || 4 | Max | 90000 | 1 || 5 | Janet | 69000 | 1 || 6 | Randy | 85000 | 1 |+—-+——-+——–+————–+ Department 表包含公司所有部门的信息。 +—-+———-+| Id | Name |+—-+———-+| 1 | IT || 2 | Sales |+—-+———-+ 编写一个 SQL 查询，找出每个部门工资前三高的员工。例如，根据上述给定的表格，查询结果应返回： +————+———-+——–+| Department | Employee | Salary |+————+———-+——–+| IT | Max | 90000 || IT | Randy | 85000 || IT | Joe | 70000 || Sales | Henry | 80000 || Sales | Sam | 60000 |+————+———-+——–+ MySQL 解决方法12345678# Write your MySQL query statement belowSELECT d.Name AS Department, e.Name AS Employee, e.Salary FROM (SELECT Name, Salary, DepartmentId,@rank := IF(@pre_d = DepartmentId, @rank + (@pre_s &lt;&gt; Salary), 1) AS rank,@pre_d := DepartmentId, @pre_s := Salary FROM Employee, (SELECT @pre_d := -1, @pre_s := -1, @rank := 1) AS initORDER BY DepartmentId, Salary DESC) e JOIN Department d ON e.DepartmentId = d.IdWHERE e.rank &lt;= 3 ORDER BY d.Name, e.Salary DESC; 结果英文版Runtime: 435 ms, faster than 93.72% of MySQL online submissions for Department Top Three Salaries. 中文版执行用时 :1581 ms, 在所有 MySQL 提交中击败了40.47%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (184) Department Highest Salary]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(184)%20Department%20Highest%20Salary%2F</url>
+    <content type="text"><![CDATA[题目描述SQL架构 1234567891011Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, DepartmentId int)Create table If Not Exists Department (Id int, Name varchar(255))Truncate table Employeeinsert into Employee (Id, Name, Salary, DepartmentId) values (&apos;1&apos;, &apos;Joe&apos;, &apos;70000&apos;, &apos;1&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;2&apos;, &apos;Jim&apos;, &apos;90000&apos;, &apos;1&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;3&apos;, &apos;Henry&apos;, &apos;80000&apos;, &apos;2&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;4&apos;, &apos;Sam&apos;, &apos;60000&apos;, &apos;2&apos;)insert into Employee (Id, Name, Salary, DepartmentId) values (&apos;5&apos;, &apos;Max&apos;, &apos;90000&apos;, &apos;1&apos;)Truncate table Departmentinsert into Department (Id, Name) values (&apos;1&apos;, &apos;IT&apos;)insert into Department (Id, Name) values (&apos;2&apos;, &apos;Sales&apos;) Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。 +—-+——-+——–+————–+| Id | Name | Salary | DepartmentId |+—-+——-+——–+————–+| 1 | Joe | 70000 | 1 || 2 | Henry | 80000 | 2 || 3 | Sam | 60000 | 2 || 4 | Max | 90000 | 1 |+—-+——-+——–+————–+ Department 表包含公司所有部门的信息。 +—-+———-+| Id | Name |+—-+———-+| 1 | IT || 2 | Sales |+—-+———-+ 编写一个 SQL 查询，找出每个部门工资最高的员工。例如，根据上述给定的表格，Max 在 IT 部门有最高工资，Henry 在 Sales 部门有最高工资。 +————+———-+——–+| Department | Employee | Salary |+————+———-+——–+| IT | Max | 90000 || Sales | Henry | 80000 |+————+———-+——–+ MySQL 解决方法123# Write your MySQL query statement belowSELECT d.Name AS Department, e.Name AS Employee, e.Salary FROM Employee e, Department dWHERE e.DepartmentId = d.Id AND e.Salary &gt;= ALL (SELECT Salary FROM Employee e2 WHERE e2.DepartmentId = d.Id); 结果英文版Runtime: 396 ms, faster than 22.14% of MySQL online submissions for Department Highest Salary. 中文版执行用时 :778 ms, 在所有 MySQL 提交中击败了66.30%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode (183) Customers Who Never Order]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(183)%20Customers%20Who%20Never%20Order%2F</url>
     <content type="text"><![CDATA[题目描述SQL架构 12345678910Create table If Not Exists Customers (Id int, Name varchar(255))Create table If Not Exists Orders (Id int, CustomerId int)Truncate table Customersinsert into Customers (Id, Name) values (&apos;1&apos;, &apos;Joe&apos;)insert into Customers (Id, Name) values (&apos;2&apos;, &apos;Henry&apos;)insert into Customers (Id, Name) values (&apos;3&apos;, &apos;Sam&apos;)insert into Customers (Id, Name) values (&apos;4&apos;, &apos;Max&apos;)Truncate table Ordersinsert into Orders (Id, CustomerId) values (&apos;1&apos;, &apos;3&apos;)insert into Orders (Id, CustomerId) values (&apos;2&apos;, &apos;1&apos;) 某网站包含两个表，Customers 表和 Orders 表。编写一个 SQL 查询，找出所有从不订购任何东西的客户。 Customers 表： +—-+——-+| Id | Name |+—-+——-+| 1 | Joe || 2 | Henry || 3 | Sam || 4 | Max |+—-+——-+ Orders 表： +—-+————+| Id | CustomerId |+—-+————+| 1 | 3 || 2 | 1 |+—-+————+ 例如给定上述表格，你的查询应返回： +———–+| Customers |+———–+| Henry || Max |+———–+ MySQL 解决方法123# Write your MySQL query statement belowSELECT Name AS Customers FROM Customers WHERE Id NOT IN (SELECT CustomerId FROM Orders); 结果英文版Runtime: 297 ms, faster than 17.59% of MySQL online submissions for Customers Who Never Order. 中文版执行用时 :640 ms, 在所有 MySQL 提交中击败了45.65%的用户]]></content>
