@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LeetCode (195) Tenth Line]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(195)%20Tenth%20Line%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个文本文件 file.txt，请只打印这个文件中的第十行。 示例假设 file.txt 有如下内容： Line 1Line 2Line 3Line 4Line 5Line 6Line 7Line 8Line 9Line 10 你的脚本应当显示第十行： Line 10 说明: 如果文件少于十行，你应当输出什么？ 至少有三种不同的解法，请尝试尽可能多的方法来解题。 Bash 解决方法12# Read from the file file.txt and output the tenth line to stdout.sed -n 10p file.txt 结果英文版Runtime: 4 ms, faster than 87.60% of Bash online submissions for Tenth Line. Memory Usage: 3.6 MB, less than 97.31% of Bash online submissions for Tenth Line. 中文版执行用时 :4 ms, 在所有 Bash 提交中击败了94.55%的用户 内存消耗 :3.7 MB, 在所有 Bash 提交中击败了48.45%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>Bash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (194) Transpose File]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(194)%20Transpose%20File%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个文件 file.txt，转置它的内容。 你可以假设每行列数相同，并且每个字段由 &#39; &#39; 分隔. 示例假设 file.txt 文件内容如下: name agealice 21ryan 30 应当输出: name alice ryanage 21 30 Bash 解决方法1234567891011# Read from the file file.txt and print its transposed content to stdout.awk '&#123; for (i = 1; i &lt;= NF; ++i) &#123; if (NR == 1) s[i] = $i; else s[i] = s[i] " " $i; &#125;&#125; END &#123; for (i = 1; s[i] != ""; ++i) &#123; print s[i]; &#125;&#125;' file.txt 结果英文版Runtime: 12 ms, faster than 75.19% of Bash online submissions for Transpose File. Memory Usage: 3.5 MB, less than 82.17% of Bash online submissions for Transpose File. 中文版执行用时 :16 ms, 在所有 Bash 提交中击败了80.53%的用户 内存消耗 :3.7 MB, 在所有 Bash 提交中击败了26.11%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>Bash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (193) Valid Phone Numbers]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(193)%20Valid%20Phone%20Numbers%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个包含电话号码列表（一行一个电话号码）的文本文件 file.txt，写一个 bash 脚本输出所有有效的电话号码。 你可以假设一个有效的电话号码必须满足以下两种格式： (xxx) xxx-xxxx 或 xxx-xxx-xxxx。（x 表示一个数字） 你也可以假设每行前后没有多余的空格字符。 示例假设 file.txt 内容如下： 987-123-4567123 456 7890(123) 456-7890 你的脚本应当输出下列有效的电话号码： 987-123-4567(123) 456-7890 Bash 解决方法12# Read from the file file.txt and output all valid phone numbers to stdout.sed -n -r '/^([0-9]&#123;3&#125;-|\([0-9]&#123;3&#125;\) )[0-9]&#123;3&#125;-[0-9]&#123;4&#125;$/p' file.txt 结果英文版Runtime: 0 ms, faster than 100.00% of Bash online submissions for Valid Phone Numbers. Memory Usage: 3.1 MB, less than 98.39% of Bash online submissions for Valid Phone Numbers. 中文版执行用时 :0 ms, 在所有 Bash 提交中击败了100.00%的用户 内存消耗 :3.1 MB, 在所有 Bash 提交中击败了69.85%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>Bash</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode (192) Word Frequency]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(192)%20Word%20Frequency%2F</url>
     <content type="text"><![CDATA[题目描述写一个 bash 脚本以统计一个文本文件 words.txt 中每个单词出现的频率。 为了简单起见，你可以假设： words.txt只包括小写字母和 ‘ ‘ 。 每个单词只由小写字母组成。 单词间由一个或多个空格字符分隔。 示例假设 words.txt 内容如下： 12the day is sunny the thethe sunny is is 你的脚本应当输出（以词频降序排列）： 1234the 4is 3sunny 2day 1 说明: 不要担心词频相同的单词的排序问题，每个单词出现的频率都是唯一的。 你可以使用一行 Unix pipes 实现吗？ Bash 解决方法12# Read from the file words.txt and output the word frequency list to stdout.grep -oE '[a-z]+' words.txt | sort | uniq -c | sort -nr | awk '&#123;print $2" "$1&#125;' 结果英文版Runtime: 0 ms, faster than 100.00% of Bash online submissions for Word Frequency. Memory Usage: 3.3 MB, less than 81.02% of Bash online submissions for Word Frequency. 中文版执行用时 :4 ms, 在所有 Bash 提交中击败了84.93%的用户 内存消耗 :3.3 MB, 在所有 Bash 提交中击败了79.57%的用户]]></content>

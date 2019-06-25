@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcAlfred.com/"/>
-  <updated>2019-06-24T15:15:00.000Z</updated>
+  <updated>2019-06-25T15:15:00.000Z</updated>
   <id>https://blog.mhxcAlfred.com/</id>
   
   <author>
@@ -15,6 +15,84 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode (195) Tenth Line</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(195)%20Tenth%20Line/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (195) Tenth Line/</id>
+    <published>2019-06-25T15:15:00.000Z</published>
+    <updated>2019-06-25T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个文本文件 <code>file.txt</code>，请只打印这个文件中的第十行。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>假设 <code>file.txt</code> 有如下内容：</p><p>Line 1<br>Line 2<br>Line 3<br>Line 4<br>Line 5<br>Line 6<br>Line 7<br>Line 8<br>Line 9<br>Line 10</p><p>你的脚本应当显示第十行：</p><p>Line 10</p><p><strong>说明:</strong></p><ol><li>如果文件少于十行，你应当输出什么？</li><li>至少有三种不同的解法，请尝试尽可能多的方法来解题。</li></ol><h1 id="Bash-解决方法"><a href="#Bash-解决方法" class="headerlink" title="Bash 解决方法"></a>Bash 解决方法</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Read from the file file.txt and output the tenth line to stdout.</span></span><br><span class="line">sed -n 10p file.txt</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 87.60% of Bash online submissions for Tenth Line.</p><p>Memory Usage: 3.6 MB, less than 97.31% of Bash online submissions for Tenth Line.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :4 ms, 在所有 Bash 提交中击败了94.55%的用户</p><p>内存消耗 :3.7 MB, 在所有 Bash 提交中击败了48.45%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      第十行、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="Bash" scheme="https://blog.mhxcAlfred.com/tags/Bash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (194) Transpose File</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(194)%20Transpose%20File/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (194) Transpose File/</id>
+    <published>2019-06-25T09:15:00.000Z</published>
+    <updated>2019-06-25T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个文件 <code>file.txt</code>，转置它的内容。</p><p>你可以假设每行列数相同，并且每个字段由 <code>&#39; &#39;</code> 分隔.</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>假设 <code>file.txt</code> 文件内容如下:</p><p>name age<br>alice 21<br>ryan 30</p><p>应当输出:</p><p>name alice ryan<br>age 21 30</p><h1 id="Bash-解决方法"><a href="#Bash-解决方法" class="headerlink" title="Bash 解决方法"></a>Bash 解决方法</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Read from the file file.txt and print its transposed content to stdout.</span></span><br><span class="line">awk <span class="string">'&#123;</span></span><br><span class="line"><span class="string">    for (i = 1; i &lt;= NF; ++i) &#123;</span></span><br><span class="line"><span class="string">        if (NR == 1) s[i] = $i;</span></span><br><span class="line"><span class="string">        else s[i] = s[i] " " $i;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">&#125; END &#123;</span></span><br><span class="line"><span class="string">    for (i = 1; s[i] != ""; ++i) &#123;</span></span><br><span class="line"><span class="string">        print s[i];</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">&#125;'</span> file.txt</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 12 ms, faster than 75.19% of Bash online submissions for Transpose File.</p><p>Memory Usage: 3.5 MB, less than 82.17% of Bash online submissions for Transpose File.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :16 ms, 在所有 Bash 提交中击败了80.53%的用户</p><p>内存消耗 :3.7 MB, 在所有 Bash 提交中击败了26.11%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      转置文件、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="Bash" scheme="https://blog.mhxcAlfred.com/tags/Bash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (193) Valid Phone Numbers</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(193)%20Valid%20Phone%20Numbers/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (193) Valid Phone Numbers/</id>
+    <published>2019-06-25T03:15:00.000Z</published>
+    <updated>2019-06-25T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个包含电话号码列表（一行一个电话号码）的文本文件 <code>file.txt</code>，写一个 bash 脚本输出所有有效的电话号码。</p><p>你可以假设一个有效的电话号码必须满足以下两种格式： (xxx) xxx-xxxx 或 xxx-xxx-xxxx。（x 表示一个数字）</p><p>你也可以假设每行前后没有多余的空格字符。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>假设 <code>file.txt</code> 内容如下：</p><p>987-123-4567<br>123 456 7890<br>(123) 456-7890</p><p>你的脚本应当输出下列有效的电话号码：</p><p>987-123-4567<br>(123) 456-7890</p><h1 id="Bash-解决方法"><a href="#Bash-解决方法" class="headerlink" title="Bash 解决方法"></a>Bash 解决方法</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Read from the file file.txt and output all valid phone numbers to stdout.</span></span><br><span class="line">sed -n -r <span class="string">'/^([0-9]&#123;3&#125;-|\([0-9]&#123;3&#125;\) )[0-9]&#123;3&#125;-[0-9]&#123;4&#125;$/p'</span> file.txt</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of Bash online submissions for Valid Phone Numbers.</p><p>Memory Usage: 3.1 MB, less than 98.39% of Bash online submissions for Valid Phone Numbers.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :0 ms, 在所有 Bash 提交中击败了100.00%的用户</p><p>内存消耗 :3.1 MB, 在所有 Bash 提交中击败了69.85%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      有效电话号码、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="Bash" scheme="https://blog.mhxcAlfred.com/tags/Bash/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode (192) Word Frequency</title>
@@ -455,84 +533,6 @@
       <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
     
       <category term="MySQL" scheme="https://blog.mhxcAlfred.com/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (175) Combine Two Tables</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(175)%20Combine%20Two%20Tables/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (175) Combine Two Tables/</id>
-    <published>2019-06-19T03:15:00.000Z</published>
-    <updated>2019-06-19T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>SQL架构</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Create table Person (PersonId int, FirstName varchar(255), LastName varchar(255))</span><br><span class="line">Create table Address (AddressId int, PersonId int, City varchar(255), State varchar(255))</span><br><span class="line">Truncate table Person</span><br><span class="line">insert into Person (PersonId, LastName, FirstName) values (&apos;1&apos;, &apos;Wang&apos;, &apos;Allen&apos;)</span><br><span class="line">Truncate table Address</span><br><span class="line">insert into Address (AddressId, PersonId, City, State) values (&apos;1&apos;, &apos;2&apos;, &apos;New York City&apos;, &apos;New York&apos;)</span><br></pre></td></tr></table></figure><p>表1: Person</p><p>+————-+———+<br>| 列名         | 类型     |<br>+————-+———+<br>| PersonId    | int     |<br>| FirstName   | varchar |<br>| LastName    | varchar |<br>+————-+———+<br>PersonId 是上表主键</p><p>表2: Address</p><p>+————-+———+<br>| 列名         | 类型    |<br>+————-+———+<br>| AddressId   | int     |<br>| PersonId    | int     |<br>| City        | varchar |<br>| State       | varchar |<br>+————-+———+<br>AddressId 是上表主键</p><p>编写一个 SQL 查询，满足条件：无论 person 是否有地址信息，都需要基于上述两表提供 person 的以下信息：</p><p>FirstName, LastName, City, State</p><h1 id="MySQL-解决方法"><a href="#MySQL-解决方法" class="headerlink" title="MySQL 解决方法"></a>MySQL 解决方法</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Write your MySQL query statement below</span><br><span class="line">SELECT Person.FirstName, Person.LastName, Address.City, Address.State FROM Person LEFT JOIN Address USING(PersonId);</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 325 ms, faster than 5.22% of MySQL online submissions for Combine Two Tables.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :1006 ms, 在所有 MySQL 提交中击败了5.03%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      组合两个表、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="MySQL" scheme="https://blog.mhxcAlfred.com/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (174) Dungeon Game</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(174)%20Dungeon%20Game/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (174) Dungeon Game/</id>
-    <published>2019-06-18T15:15:00.000Z</published>
-    <updated>2019-06-18T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>一些恶魔抓住了公主（P）并将她关在了地下城的右下角。地下城是由 M x N 个房间组成的二维网格。我们英勇的骑士（K）最初被安置在左上角的房间里，他必须穿过地下城并通过对抗恶魔来拯救公主。</p><p>骑士的初始健康点数为一个正整数。如果他的健康点数在某一时刻降至 0 或以下，他会立即死亡。</p><p>有些房间由恶魔守卫，因此骑士在进入这些房间时会失去健康点数（若房间里的值为负整数，则表示骑士将损失健康点数）；其他房间要么是空的（房间里的值为 0），要么包含增加骑士健康点数的魔法球（若房间里的值为正整数，则表示骑士将增加健康点数）。</p><p>为了尽快到达公主，骑士决定每次只向右或向下移动一步。</p><p>编写一个函数来计算确保骑士能够拯救到公主所需的最低初始健康点数。</p><p>例如，考虑到如下布局的地下城，如果骑士遵循最佳路径 右 -&gt; 右 -&gt; 下 -&gt; 下，则骑士的初始健康点数至少为 7。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| -2 (K) | -3 | 3 |</span><br><span class="line">| -5 | -10 | 1 |</span><br><span class="line">| 10 | 30 | -5 (P) |</span><br></pre></td></tr></table></figure><p><strong>说明:</strong></p><ul><li>骑士的健康点数没有上限。</li><li>任何房间都可能对骑士的健康点数造成威胁，也可能增加骑士的健康点数，包括骑士进入的左上角房间以及公主被监禁的右下角房间。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">calculateMinimumHP</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt;&amp; dungeon)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> m = dungeon.size(), n = dungeon[<span class="number">0</span>].size();</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; dp(n + <span class="number">1</span>, INT_MAX);</span><br><span class="line">        dp[n - <span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = m - <span class="number">1</span>; i &gt;= <span class="number">0</span>; --i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = n - <span class="number">1</span>; j &gt;= <span class="number">0</span>; --j) &#123;</span><br><span class="line">                dp[j] = max(<span class="number">1</span>, min(dp[j], dp[j + <span class="number">1</span>]) - dungeon[i][j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 8 ms, faster than 86.55% of C++ online submissions for Dungeon Game.</p><p>Memory Usage: 9.7 MB, less than 95.45% of C++ online submissions for Dungeon Game.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :12 ms, 在所有 C++ 提交中击败了83.46%的用户</p><p>内存消耗 :9.9 MB, 在所有 C++ 提交中击败了88.28%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      地下城游戏、困难
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (173) Binary Search Tree Iterator</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(173)%20Binary%20Search%20Tree%20Iterator/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (173) Binary Search Tree Iterator/</id>
-    <published>2019-06-18T09:15:00.000Z</published>
-    <updated>2019-06-18T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>实现一个二叉搜索树迭代器。你将使用二叉搜索树的根节点初始化迭代器。</p><p>调用 <code>next()</code> 将返回二叉搜索树中的下一个最小的数。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><img src="https://assets.leetcode.com/uploads/2018/12/25/bst-tree.png" alt></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">BSTIterator iterator = new BSTIterator(root);</span><br><span class="line">iterator.next();    // 返回 3</span><br><span class="line">iterator.next();    // 返回 7</span><br><span class="line">iterator.hasNext(); // 返回 true</span><br><span class="line">iterator.next();    // 返回 9</span><br><span class="line">iterator.hasNext(); // 返回 true</span><br><span class="line">iterator.next();    // 返回 15</span><br><span class="line">iterator.hasNext(); // 返回 true</span><br><span class="line">iterator.next();    // 返回 20</span><br><span class="line">iterator.hasNext(); // 返回 false</span><br></pre></td></tr></table></figure><p><strong>提示:</strong></p><ul><li><code>next()</code> 和 <code>hasNext()</code> 操作的时间复杂度是 O(1)，并使用 O(h) 内存，其中 h 是树的高度。</li><li>你可以假设 <code>next()</code> 调用总是有效的，也就是说，当调用 <code>next()</code> 时，BST 中至少存在一个下一个最小的数。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BSTIterator</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    BSTIterator(TreeNode *root) &#123;</span><br><span class="line">        <span class="keyword">while</span> (root) &#123;</span><br><span class="line">            s.push(root);</span><br><span class="line">            root = root-&gt;left;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/** @return whether we have a next smallest number */</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">hasNext</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> !s.empty();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/** @return the next smallest number */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">next</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        TreeNode *n = s.top();</span><br><span class="line">        s.pop();</span><br><span class="line">        <span class="keyword">int</span> res = n-&gt;val;</span><br><span class="line">        <span class="keyword">if</span> (n-&gt;right) &#123;</span><br><span class="line">            n = n-&gt;right;</span><br><span class="line">            <span class="keyword">while</span> (n) &#123;</span><br><span class="line">                s.push(n);</span><br><span class="line">                n = n-&gt;left;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">stack</span>&lt;TreeNode*&gt; s;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your BSTIterator object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * BSTIterator* obj = new BSTIterator(root);</span></span><br><span class="line"><span class="comment"> * int param_1 = obj-&gt;next();</span></span><br><span class="line"><span class="comment"> * bool param_2 = obj-&gt;hasNext();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 60 ms, faster than 71.08% of C++ online submissions for Binary Search Tree Iterator.</p><p>Memory Usage: 23.9 MB, less than 100.00% of C++ online submissions for Binary Search Tree Iterator.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :108 ms, 在所有 C++ 提交中击败了44.40%的用户</p><p>内存消耗 :24.2 MB, 在所有 C++ 提交中击败了83.82%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      二叉搜索树迭代器、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
     
   </entry>
   
