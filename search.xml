@@ -1,6 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LeetCode (210) Course Schedule II]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(210)%20Course%20Schedule%20II%2F</url>
+    <content type="text"><![CDATA[题目描述现在你总共有 n 门课需要选，记为 0 到 n-1。 在选修某些课程之前需要一些先修课程。 例如，想要学习课程 0 ，你需要先完成课程 1 ，我们用一个匹配来表示他们: [0,1] 给定课程总量以及它们的先决条件，返回你为了学完所有课程所安排的学习顺序。 可能会有多个正确的顺序，你只要返回一种就可以了。如果不可能完成所有课程，返回一个空数组。 示例 1输入: 2, [[1,0]]输出: [0,1]解释: 总共有 2 门课程。要学习课程 1，你需要先完成课程 0。因此，正确的课程顺序为 [0,1] 。 示例 2输入: 4, [[1,0],[2,0],[3,1],[3,2]]输出: [0,1,2,3] or [0,2,1,3]解释: 总共有 4 门课程。要学习课程 3，你应该先完成课程 1 和课程 2。并且课程 1 和课程 2 都应该排在课程 0 之后。 因此，一个正确的课程顺序是 [0,1,2,3] 。另一个正确的排序是 [0,2,1,3] 。 说明: 输入的先决条件是由 边缘列表 表示的图形，而不是邻接矩阵。详情请参见图的表示法。 你可以假定输入的先决条件中没有重复的边。 提示: 这个问题相当于查找一个循环是否存在于有向图中。如果存在循环，则不存在拓扑排序，因此不可能选取所有课程进行学习。 通过 DFS 进行拓扑排序 - 一个关于Coursera的精彩视频教程（21分钟），介绍拓扑排序的基本概念。 拓扑排序也可以通过 BFS 完成。 C++解决方法123456789101112131415161718192021222324252627282930313233343536373839404142434445class Solution &#123; vector&lt;int&gt; result; bool hasCycle; vector&lt;int&gt; white; vector&lt;vector&lt;int&gt;&gt; graph; unordered_set&lt;int&gt; gray; int n;public: vector&lt;int&gt; findOrder(int numCourses, vector&lt;vector&lt;int&gt;&gt;&amp; prerequisites) &#123; if(numCourses == 0) return(vector&lt;int&gt;()); n = numCourses; hasCycle = false; white = vector&lt;int&gt;(n, 0); result = vector&lt;int&gt;(n); graph = vector&lt;vector&lt;int&gt;&gt;(n); for(auto x : prerequisites) graph[x[1]].push_back(x[0]); for(int i=0; i&lt;numCourses; i++) if(!white[i]) dfs(i); if(hasCycle) return(vector&lt;int&gt;()); return(result); &#125; void dfs(int node) &#123; if(hasCycle || white[node]) return; white[node] = 1; gray.insert(node); for(int ele : graph[node]) &#123; if(gray.find(ele) != gray.end()) &#123; hasCycle = true; return; &#125; dfs(ele); &#125; gray.erase(gray.find(node)); result[--n] = node; &#125;&#125;; 结果英文版Runtime: 28 ms, faster than 55.66% of C++ online submissions for Course Schedule II. Memory Usage: 16.7 MB, less than 10.61% of C++ online submissions for Course Schedule II. 中文版执行用时 :44 ms, 在所有 C++ 提交中击败了56.80%的用户 内存消耗 :16.7 MB, 在所有 C++ 提交中击败了5.48%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (209) Minimum Size Subarray Sum]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(209)%20Minimum%20Size%20Subarray%20Sum%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个含有 n 个正整数的数组和一个正整数 s ，找出该数组中满足其和 ≥ s 的长度最小的连续子数组。如果不存在符合条件的连续子数组，返回 0。 示例输入: s = 7, nums = [2,3,1,2,4,3]输出: 2解释: 子数组 [4,3] 是该条件下的长度最小的连续子数组。 进阶: 如果你已经完成了 O(n) 时间复杂度的解法, 请尝试 O(n log n) 时间复杂度的解法。 C++解决方法1234567891011121314151617class Solution &#123;public: int minSubArrayLen(int s, vector&lt;int&gt;&amp; nums) &#123; if (nums.empty()) return 0; int left = 0, right = 0, sum = 0, len = nums.size(), res = len + 1; while (right &lt; len) &#123; while (sum &lt; s &amp;&amp; right &lt; len) &#123; sum += nums[right++]; &#125; while (sum &gt;= s) &#123; res = min(res, right - left); sum -= nums[left++]; &#125; &#125; return res == len + 1 ? 0 : res; &#125;&#125;; 结果英文版Runtime: 8 ms, faster than 97.95% of C++ online submissions for Minimum Size Subarray Sum. Memory Usage: 9.9 MB, less than 67.24% of C++ online submissions for Minimum Size Subarray Sum. 中文版执行用时 :12 ms, 在所有 C++ 提交中击败了93.34%的用户 内存消耗 :9.8 MB, 在所有 C++ 提交中击败了94.22%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (208) Implement Trie (Prefix Tree)]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(208)%20Implement%20Trie%20(Prefix%20Tree)%2F</url>
+    <content type="text"><![CDATA[题目描述实现一个 Trie (前缀树)，包含 insert, search, 和 startsWith 这三个操作。 示例12345678Trie trie = new Trie();trie.insert(&quot;apple&quot;);trie.search(&quot;apple&quot;); // 返回 truetrie.search(&quot;app&quot;); // 返回 falsetrie.startsWith(&quot;app&quot;); // 返回 truetrie.insert(&quot;app&quot;); trie.search(&quot;app&quot;); // 返回 true 说明: 你可以假设所有的输入都是由小写字母 a-z 构成的。 保证所有输入均为非空字符串。 C++解决方法123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960class TrieNode &#123;public: // Initialize your data structure here. TrieNode *child[26]; bool isWord; TrieNode() : isWord(false)&#123; for (auto &amp;a : child) a = NULL; &#125;&#125;;class Trie &#123;public: Trie() &#123; root = new TrieNode(); &#125; // Inserts a word into the trie. void insert(string s) &#123; TrieNode *p = root; for (auto &amp;a : s) &#123; int i = a - 'a'; if (!p-&gt;child[i]) p-&gt;child[i] = new TrieNode(); p = p-&gt;child[i]; &#125; p-&gt;isWord = true; &#125; // Returns if the word is in the trie. bool search(string key) &#123; TrieNode *p = root; for (auto &amp;a : key) &#123; int i = a - 'a'; if (!p-&gt;child[i]) return false; p = p-&gt;child[i]; &#125; return p-&gt;isWord; &#125; // Returns if there is any word in the trie // that starts with the given prefix. bool startsWith(string prefix) &#123; TrieNode *p = root; for (auto &amp;a : prefix) &#123; int i = a - 'a'; if (!p-&gt;child[i]) return false; p = p-&gt;child[i]; &#125; return true; &#125;private: TrieNode* root;&#125;;/** * Your Trie object will be instantiated and called as such: * Trie* obj = new Trie(); * obj-&gt;insert(word); * bool param_2 = obj-&gt;search(word); * bool param_3 = obj-&gt;startsWith(prefix); */ 结果英文版Runtime: 60 ms, faster than 97.58% of C++ online submissions for Implement Trie (Prefix Tree). Memory Usage: 44.8 MB, less than 56.40% of C++ online submissions for Implement Trie (Prefix Tree). 中文版执行用时 :88 ms, 在所有 C++ 提交中击败了92.18%的用户 内存消耗 :44.8 MB, 在所有 C++ 提交中击败了68.72%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (207) Course Schedule]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(207)%20Course%20Schedule%2F</url>
+    <content type="text"><![CDATA[题目描述现在你总共有 n 门课需要选，记为 0 到 n-1。 在选修某些课程之前需要一些先修课程。 例如，想要学习课程 0 ，你需要先完成课程 1 ，我们用一个匹配来表示他们: [0,1] 给定课程总量以及它们的先决条件，判断是否可能完成所有课程的学习？ 示例 1输入: 2, [[1,0]]输出: true解释: 总共有 2 门课程。学习课程 1 之前，你需要完成课程 0。所以这是可能的。 示例 2输入: 2, [[1,0],[0,1]]输出: false解释: 总共有 2 门课程。学习课程 1 之前，你需要先完成​课程 0；并且学习课程 0 之前，你还应先完成课程 1。这是不可能的。 说明: 输入的先决条件是由 边缘列表 表示的图形，而不是邻接矩阵。详情请参见图的表示法。 你可以假定输入的先决条件中没有重复的边。 提示: 这个问题相当于查找一个循环是否存在于有向图中。如果存在循环，则不存在拓扑排序，因此不可能选取所有课程进行学习。 通过 DFS 进行拓扑排序 - 一个关于Coursera的精彩视频教程（21分钟），介绍拓扑排序的基本概念。 拓扑排序也可以通过 BFS 完成。 C++解决方法1234567891011121314151617181920212223242526class Solution &#123;public: bool canFinish(int numCourses, vector&lt;vector&lt;int&gt;&gt;&amp; prerequisites) &#123; vector&lt;vector&lt;int&gt;&gt; graph(numCourses, vector&lt;int&gt;()); vector&lt;int&gt; in(numCourses); for (auto a : prerequisites) &#123; graph[a[1]].push_back(a[0]); ++in[a[0]]; &#125; queue&lt;int&gt; q; for (int i = 0; i &lt; numCourses; ++i) &#123; if (in[i] == 0) q.push(i); &#125; while (!q.empty()) &#123; int t = q.front(); q.pop(); for (auto a : graph[t]) &#123; --in[a]; if (in[a] == 0) q.push(a); &#125; &#125; for (int i = 0; i &lt; numCourses; ++i) &#123; if (in[i] != 0) return false; &#125; return true; &#125;&#125;; 结果英文版Runtime: 24 ms, faster than 65.45% of C++ online submissions for Course Schedule. Memory Usage: 13.6 MB, less than 41.72% of C++ online submissions for Course Schedule. 中文版执行用时 :56 ms, 在所有 C++ 提交中击败了41.77%的用户 内存消耗 :13.6 MB, 在所有 C++ 提交中击败了16.59%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (206) Reverse Linked List]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(206)%20Reverse%20Linked%20List%2F</url>
+    <content type="text"><![CDATA[题目描述反转一个单链表。 示例输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL 进阶:你可以迭代或递归地反转链表。你能否用两种方法解决这道题？ C++解决方法123456789101112131415161718/** * Definition for singly-linked list. * struct ListNode &#123; * int val; * ListNode *next; * ListNode(int x) : val(x), next(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: ListNode* reverseList(ListNode* head) &#123; if (!head || !head-&gt;next) return head; ListNode *newHead = reverseList(head-&gt;next); head-&gt;next-&gt;next = head; head-&gt;next = NULL; return newHead; &#125;&#125;; 结果英文版Runtime: 8 ms, faster than 87.92% of C++ online submissions for Reverse Linked List. Memory Usage: 9.4 MB, less than 5.15% of C++ online submissions for Reverse Linked List. 中文版执行用时 :20 ms, 在所有 C++ 提交中击败了32.42%的用户 内存消耗 :9.3 MB, 在所有 C++ 提交中击败了6.35%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (205) Isomorphic Strings]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(205)%20Isomorphic%20Strings%2F</url>
+    <content type="text"><![CDATA[题目描述给定两个字符串 s 和 t，判断它们是否是同构的。 如果 s 中的字符可以被替换得到 t ，那么这两个字符串是同构的。 所有出现的字符都必须用另一个字符替换，同时保留字符的顺序。两个字符不能映射到同一个字符上，但字符可以映射自己本身。 示例 1输入: s = &quot;egg&quot; , t = &quot;add&quot;输出: true 示例 2输入: s = &quot;foo&quot; , t = &quot;bar&quot;输出: false 示例 3输入: s = &quot;paper&quot; , t = &quot;title&quot;输出: true 说明:你可以假设 s 和 t 具有相同的长度。 C++解决方法123456789101112class Solution &#123;public: bool isIsomorphic(string s, string t) &#123; int m1[256] = &#123;0&#125;, m2[256] = &#123;0&#125;, n = s.size(); for (int i = 0; i &lt; n; ++i) &#123; if (m1[s[i]] != m2[t[i]]) return false; m1[s[i]] = i + 1; m2[t[i]] = i + 1; &#125; return true; &#125;&#125;; 结果英文版Runtime: 8 ms, faster than 91.00% of C++ online submissions for Isomorphic Strings. Memory Usage: 9.1 MB, less than 64.48% of C++ online submissions for Isomorphic Strings. 中文版执行用时 :8 ms, 在所有 C++ 提交中击败了98.40%的用户 内存消耗 :8.9 MB, 在所有 C++ 提交中击败了65.49%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (204) Count Primes]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(204)%20Count%20Primes%2F</url>
+    <content type="text"><![CDATA[题目描述统计所有小于非负整数 n 的质数的数量。 示例输入: 10输出: 4解释: 小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。 C++解决方法12345678910111213141516class Solution &#123;public: int countPrimes(int n) &#123; int res = 0; vector&lt;bool&gt; prime(n, true); for (int i = 2; i &lt; n; ++i) &#123; if (prime[i]) &#123; ++res; for (int j = 2; i * j &lt; n; ++j) &#123; prime[i * j] = false; &#125; &#125; &#125; return res; &#125;&#125;; 结果英文版Runtime: 88 ms, faster than 36.53% of C++ online submissions for Count Primes. Memory Usage: 8.6 MB, less than 74.05% of C++ online submissions for Count Primes. 中文版执行用时 :168 ms, 在所有 C++ 提交中击败了33.37%的用户 内存消耗 :8.7 MB, 在所有 C++ 提交中击败了61.99%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (203) Remove Linked List Elements]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(203)%20Remove%20Linked%20List%20Elements%2F</url>
+    <content type="text"><![CDATA[题目描述删除链表中等于给定值 val 的所有节点。 示例输入: 1-&gt;2-&gt;6-&gt;3-&gt;4-&gt;5-&gt;6, val = 6输出: 1-&gt;2-&gt;3-&gt;4-&gt;5 C++解决方法1234567891011121314151617181920212223242526/** * Definition for singly-linked list. * struct ListNode &#123; * int val; * ListNode *next; * ListNode(int x) : val(x), next(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: ListNode* removeElements(ListNode* head, int val) &#123; ListNode *dummy = new ListNode(-1), *pre = dummy; dummy-&gt;next = head; while (pre-&gt;next) &#123; if (pre-&gt;next-&gt;val == val) &#123; ListNode *t = pre-&gt;next; pre-&gt;next = t-&gt;next; t-&gt;next = NULL; delete t; &#125; else &#123; pre = pre-&gt;next; &#125; &#125; return dummy-&gt;next; &#125;&#125;; 结果英文版Runtime: 24 ms, faster than 96.79% of C++ online submissions for Remove Linked List Elements. Memory Usage: 11.2 MB, less than 16.15% of C++ online submissions for Remove Linked List Elements. 中文版执行用时 :44 ms, 在所有 C++ 提交中击败了74.02%的用户 内存消耗 :11.2 MB, 在所有 C++ 提交中击败了64.86%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (202) Happy Number]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(202)%20Happy%20Number%2F</url>
+    <content type="text"><![CDATA[题目描述写一个算法来判断一个数是不是“快乐数”。 一个“快乐数”定义为：对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和，然后重复这个过程直到这个数变为 1，也可能是无限循环但始终变不到 1。如果可以变为 1，那么这个数就是快乐数。 示例输入: 19输出: true解释: $$1^2 + 9^2 = 82\8^2 + 2^2 = 68\6^2 + 8^2 = 100\1^2 + 0^2 + 0^2 = 1$$ C++解决方法1234567891011121314class Solution &#123;public: bool isHappy(int n) &#123; while (n != 1 &amp;&amp; n != 4) &#123; int sum = 0; while (n) &#123; sum += (n % 10) * (n % 10); n /= 10; &#125; n = sum; &#125; return n == 1; &#125;&#125;; 结果英文版Runtime: 0 ms, faster than 100.00% of C++ online submissions for Happy Number. Memory Usage: 8.1 MB, less than 77.46% of C++ online submissions for Happy Number. 中文版执行用时 :4 ms, 在所有 C++ 提交中击败了95.14%的用户 内存消耗 :8.1 MB, 在所有 C++ 提交中击败了69.39%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (201) Bitwise AND of Numbers Range]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(201)%20Bitwise%20AND%20of%20Numbers%20Range%2F</url>
+    <content type="text"><![CDATA[题目描述给定范围 [m, n]，其中 0 &lt;= m &lt;= n &lt;= 2147483647，返回此范围内所有数字的按位与（包含 m, n 两端点）。 示例 1输入: [5,7]输出: 4 示例 2输入: [0,1]输出: 0 C++解决方法123456789101112class Solution &#123;public: int rangeBitwiseAnd(int m, int n) &#123; int i = 0; while (m != n) &#123; m &gt;&gt;= 1; n &gt;&gt;= 1; ++i; &#125; return (m &lt;&lt; i); &#125;&#125;; 结果英文版Runtime: 4 ms, faster than 99.46% of C++ online submissions for Bitwise AND of Numbers Range. Memory Usage: 8.1 MB, less than 65.30% of C++ online submissions for Bitwise AND of Numbers Range. 中文版执行用时 :24 ms, 在所有 C++ 提交中击败了74.89%的用户 内存消耗 :8 MB, 在所有 C++ 提交中击败了83.33%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (200) Number of Islands]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(200)%20Number%20of%20Islands%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个由 &#39;1&#39;（陆地）和 &#39;0&#39;（水）组成的的二维网格，计算岛屿的数量。一个岛被水包围，并且它是通过水平方向或垂直方向上相邻的陆地连接而成的。你可以假设网格的四个边均被水包围。 示例 1输入:11110110101100000000 输出: 1 示例 2输入:11000110000010000011 输出: 3 C++解决方法1234567891011121314151617181920212223242526class Solution &#123;public: int numIslands(vector&lt;vector&lt;char&gt;&gt;&amp; grid) &#123; if (grid.empty() || grid[0].empty()) return 0; int m = grid.size(), n = grid[0].size(), res = 0; vector&lt;vector&lt;bool&gt;&gt; visited(m, vector&lt;bool&gt;(n)); vector&lt;int&gt; dirX&#123;-1, 0, 1, 0&#125;, dirY&#123;0, 1, 0, -1&#125;; for (int i = 0; i &lt; m; ++i) &#123; for (int j = 0; j &lt; n; ++j) &#123; if (grid[i][j] == '0' || visited[i][j]) continue; ++res; queue&lt;int&gt; q&#123;&#123;i * n + j&#125;&#125;; while (!q.empty()) &#123; int t = q.front(); q.pop(); for (int k = 0; k &lt; 4; ++k) &#123; int x = t / n + dirX[k], y = t % n + dirY[k]; if (x &lt; 0 || x &gt;= m || y &lt; 0 || y &gt;= n || grid[x][y] == '0' || visited[x][y]) continue; visited[x][y] = true; q.push(x * n + y); &#125; &#125; &#125; &#125; return res; &#125;&#125;; 结果英文版Runtime: 12 ms, faster than 95.73% of C++ online submissions for Number of Islands. Memory Usage: 11.6 MB, less than 18.27% of C++ online submissions for Number of Islands. 中文版执行用时 :24 ms, 在所有 C++ 提交中击败了52.35%的用户 内存消耗 :11.5 MB, 在所有 C++ 提交中击败了16.88%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (199) Binary Tree Right Side View]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(199)%20Binary%20Tree%20Right%20Side%20View%2F</url>
+    <content type="text"><![CDATA[题目描述给定一棵二叉树，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。 示例 1输入: [1,2,3,null,5,null,4]输出: [1, 3, 4]解释: 12345 1 &lt;--- / \2 3 &lt;--- \ \ 5 4 &lt;--- C++解决方法1234567891011121314151617181920212223242526272829/** * Definition for a binary tree node. * struct TreeNode &#123; * int val; * TreeNode *left; * TreeNode *right; * TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: vector&lt;int&gt; rightSideView(TreeNode *root) &#123; vector&lt;int&gt; res; if (!root) return res; queue&lt;TreeNode*&gt; q; q.push(root); while (!q.empty()) &#123; res.push_back(q.back()-&gt;val); int size = q.size(); for (int i = 0; i &lt; size; ++i) &#123; TreeNode *node = q.front(); q.pop(); if (node-&gt;left) q.push(node-&gt;left); if (node-&gt;right) q.push(node-&gt;right); &#125; &#125; return res; &#125;&#125;; 结果英文版Runtime: 4 ms, faster than 86.64% of C++ online submissions for Binary Tree Right Side View. Memory Usage: 9.6 MB, less than 48.73% of C++ online submissions for Binary Tree Right Side View. 中文版执行用时 :8 ms, 在所有 C++ 提交中击败了85.81%的用户 内存消耗 :9.4 MB, 在所有 C++ 提交中击败了80.30%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (198) House Robber]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(198)%20House%20Robber%2F</url>
+    <content type="text"><![CDATA[题目描述你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。 给定一个代表每个房屋存放金额的非负整数数组，计算你 在不触动警报装置的情况下，能够偷窃到的最高金额。 示例 1输入: [1,2,3,1]输出: 4解释: 偷窃 1 号房屋 (金额 = 1) ，然后偷窃 3 号房屋 (金额 = 3)。 偷窃到的最高金额 = 1 + 3 = 4 。 示例 2输入: [2,7,9,3,1]输出: 12解释: 偷窃 1 号房屋 (金额 = 2), 偷窃 3 号房屋 (金额 = 9)，接着偷窃 5 号房屋 (金额 = 1)。 偷窃到的最高金额 = 2 + 9 + 1 = 12 。 C++解决方法123456789101112class Solution &#123;public: int rob(vector&lt;int&gt; &amp;nums) &#123; int rob = 0, notRob = 0, n = nums.size(); for (int i = 0; i &lt; n; ++i) &#123; int preRob = rob, preNotRob = notRob; rob = preNotRob + nums[i]; notRob = max(preRob, preNotRob); &#125; return max(rob, notRob); &#125;&#125;; 结果英文版Runtime: 4 ms, faster than 77.55% of C++ online submissions for House Robber. Memory Usage: 8.6 MB, less than 42.93% of C++ online submissions for House Robber. 中文版执行用时 :8 ms, 在所有 C++ 提交中击败了68.17%的用户 内存消耗 :8.5 MB, 在所有 C++ 提交中击败了89.30%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (197) Rising Temperature]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(197)%20Rising%20Temperature%2F</url>
+    <content type="text"><![CDATA[题目描述SQL架构 123456Create table If Not Exists Weather (Id int, RecordDate date, Temperature int)Truncate table Weatherinsert into Weather (Id, RecordDate, Temperature) values (&apos;1&apos;, &apos;2015-01-01&apos;, &apos;10&apos;)insert into Weather (Id, RecordDate, Temperature) values (&apos;2&apos;, &apos;2015-01-02&apos;, &apos;25&apos;)insert into Weather (Id, RecordDate, Temperature) values (&apos;3&apos;, &apos;2015-01-03&apos;, &apos;20&apos;)insert into Weather (Id, RecordDate, Temperature) values (&apos;4&apos;, &apos;2015-01-04&apos;, &apos;30&apos;) 给定一个 Weather 表，编写一个 SQL 查询，来查找与之前（昨天的）日期相比温度更高的所有日期的 Id。 +———+——————+——————+| Id(INT) | RecordDate(DATE) | Temperature(INT) |+———+——————+——————+| 1 | 2015-01-01 | 10 || 2 | 2015-01-02 | 25 || 3 | 2015-01-03 | 20 || 4 | 2015-01-04 | 30 |+———+——————+——————+ 示例例如，根据上述给定的 Weather 表格，返回如下 Id: +—-+| Id |+—-+| 2 || 4 |+—-+ MySQL 解决方法123456789101112# Write your MySQL query statement belowSELECT Id from ( SELECT Id, IF(@prev_day is not null and date_add(@prev_day, interval 1 day) = RecordDate and @prev_temp &lt; Temperature, 1, 0) result, @prev_day := RecordDate, @prev_temp := Temperature FROM Weather, (select @prev_temp := 0, @prev_day := NULL) a order by RecordDate ) b where result = 1; 结果英文版Runtime: 183 ms, faster than 100.00% of MySQL online submissions for Rising Temperature. 中文版执行用时 :581 ms, 在所有 MySQL 提交中击败了72.25%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (196) Delete Duplicate Emails]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(196)%20Delete%20Duplicate%20Emails%2F</url>
+    <content type="text"><![CDATA[题目描述编写一个 SQL 查询，来删除 Person 表中所有重复的电子邮箱，重复的邮箱里只保留 Id 最小 的那个。 +—-+——————+| Id | Email |+—-+——————+| 1 | john@example.com || 2 | bob@example.com || 3 | john@example.com |+—-+——————+Id 是这个表的主键。 示例例如，在运行你的查询语句之后，上面的 Person 表应返回以下几行: +—-+——————+| Id | Email |+—-+——————+| 1 | john@example.com || 2 | bob@example.com |+—-+——————+ MySQL 解决方法123# Write your MySQL query statement belowDELETE FROM Person WHERE Id NOT IN(SELECT Id FROM (SELECT MIN(Id) Id FROM Person GROUP BY Email) p); 结果英文版Runtime: 519 ms, faster than 99.71% of MySQL online submissions for Delete Duplicate Emails. 中文版执行用时 :1010 ms, 在所有 MySQL 提交中击败了93.70%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode (195) Tenth Line]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(195)%20Tenth%20Line%2F</url>
     <content type="text"><![CDATA[题目描述给定一个文本文件 file.txt，请只打印这个文件中的第十行。 示例假设 file.txt 有如下内容： Line 1Line 2Line 3Line 4Line 5Line 6Line 7Line 8Line 9Line 10 你的脚本应当显示第十行： Line 10 说明: 如果文件少于十行，你应当输出什么？ 至少有三种不同的解法，请尝试尽可能多的方法来解题。 Bash 解决方法12# Read from the file file.txt and output the tenth line to stdout.sed -n 10p file.txt 结果英文版Runtime: 4 ms, faster than 87.60% of Bash online submissions for Tenth Line. Memory Usage: 3.6 MB, less than 97.31% of Bash online submissions for Tenth Line. 中文版执行用时 :4 ms, 在所有 Bash 提交中击败了94.55%的用户 内存消耗 :3.7 MB, 在所有 Bash 提交中击败了48.45%的用户]]></content>
