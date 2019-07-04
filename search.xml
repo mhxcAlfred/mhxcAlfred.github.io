@@ -1,6 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LeetCode (222) Count Complete Tree Nodes]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(222)%20Count%20Complete%20Tree%20Nodes%2F</url>
+    <content type="text"><![CDATA[题目描述给出一个 完全二叉树，求出该树的节点个数。 说明: 完全二叉树的定义如下：在完全二叉树中，除了最底层节点可能没填满外，其余每层节点数都达到最大值，并且最下面一层的节点都集中在该层最左边的若干位置。若最底层为第 h 层，则该层包含 $$1 - 2^h$$个节点。 示例输入: 12345 1 / \ 2 3 / \ /4 5 6 输出: 6 C++解决方法1234567891011121314151617181920212223242526/** * Definition for a binary tree node. * struct TreeNode &#123; * int val; * TreeNode *left; * TreeNode *right; * TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: int countNodes(TreeNode* root) &#123; int hLeft = 0, hRight = 0; TreeNode *pLeft = root, *pRight = root; while (pLeft) &#123; ++hLeft; pLeft = pLeft-&gt;left; &#125; while (pRight) &#123; ++hRight; pRight = pRight-&gt;right; &#125; if (hLeft == hRight) return pow(2, hLeft) - 1; return countNodes(root-&gt;left) + countNodes(root-&gt;right) + 1; &#125;&#125;; 结果英文版Runtime: 24 ms, faster than 98.78% of C++ online submissions for Count Complete Tree Nodes. Memory Usage: 28.6 MB, less than 84.12% of C++ online submissions for Count Complete Tree Nodes. 中文版执行用时 :76 ms, 在所有 C++ 提交中击败了28.94%的用户 内存消耗 :28.6 MB, 在所有 C++ 提交中击败了85.66%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (221) Maximal Square]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(221)%20Maximal%20Square%2F</url>
+    <content type="text"><![CDATA[题目描述在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。 示例输入:1 0 1 0 01 0 1 1 11 1 1 1 11 0 0 1 0 输出: 4 C++解决方法123456789101112131415161718192021class Solution &#123;public: int maximalSquare(vector&lt;vector&lt;char&gt;&gt;&amp; matrix) &#123; if (matrix.empty() || matrix[0].empty()) return 0; int m = matrix.size(), n = matrix[0].size(), res = 0, pre = 0; vector&lt;int&gt; dp(m + 1, 0); for (int j = 0; j &lt; n; ++j) &#123; for (int i = 1; i &lt;= m; ++i) &#123; int t = dp[i]; if (matrix[i - 1][j] == '1') &#123; dp[i] = min(dp[i], min(dp[i - 1], pre)) + 1; res = max(res, dp[i]); &#125; else &#123; dp[i] = 0; &#125; pre = t; &#125; &#125; return res * res; &#125;&#125;; 结果英文版Runtime: 16 ms, faster than 97.14% of C++ online submissions for Maximal Square. Memory Usage: 10.3 MB, less than 98.91% of C++ online submissions for Maximal Square. 中文版执行用时 :24 ms, 在所有 C++ 提交中击败了82.42%的用户 内存消耗 :10.4 MB, 在所有 C++ 提交中击败了99.72%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (220) Contains Duplicate III]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(220)%20Contains%20Duplicate%20III%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个整数数组，判断数组中是否有两个不同的索引 i 和 j，使得 nums [i] 和 nums [j] 的差的绝对值最大为 t，并且 i 和 j 之间的差的绝对值最大为 ķ。 示例 1输入: nums = [1,2,3,1], k= 3, t = 0输出: true 示例 2输入: nums = [1,0,1,1], k=1, t = 2输出: true 示例 3输入: nums = [1,5,9,1,5,9], k = 2, t = 3输出: false C++解决方法1234567891011121314class Solution &#123;public: bool containsNearbyAlmostDuplicate(vector&lt;int&gt;&amp; nums, int k, int t) &#123; map&lt;long long, int&gt; m; int j = 0; for (int i = 0; i &lt; nums.size(); ++i) &#123; if (i - j &gt; k) m.erase(nums[j++]); auto a = m.lower_bound((long long)nums[i] - t); if (a != m.end() &amp;&amp; abs(a-&gt;first - nums[i]) &lt;= t) return true; m[nums[i]] = i; &#125; return false; &#125;&#125;; 结果英文版Runtime: 16 ms, faster than 89.61% of C++ online submissions for Contains Duplicate III. Memory Usage: 10.7 MB, less than 84.30% of C++ online submissions for Contains Duplicate III. 中文版执行用时 :28 ms, 在所有 C++ 提交中击败了63.67%的用户 内存消耗 :10.9 MB, 在所有 C++ 提交中击败了19.72%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (219) Contains Duplicate II]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(219)%20Contains%20Duplicate%20II%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和 j，使得 nums [i] = nums [j]，并且 i 和 j 的差的绝对值最大为 k。 示例 1输入: nums = [1,2,3,1], k= 3输出: true 示例 2输入: nums = [1,0,1,1], k=1输出: true 示例 3输入: nums = [1,2,3,1,2,3], k=2输出: false C++解决方法1234567891011class Solution &#123;public: bool containsNearbyDuplicate(vector&lt;int&gt;&amp; nums, int k) &#123; unordered_map&lt;int, int&gt; m; for (int i = 0; i &lt; nums.size(); ++i) &#123; if (m.find(nums[i]) != m.end() &amp;&amp; i - m[nums[i]] &lt;= k) return true; else m[nums[i]] = i; &#125; return false; &#125;&#125;; 结果英文版Runtime: 28 ms, faster than 91.06% of C++ online submissions for Contains Duplicate II. Memory Usage: 15.4 MB, less than 44.11% of C++ online submissions for Contains Duplicate II. 中文版执行用时 :32 ms, 在所有 C++ 提交中击败了93.66%的用户 内存消耗 :15.5 MB, 在所有 C++ 提交中击败了5.03%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (218) The Skyline Problem]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(218)%20The%20Skyline%20Problem%2F</url>
+    <content type="text"><![CDATA[题目描述城市的天际线是从远处观看该城市中所有建筑物形成的轮廓的外部轮廓。现在，假设您获得了城市风光照片（图A）上显示的所有建筑物的位置和高度，请编写一个程序以输出由这些建筑物 形成的天际线（图B） 每个建筑物的几何信息用三元组 [Li，Ri，Hi] 表示，其中 Li 和 Ri 分别是第 i 座建筑物左右边缘的 x 坐标，Hi 是其高度。可以保证 0 ≤ Li, Ri ≤ INT_MAX, 0 &lt; Hi ≤ INT_MAX 和 Ri - Li &gt; 0。您可以假设所有建筑物都是在绝对平坦且高度为 0 的表面上的完美矩形。 例如，图A中所有建筑物的尺寸记录为：[ [2 9 10], [3 7 15], [5 12 12], [15 20 10], [19 24 8] ] 。 输出是以 [ [x1,y1], [x2, y2], [x3, y3], ... ] 格式的“关键点”（图B中的红点）的列表，它们唯一地定义了天际线。关键点是水平线段的左端点。请注意，最右侧建筑物的最后一个关键点仅用于标记天际线的终点，并始终为零高度。此外，任何两个相邻建筑物之间的地面都应被视为天际线轮廓的一部分。 例如，图B中的天际线应该表示为：[ [2 10], [3 15], [7 12], [12 0], [15 10], [20 8], [24, 0] ]。 说明: 任何输入列表中的建筑物数量保证在 [0, 10000] 范围内。 输入列表已经按左 x 坐标 Li 进行升序排列。 输出列表必须按 x 位排序。 输出天际线中不得有连续的相同高度的水平线。例如 [...[2 3], [4 5], [7 5], [11 5], [12 7]...] 是不正确的答案；三条高度为 5 的线应该在最终输出中合并为一个：[...[2 3], [4 5], [12 7], ...] C++解决方法1234567891011121314151617181920212223242526272829303132333435363738394041424344class Solution &#123;public: vector&lt;vector&lt;int&gt;&gt; getSkyline(vector&lt;vector&lt;int&gt;&gt;&amp; buildings) &#123; auto cmp = [](pair&lt;int, int&gt; a, pair&lt;int, int&gt; b) &#123; if(a.first == b.first) return a.second &gt; b.second; else return a.first &lt; b.first; &#125;; multiset&lt;pair&lt;int, int&gt;, decltype(cmp)&gt; edges(cmp); for(auto &amp; ele : buildings) &#123; edges.insert(make_pair(ele[0], ele[2])); edges.insert(make_pair(ele[1], -ele[2])); &#125; priority_queue&lt;int&gt; pq; unordered_map&lt;int, int&gt; pending_delete; vector&lt;vector&lt;int&gt;&gt; ans; for(auto &amp;e : edges) &#123; int before = 0; if(!pq.empty()) before = pq.top(); if(e.second &gt; 0) pq.push(e.second); else &#123; pending_delete[-e.second]++; while(!pq.empty() &amp;&amp; pending_delete[pq.top()]) &#123; pending_delete[pq.top()]--; pq.pop(); &#125; &#125; int after = 0; if(!pq.empty()) after = pq.top(); if(before != after) ans.push_back(&#123;e.first, after&#125;); &#125; return ans; &#125;&#125;; 结果英文版Runtime: 40 ms, faster than 52.02% of C++ online submissions for The Skyline Problem. Memory Usage: 16.5 MB, less than 21.00% of C++ online submissions for The Skyline Problem. 中文版执行用时 :56 ms, 在所有 C++ 提交中击败了67.37%的用户 内存消耗 :16.4 MB, 在所有 C++ 提交中击败了7.45%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (217) Contains Duplicate]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(217)%20Contains%20Duplicate%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个整数数组，判断是否存在重复元素。 如果任何值在数组中出现至少两次，函数返回 true。如果数组中每个元素都不相同，则返回 false。 示例 1输入: [1,2,3,1]输出: true 示例 2输入: [1,2,3,4]输出: false 示例 3输入: [1,1,1,3,3,4,3,2,4,2]输出: true C++解决方法12345678910class Solution &#123;public: bool containsDuplicate(vector&lt;int&gt;&amp; nums) &#123; sort(nums.begin(), nums.end()); for (int i = 1; i &lt; nums.size(); ++i) &#123; if (nums[i] == nums[i - 1]) return true; &#125; return false; &#125;&#125;; 结果英文版Runtime: 40 ms, faster than 70.93% of C++ online submissions for Contains Duplicate. Memory Usage: 11.3 MB, less than 89.77% of C++ online submissions for Contains Duplicate. 中文版执行用时 :44 ms, 在所有 C++ 提交中击败了78.54%的用户 内存消耗 :11.3 MB, 在所有 C++ 提交中击败了68.77%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (216) Combination Sum III]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(216)%20Combination%20Sum%20III%2F</url>
+    <content type="text"><![CDATA[题目描述找出所有相加之和为 n 的 k 个数的组合。组合中只允许含有 1 - 9 的正整数，并且每种组合中不存在重复的数字。 说明: 所有数字都是正整数。 解集不能包含重复的组合。 示例 1输入: k = 3, n = 7输出: [[1,2,4]] 示例 2输入: k = 3, n = 9输出: [[1,2,6], [1,3,5], [2,3,4]] C++解决方法123456789101112131415161718class Solution &#123;public: vector&lt;vector&lt;int&gt; &gt; combinationSum3(int k, int n) &#123; vector&lt;vector&lt;int&gt; &gt; res; vector&lt;int&gt; out; combinationSum3DFS(k, n, 1, out, res); return res; &#125; void combinationSum3DFS(int k, int n, int level, vector&lt;int&gt; &amp;out, vector&lt;vector&lt;int&gt; &gt; &amp;res) &#123; if (n &lt; 0) return; if (n == 0 &amp;&amp; out.size() == k) res.push_back(out); for (int i = level; i &lt;= 9; ++i) &#123; out.push_back(i); combinationSum3DFS(k, n - i, i + 1, out, res); out.pop_back(); &#125; &#125;&#125;; 结果英文版Runtime: 4 ms, faster than 77.84% of C++ online submissions for Combination Sum III. Memory Usage: 8.6 MB, less than 67.42% of C++ online submissions for Combination Sum III. 中文版执行用时 :8 ms, 在所有 C++ 提交中击败了70.16%的用户 内存消耗 :8.5 MB, 在所有 C++ 提交中击败了66.94%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (215) Kth Largest Element in an Array]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(215)%20Kth%20Largest%20Element%20in%20an%20Array%2F</url>
+    <content type="text"><![CDATA[题目描述在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。 示例 1输入: [3,2,1,5,6,4] 和 k = 2输出: 5 示例 2输入: [3,2,3,1,2,4,5,5,6] 和 k = 4输出: 4 说明: 你可以假设 k 总是有效的，且 1 ≤ k ≤ 数组的长度。 C++解决方法1234567class Solution &#123;public: int findKthLargest(vector&lt;int&gt;&amp; nums, int k) &#123; sort(nums.begin(), nums.end()); return nums[nums.size() - k]; &#125;&#125;; 结果英文版Runtime: 12 ms, faster than 86.26% of C++ online submissions for Kth Largest Element in an Array. Memory Usage: 9.3 MB, less than 58.63% of C++ online submissions for Kth Largest Element in an Array. 中文版执行用时 :16 ms, 在所有 C++ 提交中击败了87.25%的用户 内存消耗 :9.2 MB, 在所有 C++ 提交中击败了74.05%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (214) Shortest Palindrome]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(214)%20Shortest%20Palindrome%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个字符串 s，你可以通过在字符串前面添加字符将其转换为回文串。找到并返回可以用这种方式转换的最短回文串。 示例 1输入: &quot;aacecaaa&quot;输出: &quot;aaacecaaa&quot; 示例 2输入: &quot;abcd&quot;输出: &quot;dcbabcd&quot; C++解决方法123456789101112131415class Solution &#123;public: string shortestPalindrome(string s) &#123; string r = s; reverse(r.begin(), r.end()); string t = s + "#" + r; vector&lt;int&gt; next(t.size(), 0); for (int i = 1; i &lt; t.size(); ++i) &#123; int j = next[i - 1]; while (j &gt; 0 &amp;&amp; t[i] != t[j]) j = next[j - 1]; next[i] = (j += t[i] == t[j]); &#125; return r.substr(0, s.size() - next.back()) + s; &#125;&#125;; 结果英文版Runtime: 4 ms, faster than 95.14% of C++ online submissions for Shortest Palindrome. Memory Usage: 10.3 MB, less than 18.08% of C++ online submissions for Shortest Palindrome. 中文版执行用时 :4 ms, 在所有 C++ 提交中击败了96.43%的用户 内存消耗 :10.1 MB, 在所有 C++ 提交中击败了54.17%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (213) House Robber II]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(213)%20House%20Robber%20II%2F</url>
+    <content type="text"><![CDATA[题目描述你是一个专业的小偷，计划偷窃沿街的房屋，每间房内都藏有一定的现金。这个地方所有的房屋都 围成一圈，这意味着第一个房屋和最后一个房屋是紧挨着的。同时，相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。 给定一个代表每个房屋存放金额的非负整数数组，计算你 在不触动警报装置的情况下，能够偷窃到的最高金额。 示例 1输入: [2,3,2]输出: 3解释: 你不能先偷窃 1 号房屋（金额 = 2），然后偷窃 3 号房屋（金额 = 2）, 因为他们是相邻的。 示例 2输入: [1,2,3,1]输出: 4解释: 你可以先偷窃 1 号房屋（金额 = 1），然后偷窃 3 号房屋（金额 = 3）。 偷窃到的最高金额 = 1 + 3 = 4 。 C++解决方法12345678910111213141516class Solution &#123;public: int rob(vector&lt;int&gt;&amp; nums) &#123; if (nums.size() &lt;= 1) return nums.empty() ? 0 : nums[0]; return max(rob(nums, 0, nums.size() - 1), rob(nums, 1, nums.size())); &#125; int rob(vector&lt;int&gt; &amp;nums, int left, int right) &#123; int rob = 0, notRob = 0; for (int i = left; i &lt; right; ++i) &#123; int preRob = rob, preNotRob = notRob; rob = preNotRob + nums[i]; notRob = max(preRob, preNotRob); &#125; return max(rob, notRob); &#125;&#125;; 结果英文版Runtime: 0 ms, faster than 100.00% of C++ online submissions for House Robber II. Memory Usage: 8.5 MB, less than 62.27% of C++ online submissions for House Robber II. 中文版执行用时 :4 ms, 在所有 C++ 提交中击败了89.41%的用户 内存消耗 :8.6 MB, 在所有 C++ 提交中击败了76.60%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (212) Word Search II]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(212)%20Word%20Search%20II%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个二维网格 board 和一个字典中的单词列表 words，找出所有同时在二维网格和字典中出现的单词。 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母在一个单词中不允许被重复使用。 示例输入:words = [“oath”,”pea”,”eat”,”rain”] and board =[ [‘o’,’a’,’a’,’n’], [‘e’,’t’,’a’,’e’], [‘i’,’h’,’k’,’r’], [‘i’,’f’,’l’,’v’]] 输出: [“eat”,”oath”] 说明: 你可以假设所有输入都由小写字母 a-z 组成。 提示: 你需要优化回溯算法以通过更大数据量的测试。你能否早点停止回溯？ 如果当前单词不存在于所有单词的前缀中，则可以立即停止回溯。什么样的数据结构可以有效地执行这样的操作？散列表是否可行？为什么？ 前缀树如何？如果你想学习如何实现一个基本的前缀树，请先查看这个问题：实现Trie（前缀树）。 C++解决方法1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253class Solution &#123;public: struct TrieNode &#123; TrieNode *child[26]; string str; TrieNode() : str("") &#123; for (auto &amp;a : child) a = NULL; &#125; &#125;; struct Trie &#123; TrieNode *root; Trie() : root(new TrieNode()) &#123;&#125; void insert(string s) &#123; TrieNode *p = root; for (auto &amp;a : s) &#123; int i = a - 'a'; if (!p-&gt;child[i]) p-&gt;child[i] = new TrieNode(); p = p-&gt;child[i]; &#125; p-&gt;str = s; &#125; &#125;; vector&lt;string&gt; findWords(vector&lt;vector&lt;char&gt;&gt;&amp; board, vector&lt;string&gt;&amp; words) &#123; vector&lt;string&gt; res; if (words.empty() || board.empty() || board[0].empty()) return res; vector&lt;vector&lt;bool&gt;&gt; visit(board.size(), vector&lt;bool&gt;(board[0].size(), false)); Trie T; for (auto &amp;a : words) T.insert(a); for (int i = 0; i &lt; board.size(); ++i) &#123; for (int j = 0; j &lt; board[i].size(); ++j) &#123; if (T.root-&gt;child[board[i][j] - 'a']) &#123; search(board, T.root-&gt;child[board[i][j] - 'a'], i, j, visit, res); &#125; &#125; &#125; return res; &#125; void search(vector&lt;vector&lt;char&gt;&gt;&amp; board, TrieNode* p, int i, int j, vector&lt;vector&lt;bool&gt;&gt;&amp; visit, vector&lt;string&gt;&amp; res) &#123; if (!p-&gt;str.empty()) &#123; res.push_back(p-&gt;str); p-&gt;str.clear(); &#125; int d[][2] = &#123;&#123;-1, 0&#125;, &#123;1, 0&#125;, &#123;0, -1&#125;, &#123;0, 1&#125;&#125;; visit[i][j] = true; for (auto &amp;a : d) &#123; int nx = a[0] + i, ny = a[1] + j; if (nx &gt;= 0 &amp;&amp; nx &lt; board.size() &amp;&amp; ny &gt;= 0 &amp;&amp; ny &lt; board[0].size() &amp;&amp; !visit[nx][ny] &amp;&amp; p-&gt;child[board[nx][ny] - 'a']) &#123; search(board, p-&gt;child[board[nx][ny] - 'a'], nx, ny, visit, res); &#125; &#125; visit[i][j] = false; &#125;&#125;; 结果英文版Runtime: 44 ms, faster than 92.30% of C++ online submissions for Word Search II. Memory Usage: 31.4 MB, less than 80.50% of C++ online submissions for Word Search II. 中文版执行用时 :64 ms, 在所有 C++ 提交中击败了92.84%的用户 内存消耗 :31.5 MB, 在所有 C++ 提交中击败了87.98%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (211) Add and Search Word - Data structure design]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(211)%20Add%20and%20Search%20Word%20-%20Data%20structure%20design%2F</url>
+    <content type="text"><![CDATA[题目描述设计一个支持以下两种操作的数据结构： 12void addWord(word)bool search(word) search(word) 可以搜索文字或正则表达式字符串，字符串只包含字母 . 或 a-z 。 . 可以表示任何一个字母。 示例1234567addWord(&quot;bad&quot;)addWord(&quot;dad&quot;)addWord(&quot;mad&quot;)search(&quot;pad&quot;) -&gt; falsesearch(&quot;bad&quot;) -&gt; truesearch(&quot;.ad&quot;) -&gt; truesearch(&quot;b..&quot;) -&gt; true 说明: 你可以假设所有单词都是由小写字母 a-z 组成的。 C++解决方法12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152class WordDictionary &#123;public: struct TrieNode &#123; public: TrieNode *child[26]; bool isWord; TrieNode() : isWord(false) &#123; for (auto &amp;a : child) a = NULL; &#125; &#125;; /** Initialize your data structure here. */ WordDictionary() &#123; root = new TrieNode(); &#125; /** Adds a word into the data structure. */ void addWord(string word) &#123; TrieNode *p = root; for (auto &amp;a : word) &#123; int i = a - 'a'; if (!p-&gt;child[i]) p-&gt;child[i] = new TrieNode(); p = p-&gt;child[i]; &#125; p-&gt;isWord = true; &#125; /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */ bool search(string word) &#123; return searchWord(word, root, 0); &#125; bool searchWord(string &amp;word, TrieNode *p, int i) &#123; if (i == word.size()) return p-&gt;isWord; if (word[i] == '.') &#123; for (auto &amp;a : p-&gt;child) &#123; if (a &amp;&amp; searchWord(word, a, i + 1)) return true; &#125; return false; &#125; else &#123; return p-&gt;child[word[i] - 'a'] &amp;&amp; searchWord(word, p-&gt;child[word[i] - 'a'], i + 1); &#125; &#125; private: TrieNode *root;&#125;;/** * Your WordDictionary object will be instantiated and called as such: * WordDictionary* obj = new WordDictionary(); * obj-&gt;addWord(word); * bool param_2 = obj-&gt;search(word); */ 结果英文版Runtime: 92 ms, faster than 86.76% of C++ online submissions for Add and Search Word - Data structure design. Memory Usage: 44.2 MB, less than 77.41% of C++ online submissions for Add and Search Word - Data structure design. 中文版执行用时 :176 ms, 在所有 C++ 提交中击败了62.84%的用户 内存消耗 :44.4 MB, 在所有 C++ 提交中击败了71.27%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode (210) Course Schedule II]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(210)%20Course%20Schedule%20II%2F</url>
     <content type="text"><![CDATA[题目描述现在你总共有 n 门课需要选，记为 0 到 n-1。 在选修某些课程之前需要一些先修课程。 例如，想要学习课程 0 ，你需要先完成课程 1 ，我们用一个匹配来表示他们: [0,1] 给定课程总量以及它们的先决条件，返回你为了学完所有课程所安排的学习顺序。 可能会有多个正确的顺序，你只要返回一种就可以了。如果不可能完成所有课程，返回一个空数组。 示例 1输入: 2, [[1,0]]输出: [0,1]解释: 总共有 2 门课程。要学习课程 1，你需要先完成课程 0。因此，正确的课程顺序为 [0,1] 。 示例 2输入: 4, [[1,0],[2,0],[3,1],[3,2]]输出: [0,1,2,3] or [0,2,1,3]解释: 总共有 4 门课程。要学习课程 3，你应该先完成课程 1 和课程 2。并且课程 1 和课程 2 都应该排在课程 0 之后。 因此，一个正确的课程顺序是 [0,1,2,3] 。另一个正确的排序是 [0,2,1,3] 。 说明: 输入的先决条件是由 边缘列表 表示的图形，而不是邻接矩阵。详情请参见图的表示法。 你可以假定输入的先决条件中没有重复的边。 提示: 这个问题相当于查找一个循环是否存在于有向图中。如果存在循环，则不存在拓扑排序，因此不可能选取所有课程进行学习。 通过 DFS 进行拓扑排序 - 一个关于Coursera的精彩视频教程（21分钟），介绍拓扑排序的基本概念。 拓扑排序也可以通过 BFS 完成。 C++解决方法123456789101112131415161718192021222324252627282930313233343536373839404142434445class Solution &#123; vector&lt;int&gt; result; bool hasCycle; vector&lt;int&gt; white; vector&lt;vector&lt;int&gt;&gt; graph; unordered_set&lt;int&gt; gray; int n;public: vector&lt;int&gt; findOrder(int numCourses, vector&lt;vector&lt;int&gt;&gt;&amp; prerequisites) &#123; if(numCourses == 0) return(vector&lt;int&gt;()); n = numCourses; hasCycle = false; white = vector&lt;int&gt;(n, 0); result = vector&lt;int&gt;(n); graph = vector&lt;vector&lt;int&gt;&gt;(n); for(auto x : prerequisites) graph[x[1]].push_back(x[0]); for(int i=0; i&lt;numCourses; i++) if(!white[i]) dfs(i); if(hasCycle) return(vector&lt;int&gt;()); return(result); &#125; void dfs(int node) &#123; if(hasCycle || white[node]) return; white[node] = 1; gray.insert(node); for(int ele : graph[node]) &#123; if(gray.find(ele) != gray.end()) &#123; hasCycle = true; return; &#125; dfs(ele); &#125; gray.erase(gray.find(node)); result[--n] = node; &#125;&#125;; 结果英文版Runtime: 28 ms, faster than 55.66% of C++ online submissions for Course Schedule II. Memory Usage: 16.7 MB, less than 10.61% of C++ online submissions for Course Schedule II. 中文版执行用时 :44 ms, 在所有 C++ 提交中击败了56.80%的用户 内存消耗 :16.7 MB, 在所有 C++ 提交中击败了5.48%的用户]]></content>
