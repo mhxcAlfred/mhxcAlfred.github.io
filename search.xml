@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LeetCode (225) Implement Stack using Queues]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(225)%20Implement%20Stack%20using%20Queues%2F</url>
+    <content type="text"><![CDATA[题目描述使用队列实现栈的下列操作： push(x) – 元素 x 入栈 pop() – 移除栈顶元素 top() – 获取栈顶元素 empty() – 返回栈是否为空 注意: 你只能使用队列的基本操作– 也就是 push to back, peek/pop from front, size, 和 is empty 这些操作是合法的。 你所使用的语言也许不支持队列。 你可以使用 list 或者 deque（双端队列）来模拟一个队列 , 只要是标准的队列操作即可。 你可以假设所有操作都是有效的（例如, 对一个空的栈不会调用 pop 或者 top 操作）。 C++解决方法123456789101112131415161718192021222324252627282930313233343536373839404142434445464748class MyStack &#123;public: /** Initialize your data structure here. */ MyStack() &#123; &#125; /** Push element x onto stack. */ void push(int x) &#123; q2.push(x); while (q2.size() &gt; 1) &#123; q1.push(q2.front()); q2.pop(); &#125; &#125; /** Removes the element on top of the stack and returns that element. */ int pop() &#123; int x = top(); q2.pop(); return x; &#125; /** Get the top element. */ int top() &#123; if (q2.empty()) &#123; for (int i = 0; i &lt; (int)q1.size() - 1; ++i) &#123; q1.push(q1.front()); q1.pop(); &#125; q2.push(q1.front()); q1.pop(); &#125; return q2.front(); &#125; /** Returns whether the stack is empty. */ bool empty() &#123; return q1.empty() &amp;&amp; q2.empty(); &#125;private: queue&lt;int&gt; q1, q2;&#125;;/** * Your MyStack object will be instantiated and called as such: * MyStack* obj = new MyStack(); * obj-&gt;push(x); * int param_2 = obj-&gt;pop(); * int param_3 = obj-&gt;top(); * bool param_4 = obj-&gt;empty(); */ 结果英文版Runtime: 0 ms, faster than 100.00% of C++ online submissions for Implement Stack using Queues. Memory Usage: 8.7 MB, less than 78.51% of C++ online submissions for Implement Stack using Queues. 中文版执行用时 :4 ms, 在所有 C++ 提交中击败了87.76%的用户 内存消耗 :8.6 MB, 在所有 C++ 提交中击败了93.44%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (224) Basic Calculator]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(224)%20Basic%20Calculator%2F</url>
+    <content type="text"><![CDATA[题目描述实现一个基本的计算器来计算一个简单的字符串表达式的值。 字符串表达式可以包含左括号 ( ，右括号 )，加号 + ，减号 -，非负整数和空格 。 示例 1输入: “1 + 1”输出: 2 示例 2输入: “ 2-1 + 2 “输出: 3 示例 3输入: “(1+(4+5+2)-3)+(6+8)”输出: 23 说明： 你可以假设所给定的表达式都是有效的。 请不要使用内置的库函数 eval。 C++解决方法1234567891011121314151617181920212223242526272829class Solution &#123;public: int calculate(string s) &#123; int res = 0, num = 0, sign = 1, n = s.size(); stack&lt;int&gt; st; for (int i = 0; i &lt; n; ++i) &#123; char c = s[i]; if (c &gt;= '0') &#123; num = 10 * num + (c - '0'); &#125; else if (c == '+' || c == '-') &#123; res += sign * num; num = 0; sign = (c == '+') ? 1 : -1; &#125; else if (c == '(') &#123; st.push(res); st.push(sign); res = 0; sign = 1; &#125; else if (c == ')') &#123; res += sign * num; num = 0; res *= st.top(); st.pop(); res += st.top(); st.pop(); &#125; &#125; res += sign * num; return res; &#125;&#125;; 结果英文版Runtime: 4 ms, faster than 99.92% of C++ online submissions for Basic Calculator. Memory Usage: 10.4 MB, less than 54.96% of C++ online submissions for Basic Calculator. 中文版执行用时 :16 ms, 在所有 C++ 提交中击败了93.29%的用户 内存消耗 :10.4 MB, 在所有 C++ 提交中击败了72.93%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (223) Rectangle Area]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(223)%20Rectangle%20Area%2F</url>
+    <content type="text"><![CDATA[题目描述在二维平面上计算出两个由直线构成的矩形重叠后形成的总面积。 每个矩形由其左下顶点和右上顶点坐标表示，如图所示。 示例输入: -3, 0, 3, 4, 0, -1, 9, 2输出: 45 说明: 假设矩形面积不会超出 int 的范围。 C++解决方法12345678class Solution &#123;public: int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) &#123; int left = max(A,E), right = max(min(C,G), left); int bottom = max(B,F), top = max(min(D,H), bottom); return (C - A) * (D - B) - (right - left) * (top - bottom) + (G - E) * (H - F); &#125;&#125;; 结果英文版Runtime: 8 ms, faster than 94.48% of C++ online submissions for Rectangle Area. Memory Usage: 8.1 MB, less than 77.24% of C++ online submissions for Rectangle Area. 中文版执行用时 :20 ms, 在所有 C++ 提交中击败了73.52%的用户 内存消耗 :8.2 MB, 在所有 C++ 提交中击败了21.01%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode (222) Count Complete Tree Nodes]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(222)%20Count%20Complete%20Tree%20Nodes%2F</url>
     <content type="text"><![CDATA[题目描述给出一个 完全二叉树，求出该树的节点个数。 说明: 完全二叉树的定义如下：在完全二叉树中，除了最底层节点可能没填满外，其余每层节点数都达到最大值，并且最下面一层的节点都集中在该层最左边的若干位置。若最底层为第 h 层，则该层包含 $$1 - 2^h$$个节点。 示例输入: 12345 1 / \ 2 3 / \ /4 5 6 输出: 6 C++解决方法1234567891011121314151617181920212223242526/** * Definition for a binary tree node. * struct TreeNode &#123; * int val; * TreeNode *left; * TreeNode *right; * TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: int countNodes(TreeNode* root) &#123; int hLeft = 0, hRight = 0; TreeNode *pLeft = root, *pRight = root; while (pLeft) &#123; ++hLeft; pLeft = pLeft-&gt;left; &#125; while (pRight) &#123; ++hRight; pRight = pRight-&gt;right; &#125; if (hLeft == hRight) return pow(2, hLeft) - 1; return countNodes(root-&gt;left) + countNodes(root-&gt;right) + 1; &#125;&#125;; 结果英文版Runtime: 24 ms, faster than 98.78% of C++ online submissions for Count Complete Tree Nodes. Memory Usage: 28.6 MB, less than 84.12% of C++ online submissions for Count Complete Tree Nodes. 中文版执行用时 :76 ms, 在所有 C++ 提交中击败了28.94%的用户 内存消耗 :28.6 MB, 在所有 C++ 提交中击败了85.66%的用户]]></content>
