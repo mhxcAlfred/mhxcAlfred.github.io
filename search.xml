@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LeetCode (240) Search a 2D Matrix II]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(240)%20Search%20a%202D%20Matrix%20II%2F</url>
+    <content type="text"><![CDATA[题目描述编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性： 每行的元素从左到右升序排列。 每列的元素从上到下升序排列。 示例现有矩阵 matrix 如下： 1234567[ [1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]] 给定 target = 5，返回 true。 给定 target = 20，返回 false。 C++解决方法123456789101112131415class Solution &#123;public: bool searchMatrix(vector&lt;vector&lt;int&gt; &gt; &amp;matrix, int target) &#123; if (matrix.empty() || matrix[0].empty()) return false; if (target &lt; matrix[0][0] || target &gt; matrix.back().back()) return false; int x = matrix.size() - 1, y = 0; while (true) &#123; if (matrix[x][y] &gt; target) --x; else if (matrix[x][y] &lt; target) ++y; else return true; if (x &lt; 0 || y &gt;= matrix[0].size()) break; &#125; return false; &#125;&#125;; 结果英文版Runtime: 100 ms, faster than 30.93% of C++ online submissions for Search a 2D Matrix II. Memory Usage: 12.8 MB, less than 70.25% of C++ online submissions for Search a 2D Matrix II. 中文版执行用时 :128 ms, 在所有 C++ 提交中击败了41.29%的用户 内存消耗 :12.9 MB, 在所有 C++ 提交中击败了23.79%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (239) Sliding Window Maximum]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(239)%20Sliding%20Window%20Maximum%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口 k 内的数字。滑动窗口每次只向右移动一位。 返回滑动窗口最大值。 示例输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3输出: [3,3,5,5,6,7]解释: 12345678 滑动窗口的位置 最大值--------------- -----[1 3 -1] -3 5 3 6 7 3 1 [3 -1 -3] 5 3 6 7 3 1 3 [-1 -3 5] 3 6 7 5 1 3 -1 [-3 5 3] 6 7 5 1 3 -1 -3 [5 3 6] 7 6 1 3 -1 -3 5 [3 6 7] 7 注意: 你可以假设 k 总是有效的，1 ≤ k ≤ 输入数组的大小，且输入数组不为空。 进阶: 你能在线性时间复杂度内解决此题吗？ C++解决方法1234567891011121314class Solution &#123;public: vector&lt;int&gt; maxSlidingWindow(vector&lt;int&gt;&amp; nums, int k) &#123; vector&lt;int&gt; res; deque&lt;int&gt; q; for (int i = 0; i &lt; nums.size(); ++i) &#123; if (!q.empty() &amp;&amp; q.front() == i - k) q.pop_front(); while (!q.empty() &amp;&amp; nums[q.back()] &lt; nums[i]) q.pop_back(); q.push_back(i); if (i &gt;= k - 1) res.push_back(nums[q.front()]); &#125; return res; &#125;&#125;; 结果英文版Runtime: 56 ms, faster than 88.57% of C++ online submissions for Sliding Window Maximum. Memory Usage: 13 MB, less than 73.58% of C++ online submissions for Sliding Window Maximum. 中文版执行用时 :76 ms, 在所有 C++ 提交中击败了94.25%的用户 内存消耗 :13.1 MB, 在所有 C++ 提交中击败了58.15%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (238) Product of Array Except Self]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(238)%20Product%20of%20Array%20Except%20Self%2F</url>
+    <content type="text"><![CDATA[题目描述给定长度为 n 的整数数组 nums，其中 n &gt; 1，返回输出数组 output ，其中 output[i] 等于 nums 中除 nums[i] 之外其余各元素的乘积。 示例输入: [1,2,3,4]输出: [24,12,8,6] 说明: 请 不要使用除法，且在 O(n) 时间复杂度内完成此题。 进阶: 你可以在常数空间复杂度内完成这个题目吗？（ 出于对空间复杂度分析的目的，输出数组 不被视为 额外空间。 C++解决方法123456789101112131415class Solution &#123;public: vector&lt;int&gt; productExceptSelf(vector&lt;int&gt;&amp; nums) &#123; vector&lt;int&gt; res(nums.size(), 1); for (int i = 1; i &lt; nums.size(); ++i) &#123; res[i] = res[i - 1] * nums[i - 1]; &#125; int right = 1; for (int i = nums.size() - 1; i &gt;= 0; --i) &#123; res[i] *= right; right *= nums[i]; &#125; return res; &#125;&#125;; 结果英文版Runtime: 40 ms, faster than 86.64% of C++ online submissions for Product of Array Except Self. Memory Usage: 12.5 MB, less than 62.11% of C++ online submissions for Product of Array Except Self. 中文版执行用时 :56 ms, 在所有 C++ 提交中击败了92.75%的用户 内存消耗 :12.5 MB, 在所有 C++ 提交中击败了66.48%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode (237) Delete Node in a Linked List]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(237)%20Delete%20Node%20in%20a%20Linked%20List%2F</url>
     <content type="text"><![CDATA[题目描述请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点，你将只被给定要求被删除的节点。 现有一个链表 – head = [4,5,1,9]，它可以表示为: 示例 1输入: head = [4,5,1,9], node = 5输出: [4,1,9]解释: 给定你链表中值为 5 的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 1 -&gt; 9. 示例 2输入: head = [4,5,1,9], node = 1输出: [4,5,9]解释: 给定你链表中值为 1 的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 5 -&gt; 9. 说明: 链表至少包含两个节点。 链表中所有节点的值都是唯一的。 给定的节点为非末尾节点并且一定是链表中的一个有效节点。 不要从你的函数中返回任何结果。 C++解决方法1234567891011121314151617/** * Definition for singly-linked list. * struct ListNode &#123; * int val; * ListNode *next; * ListNode(int x) : val(x), next(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: void deleteNode(ListNode* node) &#123; node-&gt;val = node-&gt;next-&gt;val; ListNode *tmp = node-&gt;next; node-&gt;next = tmp-&gt;next; delete tmp; &#125;&#125;; 结果英文版Runtime: 12 ms, faster than 87.12% of C++ online submissions for Delete Node in a Linked List. Memory Usage: 9.4 MB, less than 5.96% of C++ online submissions for Delete Node in a Linked List. 中文版执行用时 :28 ms, 在所有 C++ 提交中击败了30.57%的用户 内存消耗 :9.2 MB, 在所有 C++ 提交中击败了37.88%的用户]]></content>
@@ -14,9 +53,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[LeetCode (236) Lowest Common Ancestor of a Binary Tree]]></title>
-    <url>%2Fzh-CN%2FLeetCode%20(236)%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%2F</url>
-    <content type="text"><![CDATA[题目描述给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。 维基百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。” 例如，给定如下二叉树: root = [3,5,1,6,2,0,8,null,null,7,4] 示例 1输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1输出: 3解释: 节点 5 和节点 1 的最近公共祖先是节点 3。 示例 2输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4输出: 5解释: 节点 5 和节点 4 的最近公共祖先是节点 5。因为根据定义最近公共祖先节点可以为节点本身。 说明: 所有节点的值都是唯一的。 p、q 为不同节点且均存在于给定的二叉树中。 C++解决方法12345678910111213141516171819/** * Definition for a binary tree node. * struct TreeNode &#123; * int val; * TreeNode *left; * TreeNode *right; * TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) &#123; if (!root || p == root || q == root) return root; TreeNode *left = lowestCommonAncestor(root-&gt;left, p, q); TreeNode *right = lowestCommonAncestor(root-&gt;right, p , q); if (left &amp;&amp; right) return root; return left ? left : right; &#125;&#125;; 结果英文版Runtime: 24 ms, faster than 58.65% of C++ online submissions for Lowest Common Ancestor of a Binary Tree. Memory Usage: 16.6 MB, less than 78.95% of C++ online submissions for Lowest Common Ancestor of a Binary Tree. 中文版执行用时 :36 ms, 在所有 C++ 提交中击败了43.99%的用户 内存消耗 :16.5 MB, 在所有 C++ 提交中击败了86.75%的用户]]></content>
+    <title><![CDATA[LeetCode (235) Lowest Common Ancestor of a Binary Search Tree]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(235)%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。 维基百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。” 例如，给定如下二叉搜索树: root = [6,2,8,0,4,7,9,null,null,3,5] 示例 1输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8输出: 6解释: 节点 2 和节点 8 的最近公共祖先是 6。 示例 2输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4输出: 2解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。 说明: 所有节点的值都是唯一的。 p、q 为不同节点且均存在于给定的二叉搜索树中。 C++解决方法1234567891011121314151617181920/** * Definition for a binary tree node. * struct TreeNode &#123; * int val; * TreeNode *left; * TreeNode *right; * TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) &#123; while (true) &#123; if (root-&gt;val &gt; max(p-&gt;val, q-&gt;val)) root = root-&gt;left; else if (root-&gt;val &lt; min(p-&gt;val, q-&gt;val)) root = root-&gt;right; else break; &#125; return root; &#125;&#125;; 结果英文版Runtime: 40 ms, faster than 68.25% of C++ online submissions for Lowest Common Ancestor of a Binary Search Tree. Memory Usage: 25.5 MB, less than 99.80% of C++ online submissions for Lowest Common Ancestor of a Binary Search Tree. 中文版执行用时 :92 ms, 在所有 C++ 提交中击败了11.72%的用户 内存消耗 :25.7 MB, 在所有 C++ 提交中击败了52.76%的用户]]></content>
       <categories>
         <category>语言</category>
       </categories>
@@ -27,9 +66,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[LeetCode (235) Lowest Common Ancestor of a Binary Search Tree]]></title>
-    <url>%2Fzh-CN%2FLeetCode%20(235)%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree%2F</url>
-    <content type="text"><![CDATA[题目描述给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。 维基百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。” 例如，给定如下二叉搜索树: root = [6,2,8,0,4,7,9,null,null,3,5] 示例 1输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8输出: 6解释: 节点 2 和节点 8 的最近公共祖先是 6。 示例 2输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4输出: 2解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。 说明: 所有节点的值都是唯一的。 p、q 为不同节点且均存在于给定的二叉搜索树中。 C++解决方法1234567891011121314151617181920/** * Definition for a binary tree node. * struct TreeNode &#123; * int val; * TreeNode *left; * TreeNode *right; * TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) &#123; while (true) &#123; if (root-&gt;val &gt; max(p-&gt;val, q-&gt;val)) root = root-&gt;left; else if (root-&gt;val &lt; min(p-&gt;val, q-&gt;val)) root = root-&gt;right; else break; &#125; return root; &#125;&#125;; 结果英文版Runtime: 40 ms, faster than 68.25% of C++ online submissions for Lowest Common Ancestor of a Binary Search Tree. Memory Usage: 25.5 MB, less than 99.80% of C++ online submissions for Lowest Common Ancestor of a Binary Search Tree. 中文版执行用时 :92 ms, 在所有 C++ 提交中击败了11.72%的用户 内存消耗 :25.7 MB, 在所有 C++ 提交中击败了52.76%的用户]]></content>
+    <title><![CDATA[LeetCode (236) Lowest Common Ancestor of a Binary Tree]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(236)%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。 维基百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。” 例如，给定如下二叉树: root = [3,5,1,6,2,0,8,null,null,7,4] 示例 1输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1输出: 3解释: 节点 5 和节点 1 的最近公共祖先是节点 3。 示例 2输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4输出: 5解释: 节点 5 和节点 4 的最近公共祖先是节点 5。因为根据定义最近公共祖先节点可以为节点本身。 说明: 所有节点的值都是唯一的。 p、q 为不同节点且均存在于给定的二叉树中。 C++解决方法12345678910111213141516171819/** * Definition for a binary tree node. * struct TreeNode &#123; * int val; * TreeNode *left; * TreeNode *right; * TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) &#123; if (!root || p == root || q == root) return root; TreeNode *left = lowestCommonAncestor(root-&gt;left, p, q); TreeNode *right = lowestCommonAncestor(root-&gt;right, p , q); if (left &amp;&amp; right) return root; return left ? left : right; &#125;&#125;; 结果英文版Runtime: 24 ms, faster than 58.65% of C++ online submissions for Lowest Common Ancestor of a Binary Tree. Memory Usage: 16.6 MB, less than 78.95% of C++ online submissions for Lowest Common Ancestor of a Binary Tree. 中文版执行用时 :36 ms, 在所有 C++ 提交中击败了43.99%的用户 内存消耗 :16.5 MB, 在所有 C++ 提交中击败了86.75%的用户]]></content>
       <categories>
         <category>语言</category>
       </categories>
