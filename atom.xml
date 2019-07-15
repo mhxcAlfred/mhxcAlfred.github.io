@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcAlfred.com/"/>
-  <updated>2019-07-10T15:15:00.000Z</updated>
+  <updated>2019-07-15T15:15:00.000Z</updated>
   <id>https://blog.mhxcAlfred.com/</id>
   
   <author>
@@ -15,6 +15,396 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode (255) Verify Preorder Sequence in Binary Search Tree</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(255)%20Verify%20Preorder%20Sequence%20in%20Binary%20Search%20Tree/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (255) Verify Preorder Sequence in Binary Search Tree/</id>
+    <published>2019-07-15T15:15:00.000Z</published>
+    <updated>2019-07-15T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      验证前序遍历序列二叉搜索树、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (254) Factor Combinations</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(254)%20Factor%20Combinations/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (254) Factor Combinations/</id>
+    <published>2019-07-15T09:15:00.000Z</published>
+    <updated>2019-07-15T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      因子的组合、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (253) Meeting Rooms II</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(253)%20Meeting%20Rooms%20II/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (253) Meeting Rooms II/</id>
+    <published>2019-07-15T03:15:00.000Z</published>
+    <updated>2019-07-15T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      会议室 II、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (252) Meeting Rooms</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(252)%20Meeting%20Rooms/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (252) Meeting Rooms/</id>
+    <published>2019-07-14T15:15:00.000Z</published>
+    <updated>2019-07-14T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      会议室、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (251) Flatten 2D Vector</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(251)%20Flatten%202D%20Vector/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (251) Flatten 2D Vector/</id>
+    <published>2019-07-14T09:15:00.000Z</published>
+    <updated>2019-07-14T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      展开二维向量、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (250) Count Univalue Subtrees</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(250)%20Count%20Univalue%20Subtrees/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (250) Count Univalue Subtrees/</id>
+    <published>2019-07-14T03:15:00.000Z</published>
+    <updated>2019-07-14T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      统计同值子树、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (249) Group Shifted Strings</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(249)%20Group%20Shifted%20Strings/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (249) Group Shifted Strings/</id>
+    <published>2019-07-13T15:15:00.000Z</published>
+    <updated>2019-07-13T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      移位字符串分组、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (248) Strobogrammatic Number III</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(248)%20Strobogrammatic%20Number%20III/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (248) Strobogrammatic Number III/</id>
+    <published>2019-07-13T09:15:00.000Z</published>
+    <updated>2019-07-13T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      中心对称数 III、困难
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (247) Strobogrammatic Number II</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(247)%20Strobogrammatic%20Number%20II/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (247) Strobogrammatic Number II/</id>
+    <published>2019-07-13T03:15:00.000Z</published>
+    <updated>2019-07-13T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      中心对称数 II、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (246) Strobogrammatic Number</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(246)%20Strobogrammatic%20Number/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (246) Strobogrammatic Number/</id>
+    <published>2019-07-12T15:15:00.000Z</published>
+    <updated>2019-07-12T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      中心对称数、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (245) Shortest Word Distance III</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(245)%20Shortest%20Word%20Distance%20III/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (245) Shortest Word Distance III/</id>
+    <published>2019-07-12T09:15:00.000Z</published>
+    <updated>2019-07-12T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      最短单词距离 III、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (244) Shortest Word Distance II</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(244)%20Shortest%20Word%20Distance%20II/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (244) Shortest Word Distance II/</id>
+    <published>2019-07-12T03:15:00.000Z</published>
+    <updated>2019-07-12T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      最短单词距离 II、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (243) Shortest Word Distance</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(243)%20Shortest%20Word%20Distance/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (243) Shortest Word Distance/</id>
+    <published>2019-07-11T15:15:00.000Z</published>
+    <updated>2019-07-11T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      最短单词距离、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (242) Valid Anagram</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(242)%20Valid%20Anagram/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (242) Valid Anagram/</id>
+    <published>2019-07-11T09:15:00.000Z</published>
+    <updated>2019-07-11T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> s = “anagram”, t = “nagaram”<br><strong>输出:</strong> true</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> s = “rat”, t = “car”<br><strong>输出:</strong> false</p><p><strong>说明:</strong></p><p>你可以假设字符串只包含小写字母。</p><p><strong>进阶:</strong></p><p>如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isAnagram</span><span class="params">(<span class="built_in">string</span> s, <span class="built_in">string</span> t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (s.size() != t.size()) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">int</span> m[<span class="number">26</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.size(); ++i) ++m[s[i] - <span class="string">'a'</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; t.size(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (--m[t[i] - <span class="string">'a'</span>] &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 8 ms, faster than 98.27% of C++ online submissions for Valid Anagram.</p><p>Memory Usage: 9.6 MB, less than 31.91% of C++ online submissions for Valid Anagram.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :20 ms, 在所有 C++ 提交中击败了60.34%的用户</p><p>内存消耗 :9.4 MB, 在所有 C++ 提交中击败了14.08%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      有效的字母异位词、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (241) Different Ways to Add Parentheses</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(241)%20Different%20Ways%20to%20Add%20Parentheses/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (241) Different Ways to Add Parentheses/</id>
+    <published>2019-07-11T03:15:00.000Z</published>
+    <updated>2019-07-11T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个含有数字和运算符的字符串，为表达式添加括号，改变其运算优先级以求出不同的结果。你需要给出所有可能的组合的结果。有效的运算符号包含 <code>+</code>, <code>-</code> 以及 <code>*</code> 。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> <code>&quot;2-1-1&quot;</code><br><strong>输出:</strong> <code>[0, 2]</code><br><strong>解释:</strong> </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">((2-1)-1) = 0 </span><br><span class="line">(2-(1-1)) = 2</span><br></pre></td></tr></table></figure><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> <code>&quot;2*3-4*5&quot;</code><br><strong>输出:</strong> <code>[-34, -14, -10, -10, 10]</code><br><strong>解释:</strong> </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(2*(3-(4*5))) = -34 </span><br><span class="line">((2*3)-(4*5)) = -14 </span><br><span class="line">((2*(3-4))*5) = -10 </span><br><span class="line">(2*((3-4)*5)) = -10 </span><br><span class="line">(((2*3)-4)*5) = 10</span><br></pre></td></tr></table></figure><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; diffWaysToCompute(<span class="built_in">string</span> input) &#123;</span><br><span class="line">        <span class="keyword">if</span> (input.empty()) <span class="keyword">return</span> &#123;&#125;;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; ops;</span><br><span class="line">        <span class="keyword">int</span> n = input.size();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="keyword">int</span> j = i;</span><br><span class="line">            <span class="keyword">while</span> (j &lt; n &amp;&amp; <span class="built_in">isdigit</span>(input[j])) ++j;</span><br><span class="line">            ops.push_back(input.substr(i, j - i));</span><br><span class="line">            <span class="keyword">if</span> (j &lt; n) ops.push_back(input.substr(j, <span class="number">1</span>));</span><br><span class="line">            i = j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> cnt = (ops.size() + <span class="number">1</span>) / <span class="number">2</span>;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt;&gt; dp(cnt, <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt;(cnt, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;()));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cnt; ++i) dp[i][i].push_back(stoi(ops[i * <span class="number">2</span>]));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> len = <span class="number">0</span>; len &lt; cnt; ++len) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cnt - len; ++i) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; i + len; ++j) &#123;</span><br><span class="line">                    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; left = dp[i][j], right = dp[j + <span class="number">1</span>][i + len];</span><br><span class="line">                    <span class="built_in">string</span> op = ops[j * <span class="number">2</span> + <span class="number">1</span>];</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> num1 : left) &#123;</span><br><span class="line">                        <span class="keyword">for</span> (<span class="keyword">int</span> num2 : right) &#123;</span><br><span class="line">                            <span class="keyword">if</span> (op == <span class="string">"+"</span>) dp[i][i + len].push_back(num1 + num2);</span><br><span class="line">                            <span class="keyword">else</span> <span class="keyword">if</span> (op == <span class="string">"-"</span>) dp[i][i + len].push_back(num1 - num2);</span><br><span class="line">                            <span class="keyword">else</span> dp[i][i + len].push_back(num1 * num2);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[<span class="number">0</span>][cnt - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of C++ online submissions for Different Ways to Add Parentheses.</p><p>Memory Usage: 8.8 MB, less than 97.46% of C++ online submissions for Different Ways to Add Parentheses.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :4 ms, 在所有 C++ 提交中击败了96.52%的用户</p><p>内存消耗 :8.6 MB, 在所有 C++ 提交中击败了100.00%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      为运算表达式设计优先级、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode (240) Search a 2D Matrix II</title>
@@ -132,396 +522,6 @@
     <summary type="html">
     
       二叉搜索树的最近公共祖先、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (236) Lowest Common Ancestor of a Binary Tree</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(236)%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (236) Lowest Common Ancestor of a Binary Tree/</id>
-    <published>2019-07-09T03:15:00.000Z</published>
-    <updated>2019-07-09T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。</p><p><a href="https://en.wikipedia.org/wiki/Lowest_common_ancestor" target="_blank" rel="noopener">维基百科</a>中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（<strong>一个节点也可以是它自己的祖先</strong>）。”</p><p>例如，给定如下二叉树:  root = [3,5,1,6,2,0,8,null,null,7,4]</p><p><img src="https://assets.leetcode.com/uploads/2018/12/14/binarytree.png" alt></p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1<br><strong>输出:</strong> 3<br><strong>解释:</strong> 节点 5 和节点 1 的最近公共祖先是节点 3。</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4<br><strong>输出:</strong> 5<br><strong>解释:</strong> 节点 5 和节点 4 的最近公共祖先是节点 5。因为根据定义最近公共祖先节点可以为节点本身。</p><p><strong>说明:</strong></p><ul><li>所有节点的值都是唯一的。</li><li>p、q 为不同节点且均存在于给定的二叉树中。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode* root, TreeNode* p, TreeNode* q)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">if</span> (!root || p == root || q == root) <span class="keyword">return</span> root;</span><br><span class="line">       TreeNode *left = lowestCommonAncestor(root-&gt;left, p, q);</span><br><span class="line">       TreeNode *right = lowestCommonAncestor(root-&gt;right, p , q);</span><br><span class="line">       <span class="keyword">if</span> (left &amp;&amp; right) <span class="keyword">return</span> root;</span><br><span class="line">       <span class="keyword">return</span> left ? left : right;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 24 ms, faster than 58.65% of C++ online submissions for Lowest Common Ancestor of a Binary Tree.</p><p>Memory Usage: 16.6 MB, less than 78.95% of C++ online submissions for Lowest Common Ancestor of a Binary Tree.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :36 ms, 在所有 C++ 提交中击败了43.99%的用户</p><p>内存消耗 :16.5 MB, 在所有 C++ 提交中击败了86.75%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      二叉树的最近公共祖先、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (234) Palindrome Linked List</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(234)%20Palindrome%20Linked%20List/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (234) Palindrome Linked List/</id>
-    <published>2019-07-08T15:15:00.000Z</published>
-    <updated>2019-07-08T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>请判断一个链表是否为回文链表。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> 1-&gt;2<br><strong>输出:</strong> false</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> 1-&gt;2-&gt;2-&gt;1<br><strong>输出:</strong> true</p><p><strong>进阶:</strong></p><p>你能否用 O(n) 时间复杂度和 O(1) 空间复杂度解决此题？</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isPalindrome</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!head || !head-&gt;next) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        ListNode *slow = head, *fast = head;</span><br><span class="line">        <span class="keyword">while</span> (fast-&gt;next &amp;&amp; fast-&gt;next-&gt;next) &#123;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            fast = fast-&gt;next-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode *last = slow-&gt;next, *pre = head;</span><br><span class="line">        <span class="keyword">while</span> (last-&gt;next) &#123;</span><br><span class="line">            ListNode *tmp = last-&gt;next;</span><br><span class="line">            last-&gt;next = tmp-&gt;next;</span><br><span class="line">            tmp-&gt;next = slow-&gt;next;</span><br><span class="line">            slow-&gt;next = tmp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (slow-&gt;next) &#123;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            <span class="keyword">if</span> (pre-&gt;val != slow-&gt;val) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            pre = pre-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 20 ms, faster than 94.20% of C++ online submissions for Palindrome Linked List.</p><p>Memory Usage: 12.8 MB, less than 54.17% of C++ online submissions for Palindrome Linked List.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :28 ms, 在所有 C++ 提交中击败了86.12%的用户</p><p>内存消耗 :12.9 MB, 在所有 C++ 提交中击败了38.54%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      回文链表、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (233) Number of Digit One</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(233)%20Number%20of%20Digit%20One/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (233) Number of Digit One/</id>
-    <published>2019-07-08T09:15:00.000Z</published>
-    <updated>2019-07-08T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个整数 n，计算所有小于等于 n 的非负整数中数字 1 出现的个数。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> 13<br><strong>输出:</strong> 6<br><strong>解释:</strong> 数字 1 出现在以下数字中: 1, 10, 11, 12, 13 。</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">countDigitOne</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">long</span> k = <span class="number">1</span>; k &lt;= n; k *= <span class="number">10</span>) &#123;</span><br><span class="line">            <span class="keyword">long</span> r = n / k, m = n % k;</span><br><span class="line">            res += (r + <span class="number">8</span>) / <span class="number">10</span> * k + (r % <span class="number">10</span> == <span class="number">1</span> ? m + <span class="number">1</span> : <span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 68.37% of C++ online submissions for Number of Digit One.</p><p>Memory Usage: 8.1 MB, less than 82.72% of C++ online submissions for Number of Digit One.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :4 ms, 在所有 C++ 提交中击败了81.21%的用户</p><p>内存消耗 :8.3 MB, 在所有 C++ 提交中击败了18.63%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      数字 1 的个数、困难
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (232) Implement Queue using Stacks</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(232)%20Implement%20Queue%20using%20Stacks/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (232) Implement Queue using Stacks/</id>
-    <published>2019-07-08T03:15:00.000Z</published>
-    <updated>2019-07-08T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>使用栈实现队列的下列操作：</p><ul><li>push(x) – 将一个元素放入队列的尾部。</li><li>pop() – 从队列首部移除元素。</li><li>peek() – 返回队列首部的元素。</li><li>empty() – 返回队列是否为空。</li></ul><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">MyQueue queue = new MyQueue();</span><br><span class="line"></span><br><span class="line">queue.push(1);</span><br><span class="line">queue.push(2);  </span><br><span class="line">queue.peek();  // 返回 1</span><br><span class="line">queue.pop();   // 返回 1</span><br><span class="line">queue.empty(); // 返回 false</span><br></pre></td></tr></table></figure><p><strong>说明:</strong></p><ul><li>你只能使用标准的栈操作 – 也就是只有 <code>push to top</code>, <code>peek/pop from top</code>, <code>size</code>, 和 <code>is empty</code> 操作是合法的。</li><li>你所使用的语言也许不支持栈。你可以使用 list 或者 deque（双端队列）来模拟一个栈，只要是标准的栈操作即可。</li><li>假设所有操作都是有效的 （例如，一个空的队列不会调用 pop 或者 peek 操作）。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyQueue</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/** Initialize your data structure here. */</span></span><br><span class="line">    MyQueue() &#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Push element x to the back of queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        _new.push(x);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Removes the element from in front of queue and returns that element. */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">pop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        shiftStack();</span><br><span class="line">        <span class="keyword">int</span> val = _old.top(); _old.pop();</span><br><span class="line">        <span class="keyword">return</span> val;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Get the front element. */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">peek</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        shiftStack();</span><br><span class="line">        <span class="keyword">return</span> _old.top();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Returns whether the queue is empty. */</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">empty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> _old.empty() &amp;&amp; _new.empty();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">shiftStack</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!_old.empty()) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">while</span> (!_new.empty()) &#123;</span><br><span class="line">            _old.push(_new.top());</span><br><span class="line">            _new.pop();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; _old, _new;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MyQueue object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MyQueue* obj = new MyQueue();</span></span><br><span class="line"><span class="comment"> * obj-&gt;push(x);</span></span><br><span class="line"><span class="comment"> * int param_2 = obj-&gt;pop();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj-&gt;peek();</span></span><br><span class="line"><span class="comment"> * bool param_4 = obj-&gt;empty();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of C++ online submissions for Implement Queue using Stacks.</p><p>Memory Usage: 8.9 MB, less than 18.21% of C++ online submissions for Implement Queue using Stacks.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :4 ms, 在所有 C++ 提交中击败了88.74%的用户</p><p>内存消耗 :8.7 MB, 在所有 C++ 提交中击败了87.76%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      用栈实现队列、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (231) Power of Two</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(231)%20Power%20of%20Two/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (231) Power of Two/</id>
-    <published>2019-07-07T15:15:00.000Z</published>
-    <updated>2019-07-07T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个整数，编写一个函数来判断它是否是 2 的幂次方。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> 1<br><strong>输出:</strong> true<br><strong>解释:</strong> 20 = 1</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> 16<br><strong>输出:</strong> true<br><strong>解释:</strong> 24 = 16</p><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><p><strong>输入:</strong> 218<br><strong>输出:</strong> false</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span> <span class="keyword">public</span>: <span class="function"><span class="keyword">bool</span> <span class="title">isPowerOfTwo</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123; <span class="keyword">return</span> (n &gt; <span class="number">0</span>) &amp;&amp; (!(n &amp; (n - <span class="number">1</span>)));</span><br><span class="line">    &#125; </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 71.47% of C++ online submissions for Power of Two.</p><p>Memory Usage: 8 MB, less than 73.86% of C++ online submissions for Power of Two.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :0 ms, 在所有 C++ 提交中击败了100.00%的用户</p><p>内存消耗 :7.9 MB, 在所有 C++ 提交中击败了84.19%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      2 的幂、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (230) Kth Smallest Element in a BST</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(230)%20Kth%20Smallest%20Element%20in%20a%20BST/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (230) Kth Smallest Element in a BST/</id>
-    <published>2019-07-07T09:15:00.000Z</published>
-    <updated>2019-07-07T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个二叉搜索树，编写一个函数 <code>kthSmallest</code> 来查找其中第 <strong>k </strong>个最小的元素。</p><p><strong>说明:</strong></p><p>你可以假设 k 总是有效的，1 ≤ k ≤ 二叉搜索树元素个数。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> root = [3,1,4,null,2], k = 1</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  3</span><br><span class="line"> / \</span><br><span class="line">1   4</span><br><span class="line"> \</span><br><span class="line">  2</span><br></pre></td></tr></table></figure><p><strong>输出:</strong> 1</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> root = [5,3,6,2,4,null,null,1], k = 3</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">      5</span><br><span class="line">     / \</span><br><span class="line">    3   6</span><br><span class="line">   / \</span><br><span class="line">  2   4</span><br><span class="line"> /</span><br><span class="line">1</span><br></pre></td></tr></table></figure><p><strong>输出:</strong> 3</p><p><strong>进阶:</strong></p><p>如果二叉搜索树经常被修改（插入/删除操作）并且你需要频繁地查找第 k 小的值，你将如何优化 <code>kthSmallest</code> 函数？</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">kthSmallest</span><span class="params">(TreeNode* root, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> kthSmallestDFS(root, k);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">kthSmallestDFS</span><span class="params">(TreeNode* root, <span class="keyword">int</span> &amp;k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!root) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">int</span> val = kthSmallestDFS(root-&gt;left, k);</span><br><span class="line">        <span class="keyword">if</span> (k == <span class="number">0</span>) <span class="keyword">return</span> val;</span><br><span class="line">        <span class="keyword">if</span> (--k == <span class="number">0</span>) <span class="keyword">return</span> root-&gt;val;</span><br><span class="line">        <span class="keyword">return</span> kthSmallestDFS(root-&gt;right, k);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 16 ms, faster than 97.56% of C++ online submissions for Kth Smallest Element in a BST.</p><p>Memory Usage: 21.3 MB, less than 99.52% of C++ online submissions for Kth Smallest Element in a BST.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :32 ms, 在所有 C++ 提交中击败了73.72%的用户</p><p>内存消耗 :21.4 MB, 在所有 C++ 提交中击败了86.92%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      二叉搜索树中第 K 小的元素、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (229) Majority Element II</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(229)%20Majority%20Element%20II/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (229) Majority Element II/</id>
-    <published>2019-07-07T03:15:00.000Z</published>
-    <updated>2019-07-07T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个大小为 n 的数组，找出其中所有出现超过 <code>⌊ n/3 ⌋</code> 次的元素。</p><p><strong>说明:</strong> 要求算法的时间复杂度为 O(n)，空间复杂度为 O(1)。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> [3,2,3]<br><strong>输出:</strong> [3]</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> [1,1,1,3,3,2,2,2]<br><strong>输出:</strong> [1,2]</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; majorityElement(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums) &#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">0</span>, b = <span class="number">0</span>, cnt1 = <span class="number">0</span>, cnt2 = <span class="number">0</span>, n = nums.size();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> num : nums) &#123;</span><br><span class="line">            <span class="keyword">if</span> (num == a) ++cnt1;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (num == b) ++cnt2;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (cnt1 == <span class="number">0</span>) &#123; a = num; cnt1 = <span class="number">1</span>; &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (cnt2 == <span class="number">0</span>) &#123; b = num; cnt2 = <span class="number">1</span>; &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123; --cnt1; --cnt2; &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cnt1 = cnt2 = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> num : nums) &#123;</span><br><span class="line">            <span class="keyword">if</span> (num == a) ++cnt1;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (num == b) ++cnt2;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (cnt1 &gt; n / <span class="number">3</span>) res.push_back(a);</span><br><span class="line">        <span class="keyword">if</span> (cnt2 &gt; n / <span class="number">3</span>) res.push_back(b);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 16 ms, faster than 68.22% of C++ online submissions for Majority Element II.</p><p>Memory Usage: 10.5 MB, less than 81.80% of C++ online submissions for Majority Element II.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :24 ms, 在所有 C++ 提交中击败了47.05%的用户</p><p>内存消耗 :10.4 MB, 在所有 C++ 提交中击败了93.85%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      求众数 II、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (228) Summary Ranges</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(228)%20Summary%20Ranges/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (228) Summary Ranges/</id>
-    <published>2019-07-06T15:15:00.000Z</published>
-    <updated>2019-07-06T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个无重复元素的有序整数数组，返回数组区间范围的汇总。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> [0,1,2,4,5,7]<br><strong>输出:</strong> [“0-&gt;2”,”4-&gt;5”,”7”]<br><strong>解释:</strong> 0,1,2 可组成一个连续的区间; 4,5 可组成一个连续的区间。</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> [0,2,3,4,6,8,9]<br><strong>输出:</strong> [“0”,”2-&gt;4”,”6”,”8-&gt;9”]<br><strong>解释:</strong> 2,3,4 可组成一个连续的区间; 8,9 可组成一个连续的区间。</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; summaryRanges(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums) &#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>, n = nums.size();</span><br><span class="line">        <span class="keyword">while</span> (i &lt; n) &#123;</span><br><span class="line">            <span class="keyword">int</span> j = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (i + j &lt; n &amp;&amp; (<span class="keyword">long</span>)nums[i + j] - nums[i] == j) ++j;</span><br><span class="line">            res.push_back(j &lt;= <span class="number">1</span> ? to_string(nums[i]) : to_string(nums[i]) + <span class="string">"-&gt;"</span> + to_string(nums[i + j - <span class="number">1</span>]));</span><br><span class="line">            i += j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 69.06% of C++ online submissions for Summary Ranges.</p><p>Memory Usage: 8.5 MB, less than 24.42% of C++ online submissions for Summary Ranges.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :8 ms, 在所有 C++ 提交中击败了48.63%的用户</p><p>内存消耗 :8.4 MB, 在所有 C++ 提交中击败了87.07%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      汇总区间、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (227) Basic Calculator II</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(227)%20Basic%20Calculator%20II/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (227) Basic Calculator II/</id>
-    <published>2019-07-06T09:15:00.000Z</published>
-    <updated>2019-07-06T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>实现一个基本的计算器来计算一个简单的字符串表达式的值。</p><p>字符串表达式仅包含非负整数，<code>+</code>， <code>-</code> ，<code>*</code>，<code>/</code> 四种运算符和空格 。 整数除法仅保留整数部分。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> “3+2*2”<br><strong>输出:</strong> 7</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> “ 3/2 “<br><strong>输出:</strong> 1</p><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><p><strong>输入:</strong> “ 3+5 / 2 “<br><strong>输出:</strong> 5</p><p><strong>说明：</strong></p><ul><li>你可以假设所给定的表达式都是有效的。</li><li>请<strong>不要</strong>使用内置的库函数 <code>eval</code>。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">calculate</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> res = <span class="number">0</span>, curRes = <span class="number">0</span>, num = <span class="number">0</span>, n = s.size();</span><br><span class="line">        <span class="keyword">char</span> op = <span class="string">'+'</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="keyword">char</span> c = s[i];</span><br><span class="line">            <span class="keyword">if</span> (c &gt;= <span class="string">'0'</span> &amp;&amp; c &lt;= <span class="string">'9'</span>) &#123;</span><br><span class="line">                num = num * <span class="number">10</span> + c - <span class="string">'0'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (c == <span class="string">'+'</span> || c == <span class="string">'-'</span> || c == <span class="string">'*'</span> || c == <span class="string">'/'</span> || i == n - <span class="number">1</span>) &#123;</span><br><span class="line">                <span class="keyword">switch</span> (op) &#123;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">'+'</span>: curRes += num; <span class="keyword">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">'-'</span>: curRes -= num; <span class="keyword">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">'*'</span>: curRes *= num; <span class="keyword">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">'/'</span>: curRes /= num; <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (c == <span class="string">'+'</span> || c == <span class="string">'-'</span> || i == n - <span class="number">1</span>) &#123;</span><br><span class="line">                    res += curRes;</span><br><span class="line">                    curRes = <span class="number">0</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                op = c;</span><br><span class="line">                num = <span class="number">0</span>;</span><br><span class="line">            &#125; </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 12 ms, faster than 92.48% of C++ online submissions for Basic Calculator II.</p><p>Memory Usage: 9.9 MB, less than 94.77% of C++ online submissions for Basic Calculator II.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :16 ms, 在所有 C++ 提交中击败了89.47%的用户</p><p>内存消耗 :9.9 MB, 在所有 C++ 提交中击败了88.18%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      基本计算器 II、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (226) Invert Binary Tree</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(226)%20Invert%20Binary%20Tree/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (226) Invert Binary Tree/</id>
-    <published>2019-07-06T03:15:00.000Z</published>
-    <updated>2019-07-06T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>翻转一棵二叉树。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">     4</span><br><span class="line">   /   \</span><br><span class="line">  2     7</span><br><span class="line"> / \   / \</span><br><span class="line">1   3 6   9</span><br></pre></td></tr></table></figure><p><strong>输出:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">     4</span><br><span class="line">   /   \</span><br><span class="line">  7     2</span><br><span class="line"> / \   / \</span><br><span class="line">9   6 3   1</span><br></pre></td></tr></table></figure><p><strong>备注:</strong></p><p>这个问题是受到 <a href="https://twitter.com/mxcl" target="_blank" rel="noopener">Max Howell </a>的 <a href="https://twitter.com/mxcl/status/608682016205344768" target="_blank" rel="noopener">原问题</a> 启发的:</p><blockquote><p>谷歌：我们90％的工程师使用您编写的软件(Homebrew)，但是您却无法在面试时在白板上写出翻转二叉树这道题，这太糟糕了。</p></blockquote><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">invertTree</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!root) <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        <span class="built_in">queue</span>&lt;TreeNode*&gt; q;</span><br><span class="line">        q.push(root);</span><br><span class="line">        <span class="keyword">while</span> (!q.empty()) &#123;</span><br><span class="line">            TreeNode *node = q.front(); q.pop();</span><br><span class="line">            TreeNode *tmp = node-&gt;left;</span><br><span class="line">            node-&gt;left = node-&gt;right;</span><br><span class="line">            node-&gt;right = tmp;</span><br><span class="line">            <span class="keyword">if</span> (node-&gt;left) q.push(node-&gt;left);</span><br><span class="line">            <span class="keyword">if</span> (node-&gt;right) q.push(node-&gt;right);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 73.28% of C++ online submissions for Invert Binary Tree.</p><p>Memory Usage: 9 MB, less than 93.76% of C++ online submissions for Invert Binary Tree.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :0 ms, 在所有 C++ 提交中击败了100.00%的用户</p><p>内存消耗 :9.1 MB, 在所有 C++ 提交中击败了57.73%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      翻转二叉树、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (225) Implement Stack using Queues</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(225)%20Implement%20Stack%20using%20Queues/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (225) Implement Stack using Queues/</id>
-    <published>2019-07-05T15:15:00.000Z</published>
-    <updated>2019-07-05T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>使用队列实现栈的下列操作：</p><ul><li>push(x) – 元素 x 入栈</li><li>pop() – 移除栈顶元素</li><li>top() – 获取栈顶元素</li><li>empty() – 返回栈是否为空</li></ul><p><strong>注意:</strong></p><ul><li>你只能使用队列的基本操作– 也就是 <code>push to back</code>, <code>peek/pop from front</code>, <code>size</code>, 和 <code>is empty</code> 这些操作是合法的。</li><li>你所使用的语言也许不支持队列。 你可以使用 list 或者 deque（双端队列）来模拟一个队列 , 只要是标准的队列操作即可。</li><li>你可以假设所有操作都是有效的（例如, 对一个空的栈不会调用 pop 或者 top 操作）。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyStack</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/** Initialize your data structure here. */</span></span><br><span class="line">    MyStack() &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Push element x onto stack. */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        q2.push(x);</span><br><span class="line">        <span class="keyword">while</span> (q2.size() &gt; <span class="number">1</span>) &#123;</span><br><span class="line">            q1.push(q2.front()); q2.pop();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Removes the element on top of the stack and returns that element. */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">pop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x = top(); q2.pop();</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Get the top element. */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">top</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (q2.empty()) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)q1.size() - <span class="number">1</span>; ++i) &#123;</span><br><span class="line">                q1.push(q1.front()); q1.pop();</span><br><span class="line">            &#125;</span><br><span class="line">            q2.push(q1.front()); q1.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> q2.front();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Returns whether the stack is empty. */</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">empty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> q1.empty() &amp;&amp; q2.empty();</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q1, q2;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MyStack object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MyStack* obj = new MyStack();</span></span><br><span class="line"><span class="comment"> * obj-&gt;push(x);</span></span><br><span class="line"><span class="comment"> * int param_2 = obj-&gt;pop();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj-&gt;top();</span></span><br><span class="line"><span class="comment"> * bool param_4 = obj-&gt;empty();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of C++ online submissions for Implement Stack using Queues.</p><p>Memory Usage: 8.7 MB, less than 78.51% of C++ online submissions for Implement Stack using Queues.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :4 ms, 在所有 C++ 提交中击败了87.76%的用户</p><p>内存消耗 :8.6 MB, 在所有 C++ 提交中击败了93.44%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      用队列实现栈、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (224) Basic Calculator</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(224)%20Basic%20Calculator/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (224) Basic Calculator/</id>
-    <published>2019-07-05T09:15:00.000Z</published>
-    <updated>2019-07-05T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>实现一个基本的计算器来计算一个简单的字符串表达式的值。</p><p>字符串表达式可以包含左括号 <code>(</code> ，右括号 <code>)</code>，加号 <code>+</code> ，减号 <code>-</code>，<strong>非负</strong>整数和空格 。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> “1 + 1”<br><strong>输出:</strong> 2</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> “ 2-1 + 2 “<br><strong>输出:</strong> 3</p><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><p><strong>输入:</strong> “(1+(4+5+2)-3)+(6+8)”<br><strong>输出:</strong> 23</p><p><strong>说明：</strong></p><ul><li>你可以假设所给定的表达式都是有效的。</li><li>请<strong>不要</strong>使用内置的库函数 <code>eval</code>。</li></ul><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">calculate</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>, num = <span class="number">0</span>, sign = <span class="number">1</span>, n = s.size();</span><br><span class="line">        <span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; st;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="keyword">char</span> c = s[i];</span><br><span class="line">            <span class="keyword">if</span> (c &gt;= <span class="string">'0'</span>) &#123;</span><br><span class="line">                num = <span class="number">10</span> * num + (c - <span class="string">'0'</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (c == <span class="string">'+'</span> || c == <span class="string">'-'</span>) &#123;</span><br><span class="line">                res += sign * num;</span><br><span class="line">                num = <span class="number">0</span>;</span><br><span class="line">                sign = (c == <span class="string">'+'</span>) ? <span class="number">1</span> : <span class="number">-1</span>;</span><br><span class="line">             &#125; <span class="keyword">else</span> <span class="keyword">if</span> (c == <span class="string">'('</span>) &#123;</span><br><span class="line">                st.push(res);</span><br><span class="line">                st.push(sign);</span><br><span class="line">                res = <span class="number">0</span>;</span><br><span class="line">                sign = <span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (c == <span class="string">')'</span>) &#123;</span><br><span class="line">                res += sign * num;</span><br><span class="line">                num = <span class="number">0</span>;</span><br><span class="line">                res *= st.top(); st.pop();</span><br><span class="line">                res += st.top(); st.pop();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        res += sign * num;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 99.92% of C++ online submissions for Basic Calculator.</p><p>Memory Usage: 10.4 MB, less than 54.96% of C++ online submissions for Basic Calculator.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :16 ms, 在所有 C++ 提交中击败了93.29%的用户</p><p>内存消耗 :10.4 MB, 在所有 C++ 提交中击败了72.93%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      基本计算器、困难
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (223) Rectangle Area</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(223)%20Rectangle%20Area/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (223) Rectangle Area/</id>
-    <published>2019-07-05T03:15:00.000Z</published>
-    <updated>2019-07-05T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>在<strong>二维</strong>平面上计算出两个<strong>由直线构成的</strong>矩形重叠后形成的总面积。</p><p>每个矩形由其左下顶点和右上顶点坐标表示，如图所示。</p><p><img src="https://assets.leetcode.com/uploads/2018/10/22/rectangle_area.png" alt="Rectangle Area"></p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> -3, 0, 3, 4, 0, -1, 9, 2<br><strong>输出:</strong> 45</p><p><strong>说明:</strong> 假设矩形面积不会超出 <strong>int</strong> 的范围。</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">computeArea</span><span class="params">(<span class="keyword">int</span> A, <span class="keyword">int</span> B, <span class="keyword">int</span> C, <span class="keyword">int</span> D, <span class="keyword">int</span> E, <span class="keyword">int</span> F, <span class="keyword">int</span> G, <span class="keyword">int</span> H)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = max(A,E), right = max(min(C,G), left);</span><br><span class="line">        <span class="keyword">int</span> bottom = max(B,F), top = max(min(D,H), bottom);</span><br><span class="line">        <span class="keyword">return</span> (C - A) * (D - B) - (right - left) * (top - bottom) + (G - E) * (H - F);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 8 ms, faster than 94.48% of C++ online submissions for Rectangle Area.</p><p>Memory Usage: 8.1 MB, less than 77.24% of C++ online submissions for Rectangle Area.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :20 ms, 在所有 C++ 提交中击败了73.52%的用户</p><p>内存消耗 :8.2 MB, 在所有 C++ 提交中击败了21.01%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      矩形面积、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (222) Count Complete Tree Nodes</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(222)%20Count%20Complete%20Tree%20Nodes/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (222) Count Complete Tree Nodes/</id>
-    <published>2019-07-04T15:15:00.000Z</published>
-    <updated>2019-07-04T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给出一个 <strong>完全二叉树</strong>，求出该树的节点个数。</p><p><strong>说明:</strong></p><p>完全二叉树的定义如下：在完全二叉树中，除了最底层节点可能没填满外，其余每层节点数都达到最大值，并且最下面一层的节点都集中在该层最左边的若干位置。若最底层为第 h 层，则该层包含</p><p>$$<br>1 - 2^h<br>$$<br>个节点。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    1</span><br><span class="line">   / \</span><br><span class="line">  2   3</span><br><span class="line"> / \  /</span><br><span class="line">4  5 6</span><br></pre></td></tr></table></figure><p><strong>输出:</strong> 6</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">countNodes</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> hLeft = <span class="number">0</span>, hRight = <span class="number">0</span>;</span><br><span class="line">        TreeNode *pLeft = root, *pRight = root;</span><br><span class="line">        <span class="keyword">while</span> (pLeft) &#123;</span><br><span class="line">            ++hLeft;</span><br><span class="line">            pLeft = pLeft-&gt;left;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (pRight) &#123;</span><br><span class="line">            ++hRight;</span><br><span class="line">            pRight = pRight-&gt;right;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (hLeft == hRight) <span class="keyword">return</span> <span class="built_in">pow</span>(<span class="number">2</span>, hLeft) - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> countNodes(root-&gt;left) + countNodes(root-&gt;right) + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 24 ms, faster than 98.78% of C++ online submissions for Count Complete Tree Nodes.</p><p>Memory Usage: 28.6 MB, less than 84.12% of C++ online submissions for Count Complete Tree Nodes.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :76 ms, 在所有 C++ 提交中击败了28.94%的用户</p><p>内存消耗 :28.6 MB, 在所有 C++ 提交中击败了85.66%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      完全二叉树的节点个数、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (221) Maximal Square</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(221)%20Maximal%20Square/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (221) Maximal Square/</id>
-    <published>2019-07-04T09:15:00.000Z</published>
-    <updated>2019-07-04T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong><br>1 0 1 0 0<br>1 0 <strong>1 1</strong> 1<br>1 1 <strong>1 1</strong> 1<br>1 0 0 1 0</p><p><strong>输出:</strong> 4</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maximalSquare</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&gt;&amp; matrix)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (matrix.empty() || matrix[<span class="number">0</span>].empty()) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> m = matrix.size(), n = matrix[<span class="number">0</span>].size(), res = <span class="number">0</span>, pre = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; dp(m + <span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; ++j) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; ++i) &#123;</span><br><span class="line">                <span class="keyword">int</span> t = dp[i];</span><br><span class="line">                <span class="keyword">if</span> (matrix[i - <span class="number">1</span>][j] == <span class="string">'1'</span>) &#123;</span><br><span class="line">                    dp[i] = min(dp[i], min(dp[i - <span class="number">1</span>], pre)) + <span class="number">1</span>;</span><br><span class="line">                    res = max(res, dp[i]);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    dp[i] = <span class="number">0</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                pre = t;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res * res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 16 ms, faster than 97.14% of C++ online submissions for Maximal Square.</p><p>Memory Usage: 10.3 MB, less than 98.91% of C++ online submissions for Maximal Square.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :24 ms, 在所有 C++ 提交中击败了82.42%的用户</p><p>内存消耗 :10.4 MB, 在所有 C++ 提交中击败了99.72%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      最大正方形、中等
     
     </summary>
     

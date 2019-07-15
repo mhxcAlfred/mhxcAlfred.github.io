@@ -1,6 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LeetCode (255) Verify Preorder Sequence in Binary Search Tree]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(255)%20Verify%20Preorder%20Sequence%20in%20Binary%20Search%20Tree%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (254) Factor Combinations]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(254)%20Factor%20Combinations%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (253) Meeting Rooms II]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(253)%20Meeting%20Rooms%20II%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (252) Meeting Rooms]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(252)%20Meeting%20Rooms%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (251) Flatten 2D Vector]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(251)%20Flatten%202D%20Vector%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (250) Count Univalue Subtrees]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(250)%20Count%20Univalue%20Subtrees%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (249) Group Shifted Strings]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(249)%20Group%20Shifted%20Strings%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (248) Strobogrammatic Number III]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(248)%20Strobogrammatic%20Number%20III%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (247) Strobogrammatic Number II]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(247)%20Strobogrammatic%20Number%20II%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (246) Strobogrammatic Number]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(246)%20Strobogrammatic%20Number%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (245) Shortest Word Distance III]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(245)%20Shortest%20Word%20Distance%20III%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (244) Shortest Word Distance II]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(244)%20Shortest%20Word%20Distance%20II%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (243) Shortest Word Distance]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(243)%20Shortest%20Word%20Distance%2F</url>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (242) Valid Anagram]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(242)%20Valid%20Anagram%2F</url>
+    <content type="text"><![CDATA[题目描述给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。 示例 1输入: s = “anagram”, t = “nagaram”输出: true 示例 2输入: s = “rat”, t = “car”输出: false 说明: 你可以假设字符串只包含小写字母。 进阶: 如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？ C++解决方法123456789101112class Solution &#123;public: bool isAnagram(string s, string t) &#123; if (s.size() != t.size()) return false; int m[26] = &#123;0&#125;; for (int i = 0; i &lt; s.size(); ++i) ++m[s[i] - 'a']; for (int i = 0; i &lt; t.size(); ++i) &#123; if (--m[t[i] - 'a'] &lt; 0) return false; &#125; return true; &#125;&#125;; 结果英文版Runtime: 8 ms, faster than 98.27% of C++ online submissions for Valid Anagram. Memory Usage: 9.6 MB, less than 31.91% of C++ online submissions for Valid Anagram. 中文版执行用时 :20 ms, 在所有 C++ 提交中击败了60.34%的用户 内存消耗 :9.4 MB, 在所有 C++ 提交中击败了14.08%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode (241) Different Ways to Add Parentheses]]></title>
+    <url>%2Fzh-CN%2FLeetCode%20(241)%20Different%20Ways%20to%20Add%20Parentheses%2F</url>
+    <content type="text"><![CDATA[题目描述给定一个含有数字和运算符的字符串，为表达式添加括号，改变其运算优先级以求出不同的结果。你需要给出所有可能的组合的结果。有效的运算符号包含 +, - 以及 * 。 示例 1输入: &quot;2-1-1&quot;输出: [0, 2]解释: 12((2-1)-1) = 0 (2-(1-1)) = 2 示例 2输入: &quot;2*3-4*5&quot;输出: [-34, -14, -10, -10, 10]解释: 12345(2*(3-(4*5))) = -34 ((2*3)-(4*5)) = -14 ((2*(3-4))*5) = -10 (2*((3-4)*5)) = -10 (((2*3)-4)*5) = 10 C++解决方法12345678910111213141516171819202122232425262728293031323334class Solution &#123;public: vector&lt;int&gt; diffWaysToCompute(string input) &#123; if (input.empty()) return &#123;&#125;; vector&lt;string&gt; ops; int n = input.size(); for (int i = 0; i &lt; n; ++i) &#123; int j = i; while (j &lt; n &amp;&amp; isdigit(input[j])) ++j; ops.push_back(input.substr(i, j - i)); if (j &lt; n) ops.push_back(input.substr(j, 1)); i = j; &#125; int cnt = (ops.size() + 1) / 2; vector&lt;vector&lt;vector&lt;int&gt;&gt;&gt; dp(cnt, vector&lt;vector&lt;int&gt;&gt;(cnt, vector&lt;int&gt;())); for (int i = 0; i &lt; cnt; ++i) dp[i][i].push_back(stoi(ops[i * 2])); for (int len = 0; len &lt; cnt; ++len) &#123; for (int i = 0; i &lt; cnt - len; ++i) &#123; for (int j = i; j &lt; i + len; ++j) &#123; vector&lt;int&gt; left = dp[i][j], right = dp[j + 1][i + len]; string op = ops[j * 2 + 1]; for (int num1 : left) &#123; for (int num2 : right) &#123; if (op == "+") dp[i][i + len].push_back(num1 + num2); else if (op == "-") dp[i][i + len].push_back(num1 - num2); else dp[i][i + len].push_back(num1 * num2); &#125; &#125; &#125; &#125; &#125; return dp[0][cnt - 1]; &#125;&#125;; 结果英文版Runtime: 0 ms, faster than 100.00% of C++ online submissions for Different Ways to Add Parentheses. Memory Usage: 8.8 MB, less than 97.46% of C++ online submissions for Different Ways to Add Parentheses. 中文版执行用时 :4 ms, 在所有 C++ 提交中击败了96.52%的用户 内存消耗 :8.6 MB, 在所有 C++ 提交中击败了100.00%的用户]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LeetCode (240) Search a 2D Matrix II]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(240)%20Search%20a%202D%20Matrix%20II%2F</url>
     <content type="text"><![CDATA[题目描述编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性： 每行的元素从左到右升序排列。 每列的元素从上到下升序排列。 示例现有矩阵 matrix 如下： 1234567[ [1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]] 给定 target = 5，返回 true。 给定 target = 20，返回 false。 C++解决方法123456789101112131415class Solution &#123;public: bool searchMatrix(vector&lt;vector&lt;int&gt; &gt; &amp;matrix, int target) &#123; if (matrix.empty() || matrix[0].empty()) return false; if (target &lt; matrix[0][0] || target &gt; matrix.back().back()) return false; int x = matrix.size() - 1, y = 0; while (true) &#123; if (matrix[x][y] &gt; target) --x; else if (matrix[x][y] &lt; target) ++y; else return true; if (x &lt; 0 || y &gt;= matrix[0].size()) break; &#125; return false; &#125;&#125;; 结果英文版Runtime: 100 ms, faster than 30.93% of C++ online submissions for Search a 2D Matrix II. Memory Usage: 12.8 MB, less than 70.25% of C++ online submissions for Search a 2D Matrix II. 中文版执行用时 :128 ms, 在所有 C++ 提交中击败了41.29%的用户 内存消耗 :12.9 MB, 在所有 C++ 提交中击败了23.79%的用户]]></content>
@@ -1004,7 +1199,7 @@
   <entry>
     <title><![CDATA[LeetCode (163) Missing Ranges]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(163)%20Missing%20Ranges%2F</url>
-    <content type="text"><![CDATA[题目描述示例 1示例 2C++解决方法12 结果英文版中文版]]></content>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
       <categories>
         <category>语言</category>
       </categories>
@@ -1082,7 +1277,7 @@
   <entry>
     <title><![CDATA[LeetCode (157) Read N Characters Given Read4]]></title>
     <url>%2Fzh-CN%2FLeetCode%20(157)%20Read%20N%20Characters%20Given%20Read4%2F</url>
-    <content type="text"><![CDATA[题目描述示例 1示例 2C++解决方法12 结果英文版中文版]]></content>
+    <content type="text"><![CDATA[题目描述示例 1示例 2示例 3C++解决方法12 结果英文版中文版]]></content>
       <categories>
         <category>语言</category>
       </categories>
