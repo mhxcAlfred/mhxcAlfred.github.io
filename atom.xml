@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcAlfred.com/"/>
-  <updated>2019-07-16T15:15:00.000Z</updated>
+  <updated>2019-07-18T15:15:00.000Z</updated>
   <id>https://blog.mhxcAlfred.com/</id>
   
   <author>
@@ -15,6 +15,162 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode (264) Ugly Number II</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(264)%20Ugly%20Number%20II/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (264) Ugly Number II/</id>
+    <published>2019-07-18T15:15:00.000Z</published>
+    <updated>2019-07-18T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>编写一个程序，找出第 <code>n</code> 个丑数。</p><p>丑数就是只包含质因数 <code>2, 3, 5</code> 的<strong>正整数</strong>。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> n = 10<br><strong>输出:</strong> 12<br><strong>解释:</strong> <code>1, 2, 3, 4, 5, 6, 8, 9, 10, 12</code> 是前 10 个丑数。</p><p><strong>说明: </strong> </p><ol><li><code>1</code> 是丑数。</li><li><code>n</code> <strong>不超过</strong> 1690。</li></ol><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">nthUglyNumber</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res(<span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">int</span> i2 = <span class="number">0</span>, i3 = <span class="number">0</span>, i5 = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (res.size() &lt; n) &#123;</span><br><span class="line">            <span class="keyword">int</span> m2 = res[i2] * <span class="number">2</span>, m3 = res[i3] * <span class="number">3</span>, m5 = res[i5] * <span class="number">5</span>;</span><br><span class="line">            <span class="keyword">int</span> mn = min(m2, min(m3, m5));</span><br><span class="line">            <span class="keyword">if</span> (mn == m2) ++i2;</span><br><span class="line">            <span class="keyword">if</span> (mn == m3) ++i3;</span><br><span class="line">            <span class="keyword">if</span> (mn == m5) ++i5;</span><br><span class="line">            res.push_back(mn);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res.back();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 8 ms, faster than 80.28% of C++ online submissions for Ugly Number II.</p><p>Memory Usage: 11.8 MB, less than 45.34% of C++ online submissions for Ugly Number II.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :24 ms, 在所有 C++ 提交中击败了31.23%的用户</p><p>内存消耗 :11.6 MB, 在所有 C++ 提交中击败了31.90%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      丑数 II、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (263) Ugly Number</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(263)%20Ugly%20Number/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (263) Ugly Number/</id>
+    <published>2019-07-18T09:15:00.000Z</published>
+    <updated>2019-07-18T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>编写一个程序判断给定的数是否为丑数。</p><p>丑数就是只包含质因数 <code>2, 3, 5</code> 的<strong>正整数</strong>。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> 6<br><strong>输出:</strong> true<br><strong>解释:</strong> 6 = 2 × 3</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> 8<br><strong>输出:</strong> true<br><strong>解释:</strong> 8 = 2 × 2 × 2</p><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><p><strong>输入:</strong> 14<br><strong>输出:</strong> false<br><strong>解释:</strong> <code>14</code> 不是丑数，因为它包含了另外一个质因数 <code>7</code>。</p><p><strong>说明:</strong></p><ol><li><code>1</code> 是丑数。</li><li>输入不会超过 32 位有符号整数的范围: </li></ol><p>$$<br>[−2^{31},  2^{31} − 1]<br>$$</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isUgly</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (num &lt;= <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">while</span> (num % <span class="number">2</span> == <span class="number">0</span>) num /= <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">while</span> (num % <span class="number">3</span> == <span class="number">0</span>) num /= <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">while</span> (num % <span class="number">5</span> == <span class="number">0</span>) num /= <span class="number">5</span>;</span><br><span class="line">        <span class="keyword">return</span> num == <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 69.18% of C++ online submissions for Ugly Number.</p><p>Memory Usage: 8 MB, less than 80.16% of C++ online submissions for Ugly Number.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :8 ms, 在所有 C++ 提交中击败了63.54%的用户</p><p>内存消耗 :8.1 MB, 在所有 C++ 提交中击败了20.00%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      丑数、简单
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (262) Trips and Users</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(262)%20Trips%20and%20Users/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (262) Trips and Users/</id>
+    <published>2019-07-18T03:15:00.000Z</published>
+    <updated>2019-07-18T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>SQL架构</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">Create table If Not Exists Trips (Id int, Client_Id int, Driver_Id int, City_Id int, Status ENUM(&apos;completed&apos;, &apos;cancelled_by_driver&apos;, &apos;cancelled_by_client&apos;), Request_at varchar(50))</span><br><span class="line">Create table If Not Exists Users (Users_Id int, Banned varchar(50), Role ENUM(&apos;client&apos;, &apos;driver&apos;, &apos;partner&apos;))</span><br><span class="line">Truncate table Trips</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;1&apos;, &apos;1&apos;, &apos;10&apos;, &apos;1&apos;, &apos;completed&apos;, &apos;2013-10-01&apos;)</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;2&apos;, &apos;2&apos;, &apos;11&apos;, &apos;1&apos;, &apos;cancelled_by_driver&apos;, &apos;2013-10-01&apos;)</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;3&apos;, &apos;3&apos;, &apos;12&apos;, &apos;6&apos;, &apos;completed&apos;, &apos;2013-10-01&apos;)</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;4&apos;, &apos;4&apos;, &apos;13&apos;, &apos;6&apos;, &apos;cancelled_by_client&apos;, &apos;2013-10-01&apos;)</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;5&apos;, &apos;1&apos;, &apos;10&apos;, &apos;1&apos;, &apos;completed&apos;, &apos;2013-10-02&apos;)</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;6&apos;, &apos;2&apos;, &apos;11&apos;, &apos;6&apos;, &apos;completed&apos;, &apos;2013-10-02&apos;)</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;7&apos;, &apos;3&apos;, &apos;12&apos;, &apos;6&apos;, &apos;completed&apos;, &apos;2013-10-02&apos;)</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;8&apos;, &apos;2&apos;, &apos;12&apos;, &apos;12&apos;, &apos;completed&apos;, &apos;2013-10-03&apos;)</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;9&apos;, &apos;3&apos;, &apos;10&apos;, &apos;12&apos;, &apos;completed&apos;, &apos;2013-10-03&apos;)</span><br><span class="line">insert into Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) values (&apos;10&apos;, &apos;4&apos;, &apos;13&apos;, &apos;12&apos;, &apos;cancelled_by_driver&apos;, &apos;2013-10-03&apos;)</span><br><span class="line">Truncate table Users</span><br><span class="line">insert into Users (Users_Id, Banned, Role) values (&apos;1&apos;, &apos;No&apos;, &apos;client&apos;)</span><br><span class="line">insert into Users (Users_Id, Banned, Role) values (&apos;2&apos;, &apos;Yes&apos;, &apos;client&apos;)</span><br><span class="line">insert into Users (Users_Id, Banned, Role) values (&apos;3&apos;, &apos;No&apos;, &apos;client&apos;)</span><br><span class="line">insert into Users (Users_Id, Banned, Role) values (&apos;4&apos;, &apos;No&apos;, &apos;client&apos;)</span><br><span class="line">insert into Users (Users_Id, Banned, Role) values (&apos;10&apos;, &apos;No&apos;, &apos;driver&apos;)</span><br><span class="line">insert into Users (Users_Id, Banned, Role) values (&apos;11&apos;, &apos;No&apos;, &apos;driver&apos;)</span><br><span class="line">insert into Users (Users_Id, Banned, Role) values (&apos;12&apos;, &apos;No&apos;, &apos;driver&apos;)</span><br><span class="line">insert into Users (Users_Id, Banned, Role) values (&apos;13&apos;, &apos;No&apos;, &apos;driver&apos;)</span><br></pre></td></tr></table></figure><p><code>Trips</code> 表中存所有出租车的行程信息。每段行程有唯一键 Id，Client_Id 和 Driver_Id 是 Users 表中 Users_Id 的外键。Status 是枚举类型，枚举成员为 (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’)。</p><p>+—-+———–+———–+———+——————–+———-+<br>| Id | Client_Id| Driver_Id | City_Id |        Status      |Request_at|<br>+—-+———–+———–+———+——————–+———-+<br>| 1  |     1     |    10     |    1    |     completed      |2013-10-01|<br>| 2  |     2     |    11     |    1    | cancelled_by_driver|2013-10-01|<br>| 3  |     3     |    12     |    6    |     completed      |2013-10-01|<br>| 4  |     4     |    13     |    6    | cancelled_by_client|2013-10-01|<br>| 5  |     1     |    10     |    1    |     completed      |2013-10-02|<br>| 6  |     2     |    11     |    6    |     completed      |2013-10-02|<br>| 7  |     3     |    12     |    6    |     completed      |2013-10-02|<br>| 8  |     2     |    12     |    12   |     completed      |2013-10-03|<br>| 9  |     3     |    10     |    12   |     completed      |2013-10-03|<br>| 10 |     4     |    13     |    12   | cancelled_by_driver|2013-10-03|<br>+—-+———–+———–+———+——————–+———-+</p><p><code>Users</code> 表存所有用户。每个用户有唯一键 Users_Id。Banned 表示这个用户是否被禁止，Role 则是一个表示（‘client’, ‘driver’, ‘partner’）的枚举类型。</p><p>+———-+——–+——–+<br>| Users_Id | Banned |  Role  |<br>+———-+——–+——–+<br>|    1     |   No   | client |<br>|    2     |   Yes  | client |<br>|    3     |   No   | client |<br>|    4     |   No   | client |<br>|    10    |   No   | driver |<br>|    11    |   No   | driver |<br>|    12    |   No   | driver |<br>|    13    |   No   | driver |<br>+———-+——–+——–+</p><p>写一段 SQL 语句查出 <strong>2013年10月1日</strong> 至 <strong>2013年10月3日</strong> 期间非禁止用户的取消率。基于上表，你的 SQL 语句应返回如下结果，取消率（Cancellation Rate）保留两位小数。</p><p>+————+——————-+<br>|     Day    | Cancellation Rate |<br>+————+——————-+<br>| 2013-10-01 |       0.33        |<br>| 2013-10-02 |       0.00        |<br>| 2013-10-03 |       0.50        |<br>+————+——————-+</p><p><strong>致谢:</strong></p><p>非常感谢 <a href="https://leetcode.com/discuss/user/cak1erlizhou" target="_blank" rel="noopener">@cak1erlizhou</a> 详细的提供了这道题和相应的测试用例。</p><h1 id="MySQL-解决方法"><a href="#MySQL-解决方法" class="headerlink" title="MySQL 解决方法"></a>MySQL 解决方法</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Write your MySQL query statement below</span><br><span class="line">SELECT Request_at Day, ROUND(COUNT(IF(Status != &apos;completed&apos;, TRUE, NULL)) / COUNT(*), 2) &apos;Cancellation Rate&apos;</span><br><span class="line">FROM Trips WHERE (Request_at BETWEEN &apos;2013-10-01&apos; AND &apos;2013-10-03&apos;) AND Client_Id IN</span><br><span class="line">(SELECT Users_Id FROM Users WHERE Banned = &apos;No&apos;) GROUP BY Request_at;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 200 ms, faster than 85.63% of MySQL online submissions for Trips and Users.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :635 ms, 在所有 MySQL 提交中击败了23.95%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      行程和用户、困难
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="MySQL" scheme="https://blog.mhxcAlfred.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (261) Graph Valid Tree</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(261)%20Graph%20Valid%20Tree/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (261) Graph Valid Tree/</id>
+    <published>2019-07-17T15:15:00.000Z</published>
+    <updated>2019-07-17T15:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      以图判树、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (260) Single Number III</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(260)%20Single%20Number%20III/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (260) Single Number III/</id>
+    <published>2019-07-17T09:15:00.000Z</published>
+    <updated>2019-07-17T09:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个整数数组 <code>nums</code>，其中恰好有两个元素只出现一次，其余所有元素均出现两次。 找出只出现一次的那两个元素。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> <code>[1,2,1,3,2,5]</code><br><strong>输出:</strong> <code>[3,5]</code></p><p><strong>注意:</strong></p><ol><li>结果输出的顺序并不重要，对于上面的例子， <code>[5, 3]</code> 也是正确答案。</li><li>你的算法应该具有线性时间复杂度。你能否仅使用常数空间复杂度来实现？</li></ol><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; singleNumber(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums) &#123;</span><br><span class="line">        <span class="keyword">int</span> diff = accumulate(nums.begin(), nums.end(), <span class="number">0</span>, bit_xor&lt;<span class="keyword">int</span>&gt;());</span><br><span class="line">        diff &amp;= -diff;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res(<span class="number">2</span>, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span> &amp;a : nums) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a &amp; diff) res[<span class="number">0</span>] ^= a;</span><br><span class="line">            <span class="keyword">else</span> res[<span class="number">1</span>] ^= a;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 16 ms, faster than 69.30% of C++ online submissions for Single Number III.</p><p>Memory Usage: 9.8 MB, less than 53.28% of C++ online submissions for Single Number III.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :16 ms, 在所有 C++ 提交中击败了85.85%的用户</p><p>内存消耗 :9.8 MB, 在所有 C++ 提交中击败了54.30%的用户</p>]]></content>
+    
+    <summary type="html">
+    
+      只出现一次的数字 III、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode (259) 3Sum Smaller</title>
+    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(259)%203Sum%20Smaller/"/>
+    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (259) 3Sum Smaller/</id>
+    <published>2019-07-17T03:15:00.000Z</published>
+    <updated>2019-07-17T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+    
+    <summary type="html">
+    
+      较小的三数之和、中等
+    
+    </summary>
+    
+      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
+    
+      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode (258) Add Digits</title>
@@ -366,162 +522,6 @@
     <summary type="html">
     
       最短单词距离 III、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (244) Shortest Word Distance II</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(244)%20Shortest%20Word%20Distance%20II/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (244) Shortest Word Distance II/</id>
-    <published>2019-07-12T03:15:00.000Z</published>
-    <updated>2019-07-12T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
-    
-    <summary type="html">
-    
-      最短单词距离 II、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (243) Shortest Word Distance</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(243)%20Shortest%20Word%20Distance/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (243) Shortest Word Distance/</id>
-    <published>2019-07-11T15:15:00.000Z</published>
-    <updated>2019-07-11T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
-    
-    <summary type="html">
-    
-      最短单词距离、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (242) Valid Anagram</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(242)%20Valid%20Anagram/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (242) Valid Anagram/</id>
-    <published>2019-07-11T09:15:00.000Z</published>
-    <updated>2019-07-11T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> s = “anagram”, t = “nagaram”<br><strong>输出:</strong> true</p><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> s = “rat”, t = “car”<br><strong>输出:</strong> false</p><p><strong>说明:</strong></p><p>你可以假设字符串只包含小写字母。</p><p><strong>进阶:</strong></p><p>如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isAnagram</span><span class="params">(<span class="built_in">string</span> s, <span class="built_in">string</span> t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (s.size() != t.size()) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">int</span> m[<span class="number">26</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.size(); ++i) ++m[s[i] - <span class="string">'a'</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; t.size(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (--m[t[i] - <span class="string">'a'</span>] &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 8 ms, faster than 98.27% of C++ online submissions for Valid Anagram.</p><p>Memory Usage: 9.6 MB, less than 31.91% of C++ online submissions for Valid Anagram.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :20 ms, 在所有 C++ 提交中击败了60.34%的用户</p><p>内存消耗 :9.4 MB, 在所有 C++ 提交中击败了14.08%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      有效的字母异位词、简单
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (241) Different Ways to Add Parentheses</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(241)%20Different%20Ways%20to%20Add%20Parentheses/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (241) Different Ways to Add Parentheses/</id>
-    <published>2019-07-11T03:15:00.000Z</published>
-    <updated>2019-07-11T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个含有数字和运算符的字符串，为表达式添加括号，改变其运算优先级以求出不同的结果。你需要给出所有可能的组合的结果。有效的运算符号包含 <code>+</code>, <code>-</code> 以及 <code>*</code> 。</p><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> <code>&quot;2-1-1&quot;</code><br><strong>输出:</strong> <code>[0, 2]</code><br><strong>解释:</strong> </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">((2-1)-1) = 0 </span><br><span class="line">(2-(1-1)) = 2</span><br></pre></td></tr></table></figure><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> <code>&quot;2*3-4*5&quot;</code><br><strong>输出:</strong> <code>[-34, -14, -10, -10, 10]</code><br><strong>解释:</strong> </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(2*(3-(4*5))) = -34 </span><br><span class="line">((2*3)-(4*5)) = -14 </span><br><span class="line">((2*(3-4))*5) = -10 </span><br><span class="line">(2*((3-4)*5)) = -10 </span><br><span class="line">(((2*3)-4)*5) = 10</span><br></pre></td></tr></table></figure><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; diffWaysToCompute(<span class="built_in">string</span> input) &#123;</span><br><span class="line">        <span class="keyword">if</span> (input.empty()) <span class="keyword">return</span> &#123;&#125;;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; ops;</span><br><span class="line">        <span class="keyword">int</span> n = input.size();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="keyword">int</span> j = i;</span><br><span class="line">            <span class="keyword">while</span> (j &lt; n &amp;&amp; <span class="built_in">isdigit</span>(input[j])) ++j;</span><br><span class="line">            ops.push_back(input.substr(i, j - i));</span><br><span class="line">            <span class="keyword">if</span> (j &lt; n) ops.push_back(input.substr(j, <span class="number">1</span>));</span><br><span class="line">            i = j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> cnt = (ops.size() + <span class="number">1</span>) / <span class="number">2</span>;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt;&gt; dp(cnt, <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt;(cnt, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;()));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cnt; ++i) dp[i][i].push_back(stoi(ops[i * <span class="number">2</span>]));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> len = <span class="number">0</span>; len &lt; cnt; ++len) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cnt - len; ++i) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; i + len; ++j) &#123;</span><br><span class="line">                    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; left = dp[i][j], right = dp[j + <span class="number">1</span>][i + len];</span><br><span class="line">                    <span class="built_in">string</span> op = ops[j * <span class="number">2</span> + <span class="number">1</span>];</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> num1 : left) &#123;</span><br><span class="line">                        <span class="keyword">for</span> (<span class="keyword">int</span> num2 : right) &#123;</span><br><span class="line">                            <span class="keyword">if</span> (op == <span class="string">"+"</span>) dp[i][i + len].push_back(num1 + num2);</span><br><span class="line">                            <span class="keyword">else</span> <span class="keyword">if</span> (op == <span class="string">"-"</span>) dp[i][i + len].push_back(num1 - num2);</span><br><span class="line">                            <span class="keyword">else</span> dp[i][i + len].push_back(num1 * num2);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[<span class="number">0</span>][cnt - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 0 ms, faster than 100.00% of C++ online submissions for Different Ways to Add Parentheses.</p><p>Memory Usage: 8.8 MB, less than 97.46% of C++ online submissions for Different Ways to Add Parentheses.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :4 ms, 在所有 C++ 提交中击败了96.52%的用户</p><p>内存消耗 :8.6 MB, 在所有 C++ 提交中击败了100.00%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      为运算表达式设计优先级、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (240) Search a 2D Matrix II</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(240)%20Search%20a%202D%20Matrix%20II/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (240) Search a 2D Matrix II/</id>
-    <published>2019-07-10T15:15:00.000Z</published>
-    <updated>2019-07-10T15:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性：</p><ul><li>每行的元素从左到右升序排列。</li><li>每列的元素从上到下升序排列。</li></ul><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>现有矩阵 matrix 如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  [1,   4,  7, 11, 15],</span><br><span class="line">  [2,   5,  8, 12, 19],</span><br><span class="line">  [3,   6,  9, 16, 22],</span><br><span class="line">  [10, 13, 14, 17, 24],</span><br><span class="line">  [18, 21, 23, 26, 30]</span><br><span class="line">]</span><br></pre></td></tr></table></figure><p>给定 target = 5，返回 true。</p><p>给定 target = 20，返回 false。</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">searchMatrix</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &gt; &amp;matrix, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (matrix.empty() || matrix[<span class="number">0</span>].empty()) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">if</span> (target &lt; matrix[<span class="number">0</span>][<span class="number">0</span>] || target &gt; matrix.back().back()) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">int</span> x = matrix.size() - <span class="number">1</span>, y = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (matrix[x][y] &gt; target) --x;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (matrix[x][y] &lt; target) ++y;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">if</span> (x &lt; <span class="number">0</span> || y &gt;= matrix[<span class="number">0</span>].size()) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 100 ms, faster than 30.93% of C++ online submissions for Search a 2D Matrix II.</p><p>Memory Usage: 12.8 MB, less than 70.25% of C++ online submissions for Search a 2D Matrix II.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :128 ms, 在所有 C++ 提交中击败了41.29%的用户</p><p>内存消耗 :12.9 MB, 在所有 C++ 提交中击败了23.79%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      搜索二维矩阵 II、中等
-    
-    </summary>
-    
-      <category term="语言" scheme="https://blog.mhxcAlfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="算法" scheme="https://blog.mhxcAlfred.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="LeetCode" scheme="https://blog.mhxcAlfred.com/tags/LeetCode/"/>
-    
-      <category term="C++" scheme="https://blog.mhxcAlfred.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode (239) Sliding Window Maximum</title>
-    <link href="https://blog.mhxcAlfred.com/zh-CN/LeetCode%20(239)%20Sliding%20Window%20Maximum/"/>
-    <id>https://blog.mhxcAlfred.com/zh-CN/LeetCode (239) Sliding Window Maximum/</id>
-    <published>2019-07-10T09:15:00.000Z</published>
-    <updated>2019-07-10T09:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口 k 内的数字。滑动窗口每次只向右移动一位。</p><p>返回滑动窗口最大值。</p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> nums = [1,3,-1,-3,5,3,6,7], 和 k = 3<br><strong>输出:</strong> [3,3,5,5,6,7]<br><strong>解释:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> 滑动窗口的位置                最大值</span><br><span class="line">---------------               -----</span><br><span class="line">[1  3  -1] -3  5  3  6  7       3</span><br><span class="line"> 1 [3  -1  -3] 5  3  6  7       3</span><br><span class="line"> 1  3 [-1  -3  5] 3  6  7       5</span><br><span class="line"> 1  3  -1 [-3  5  3] 6  7       5</span><br><span class="line"> 1  3  -1  -3 [5  3  6] 7       6</span><br><span class="line"> 1  3  -1  -3  5 [3  6  7]      7</span><br></pre></td></tr></table></figure><p><strong>注意:</strong></p><p>你可以假设 k 总是有效的，1 ≤ k ≤ 输入数组的大小，且输入数组不为空。</p><p><strong>进阶:</strong></p><p>你能在线性时间复杂度内解决此题吗？</p><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; maxSlidingWindow(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="built_in">deque</span>&lt;<span class="keyword">int</span>&gt; q;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.size(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!q.empty() &amp;&amp; q.front() == i - k) q.pop_front();</span><br><span class="line">            <span class="keyword">while</span> (!q.empty() &amp;&amp; nums[q.back()] &lt; nums[i]) q.pop_back();</span><br><span class="line">            q.push_back(i);</span><br><span class="line">            <span class="keyword">if</span> (i &gt;= k - <span class="number">1</span>) res.push_back(nums[q.front()]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 56 ms, faster than 88.57% of C++ online submissions for Sliding Window Maximum.</p><p>Memory Usage: 13 MB, less than 73.58% of C++ online submissions for Sliding Window Maximum.</p><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :76 ms, 在所有 C++ 提交中击败了94.25%的用户</p><p>内存消耗 :13.1 MB, 在所有 C++ 提交中击败了58.15%的用户</p>]]></content>
-    
-    <summary type="html">
-    
-      滑动窗口最大值、困难
     
     </summary>
     
