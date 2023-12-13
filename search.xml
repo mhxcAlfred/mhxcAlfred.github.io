@@ -1048,28 +1048,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LeetCode (131) Palindrome Partitioning</title>
-    <url>/c8001ba02a2e/</url>
-    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。</p>
-<p>返回 s 所有可能的分割方案。</p>
-<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> “aab”<br><strong>输出:</strong><br>[<br>  [“aa”,”b”],<br>  [“a”,”a”,”b”]<br>]</p>
-<h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;string&gt;&gt; <span class="built_in">partition</span>(string s) &#123;</span><br><span class="line">        <span class="type">int</span> n = s.<span class="built_in">size</span>();</span><br><span class="line">        vector&lt;vector&lt;string&gt;&gt; res;</span><br><span class="line">        vector&lt;string&gt; out;</span><br><span class="line">        vector&lt;vector&lt;<span class="type">bool</span>&gt;&gt; <span class="built_in">dp</span>(n, <span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;(n));</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt;= i; ++j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (s[i] == s[j] &amp;&amp; (i - j &lt;= <span class="number">2</span> || dp[j + <span class="number">1</span>][i - <span class="number">1</span>])) &#123;</span><br><span class="line">                    dp[j][i] = <span class="literal">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">helper</span>(s, <span class="number">0</span>, dp, out, res);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">helper</span><span class="params">(string s, <span class="type">int</span> start, vector&lt;vector&lt;<span class="type">bool</span>&gt;&gt;&amp; dp, vector&lt;string&gt;&amp; out, vector&lt;vector&lt;string&gt;&gt;&amp; res)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (start == s.<span class="built_in">size</span>()) &#123; res.<span class="built_in">push_back</span>(out); <span class="keyword">return</span>; &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = start; i &lt; s.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!dp[start][i]) <span class="keyword">continue</span>;</span><br><span class="line">            out.<span class="built_in">push_back</span>(s.<span class="built_in">substr</span>(start, i - start + <span class="number">1</span>));</span><br><span class="line">            <span class="built_in">helper</span>(s, i + <span class="number">1</span>, dp, out, res);</span><br><span class="line">            out.<span class="built_in">pop_back</span>();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 24 ms, faster than 70.14% of C++ online submissions for Palindrome Partitioning.</p>
-<p>Memory Usage: 13.9 MB, less than 71.84% of C++ online submissions for Palindrome Partitioning.</p>
-<h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 : 32 ms, 在Palindrome Partitioning的C++提交中击败了88.44% 的用户</p>
-<p>内存消耗 : 13.7 MB, 在Palindrome Partitioning的C++提交中击败了84.77% 的用户</p>
-]]></content>
-      <categories>
-        <category>语言</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>LeetCode</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LeetCode (130) Surrounded Regions</title>
     <url>/53cf3c1b5bbf/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个二维的矩阵，包含 <code>&#39;X&#39;</code> 和 <code>&#39;O&#39;</code>（<strong>字母 O</strong>）。</p>
@@ -1085,6 +1063,28 @@
 <p>Memory Usage: 14.3 MB, less than 63.96% of C++ online submissions for Surrounded Regions.</p>
 <h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 : 64 ms, 在Surrounded Regions的C++提交中击败了43.53% 的用户</p>
 <p>内存消耗 : 14.1 MB, 在Surrounded Regions的C++提交中击败了82.24% 的用户</p>
+]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode (131) Palindrome Partitioning</title>
+    <url>/c8001ba02a2e/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。</p>
+<p>返回 s 所有可能的分割方案。</p>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> “aab”<br><strong>输出:</strong><br>[<br>  [“aa”,”b”],<br>  [“a”,”a”,”b”]<br>]</p>
+<h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;string&gt;&gt; <span class="built_in">partition</span>(string s) &#123;</span><br><span class="line">        <span class="type">int</span> n = s.<span class="built_in">size</span>();</span><br><span class="line">        vector&lt;vector&lt;string&gt;&gt; res;</span><br><span class="line">        vector&lt;string&gt; out;</span><br><span class="line">        vector&lt;vector&lt;<span class="type">bool</span>&gt;&gt; <span class="built_in">dp</span>(n, <span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;(n));</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt;= i; ++j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (s[i] == s[j] &amp;&amp; (i - j &lt;= <span class="number">2</span> || dp[j + <span class="number">1</span>][i - <span class="number">1</span>])) &#123;</span><br><span class="line">                    dp[j][i] = <span class="literal">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">helper</span>(s, <span class="number">0</span>, dp, out, res);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">helper</span><span class="params">(string s, <span class="type">int</span> start, vector&lt;vector&lt;<span class="type">bool</span>&gt;&gt;&amp; dp, vector&lt;string&gt;&amp; out, vector&lt;vector&lt;string&gt;&gt;&amp; res)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (start == s.<span class="built_in">size</span>()) &#123; res.<span class="built_in">push_back</span>(out); <span class="keyword">return</span>; &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = start; i &lt; s.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!dp[start][i]) <span class="keyword">continue</span>;</span><br><span class="line">            out.<span class="built_in">push_back</span>(s.<span class="built_in">substr</span>(start, i - start + <span class="number">1</span>));</span><br><span class="line">            <span class="built_in">helper</span>(s, i + <span class="number">1</span>, dp, out, res);</span><br><span class="line">            out.<span class="built_in">pop_back</span>();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 24 ms, faster than 70.14% of C++ online submissions for Palindrome Partitioning.</p>
+<p>Memory Usage: 13.9 MB, less than 71.84% of C++ online submissions for Palindrome Partitioning.</p>
+<h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 : 32 ms, 在Palindrome Partitioning的C++提交中击败了88.44% 的用户</p>
+<p>内存消耗 : 13.7 MB, 在Palindrome Partitioning的C++提交中击败了84.77% 的用户</p>
 ]]></content>
       <categories>
         <category>语言</category>
@@ -1538,28 +1538,6 @@
 <p>Memory Usage: 9.6 MB, less than 37.30% of C++ online submissions for Insertion Sort List.</p>
 <h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :64 ms, 在所有C++提交中击败了63.50%的用户</p>
 <p>内存消耗 :9.7 MB, 在所有C++提交中击败了12.05%的用户</p>
-]]></content>
-      <categories>
-        <category>语言</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>LeetCode</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode (148) Sort List</title>
-    <url>/0c861174ee8e/</url>
-    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>在 <strong>O(n log n)</strong> 时间复杂度和常数级空间复杂度下，对链表进行排序。</p>
-<h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> 4-&gt;2-&gt;1-&gt;3<br><strong>输出:</strong> 1-&gt;2-&gt;3-&gt;4</p>
-<h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> -1-&gt;5-&gt;3-&gt;4-&gt;0<br><strong>输出:</strong> -1-&gt;0-&gt;3-&gt;4-&gt;5</p>
-<h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">sortList</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!head || !head-&gt;next) <span class="keyword">return</span> head;</span><br><span class="line">        ListNode *slow = head, *fast = head, *pre = head;</span><br><span class="line">        <span class="keyword">while</span> (fast &amp;&amp; fast-&gt;next) &#123;</span><br><span class="line">            pre = slow;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            fast = fast-&gt;next-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        pre-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">merge</span>(<span class="built_in">sortList</span>(head), <span class="built_in">sortList</span>(slow));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">ListNode* <span class="title">merge</span><span class="params">(ListNode* l1, ListNode* l2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!l1) <span class="keyword">return</span> l2;</span><br><span class="line">        <span class="keyword">if</span> (!l2) <span class="keyword">return</span> l1;</span><br><span class="line">        <span class="keyword">if</span> (l1-&gt;val &lt; l2-&gt;val) &#123;</span><br><span class="line">            l1-&gt;next = <span class="built_in">merge</span>(l1-&gt;next, l2);</span><br><span class="line">            <span class="keyword">return</span> l1;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            l2-&gt;next = <span class="built_in">merge</span>(l1, l2-&gt;next);</span><br><span class="line">            <span class="keyword">return</span> l2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 44 ms, faster than 93.47% of C++ online submissions for Sort List.</p>
-<p>Memory Usage: 12.9 MB, less than 43.67% of C++ online submissions for Sort List.</p>
-<h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :64 ms, 在所有C++提交中击败了95.17%的用户</p>
-<p>内存消耗 :12.9 MB, 在所有C++提交中击败了45.63%的用户</p>
 ]]></content>
       <categories>
         <category>语言</category>
@@ -2463,9 +2441,9 @@
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Create</span> <span class="keyword">table</span> If <span class="keyword">Not</span> <span class="keyword">Exists</span> Person (Id <span class="type">int</span>, Email <span class="type">varchar</span>(<span class="number">255</span>))</span><br><span class="line"><span class="keyword">Truncate</span> <span class="keyword">table</span> Person</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> Person (Id, Email) <span class="keyword">values</span> (<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;a@b.com&#x27;</span>)</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> Person (Id, Email) <span class="keyword">values</span> (<span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;c@d.com&#x27;</span>)</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> Person (Id, Email) <span class="keyword">values</span> (<span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;a@b.com&#x27;</span>)</span><br></pre></td></tr></table></figure>
 
 <p>编写一个 SQL 查询，查找 <code>Person</code> 表中所有重复的电子邮箱。</p>
-<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>+—-+———+<br>| Id | Email   |<br>+—-+———+<br>| 1  | <a href="mailto:&#x61;&#64;&#x62;&#x2e;&#99;&#111;&#109;">&#x61;&#64;&#x62;&#x2e;&#99;&#111;&#109;</a> |<br>| 2  | <a href="mailto:&#99;&#64;&#x64;&#46;&#99;&#111;&#109;">&#99;&#64;&#x64;&#46;&#99;&#111;&#109;</a> |<br>| 3  | <a href="mailto:&#97;&#64;&#x62;&#x2e;&#99;&#111;&#109;">&#97;&#64;&#x62;&#x2e;&#99;&#111;&#109;</a> |<br>+—-+———+</p>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>+—-+———+<br>| Id | Email   |<br>+—-+———+<br>| 1  | <a href="mailto:&#97;&#x40;&#98;&#x2e;&#x63;&#x6f;&#x6d;">&#97;&#x40;&#98;&#x2e;&#x63;&#x6f;&#x6d;</a> |<br>| 2  | <a href="mailto:&#x63;&#64;&#x64;&#x2e;&#x63;&#111;&#109;">&#x63;&#64;&#x64;&#x2e;&#x63;&#111;&#109;</a> |<br>| 3  | <a href="mailto:&#x61;&#x40;&#98;&#46;&#99;&#111;&#109;">&#x61;&#x40;&#98;&#46;&#99;&#111;&#109;</a> |<br>+—-+———+</p>
 <p>根据以上输入，你的查询应返回以下结果：</p>
-<p>+———+<br>| Email   |<br>+———+<br>| <a href="mailto:&#x61;&#64;&#x62;&#46;&#99;&#111;&#109;">&#x61;&#64;&#x62;&#46;&#99;&#111;&#109;</a> |<br>+———+</p>
+<p>+———+<br>| Email   |<br>+———+<br>| <a href="mailto:&#97;&#x40;&#98;&#x2e;&#99;&#111;&#x6d;">&#97;&#x40;&#98;&#x2e;&#99;&#111;&#x6d;</a> |<br>+———+</p>
 <p><strong>说明:</strong> 所有电子邮箱都是小写字母。</p>
 <h1 id="MySQL-解决方法"><a href="#MySQL-解决方法" class="headerlink" title="MySQL 解决方法"></a>MySQL 解决方法</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Write your MySQL query statement below</span><br><span class="line">SELECT DISTINCT p1.Email FROM Person p1</span><br><span class="line">JOIN Person p2 ON p1.Email = p2.Email</span><br><span class="line">WHERE p1.Id &lt;&gt; p2.Id;</span><br></pre></td></tr></table></figure>
 
@@ -2852,9 +2830,9 @@
     <title>LeetCode (196) Delete Duplicate Emails</title>
     <url>/437b00288b55/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>编写一个 SQL 查询，来删除 <code>Person</code> 表中所有重复的电子邮箱，重复的邮箱里只保留 **Id ** 最小 的那个。</p>
-<p>+—-+——————+<br>| Id | Email            |<br>+—-+——————+<br>| 1  | <a href="mailto:&#106;&#111;&#x68;&#x6e;&#x40;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;">&#106;&#111;&#x68;&#x6e;&#x40;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;</a> |<br>| 2  | <a href="mailto:&#x62;&#x6f;&#98;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#x62;&#x6f;&#98;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a>  |<br>| 3  | <a href="mailto:&#x6a;&#111;&#x68;&#110;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#46;&#x63;&#x6f;&#109;">&#x6a;&#111;&#x68;&#110;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#46;&#x63;&#x6f;&#109;</a> |<br>+—-+——————+<br>Id 是这个表的主键。</p>
+<p>+—-+——————+<br>| Id | Email            |<br>+—-+——————+<br>| 1  | <a href="mailto:&#x6a;&#111;&#104;&#x6e;&#64;&#101;&#x78;&#97;&#x6d;&#x70;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x6a;&#111;&#104;&#x6e;&#64;&#101;&#x78;&#97;&#x6d;&#x70;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;</a> |<br>| 2  | <a href="mailto:&#x62;&#111;&#x62;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;">&#x62;&#111;&#x62;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;</a>  |<br>| 3  | <a href="mailto:&#x6a;&#111;&#104;&#x6e;&#x40;&#x65;&#x78;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#99;&#x6f;&#109;">&#x6a;&#111;&#104;&#x6e;&#x40;&#x65;&#x78;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#99;&#x6f;&#109;</a> |<br>+—-+——————+<br>Id 是这个表的主键。</p>
 <h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>例如，在运行你的查询语句之后，上面的 <code>Person</code> 表应返回以下几行:</p>
-<p>+—-+——————+<br>| Id | Email            |<br>+—-+——————+<br>| 1  | <a href="mailto:&#x6a;&#x6f;&#x68;&#110;&#x40;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;">&#x6a;&#x6f;&#x68;&#110;&#x40;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;</a> |<br>| 2  | <a href="mailto:&#x62;&#111;&#x62;&#x40;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;">&#x62;&#111;&#x62;&#x40;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;</a>  |<br>+—-+——————+</p>
+<p>+—-+——————+<br>| Id | Email            |<br>+—-+——————+<br>| 1  | <a href="mailto:&#x6a;&#x6f;&#104;&#x6e;&#x40;&#101;&#120;&#97;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#x6a;&#x6f;&#104;&#x6e;&#x40;&#101;&#120;&#97;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;</a> |<br>| 2  | <a href="mailto:&#x62;&#111;&#x62;&#x40;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;">&#x62;&#111;&#x62;&#x40;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;</a>  |<br>+—-+——————+</p>
 <h1 id="MySQL-解决方法"><a href="#MySQL-解决方法" class="headerlink" title="MySQL 解决方法"></a>MySQL 解决方法</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Write your MySQL query statement below</span><br><span class="line">DELETE FROM Person WHERE Id NOT IN</span><br><span class="line">(SELECT Id FROM (SELECT MIN(Id) Id FROM Person GROUP BY Email) p);</span><br></pre></td></tr></table></figure>
 
 <h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 519 ms, faster than 99.71% of MySQL online submissions for Delete Duplicate Emails.</p>
@@ -4109,28 +4087,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LeetCode (24) Swap Nodes in Pairs</title>
-    <url>/b2614d81ccfe/</url>
-    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。</p>
-<p><strong>你不能只是单纯的改变节点内部的值</strong>，而是需要实际的进行节点交换。</p>
-<h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p>给定 <code>1-&gt;2-&gt;3-&gt;4</code>, 你应该返回 <code>2-&gt;1-&gt;4-&gt;3</code>.</p>
-<h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">swapPairs</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!head || !head-&gt;next) <span class="keyword">return</span> head;</span><br><span class="line">        ListNode *t = head-&gt;next;</span><br><span class="line">        head-&gt;next = <span class="built_in">swapPairs</span>(head-&gt;next-&gt;next);</span><br><span class="line">        t-&gt;next = head;</span><br><span class="line">        <span class="keyword">return</span> t;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 100.00% of C++ online submissions for Swap Nodes in Pairs.</p>
-<p>Memory Usage: 8.6 MB, less than 100.00% of C++ online submissions for Swap Nodes in Pairs.</p>
-<h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 : 12 ms, 在Swap Nodes in Pairs的C++提交中击败了11.76% 的用户</p>
-<p>内存消耗 : 8.8 MB, 在Swap Nodes in Pairs的C++提交中击败了0.68% 的用户</p>
-]]></content>
-      <categories>
-        <category>语言</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>LeetCode</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LeetCode (240) Search a 2D Matrix II</title>
     <url>/e24be00c29fa/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性：</p>
@@ -4149,6 +4105,28 @@
 <p>Memory Usage: 12.8 MB, less than 70.25% of C++ online submissions for Search a 2D Matrix II.</p>
 <h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :128 ms, 在所有 C++ 提交中击败了41.29%的用户</p>
 <p>内存消耗 :12.9 MB, 在所有 C++ 提交中击败了23.79%的用户</p>
+]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode (24) Swap Nodes in Pairs</title>
+    <url>/b2614d81ccfe/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。</p>
+<p><strong>你不能只是单纯的改变节点内部的值</strong>，而是需要实际的进行节点交换。</p>
+<h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p>给定 <code>1-&gt;2-&gt;3-&gt;4</code>, 你应该返回 <code>2-&gt;1-&gt;4-&gt;3</code>.</p>
+<h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">swapPairs</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!head || !head-&gt;next) <span class="keyword">return</span> head;</span><br><span class="line">        ListNode *t = head-&gt;next;</span><br><span class="line">        head-&gt;next = <span class="built_in">swapPairs</span>(head-&gt;next-&gt;next);</span><br><span class="line">        t-&gt;next = head;</span><br><span class="line">        <span class="keyword">return</span> t;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 4 ms, faster than 100.00% of C++ online submissions for Swap Nodes in Pairs.</p>
+<p>Memory Usage: 8.6 MB, less than 100.00% of C++ online submissions for Swap Nodes in Pairs.</p>
+<h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 : 12 ms, 在Swap Nodes in Pairs的C++提交中击败了11.76% 的用户</p>
+<p>内存消耗 : 8.8 MB, 在Swap Nodes in Pairs的C++提交中击败了0.68% 的用户</p>
 ]]></content>
       <categories>
         <category>语言</category>
@@ -4421,6 +4399,21 @@
       </tags>
   </entry>
   <entry>
+    <title>LeetCode (255) Verify Preorder Sequence in Binary Search Tree</title>
+    <url>/442377fa3041/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LeetCode (256) Paint House</title>
     <url>/06fcbf7f26bc/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
@@ -4549,6 +4542,21 @@
 <h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :16 ms, 在所有 C++ 提交中击败了85.85%的用户</p>
 <p>内存消耗 :9.8 MB, 在所有 C++ 提交中击败了54.30%的用户</p>
 ]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode (261) Graph Valid Tree</title>
+    <url>/afa606ad0c75/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
       <categories>
         <category>语言</category>
       </categories>
@@ -6103,27 +6111,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LeetCode (77) Combinations</title>
-    <url>/ee6e9a1b5c5a/</url>
-    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定两个整数 n 和 k，返回 1 … n 中所有可能的 k 个数的组合。</p>
-<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> n &#x3D; 4, k &#x3D; 2<br><strong>输出:</strong><br>[<br>  [2,4],<br>  [3,4],<br>  [2,3],<br>  [1,2],<br>  [1,3],<br>  [1,4],<br>]</p>
-<h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">combine</span>(<span class="type">int</span> n, <span class="type">int</span> k) &#123;</span><br><span class="line">        vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; res;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">out</span><span class="params">(k, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            ++out[i];</span><br><span class="line">            <span class="keyword">if</span> (out[i] &gt; n) --i;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (i == k - <span class="number">1</span>) res.<span class="built_in">push_back</span>(out);</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                ++i;</span><br><span class="line">                out[i] = out[i - <span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 72 ms, faster than 86.50% of C++ online submissions for Combinations.</p>
-<p>Memory Usage: 11.8 MB, less than 81.82% of C++ online submissions for Combinations.</p>
-<h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 : 196 ms, 在Combinations的C++提交中击败了44.65% 的用户</p>
-<p>内存消耗 : 11.8 MB, 在Combinations的C++提交中击败了75.47% 的用户</p>
-]]></content>
-      <categories>
-        <category>语言</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>LeetCode</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LeetCode (78) Subsets</title>
     <url>/78ec236069ff/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一组<strong>不含重复元素</strong>的整数数组 nums，返回该数组所有可能的子集（幂集）。</p>
@@ -6135,6 +6122,27 @@
 <p>Memory Usage: 9.1 MB, less than 76.42% of C++ online submissions for Subsets.</p>
 <h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 : 12 ms, 在Subsets的C++提交中击败了96.28% 的用户</p>
 <p>内存消耗 : 9.2 MB, 在Subsets的C++提交中击败了50.89% 的用户</p>
+]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode (77) Combinations</title>
+    <url>/ee6e9a1b5c5a/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定两个整数 n 和 k，返回 1 … n 中所有可能的 k 个数的组合。</p>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p><strong>输入:</strong> n &#x3D; 4, k &#x3D; 2<br><strong>输出:</strong><br>[<br>  [2,4],<br>  [3,4],<br>  [2,3],<br>  [1,2],<br>  [1,3],<br>  [1,4],<br>]</p>
+<h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">combine</span>(<span class="type">int</span> n, <span class="type">int</span> k) &#123;</span><br><span class="line">        vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; res;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">out</span><span class="params">(k, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            ++out[i];</span><br><span class="line">            <span class="keyword">if</span> (out[i] &gt; n) --i;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (i == k - <span class="number">1</span>) res.<span class="built_in">push_back</span>(out);</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                ++i;</span><br><span class="line">                out[i] = out[i - <span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 72 ms, faster than 86.50% of C++ online submissions for Combinations.</p>
+<p>Memory Usage: 11.8 MB, less than 81.82% of C++ online submissions for Combinations.</p>
+<h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 : 196 ms, 在Combinations的C++提交中击败了44.65% 的用户</p>
+<p>内存消耗 : 11.8 MB, 在Combinations的C++提交中击败了75.47% 的用户</p>
 ]]></content>
       <categories>
         <category>语言</category>
@@ -6196,6 +6204,28 @@
 <p>Memory Usage: 14.5 MB, less than 66.80% of C++ online submissions for String to Integer (atoi).</p>
 <h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 : 36 ms, 在String to Integer (atoi)的C++提交中击败了3.71% 的用户</p>
 <p>内存消耗 : 14.3 MB, 在String to Integer (atoi)的C++提交中击败了0.67% 的用户</p>
+]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode (148) Sort List</title>
+    <url>/0c861174ee8e/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>在 <strong>O(n log n)</strong> 时间复杂度和常数级空间复杂度下，对链表进行排序。</p>
+<h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><p><strong>输入:</strong> 4-&gt;2-&gt;1-&gt;3<br><strong>输出:</strong> 1-&gt;2-&gt;3-&gt;4</p>
+<h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><p><strong>输入:</strong> -1-&gt;5-&gt;3-&gt;4-&gt;0<br><strong>输出:</strong> -1-&gt;0-&gt;3-&gt;4-&gt;5</p>
+<h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">sortList</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!head || !head-&gt;next) <span class="keyword">return</span> head;</span><br><span class="line">        ListNode *slow = head, *fast = head, *pre = head;</span><br><span class="line">        <span class="keyword">while</span> (fast &amp;&amp; fast-&gt;next) &#123;</span><br><span class="line">            pre = slow;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            fast = fast-&gt;next-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        pre-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">merge</span>(<span class="built_in">sortList</span>(head), <span class="built_in">sortList</span>(slow));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">ListNode* <span class="title">merge</span><span class="params">(ListNode* l1, ListNode* l2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!l1) <span class="keyword">return</span> l2;</span><br><span class="line">        <span class="keyword">if</span> (!l2) <span class="keyword">return</span> l1;</span><br><span class="line">        <span class="keyword">if</span> (l1-&gt;val &lt; l2-&gt;val) &#123;</span><br><span class="line">            l1-&gt;next = <span class="built_in">merge</span>(l1-&gt;next, l2);</span><br><span class="line">            <span class="keyword">return</span> l1;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            l2-&gt;next = <span class="built_in">merge</span>(l1, l2-&gt;next);</span><br><span class="line">            <span class="keyword">return</span> l2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><p>Runtime: 44 ms, faster than 93.47% of C++ online submissions for Sort List.</p>
+<p>Memory Usage: 12.9 MB, less than 43.67% of C++ online submissions for Sort List.</p>
+<h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2><p>执行用时 :64 ms, 在所有C++提交中击败了95.17%的用户</p>
+<p>内存消耗 :12.9 MB, 在所有C++提交中击败了45.63%的用户</p>
 ]]></content>
       <categories>
         <category>语言</category>
@@ -6833,36 +6863,6 @@
       <tags>
         <tag>语法</tag>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode (255) Verify Preorder Sequence in Binary Search Tree</title>
-    <url>/442377fa3041/</url>
-    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
-      <categories>
-        <category>语言</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>LeetCode</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode (261) Graph Valid Tree</title>
-    <url>/afa606ad0c75/</url>
-    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><h1 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h1><h1 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h1><h1 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3"></a>示例 3</h1><h1 id="C-解决方法"><a href="#C-解决方法" class="headerlink" title="C++解决方法"></a>C++解决方法</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="英文版"><a href="#英文版" class="headerlink" title="英文版"></a>英文版</h2><h2 id="中文版"><a href="#中文版" class="headerlink" title="中文版"></a>中文版</h2>]]></content>
-      <categories>
-        <category>语言</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>LeetCode</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
 </search>
