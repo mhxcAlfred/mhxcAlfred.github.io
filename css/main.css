@@ -2272,11 +2272,13 @@ pre code {
   -webkit-box-shadow: 0 0 5px #000;
   -moz-box-shadow: 0 0 5px #000;
 }
-.category-all-page .category-list-item {
-  margin: 10px 10px;
-  padding: 10px;
-  -webkit-box-shadow: 0 0 5px #fff;
-  -moz-box-shadow: 0 0 5px #fff;
+@media (prefers-color-scheme: dark) {
+  .category-all-page .category-list-item {
+    margin: 10px 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0 0 5px #fff;
+    -moz-box-shadow: 0 0 5px #fff;
+  }
 }
 .category-all-page .category-list-count {
   color: #bbb;
@@ -2807,7 +2809,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #5b3dc9;
+  background: #ff8bff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
