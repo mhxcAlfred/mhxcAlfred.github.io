@@ -1769,29 +1769,31 @@ pre code {
 .use-motion .collection-header {
   visibility: hidden;
 }
-.use-motion .post-block {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 5px #fff;
-  -moz-box-shadow: 0 0 5px #fff;
-}
-.use-motion .pagination,
-.use-motion .comments {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 5px #fff;
-  -moz-box-shadow: 0 0 5px #fff;
-}
-.use-motion .post-header {
-  visibility: hidden;
-}
-.use-motion .post-body {
-  visibility: hidden;
-}
-.use-motion .collection-header {
-  visibility: hidden;
+@media (prefers-color-scheme: dark) {
+  .use-motion .post-block {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 25px;
+    -webkit-box-shadow: 0 0 5px #fff;
+    -moz-box-shadow: 0 0 5px #fff;
+  }
+  .use-motion .pagination,
+  .use-motion .comments {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 25px;
+    -webkit-box-shadow: 0 0 5px #fff;
+    -moz-box-shadow: 0 0 5px #fff;
+  }
+  .use-motion .post-header {
+    visibility: hidden;
+  }
+  .use-motion .post-body {
+    visibility: hidden;
+  }
+  .use-motion .collection-header {
+    visibility: hidden;
+  }
 }
 .posts-collapse .post-content {
   margin-bottom: 35px;
@@ -2678,7 +2680,7 @@ header.header {
   }
 }
 .post-block:first-of-type {
-  padding-top: 70px;
+  padding-top: 25px;
 }
 @media (max-width: 767px) {
   .post-block:first-of-type {
@@ -2805,7 +2807,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ffff2d;
+  background: #5b3dc9;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
