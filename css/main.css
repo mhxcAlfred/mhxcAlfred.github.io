@@ -1759,7 +1759,7 @@ pre code {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 700px;
+  width: 90%;
 }
 @media (max-width: 767px) {
   .footer-inner {
@@ -1768,12 +1768,12 @@ pre code {
 }
 @media (min-width: 1200px) {
   .footer-inner {
-    width: 800px;
+    width: 90%;
   }
 }
 @media (min-width: 1600px) {
   .footer-inner {
-    width: 900px;
+    width: 90%;
   }
 }
 .use-motion .footer {
@@ -2755,7 +2755,7 @@ mjx-container[display='true'] + br {
 }
 header.header {
   margin: 0 auto;
-  width: 700px;
+  width: 90%;
 }
 @media (max-width: 767px) {
   header.header {
@@ -2764,17 +2764,17 @@ header.header {
 }
 @media (min-width: 1200px) {
   header.header {
-    width: 800px;
+    width: 90%;
   }
 }
 @media (min-width: 1600px) {
   header.header {
-    width: 900px;
+    width: 90%;
   }
 }
 .main-inner {
   margin: 0 auto;
-  width: 700px;
+  width: 90%;
   padding-bottom: 60px;
 }
 @media (max-width: 767px) {
@@ -2784,12 +2784,12 @@ header.header {
 }
 @media (min-width: 1200px) {
   .main-inner {
-    width: 800px;
+    width: 90%;
   }
 }
 @media (min-width: 1600px) {
   .main-inner {
-    width: 900px;
+    width: 90%;
   }
 }
 @media (max-width: 767px) {
@@ -2926,7 +2926,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #4921b9;
+  background: #ff79a4;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
