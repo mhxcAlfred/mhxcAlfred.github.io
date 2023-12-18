@@ -1,105 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Markdown 扩展语法</title>
-    <url>/zh-CN/3efd35f36d1d/</url>
-    <content><![CDATA[<hr>
-<h1 id="总览"><a href="#总览" class="headerlink" title="总览"></a><center>总览</center></h1><blockquote>
-<p>即便 John Gruber 的原始设计文档中所列出的 Markdown 基本语法 已经囊括了许多满足日常所需的元素，但对于某些人来说仍然不够。这就是 Markdown 扩展语法出现的缘由。</p>
-</blockquote>
-<blockquote>
-<p>一些个人和组织通过添加表格（tables）、代码块（code blocks）、语法高亮、将 URL 自动转换为链接和脚注（footnotes）等额外的元素来扩展 Markdown 的基本语法。这些额外添加的元素可以通过使用构建于 Markdown 之上的轻量级标记语言或通过向兼容的 Markdown 解析器添加扩展来启用这些新元素。</p>
-</blockquote>
-<hr>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><blockquote>
-<p>如需添加表格，请使用三个或更多个连字符（ — ）来为每个列创建表头，并使用管道符（ | ）来分隔每个列。为兼容考虑，你还应该在行的两侧添加管道符。</p>
-</blockquote>
-<blockquote>
-<p>通过在标题行中的连字符（ hyphens ）的左侧或右侧或两侧添加冒号（ : ），可以将对应列中的文本向左或向右或居中对齐。</p>
-</blockquote>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p><code>|First Header | Second Header | Third Header|</code><br><code>|:----------- | :-----------: | -----------:|</code><br><code>|Content Cell | Content Cell  | Content Cell|</code><br><code>|Content Cell | Content Cell  | Content Cell|</code></p>
-<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><table>
-<thead>
-<tr>
-<th align="left">First Header</th>
-<th align="center">Second Header</th>
-<th align="right">Third Header</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Content Cell</td>
-<td align="center">Content Cell</td>
-<td align="right">Content Cell</td>
-</tr>
-<tr>
-<td align="left">Content Cell</td>
-<td align="center">Content Cell</td>
-<td align="right">Content Cell</td>
-</tr>
-</tbody></table>
-<h3 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h3><blockquote>
-<p>你可以为表格中的文本设置格式。例如，可以添加 链接（ links ）、代码（ code ）（注意，只能为单词或短语添加反引号 ( &#96; ) ，不能添加 代码块（ code blocks ））以及 强调（ emphasis ）。</p>
-</blockquote>
-<blockquote>
-<p>不支持的格式包括标题（ headings ）、块引用（ blockquotes ）、列表（ lists ）、水平分割线（ horizontal rules ）、图片（ images ）或 HTML 标记。</p>
-</blockquote>
-<hr>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><blockquote>
-<p>Markdown 的基本语法允许你通过缩进四个空格或一个制表符来创建 代码块 。如果你觉得不方便，可以试试围栏代码块（ fenced code blocks ）。根据 Markdown 解析器或编辑器的不同，代码块的前后可以使用三个反引号（ &#96;&#96;&#96; ）或三个波浪号（ ~~~ ）来标记围栏代码块。</p>
-</blockquote>
-<blockquote>
-<p>许多 Markdown 解析器都支持围栏代码块的语法高亮功能。此功能允许你为编写代码所用的编程语言添加带颜色的语法高亮显示。如需添加语法高亮，请在围栏代码块前的反引号旁指定所用的编程语言。</p>
-</blockquote>
-<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><p><code>~~~C</code><br><code>#include &lt;stdio.h&gt;</code><br><code>int main() &#123;</code><br><code>        // 打印 Hello, World!</code><br><code>        printf(&quot;Hello, World!\n&quot;);</code><br><code>        return 0;</code><br><code>&#125;</code><br><code>~~~</code>  </p>
-<h3 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 打印 Hello, World!</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello, World!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><blockquote>
-<p>你可以贯穿单词的中心放一条横线从而删除这些单词。其效果看起来是这样的： <del>这样</del> 。此功能允许你标记某些单词是错误的，不应该出现在文档中。在单词前面和后面分别放置两个波浪号（ ~~ ） 来表示删除这些单词。</p>
-</blockquote>
-<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h3><p><code>~~这是删除的文字~~</code></p>
-<h3 id="效果-2"><a href="#效果-2" class="headerlink" title="效果"></a>效果</h3><p><del>这是删除的文字</del></p>
-<hr>
-<h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><blockquote>
-<p>任务列表（task lists 或者 checklists）允许你创建带有复选框的项目列表。在支持任务列表的 Markdown 应用程序中，复选框将显示在内容旁边。要创建任务列表，请在任务列表项前面添加破折号（-）和中间带空格的方括号（[ ]）。要选中复选框，请在方括号中间添加一个 x ，即（[\x]）。</p>
-</blockquote>
-<h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h3><p><code>- [x] 复选1</code><br><code>- [x] 复选2</code><br><code>- [ ] 复选3</code></p>
-<h3 id="效果-3"><a href="#效果-3" class="headerlink" title="效果"></a>效果</h3><ul>
-<li><input checked="" disabled="" type="checkbox"> 复选1</li>
-<li><input checked="" disabled="" type="checkbox"> 复选2</li>
-<li><input disabled="" type="checkbox"> 复选3</li>
-</ul>
-<hr>
-<h2 id="表情符号"><a href="#表情符号" class="headerlink" title="表情符号"></a>表情符号</h2><blockquote>
-<p>有两种方式可以将表情符号添加到 Markdown 文档中：将表情符号复制并粘贴到 Markdown 格式的文本中。</p>
-</blockquote>
-<blockquote>
-<p>在大多数情况下，你可以简单地从 Emojipedia 等来源复制表情符号，然后将其粘贴到文档中。许多 Markdown 应用程序就会自动以 Markdown 格式的文本来显示表情符号。从 Markdown 应用程序导出的 HTML 和 PDF 文件也是可以显示表情符号的。</p>
-</blockquote>
-<h3 id="示例-4"><a href="#示例-4" class="headerlink" title="示例"></a>示例</h3><p><code>这是个表情: ❤️</code></p>
-<h3 id="效果-4"><a href="#效果-4" class="headerlink" title="效果"></a>效果</h3><p>这是个表情: ❤️</p>
-<hr>
-<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h3 id="示例-5"><a href="#示例-5" class="headerlink" title="示例"></a>示例</h3><p><code>$$</code><br><code>e=mc^2</code><br><code>$$</code></p>
-<p><code>$$</code><br><code>\frac&#123;\partial u&#125;&#123;\partial t&#125;</code><br><code>= h^2 \left( \frac&#123;\partial^2 u&#125;&#123;\partial x^2&#125; +</code><br><code>\frac&#123;\partial^2 u&#125;&#123;\partial y^2&#125; +</code><br><code>\frac&#123;\partial^2 u&#125;&#123;\partial z^2&#125;\right)</code><br><code>$$</code></p>
-<p><code>$$</code><br><code>cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta - 1</code><br><code>$$</code></p>
-<p><code>$$</code><br><code>\begin&#123;aligned&#125;</code><br><code>\dot&#123;x&#125; &amp; = \sigma(y-x) \\\\</code><br><code>\dot&#123;y&#125; &amp; = \rho x - y - xz \\\\</code><br><code>\dot&#123;z&#125; &amp; = -\beta z + xy</code><br><code>\end&#123;aligned&#125;</code><br><code>$$</code></p>
-<p><code>$$</code><br><code>\begin&#123;aligned&#125;</code><br><code>a &amp;= b + c \\\\</code><br><code>&amp;= d + e + f + g \\\\</code><br><code>&amp;= h + i</code><br><code>\end&#123;aligned&#125;</code><br><code>$$</code></p>
-<h3 id="效果-5"><a href="#效果-5" class="headerlink" title="效果"></a>效果</h3><p>$$<br>e&#x3D;mc^2<br>$$</p>
-<p>$$<br>\frac{\partial u}{\partial t}<br>&#x3D; h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)<br>$$</p>
-<p>$$<br>cos 2\theta &#x3D; \cos^2 \theta - \sin^2 \theta &#x3D; 2 \cos^2 \theta - 1<br>$$</p>
-<p>$$<br>\begin{aligned}<br>\dot{x} &amp; &#x3D; \sigma(y-x) \\<br>\dot{y} &amp; &#x3D; \rho x - y - xz \\<br>\dot{z} &amp; &#x3D; -\beta z + xy<br>\end{aligned}<br>$$</p>
-<p>$$<br>\begin{aligned}<br>a &amp;&#x3D; b + c \\<br>  &amp;&#x3D; d + e + f + g \\<br>  &amp;&#x3D; h + i<br>\end{aligned}<br>$$</p>
-<hr>
-]]></content>
-      <categories>
-        <category>语言</category>
-      </categories>
-      <tags>
-        <tag>语法</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 基本语法</title>
     <url>/zh-CN/d7084d3dfa3b/</url>
     <content><![CDATA[<hr>
@@ -303,6 +204,105 @@ int main() &#123;
 <h3 id="效果-7"><a href="#效果-7" class="headerlink" title="效果"></a>效果</h3><p><img src="/zh-CN/d7084d3dfa3b/201911190001.jpg" alt="测试"></p>
 <img src="/zh-CN/d7084d3dfa3b/201911190001.jpg" class="" title="测试">
 
+<hr>
+]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown 扩展语法</title>
+    <url>/zh-CN/3efd35f36d1d/</url>
+    <content><![CDATA[<hr>
+<h1 id="总览"><a href="#总览" class="headerlink" title="总览"></a><center>总览</center></h1><blockquote>
+<p>即便 John Gruber 的原始设计文档中所列出的 Markdown 基本语法 已经囊括了许多满足日常所需的元素，但对于某些人来说仍然不够。这就是 Markdown 扩展语法出现的缘由。</p>
+</blockquote>
+<blockquote>
+<p>一些个人和组织通过添加表格（tables）、代码块（code blocks）、语法高亮、将 URL 自动转换为链接和脚注（footnotes）等额外的元素来扩展 Markdown 的基本语法。这些额外添加的元素可以通过使用构建于 Markdown 之上的轻量级标记语言或通过向兼容的 Markdown 解析器添加扩展来启用这些新元素。</p>
+</blockquote>
+<hr>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><blockquote>
+<p>如需添加表格，请使用三个或更多个连字符（ — ）来为每个列创建表头，并使用管道符（ | ）来分隔每个列。为兼容考虑，你还应该在行的两侧添加管道符。</p>
+</blockquote>
+<blockquote>
+<p>通过在标题行中的连字符（ hyphens ）的左侧或右侧或两侧添加冒号（ : ），可以将对应列中的文本向左或向右或居中对齐。</p>
+</blockquote>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p><code>|First Header | Second Header | Third Header|</code><br><code>|:----------- | :-----------: | -----------:|</code><br><code>|Content Cell | Content Cell  | Content Cell|</code><br><code>|Content Cell | Content Cell  | Content Cell|</code></p>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><table>
+<thead>
+<tr>
+<th align="left">First Header</th>
+<th align="center">Second Header</th>
+<th align="right">Third Header</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Content Cell</td>
+<td align="center">Content Cell</td>
+<td align="right">Content Cell</td>
+</tr>
+<tr>
+<td align="left">Content Cell</td>
+<td align="center">Content Cell</td>
+<td align="right">Content Cell</td>
+</tr>
+</tbody></table>
+<h3 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h3><blockquote>
+<p>你可以为表格中的文本设置格式。例如，可以添加 链接（ links ）、代码（ code ）（注意，只能为单词或短语添加反引号 ( &#96; ) ，不能添加 代码块（ code blocks ））以及 强调（ emphasis ）。</p>
+</blockquote>
+<blockquote>
+<p>不支持的格式包括标题（ headings ）、块引用（ blockquotes ）、列表（ lists ）、水平分割线（ horizontal rules ）、图片（ images ）或 HTML 标记。</p>
+</blockquote>
+<hr>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><blockquote>
+<p>Markdown 的基本语法允许你通过缩进四个空格或一个制表符来创建 代码块 。如果你觉得不方便，可以试试围栏代码块（ fenced code blocks ）。根据 Markdown 解析器或编辑器的不同，代码块的前后可以使用三个反引号（ &#96;&#96;&#96; ）或三个波浪号（ ~~~ ）来标记围栏代码块。</p>
+</blockquote>
+<blockquote>
+<p>许多 Markdown 解析器都支持围栏代码块的语法高亮功能。此功能允许你为编写代码所用的编程语言添加带颜色的语法高亮显示。如需添加语法高亮，请在围栏代码块前的反引号旁指定所用的编程语言。</p>
+</blockquote>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><p><code>~~~C</code><br><code>#include &lt;stdio.h&gt;</code><br><code>int main() &#123;</code><br><code>        // 打印 Hello, World!</code><br><code>        printf(&quot;Hello, World!\n&quot;);</code><br><code>        return 0;</code><br><code>&#125;</code><br><code>~~~</code>  </p>
+<h3 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 打印 Hello, World!</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello, World!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><blockquote>
+<p>你可以贯穿单词的中心放一条横线从而删除这些单词。其效果看起来是这样的： <del>这样</del> 。此功能允许你标记某些单词是错误的，不应该出现在文档中。在单词前面和后面分别放置两个波浪号（ ~~ ） 来表示删除这些单词。</p>
+</blockquote>
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h3><p><code>~~这是删除的文字~~</code></p>
+<h3 id="效果-2"><a href="#效果-2" class="headerlink" title="效果"></a>效果</h3><p><del>这是删除的文字</del></p>
+<hr>
+<h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><blockquote>
+<p>任务列表（task lists 或者 checklists）允许你创建带有复选框的项目列表。在支持任务列表的 Markdown 应用程序中，复选框将显示在内容旁边。要创建任务列表，请在任务列表项前面添加破折号（-）和中间带空格的方括号（[ ]）。要选中复选框，请在方括号中间添加一个 x ，即（[\x]）。</p>
+</blockquote>
+<h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h3><p><code>- [x] 复选1</code><br><code>- [x] 复选2</code><br><code>- [ ] 复选3</code></p>
+<h3 id="效果-3"><a href="#效果-3" class="headerlink" title="效果"></a>效果</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> 复选1</li>
+<li><input checked="" disabled="" type="checkbox"> 复选2</li>
+<li><input disabled="" type="checkbox"> 复选3</li>
+</ul>
+<hr>
+<h2 id="表情符号"><a href="#表情符号" class="headerlink" title="表情符号"></a>表情符号</h2><blockquote>
+<p>有两种方式可以将表情符号添加到 Markdown 文档中：将表情符号复制并粘贴到 Markdown 格式的文本中。</p>
+</blockquote>
+<blockquote>
+<p>在大多数情况下，你可以简单地从 Emojipedia 等来源复制表情符号，然后将其粘贴到文档中。许多 Markdown 应用程序就会自动以 Markdown 格式的文本来显示表情符号。从 Markdown 应用程序导出的 HTML 和 PDF 文件也是可以显示表情符号的。</p>
+</blockquote>
+<h3 id="示例-4"><a href="#示例-4" class="headerlink" title="示例"></a>示例</h3><p><code>这是个表情: ❤️</code></p>
+<h3 id="效果-4"><a href="#效果-4" class="headerlink" title="效果"></a>效果</h3><p>这是个表情: ❤️</p>
+<hr>
+<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h3 id="示例-5"><a href="#示例-5" class="headerlink" title="示例"></a>示例</h3><p><code>$$</code><br><code>e=mc^2</code><br><code>$$</code></p>
+<p><code>$$</code><br><code>\frac&#123;\partial u&#125;&#123;\partial t&#125;</code><br><code>= h^2 \left( \frac&#123;\partial^2 u&#125;&#123;\partial x^2&#125; +</code><br><code>\frac&#123;\partial^2 u&#125;&#123;\partial y^2&#125; +</code><br><code>\frac&#123;\partial^2 u&#125;&#123;\partial z^2&#125;\right)</code><br><code>$$</code></p>
+<p><code>$$</code><br><code>cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta - 1</code><br><code>$$</code></p>
+<p><code>$$</code><br><code>\begin&#123;aligned&#125;</code><br><code>\dot&#123;x&#125; &amp; = \sigma(y-x) \\\\</code><br><code>\dot&#123;y&#125; &amp; = \rho x - y - xz \\\\</code><br><code>\dot&#123;z&#125; &amp; = -\beta z + xy</code><br><code>\end&#123;aligned&#125;</code><br><code>$$</code></p>
+<p><code>$$</code><br><code>\begin&#123;aligned&#125;</code><br><code>a &amp;= b + c \\\\</code><br><code>&amp;= d + e + f + g \\\\</code><br><code>&amp;= h + i</code><br><code>\end&#123;aligned&#125;</code><br><code>$$</code></p>
+<h3 id="效果-5"><a href="#效果-5" class="headerlink" title="效果"></a>效果</h3><p>$$<br>e&#x3D;mc^2<br>$$</p>
+<p>$$<br>\frac{\partial u}{\partial t}<br>&#x3D; h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)<br>$$</p>
+<p>$$<br>cos 2\theta &#x3D; \cos^2 \theta - \sin^2 \theta &#x3D; 2 \cos^2 \theta - 1<br>$$</p>
+<p>$$<br>\begin{aligned}<br>\dot{x} &amp; &#x3D; \sigma(y-x) \\<br>\dot{y} &amp; &#x3D; \rho x - y - xz \\<br>\dot{z} &amp; &#x3D; -\beta z + xy<br>\end{aligned}<br>$$</p>
+<p>$$<br>\begin{aligned}<br>a &amp;&#x3D; b + c \\<br>  &amp;&#x3D; d + e + f + g \\<br>  &amp;&#x3D; h + i<br>\end{aligned}<br>$$</p>
 <hr>
 ]]></content>
       <categories>
