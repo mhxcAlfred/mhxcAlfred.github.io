@@ -1,5 +1,6 @@
-https://blog.mhxcalfred.com/404/
+https://blog.mhxcalfred.com/404
 https://blog.mhxcalfred.com/about/
+https://blog.mhxcalfred.com/README
 https://blog.mhxcalfred.com/categories/
 https://blog.mhxcalfred.com/tags/
 https://blog.mhxcalfred.com/zh-CN/3efd35f36d1d/
