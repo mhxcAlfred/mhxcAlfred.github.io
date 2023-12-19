@@ -1,6 +1,6 @@
 (function() {
   /** 计时起始时间，自行修改 **/
-  var start = new Date("03/01/2019 11:15:00");
+  var start = new Date("2019-11-15 11:15:00");
 
   function update() {
     var now = new Date();
@@ -11,6 +11,10 @@
     var minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
     var hours = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
     var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+    hours = ("0" + hours).slice(-2);
+    minutes = ("0" + minutes).slice(-2);
+    seconds = ("0" + seconds).slice(-2);
     
     document.getElementById("timeDate").innerHTML = "本站已安全运行 " + days + " 天 ";
     document.getElementById("times").innerHTML = hours + " 小时 " + minutes + " 分 " + seconds + " 秒";

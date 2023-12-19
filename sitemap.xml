@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.mhxcalfred.com/404/</loc>
+    <loc>https://blog.mhxcalfred.com/anniversary/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.mhxcalfred.com/anniversary/</loc>
+    <loc>https://blog.mhxcalfred.com/404/</loc>
     
     <lastmod>2023-12-19</lastmod>
     
@@ -106,20 +106,6 @@
   </url>
   
   <url>
-    <loc>https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2023-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/%E7%94%9F%E6%97%A5/</loc>
-    <lastmod>2023-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.mhxcalfred.com/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2023-12-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -147,6 +133,20 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/</loc>
+    <lastmod>2023-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/%E7%94%9F%E6%97%A5/</loc>
+    <lastmod>2023-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -157,14 +157,14 @@
   </url>
   
   <url>
-    <loc>https://blog.mhxcalfred.com/categories/%E6%97%A5%E5%B8%B8/</loc>
+    <loc>https://blog.mhxcalfred.com/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.mhxcalfred.com/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.mhxcalfred.com/categories/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2023-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
