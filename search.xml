@@ -314,6 +314,38 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
+    <title>三十而立</title>
+    <url>/zh-CN/77c9ae3232a8/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div id="biaoti">
+  <p>生日快乐</p>
+</div>
+
+<div style="text-align:center;">
+  <a href="/anniversary/">
+    <img src="/images/birthday.svg" alt="纪念日" />
+  </a>
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>纪念日</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>生日</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo+NexT建站美化</title>
     <url>/zh-CN/169e96ce9dbb/</url>
     <content><![CDATA[<hr>
@@ -451,38 +483,6 @@ int main() &#123;
         <tag>Hexo</tag>
         <tag>NexT</tag>
         <tag>美化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>三十而立</title>
-    <url>/zh-CN/77c9ae3232a8/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div id="biaoti">
-  <p>生日快乐</p>
-</div>
-
-<div style="text-align:center;">
-  <a href="/anniversary/">
-    <img src="/images/birthday.svg" alt="纪念日" />
-  </a>
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>纪念日</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>生日</tag>
       </tags>
   </entry>
   <entry>
