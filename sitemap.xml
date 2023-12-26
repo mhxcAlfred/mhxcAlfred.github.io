@@ -56,6 +56,15 @@
   </url>
   
   <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/872e0051a38d/</loc>
+    
+    <lastmod>2019-12-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcalfred.com/zh-CN/22666729ba66/</loc>
     
     <lastmod>2019-11-29</lastmod>
@@ -163,6 +172,34 @@
   
   <url>
     <loc>https://blog.mhxcalfred.com/tags/Markdown/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/Hexo/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/NexT/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/%E7%BE%8E%E5%8C%96/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -329,34 +366,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2023-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/Hexo/</loc>
-    <lastmod>2023-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/NexT/</loc>
-    <lastmod>2023-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2023-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -367,14 +376,14 @@
   </url>
   
   <url>
-    <loc>https://blog.mhxcalfred.com/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5/</loc>
+    <loc>https://blog.mhxcalfred.com/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.mhxcalfred.com/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.mhxcalfred.com/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
