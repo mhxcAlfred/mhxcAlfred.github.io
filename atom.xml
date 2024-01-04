@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2019-12-06T03:15:00.000Z</updated>
+  <updated>2019-12-13T03:15:00.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,311 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>力扣00017.电话号码的字母组合</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/5cf897376097/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/5cf897376097/</id>
+    <published>2019-12-13T03:15:00.000Z</published>
+    <updated>2019-12-13T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。答案可以按 任意顺序 返回。</p><p>给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。</p><img src="/zh-CN/5cf897376097/201912130001.png" class="" title="题目"><h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><blockquote><p>输入：digits &#x3D; “23”<br>输出：[“ad”,”ae”,”af”,”bd”,”be”,”bf”,”cd”,”ce”,”cf”]</p></blockquote><h2 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h2><blockquote><p>输入：digits &#x3D; “”<br>输出：[]</p></blockquote><h2 id="示例-3："><a href="#示例-3：" class="headerlink" title="示例 3："></a>示例 3：</h2><blockquote><p>输入：digits &#x3D; “2”<br>输出：[“a”,”b”,”c”]</p></blockquote><h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><ul><li>0 &lt;&#x3D; digits.length &lt;&#x3D; 4</li><li>digits[i] 是范围 [‘2’, ‘9’] 的一个数字。</li></ul><hr><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C++ 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C++ 的用户</p><hr><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Java 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Java 的用户</p><hr><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python 的用户</p><hr><h2 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python3 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python3 的用户</p><hr><h2 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-4"><a href="#结果-4" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C 的用户</p><hr><h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-5"><a href="#结果-5" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C# 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C# 的用户</p><hr><h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-6"><a href="#结果-6" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 JavaScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 JavaScript 的用户</p><hr><h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-7"><a href="#结果-7" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 TypeScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 TypeScript 的用户</p><hr><h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-8"><a href="#结果-8" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 PHP 的用户</p><p>内存消耗 :  MB, 击败 % 使用 PHP 的用户</p><hr><h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-9"><a href="#结果-9" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Swift 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Swift 的用户</p><hr><h2 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-10"><a href="#结果-10" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Kotlin 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Kotlin 的用户</p><hr><h2 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-11"><a href="#结果-11" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Dart 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Dart 的用户</p><hr><h2 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-12"><a href="#结果-12" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Go 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Go 的用户</p><hr><h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-13"><a href="#结果-13" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Ruby 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Ruby 的用户</p><hr><h2 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-14"><a href="#结果-14" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Scala 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Scala 的用户</p><hr><h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Rust 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Rust 的用户</p><hr><h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-16"><a href="#结果-16" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Racket 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Racket 的用户</p><hr><h2 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h2><figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-17"><a href="#结果-17" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Erlang 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Erlang 的用户</p><hr><h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-18"><a href="#结果-18" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Elixir 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Elixir 的用户</p><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;电话号码的字母组合、哈希表、字符串、回溯、中等&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="语言" scheme="https://blog.mhxcalfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="算法" scheme="https://blog.mhxcalfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="LeetCode" scheme="https://blog.mhxcalfred.com/tags/LeetCode/"/>
+    
+    <category term="C++" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="Java" scheme="https://blog.mhxcalfred.com/tags/Java/"/>
+    
+    <category term="Python" scheme="https://blog.mhxcalfred.com/tags/Python/"/>
+    
+    <category term="Python3" scheme="https://blog.mhxcalfred.com/tags/Python3/"/>
+    
+    <category term="C" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="C#" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="JavaScript" scheme="https://blog.mhxcalfred.com/tags/JavaScript/"/>
+    
+    <category term="TypeScript" scheme="https://blog.mhxcalfred.com/tags/TypeScript/"/>
+    
+    <category term="PHP" scheme="https://blog.mhxcalfred.com/tags/PHP/"/>
+    
+    <category term="Swift" scheme="https://blog.mhxcalfred.com/tags/Swift/"/>
+    
+    <category term="Kotlin" scheme="https://blog.mhxcalfred.com/tags/Kotlin/"/>
+    
+    <category term="Dart" scheme="https://blog.mhxcalfred.com/tags/Dart/"/>
+    
+    <category term="Go" scheme="https://blog.mhxcalfred.com/tags/Go/"/>
+    
+    <category term="Ruby" scheme="https://blog.mhxcalfred.com/tags/Ruby/"/>
+    
+    <category term="Scala" scheme="https://blog.mhxcalfred.com/tags/Scala/"/>
+    
+    <category term="Rust" scheme="https://blog.mhxcalfred.com/tags/Rust/"/>
+    
+    <category term="Racket" scheme="https://blog.mhxcalfred.com/tags/Racket/"/>
+    
+    <category term="Erlang" scheme="https://blog.mhxcalfred.com/tags/Erlang/"/>
+    
+    <category term="Elixir" scheme="https://blog.mhxcalfred.com/tags/Elixir/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>力扣00016.最接近的三数之和</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/091c1663d8a6/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/091c1663d8a6/</id>
+    <published>2019-12-12T03:15:00.000Z</published>
+    <updated>2019-12-12T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给你一个长度为 n 的整数数组 nums 和 一个目标值 target。请你从 nums 中选出三个整数，使它们的和与 target 最接近。</p><p>返回这三个数的和。</p><p>假定每组输入只存在恰好一个解。</p><h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><blockquote><p>输入：nums &#x3D; [-1,2,1,-4], target &#x3D; 1<br>输出：2<br>解释：与 target 最接近的和是 2 (-1 + 2 + 1 &#x3D; 2) 。</p></blockquote><h2 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h2><blockquote><p>输入：nums &#x3D; [0,0,0], target &#x3D; 1<br>输出：0</p></blockquote><h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><ul><li>$3 &lt;&#x3D; nums.length &lt;&#x3D; 1000$</li><li>$-1000 &lt;&#x3D; nums[i] &lt;&#x3D; 1000$</li><li>$-10^4 &lt;&#x3D; target &lt;&#x3D; 10^4$</li></ul><hr><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C++ 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C++ 的用户</p><hr><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Java 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Java 的用户</p><hr><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python 的用户</p><hr><h2 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python3 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python3 的用户</p><hr><h2 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-4"><a href="#结果-4" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C 的用户</p><hr><h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-5"><a href="#结果-5" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C# 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C# 的用户</p><hr><h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-6"><a href="#结果-6" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 JavaScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 JavaScript 的用户</p><hr><h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-7"><a href="#结果-7" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 TypeScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 TypeScript 的用户</p><hr><h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-8"><a href="#结果-8" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 PHP 的用户</p><p>内存消耗 :  MB, 击败 % 使用 PHP 的用户</p><hr><h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-9"><a href="#结果-9" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Swift 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Swift 的用户</p><hr><h2 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-10"><a href="#结果-10" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Kotlin 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Kotlin 的用户</p><hr><h2 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-11"><a href="#结果-11" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Dart 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Dart 的用户</p><hr><h2 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-12"><a href="#结果-12" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Go 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Go 的用户</p><hr><h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-13"><a href="#结果-13" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Ruby 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Ruby 的用户</p><hr><h2 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-14"><a href="#结果-14" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Scala 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Scala 的用户</p><hr><h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Rust 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Rust 的用户</p><hr><h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-16"><a href="#结果-16" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Racket 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Racket 的用户</p><hr><h2 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h2><figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-17"><a href="#结果-17" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Erlang 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Erlang 的用户</p><hr><h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-18"><a href="#结果-18" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Elixir 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Elixir 的用户</p><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;最接近的三数之和、数组、双指针、排序、中等&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="语言" scheme="https://blog.mhxcalfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="算法" scheme="https://blog.mhxcalfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="LeetCode" scheme="https://blog.mhxcalfred.com/tags/LeetCode/"/>
+    
+    <category term="C++" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="Java" scheme="https://blog.mhxcalfred.com/tags/Java/"/>
+    
+    <category term="Python" scheme="https://blog.mhxcalfred.com/tags/Python/"/>
+    
+    <category term="Python3" scheme="https://blog.mhxcalfred.com/tags/Python3/"/>
+    
+    <category term="C" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="C#" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="JavaScript" scheme="https://blog.mhxcalfred.com/tags/JavaScript/"/>
+    
+    <category term="TypeScript" scheme="https://blog.mhxcalfred.com/tags/TypeScript/"/>
+    
+    <category term="PHP" scheme="https://blog.mhxcalfred.com/tags/PHP/"/>
+    
+    <category term="Swift" scheme="https://blog.mhxcalfred.com/tags/Swift/"/>
+    
+    <category term="Kotlin" scheme="https://blog.mhxcalfred.com/tags/Kotlin/"/>
+    
+    <category term="Dart" scheme="https://blog.mhxcalfred.com/tags/Dart/"/>
+    
+    <category term="Go" scheme="https://blog.mhxcalfred.com/tags/Go/"/>
+    
+    <category term="Ruby" scheme="https://blog.mhxcalfred.com/tags/Ruby/"/>
+    
+    <category term="Scala" scheme="https://blog.mhxcalfred.com/tags/Scala/"/>
+    
+    <category term="Rust" scheme="https://blog.mhxcalfred.com/tags/Rust/"/>
+    
+    <category term="Racket" scheme="https://blog.mhxcalfred.com/tags/Racket/"/>
+    
+    <category term="Erlang" scheme="https://blog.mhxcalfred.com/tags/Erlang/"/>
+    
+    <category term="Elixir" scheme="https://blog.mhxcalfred.com/tags/Elixir/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>力扣00015.三数之和</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/4b7ce86b9306/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/4b7ce86b9306/</id>
+    <published>2019-12-11T03:15:00.000Z</published>
+    <updated>2019-12-11T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i !&#x3D; j、i !&#x3D; k 且 j !&#x3D; k ，同时还满足 nums[i] + nums[j] + nums[k] &#x3D;&#x3D; 0 。请</p><p>你返回所有和为 0 且不重复的三元组。</p><p>注意：答案中不可以包含重复的三元组。</p><h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><blockquote><p>输入：nums &#x3D; [-1,0,1,2,-1,-4]<br>输出：[[-1,-1,2],[-1,0,1]]<br>解释：<br>nums[0] + nums[1] + nums[2] &#x3D; (-1) + 0 + 1 &#x3D; 0 。<br>nums[1] + nums[2] + nums[4] &#x3D; 0 + 1 + (-1) &#x3D; 0 。<br>nums[0] + nums[3] + nums[4] &#x3D; (-1) + 2 + (-1) &#x3D; 0 。<br>不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。<br>注意，输出的顺序和三元组的顺序并不重要。</p></blockquote><h2 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h2><blockquote><p>输入：nums &#x3D; [0,1,1]<br>输出：[]<br>解释：唯一可能的三元组和不为 0 。</p></blockquote><h2 id="示例-3："><a href="#示例-3：" class="headerlink" title="示例 3："></a>示例 3：</h2><blockquote><p>输入：nums &#x3D; [0,0,0]<br>输出：[[0,0,0]]<br>解释：唯一可能的三元组和为 0 。</p></blockquote><h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><ul><li>$3 &lt;&#x3D; nums.length &lt;&#x3D; 3000$</li><li>$-10^5 &lt;&#x3D; nums[i] &lt;&#x3D; 10^5$</li></ul><hr><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C++ 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C++ 的用户</p><hr><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Java 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Java 的用户</p><hr><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python 的用户</p><hr><h2 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python3 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python3 的用户</p><hr><h2 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-4"><a href="#结果-4" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C 的用户</p><hr><h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-5"><a href="#结果-5" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C# 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C# 的用户</p><hr><h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-6"><a href="#结果-6" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 JavaScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 JavaScript 的用户</p><hr><h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-7"><a href="#结果-7" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 TypeScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 TypeScript 的用户</p><hr><h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-8"><a href="#结果-8" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 PHP 的用户</p><p>内存消耗 :  MB, 击败 % 使用 PHP 的用户</p><hr><h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-9"><a href="#结果-9" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Swift 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Swift 的用户</p><hr><h2 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-10"><a href="#结果-10" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Kotlin 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Kotlin 的用户</p><hr><h2 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-11"><a href="#结果-11" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Dart 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Dart 的用户</p><hr><h2 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-12"><a href="#结果-12" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Go 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Go 的用户</p><hr><h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-13"><a href="#结果-13" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Ruby 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Ruby 的用户</p><hr><h2 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-14"><a href="#结果-14" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Scala 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Scala 的用户</p><hr><h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Rust 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Rust 的用户</p><hr><h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-16"><a href="#结果-16" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Racket 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Racket 的用户</p><hr><h2 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h2><figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-17"><a href="#结果-17" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Erlang 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Erlang 的用户</p><hr><h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-18"><a href="#结果-18" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Elixir 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Elixir 的用户</p><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;三数之和、数组、双指针、排序、中等&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="语言" scheme="https://blog.mhxcalfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="算法" scheme="https://blog.mhxcalfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="LeetCode" scheme="https://blog.mhxcalfred.com/tags/LeetCode/"/>
+    
+    <category term="C++" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="Java" scheme="https://blog.mhxcalfred.com/tags/Java/"/>
+    
+    <category term="Python" scheme="https://blog.mhxcalfred.com/tags/Python/"/>
+    
+    <category term="Python3" scheme="https://blog.mhxcalfred.com/tags/Python3/"/>
+    
+    <category term="C" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="C#" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="JavaScript" scheme="https://blog.mhxcalfred.com/tags/JavaScript/"/>
+    
+    <category term="TypeScript" scheme="https://blog.mhxcalfred.com/tags/TypeScript/"/>
+    
+    <category term="PHP" scheme="https://blog.mhxcalfred.com/tags/PHP/"/>
+    
+    <category term="Swift" scheme="https://blog.mhxcalfred.com/tags/Swift/"/>
+    
+    <category term="Kotlin" scheme="https://blog.mhxcalfred.com/tags/Kotlin/"/>
+    
+    <category term="Dart" scheme="https://blog.mhxcalfred.com/tags/Dart/"/>
+    
+    <category term="Go" scheme="https://blog.mhxcalfred.com/tags/Go/"/>
+    
+    <category term="Ruby" scheme="https://blog.mhxcalfred.com/tags/Ruby/"/>
+    
+    <category term="Scala" scheme="https://blog.mhxcalfred.com/tags/Scala/"/>
+    
+    <category term="Rust" scheme="https://blog.mhxcalfred.com/tags/Rust/"/>
+    
+    <category term="Racket" scheme="https://blog.mhxcalfred.com/tags/Racket/"/>
+    
+    <category term="Erlang" scheme="https://blog.mhxcalfred.com/tags/Erlang/"/>
+    
+    <category term="Elixir" scheme="https://blog.mhxcalfred.com/tags/Elixir/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>力扣00014.最长公共前缀</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/c4e0d9c6f0ec/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/c4e0d9c6f0ec/</id>
+    <published>2019-12-10T03:15:00.000Z</published>
+    <updated>2019-12-10T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>编写一个函数来查找字符串数组中的最长公共前缀。</p><p>如果不存在公共前缀，返回空字符串 “”。</p><h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><blockquote><p>输入：strs &#x3D; [“flower”,”flow”,”flight”]<br>输出：”fl”</p></blockquote><h2 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h2><blockquote><p>输入：strs &#x3D; [“dog”,”racecar”,”car”]<br>输出：””<br>解释：输入不存在公共前缀。</p></blockquote><h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><ul><li>1 &lt;&#x3D; strs.length &lt;&#x3D; 200</li><li>0 &lt;&#x3D; strs[i].length &lt;&#x3D; 200</li><li>strs[i] 仅由小写英文字母组成</li></ul><hr><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C++ 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C++ 的用户</p><hr><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Java 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Java 的用户</p><hr><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python 的用户</p><hr><h2 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python3 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python3 的用户</p><hr><h2 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-4"><a href="#结果-4" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C 的用户</p><hr><h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-5"><a href="#结果-5" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C# 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C# 的用户</p><hr><h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-6"><a href="#结果-6" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 JavaScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 JavaScript 的用户</p><hr><h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-7"><a href="#结果-7" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 TypeScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 TypeScript 的用户</p><hr><h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-8"><a href="#结果-8" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 PHP 的用户</p><p>内存消耗 :  MB, 击败 % 使用 PHP 的用户</p><hr><h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-9"><a href="#结果-9" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Swift 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Swift 的用户</p><hr><h2 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-10"><a href="#结果-10" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Kotlin 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Kotlin 的用户</p><hr><h2 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-11"><a href="#结果-11" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Dart 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Dart 的用户</p><hr><h2 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-12"><a href="#结果-12" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Go 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Go 的用户</p><hr><h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-13"><a href="#结果-13" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Ruby 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Ruby 的用户</p><hr><h2 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-14"><a href="#结果-14" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Scala 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Scala 的用户</p><hr><h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Rust 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Rust 的用户</p><hr><h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-16"><a href="#结果-16" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Racket 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Racket 的用户</p><hr><h2 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h2><figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-17"><a href="#结果-17" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Erlang 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Erlang 的用户</p><hr><h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-18"><a href="#结果-18" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Elixir 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Elixir 的用户</p><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;最长公共前缀、字典树、字符串、简单&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="语言" scheme="https://blog.mhxcalfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="算法" scheme="https://blog.mhxcalfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="LeetCode" scheme="https://blog.mhxcalfred.com/tags/LeetCode/"/>
+    
+    <category term="C++" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="Java" scheme="https://blog.mhxcalfred.com/tags/Java/"/>
+    
+    <category term="Python" scheme="https://blog.mhxcalfred.com/tags/Python/"/>
+    
+    <category term="Python3" scheme="https://blog.mhxcalfred.com/tags/Python3/"/>
+    
+    <category term="C" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="C#" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="JavaScript" scheme="https://blog.mhxcalfred.com/tags/JavaScript/"/>
+    
+    <category term="TypeScript" scheme="https://blog.mhxcalfred.com/tags/TypeScript/"/>
+    
+    <category term="PHP" scheme="https://blog.mhxcalfred.com/tags/PHP/"/>
+    
+    <category term="Swift" scheme="https://blog.mhxcalfred.com/tags/Swift/"/>
+    
+    <category term="Kotlin" scheme="https://blog.mhxcalfred.com/tags/Kotlin/"/>
+    
+    <category term="Dart" scheme="https://blog.mhxcalfred.com/tags/Dart/"/>
+    
+    <category term="Go" scheme="https://blog.mhxcalfred.com/tags/Go/"/>
+    
+    <category term="Ruby" scheme="https://blog.mhxcalfred.com/tags/Ruby/"/>
+    
+    <category term="Scala" scheme="https://blog.mhxcalfred.com/tags/Scala/"/>
+    
+    <category term="Rust" scheme="https://blog.mhxcalfred.com/tags/Rust/"/>
+    
+    <category term="Racket" scheme="https://blog.mhxcalfred.com/tags/Racket/"/>
+    
+    <category term="Erlang" scheme="https://blog.mhxcalfred.com/tags/Erlang/"/>
+    
+    <category term="Elixir" scheme="https://blog.mhxcalfred.com/tags/Elixir/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>力扣00013.罗马数字转整数</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/be8e4fe47411/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/be8e4fe47411/</id>
+    <published>2019-12-09T03:15:00.000Z</published>
+    <updated>2019-12-09T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>罗马数字包含以下七种字符： I， V， X， L，C，D 和 M。</p><table><thead><tr><th align="center">字符</th><th align="center">数值</th></tr></thead><tbody><tr><td align="center">I</td><td align="center">1</td></tr><tr><td align="center">V</td><td align="center">5</td></tr><tr><td align="center">X</td><td align="center">10</td></tr><tr><td align="center">L</td><td align="center">50</td></tr><tr><td align="center">C</td><td align="center">100</td></tr><tr><td align="center">D</td><td align="center">500</td></tr><tr><td align="center">M</td><td align="center">1000</td></tr></tbody></table><p>例如， 罗马数字 2 写做 II ，即为两个并列的 1。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II 。</p><p>通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：</p><ul><li>I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。</li><li>X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。 </li><li>C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。</li></ul><p>给定一个罗马数字，将其转换成整数。</p><h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><blockquote><p>输入: s &#x3D; “III”<br>输出: 3</p></blockquote><h2 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h2><blockquote><p>输入: s &#x3D; “IV”<br>输出: 4</p></blockquote><h2 id="示例-3"><a href="#示例-3" class="headerlink" title="示例 3:"></a>示例 3:</h2><blockquote><p>输入: s &#x3D; “IX”<br>输出: 9</p></blockquote><h2 id="示例-4"><a href="#示例-4" class="headerlink" title="示例 4:"></a>示例 4:</h2><blockquote><p>输入: s &#x3D; “LVIII”<br>输出: 58<br>解释: L &#x3D; 50, V&#x3D; 5, III &#x3D; 3.</p></blockquote><h2 id="示例-5"><a href="#示例-5" class="headerlink" title="示例 5:"></a>示例 5:</h2><blockquote><p>输入: s &#x3D; “MCMXCIV”<br>输出: 1994<br>解释: M &#x3D; 1000, CM &#x3D; 900, XC &#x3D; 90, IV &#x3D; 4.</p></blockquote><h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><ul><li>1 &lt;&#x3D; s.length &lt;&#x3D; 15</li><li>s 仅含字符 (‘I’, ‘V’, ‘X’, ‘L’, ‘C’, ‘D’, ‘M’)</li><li>题目数据保证 s 是一个有效的罗马数字，且表示整数在范围 [1, 3999] 内</li><li>题目所给测试用例皆符合罗马数字书写规则，不会出现跨位等情况。</li><li>IL 和 IM 这样的例子并不符合题目要求，49 应该写作 XLIX，999 应该写作 CMXCIX 。</li></ul><hr><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C++ 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C++ 的用户</p><hr><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Java 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Java 的用户</p><hr><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python 的用户</p><hr><h2 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Python3 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Python3 的用户</p><hr><h2 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-4"><a href="#结果-4" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C 的用户</p><hr><h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-5"><a href="#结果-5" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 C# 的用户</p><p>内存消耗 :  MB, 击败 % 使用 C# 的用户</p><hr><h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-6"><a href="#结果-6" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 JavaScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 JavaScript 的用户</p><hr><h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-7"><a href="#结果-7" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 TypeScript 的用户</p><p>内存消耗 :  MB, 击败 % 使用 TypeScript 的用户</p><hr><h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-8"><a href="#结果-8" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 PHP 的用户</p><p>内存消耗 :  MB, 击败 % 使用 PHP 的用户</p><hr><h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-9"><a href="#结果-9" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Swift 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Swift 的用户</p><hr><h2 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-10"><a href="#结果-10" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Kotlin 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Kotlin 的用户</p><hr><h2 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-11"><a href="#结果-11" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Dart 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Dart 的用户</p><hr><h2 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-12"><a href="#结果-12" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Go 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Go 的用户</p><hr><h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-13"><a href="#结果-13" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Ruby 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Ruby 的用户</p><hr><h2 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-14"><a href="#结果-14" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Scala 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Scala 的用户</p><hr><h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Rust 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Rust 的用户</p><hr><h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-16"><a href="#结果-16" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Racket 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Racket 的用户</p><hr><h2 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h2><figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-17"><a href="#结果-17" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Erlang 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Erlang 的用户</p><hr><h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结果-18"><a href="#结果-18" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Elixir 的用户</p><p>内存消耗 :  MB, 击败 % 使用 Elixir 的用户</p><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;罗马数字转整数、哈希表、数学、字符串、简单&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="语言" scheme="https://blog.mhxcalfred.com/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="算法" scheme="https://blog.mhxcalfred.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="LeetCode" scheme="https://blog.mhxcalfred.com/tags/LeetCode/"/>
+    
+    <category term="C++" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="Java" scheme="https://blog.mhxcalfred.com/tags/Java/"/>
+    
+    <category term="Python" scheme="https://blog.mhxcalfred.com/tags/Python/"/>
+    
+    <category term="Python3" scheme="https://blog.mhxcalfred.com/tags/Python3/"/>
+    
+    <category term="C" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="C#" scheme="https://blog.mhxcalfred.com/tags/C/"/>
+    
+    <category term="JavaScript" scheme="https://blog.mhxcalfred.com/tags/JavaScript/"/>
+    
+    <category term="TypeScript" scheme="https://blog.mhxcalfred.com/tags/TypeScript/"/>
+    
+    <category term="PHP" scheme="https://blog.mhxcalfred.com/tags/PHP/"/>
+    
+    <category term="Swift" scheme="https://blog.mhxcalfred.com/tags/Swift/"/>
+    
+    <category term="Kotlin" scheme="https://blog.mhxcalfred.com/tags/Kotlin/"/>
+    
+    <category term="Dart" scheme="https://blog.mhxcalfred.com/tags/Dart/"/>
+    
+    <category term="Go" scheme="https://blog.mhxcalfred.com/tags/Go/"/>
+    
+    <category term="Ruby" scheme="https://blog.mhxcalfred.com/tags/Ruby/"/>
+    
+    <category term="Scala" scheme="https://blog.mhxcalfred.com/tags/Scala/"/>
+    
+    <category term="Rust" scheme="https://blog.mhxcalfred.com/tags/Rust/"/>
+    
+    <category term="Racket" scheme="https://blog.mhxcalfred.com/tags/Racket/"/>
+    
+    <category term="Erlang" scheme="https://blog.mhxcalfred.com/tags/Erlang/"/>
+    
+    <category term="Elixir" scheme="https://blog.mhxcalfred.com/tags/Elixir/"/>
+    
+  </entry>
   
   <entry>
     <title>力扣00012.整数转罗马数字</title>
@@ -818,29 +1123,6 @@
     <category term="NexT" scheme="https://blog.mhxcalfred.com/tags/NexT/"/>
     
     <category term="美化" scheme="https://blog.mhxcalfred.com/tags/%E7%BE%8E%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三十而立</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/77c9ae3232a8/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/77c9ae3232a8/</id>
-    <published>2019-11-15T03:15:00.000Z</published>
-    <updated>2019-11-15T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>生日快乐</p></div><div style="text-align:center;">  <a href="/anniversary/">    <img src="/images/birthday.svg" alt="纪念日" />  </a></div><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、生日&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="纪念日" scheme="https://blog.mhxcalfred.com/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="生日" scheme="https://blog.mhxcalfred.com/tags/%E7%94%9F%E6%97%A5/"/>
     
   </entry>
   
