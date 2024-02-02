@@ -56,6 +56,60 @@
   </url>
   
   <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/dc473ddee730/</loc>
+    
+    <lastmod>2020-02-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/5b25acec5562/</loc>
+    
+    <lastmod>2020-01-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/115621fd06bf/</loc>
+    
+    <lastmod>2020-01-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/9d7677904820/</loc>
+    
+    <lastmod>2020-01-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/2c49a64264fb/</loc>
+    
+    <lastmod>2020-01-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/888671d85a20/</loc>
+    
+    <lastmod>2020-01-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcalfred.com/zh-CN/2811040e6739/</loc>
     
     <lastmod>2020-01-17</lastmod>
@@ -484,6 +538,20 @@
   </url>
   
   <url>
+    <loc>https://blog.mhxcalfred.com/tags/%E5%85%83%E5%AE%B5%E8%8A%82/</loc>
+    <lastmod>2024-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/%E9%99%A4%E5%A4%95/</loc>
+    <lastmod>2024-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcalfred.com/tags/%E8%AF%AD%E6%B3%95/</loc>
     <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -492,6 +560,13 @@
   
   <url>
     <loc>https://blog.mhxcalfred.com/tags/Markdown/</loc>
+    <lastmod>2024-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/%E7%94%9F%E6%97%A5/</loc>
     <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -520,13 +595,6 @@
   
   <url>
     <loc>https://blog.mhxcalfred.com/tags/%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2024-02-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/%E7%94%9F%E6%97%A5/</loc>
     <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
