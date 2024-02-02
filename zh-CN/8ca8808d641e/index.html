@@ -180,7 +180,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">41</span>
+          <span class="site-state-item-count">46</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -315,7 +315,11 @@
 <h2 id="示例-3："><a href="#示例-3：" class="headerlink" title="示例 3："></a>示例 3：</h2><blockquote>
 <p>输入：s &#x3D; “A”, numRows &#x3D; 1<br>输出：”A”</p>
 </blockquote>
-<h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><p>1 &lt;&#x3D; s.length &lt;&#x3D; 1000<br>s 由英文字母（小写和大写）、’,’ 和 ‘.’ 组成<br>1 &lt;&#x3D; numRows &lt;&#x3D; 1000</p>
+<h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><ul>
+<li>1 &lt;&#x3D; s.length &lt;&#x3D; 1000</li>
+<li>s 由英文字母（小写和大写）、’,’ 和 ‘.’ 组成</li>
+<li>1 &lt;&#x3D; numRows &lt;&#x3D; 1000</li>
+</ul>
 <hr>
 <h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">std::string <span class="title">convert</span><span class="params">(std::string s, <span class="type">int</span> numRows)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (numRows &lt;= <span class="number">1</span> || s.<span class="built_in">length</span>() &lt;= numRows) &#123;</span><br><span class="line">            <span class="keyword">return</span> s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function">std::vector&lt;std::string&gt; <span class="title">rows</span><span class="params">(numRows)</span></span>;</span><br><span class="line">        <span class="type">int</span> row = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> step = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">char</span> c : s) &#123;</span><br><span class="line">            rows[row].<span class="built_in">push_back</span>(c);</span><br><span class="line">            <span class="keyword">if</span> (row == <span class="number">0</span>) &#123;</span><br><span class="line">                step = <span class="number">1</span>; <span class="comment">// 到达第一行，改变方向向下</span></span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (row == numRows - <span class="number">1</span>) &#123;</span><br><span class="line">                step = <span class="number">-1</span>; <span class="comment">// 到达最后一行，改变方向向上</span></span><br><span class="line">            &#125;</span><br><span class="line">            row += step;</span><br><span class="line">        &#125;</span><br><span class="line">        std::string result;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">const</span> std::string&amp; rowStr : rows) &#123;</span><br><span class="line">            result += rowStr;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
@@ -516,7 +520,7 @@
     <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">Gitalk</a>
   </div>
 <div>
-  <span class="post-count">全站共  94k  字</span>
+  <span class="post-count">全站共  104k  字</span>
 </div>
 <div class="busuanzi-count">
     <span class="post-meta-item" id="busuanzi_container_site_uv">
