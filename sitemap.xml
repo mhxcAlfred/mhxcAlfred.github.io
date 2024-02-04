@@ -601,6 +601,13 @@
   </url>
   
   <url>
+    <loc>https://blog.mhxcalfred.com/tags/Markdown/</loc>
+    <lastmod>2024-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcalfred.com/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2024-02-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -623,20 +630,6 @@
   
   <url>
     <loc>https://blog.mhxcalfred.com/tags/%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2024-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2024-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/Markdown/</loc>
     <lastmod>2024-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
