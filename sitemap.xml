@@ -56,9 +56,54 @@
   </url>
   
   <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/f5b9b1719f8d/</loc>
+    
+    <lastmod>2020-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/6128bc695126/</loc>
+    
+    <lastmod>2020-02-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/0e37b647b7ff/</loc>
+    
+    <lastmod>2020-02-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcalfred.com/zh-CN/2389374bdf3e/</loc>
     
     <lastmod>2020-02-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/3630949b0815/</loc>
+    
+    <lastmod>2020-02-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/3fd01af05aa5/</loc>
+    
+    <lastmod>2020-02-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -884,6 +929,13 @@
   
   <url>
     <loc>https://blog.mhxcalfred.com/tags/%E5%85%83%E5%AE%B5%E8%8A%82/</loc>
+    <lastmod>2024-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/%E9%9B%A8%E6%B0%B4/</loc>
     <lastmod>2024-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

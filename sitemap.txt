@@ -4,7 +4,12 @@ https://blog.mhxcalfred.com/categories/
 https://blog.mhxcalfred.com/tags/
 https://blog.mhxcalfred.com/404/
 https://blog.mhxcalfred.com/zh-CN/568d73111563/
+https://blog.mhxcalfred.com/zh-CN/f5b9b1719f8d/
+https://blog.mhxcalfred.com/zh-CN/6128bc695126/
+https://blog.mhxcalfred.com/zh-CN/0e37b647b7ff/
 https://blog.mhxcalfred.com/zh-CN/2389374bdf3e/
+https://blog.mhxcalfred.com/zh-CN/3630949b0815/
+https://blog.mhxcalfred.com/zh-CN/3fd01af05aa5/
 https://blog.mhxcalfred.com/zh-CN/b5cabbbd20c6/
 https://blog.mhxcalfred.com/zh-CN/046b68dd049d/
 https://blog.mhxcalfred.com/zh-CN/d53dfdb913f6/
@@ -106,6 +111,7 @@ https://blog.mhxcalfred.com/tags/%E5%A4%A7%E5%AF%92/
 https://blog.mhxcalfred.com/tags/%E9%99%A4%E5%A4%95/
 https://blog.mhxcalfred.com/tags/%E7%AB%8B%E6%98%A5/
 https://blog.mhxcalfred.com/tags/%E5%85%83%E5%AE%B5%E8%8A%82/
+https://blog.mhxcalfred.com/tags/%E9%9B%A8%E6%B0%B4/
 https://blog.mhxcalfred.com/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5/
 https://blog.mhxcalfred.com/categories/%E6%95%99%E7%A8%8B/
 https://blog.mhxcalfred.com/categories/%E8%AF%AD%E8%A8%80/
