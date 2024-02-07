@@ -6013,36 +6013,6 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
-    <title>大寒</title>
-    <url>/zh-CN/25559fc796b9/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div id="biaoti">
-  <p>大寒</p>
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/25559fc796b9/202001200001.webp" class="" title="节气">
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>节气</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>大寒</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>力扣00036.有效的数独</title>
     <url>/zh-CN/c56d6400e4cf/</url>
     <content><![CDATA[<hr>
@@ -6196,6 +6166,36 @@ int main() &#123;
         <tag>Racket</tag>
         <tag>Erlang</tag>
         <tag>Elixir</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大寒</title>
+    <url>/zh-CN/25559fc796b9/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div id="biaoti">
+  <p>大寒</p>
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/25559fc796b9/202001200001.webp" class="" title="节气">
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>节气</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>大寒</tag>
       </tags>
   </entry>
   <entry>
@@ -6706,36 +6706,6 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
-    <title>元宵节</title>
-    <url>/zh-CN/8373f60c0ba6/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div id="biaoti">
-  <p>元宵节快乐</p>
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/8373f60c0ba6/202002080001.jpg" class="" title="纪念日">
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>纪念日</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>元宵节</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>力扣00040.组合总和 II</title>
     <url>/zh-CN/ce16c36a21a7/</url>
     <content><![CDATA[<hr>
@@ -6833,6 +6803,181 @@ int main() &#123;
 
 <h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 Rust 的用户</p>
 <p>内存消耗 : 2.00 MB, 击败 95.00% 使用 Rust 的用户</p>
+<hr>
+<h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><p>暂时未解决</p>
+<figure class="highlight scheme"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-16"><a href="#结果-16" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Racket 的用户</p>
+<p>内存消耗 :  MB, 击败 % 使用 Racket 的用户</p>
+<hr>
+<h2 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h2><p>暂时未解决</p>
+<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-17"><a href="#结果-17" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Erlang 的用户</p>
+<p>内存消耗 :  MB, 击败 % 使用 Erlang 的用户</p>
+<hr>
+<h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><p>暂时未解决</p>
+<figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-18"><a href="#结果-18" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Elixir 的用户</p>
+<p>内存消耗 :  MB, 击败 % 使用 Elixir 的用户</p>
+<hr>
+]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>LeetCode</tag>
+        <tag>C++</tag>
+        <tag>Java</tag>
+        <tag>Python</tag>
+        <tag>Python3</tag>
+        <tag>C</tag>
+        <tag>C#</tag>
+        <tag>JavaScript</tag>
+        <tag>TypeScript</tag>
+        <tag>PHP</tag>
+        <tag>Swift</tag>
+        <tag>Kotlin</tag>
+        <tag>Dart</tag>
+        <tag>Go</tag>
+        <tag>Ruby</tag>
+        <tag>Scala</tag>
+        <tag>Rust</tag>
+        <tag>Racket</tag>
+        <tag>Erlang</tag>
+        <tag>Elixir</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>元宵节</title>
+    <url>/zh-CN/8373f60c0ba6/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div id="biaoti">
+  <p>元宵节快乐</p>
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/8373f60c0ba6/202002080001.jpg" class="" title="纪念日">
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>纪念日</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>元宵节</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>力扣00042.接雨水</title>
+    <url>/zh-CN/ba41afd51b99/</url>
+    <content><![CDATA[<hr>
+<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。</p>
+<h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><img src="/zh-CN/ba41afd51b99/202002120001.png" class="" title="示例1">
+
+<blockquote>
+<p>输入：height &#x3D; [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出：6<br>解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 </p>
+</blockquote>
+<h2 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h2><blockquote>
+<p>输入：height &#x3D; [4,2,0,3,2,5]<br>输出：9</p>
+</blockquote>
+<h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><ul>
+<li>n &#x3D;&#x3D; height.length</li>
+<li>$1 &lt;&#x3D; n &lt;&#x3D; 2 * 10^4$</li>
+<li>$0 &lt;&#x3D; height[i] &lt;&#x3D; 10^5$</li>
+</ul>
+<hr>
+<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">trap</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; height)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (height.<span class="built_in">size</span>() &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> left = <span class="number">0</span>, right = height.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> left_max = <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                    left_max = height[left];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += left_max - height[left];</span><br><span class="line">                &#125;</span><br><span class="line">                left++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                    right_max = height[right];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += right_max - height[right];</span><br><span class="line">                &#125;</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 15 ms, 击败 50.80% 使用 C++ 的用户</p>
+<p>内存消耗 : 21.66 MB, 击败 17.09% 使用 C++ 的用户</p>
+<hr>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">trap</span><span class="params">(<span class="type">int</span>[] height)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (height.length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> <span class="number">0</span>, right = height.length - <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">left_max</span> <span class="operator">=</span> <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                    left_max = height[left];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += left_max - height[left];</span><br><span class="line">                &#125;</span><br><span class="line">                left++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                    right_max = height[right];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += right_max - height[right];</span><br><span class="line">                &#125;</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 Java 的用户</p>
+<p>内存消耗 : 45.56 MB, 击败 5.11% 使用 Java 的用户</p>
+<hr>
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">trap</span>(<span class="params">self, height</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type height: List[int]</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(height) &lt; <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(height) - <span class="number">1</span></span><br><span class="line">        left_max, right_max = <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="keyword">if</span> height[left] &lt; height[right]:</span><br><span class="line">                <span class="keyword">if</span> height[left] &gt;= left_max:</span><br><span class="line">                    left_max = height[left]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    result += left_max - height[left]</span><br><span class="line">                left += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> height[right] &gt;= right_max:</span><br><span class="line">                    right_max = height[right]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    result += right_max - height[right]</span><br><span class="line">                right -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 18 ms, 击败 99.40% 使用 Python 的用户</p>
+<p>内存消耗 : 12.68 MB, 击败 91.49% 使用 Python 的用户</p>
+<hr>
+<h2 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">trap</span>(<span class="params">self, height: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(height) &lt; <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(height) - <span class="number">1</span></span><br><span class="line">        left_max, right_max = <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="keyword">if</span> height[left] &lt; height[right]:</span><br><span class="line">                <span class="keyword">if</span> height[left] &gt;= left_max:</span><br><span class="line">                    left_max = height[left]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    result += left_max - height[left]</span><br><span class="line">                left += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> height[right] &gt;= right_max:</span><br><span class="line">                    right_max = height[right]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    result += right_max - height[right]</span><br><span class="line">                right -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 47 ms, 击败 94.36% 使用 Python3 的用户</p>
+<p>内存消耗 : 17.77 MB, 击败 74.44% 使用 Python3 的用户</p>
+<hr>
+<h2 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">trap</span><span class="params">(<span class="type">int</span>* height, <span class="type">int</span> heightSize)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (heightSize &lt; <span class="number">3</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> left = <span class="number">0</span>, right = heightSize - <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> left_max = <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                left_max = height[left];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += left_max - height[left];</span><br><span class="line">            &#125;</span><br><span class="line">            left++;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                right_max = height[right];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += right_max - height[right];</span><br><span class="line">            &#125;</span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-4"><a href="#结果-4" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 9 ms, 击败 69.17% 使用 C 的用户</p>
+<p>内存消耗 : 6.44 MB, 击败 99.08% 使用 C 的用户</p>
+<hr>
+<h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">int</span> <span class="title">Trap</span>(<span class="params"><span class="built_in">int</span>[] height</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (height.Length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">int</span> left = <span class="number">0</span>, right = height.Length - <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">int</span> left_max = <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                    left_max = height[left];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += left_max - height[left];</span><br><span class="line">                &#125;</span><br><span class="line">                left++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                    right_max = height[right];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += right_max - height[right];</span><br><span class="line">                &#125;</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-5"><a href="#结果-5" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 76 ms, 击败 95.76% 使用 C# 的用户</p>
+<p>内存消耗 : 44.57 MB, 击败 26.25% 使用 C# 的用户</p>
+<hr>
+<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number[]</span>&#125; <span class="variable">height</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> trap = <span class="keyword">function</span>(<span class="params">height</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (height.<span class="property">length</span> &lt; <span class="number">3</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> left = <span class="number">0</span>, right = height.<span class="property">length</span> - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">let</span> left_max = <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                left_max = height[left];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += left_max - height[left];</span><br><span class="line">            &#125;</span><br><span class="line">            left++;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                right_max = height[right];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += right_max - height[right];</span><br><span class="line">            &#125;</span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-6"><a href="#结果-6" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 52 ms, 击败 99.07% 使用 JavaScript 的用户</p>
+<p>内存消耗 : 50.02 MB, 击败 25.70% 使用 JavaScript 的用户</p>
+<hr>
+<h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">trap</span>(<span class="params">height: <span class="built_in">number</span>[]</span>): <span class="built_in">number</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (height.<span class="property">length</span> &lt; <span class="number">3</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">left</span>: <span class="built_in">number</span> = <span class="number">0</span>, <span class="attr">right</span>: <span class="built_in">number</span> = height.<span class="property">length</span> - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">left_max</span>: <span class="built_in">number</span> = <span class="number">0</span>, <span class="attr">right_max</span>: <span class="built_in">number</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">result</span>: <span class="built_in">number</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                left_max = height[left];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += left_max - height[left];</span><br><span class="line">            &#125;</span><br><span class="line">            left++;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                right_max = height[right];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += right_max - height[right];</span><br><span class="line">            &#125;</span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-7"><a href="#结果-7" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 70 ms, 击败 72.92% 使用 TypeScript 的用户</p>
+<p>内存消耗 : 52.29 MB, 击败 29.22% 使用 TypeScript 的用户</p>
+<hr>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> Integer[] $height</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> Integer</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">trap</span>(<span class="params"><span class="variable">$height</span></span>) </span>&#123;</span><br><span class="line">        <span class="variable">$length</span> = <span class="title function_ invoke__">count</span>(<span class="variable">$height</span>);</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$length</span> &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable">$left</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="variable">$right</span> = <span class="variable">$length</span> - <span class="number">1</span>;</span><br><span class="line">        <span class="variable">$left_max</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="variable">$right_max</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="variable">$result</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (<span class="variable">$left</span> &lt; <span class="variable">$right</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="variable">$height</span>[<span class="variable">$left</span>] &lt; <span class="variable">$height</span>[<span class="variable">$right</span>]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (<span class="variable">$height</span>[<span class="variable">$left</span>] &gt;= <span class="variable">$left_max</span>) &#123;</span><br><span class="line">                    <span class="variable">$left_max</span> = <span class="variable">$height</span>[<span class="variable">$left</span>];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="variable">$result</span> += <span class="variable">$left_max</span> - <span class="variable">$height</span>[<span class="variable">$left</span>];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="variable">$left</span>++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (<span class="variable">$height</span>[<span class="variable">$right</span>] &gt;= <span class="variable">$right_max</span>) &#123;</span><br><span class="line">                    <span class="variable">$right_max</span> = <span class="variable">$height</span>[<span class="variable">$right</span>];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="variable">$result</span> += <span class="variable">$right_max</span> - <span class="variable">$height</span>[<span class="variable">$right</span>];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="variable">$right</span>--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$result</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-8"><a href="#结果-8" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 30 ms, 击败 65.31% 使用 PHP 的用户</p>
+<p>内存消耗 : 21.50 MB, 击败 79.59% 使用 PHP 的用户</p>
+<hr>
+<h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">func</span> <span class="title function_">trap</span>(<span class="keyword">_</span> <span class="params">height</span>: [<span class="type">Int</span>]) -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> length <span class="operator">=</span> height.count</span><br><span class="line">        <span class="keyword">guard</span> length <span class="operator">&gt;=</span> <span class="number">3</span> <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> left <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> right <span class="operator">=</span> length <span class="operator">-</span> <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> leftMax <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> rightMax <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> result <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> left <span class="operator">&lt;</span> right &#123;</span><br><span class="line">            <span class="keyword">if</span> height[left] <span class="operator">&lt;</span> height[right] &#123;</span><br><span class="line">                <span class="keyword">if</span> height[left] <span class="operator">&gt;=</span> leftMax &#123;</span><br><span class="line">                    leftMax <span class="operator">=</span> height[left]</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result <span class="operator">+=</span> leftMax <span class="operator">-</span> height[left]</span><br><span class="line">                &#125;</span><br><span class="line">                left <span class="operator">+=</span> <span class="number">1</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> height[right] <span class="operator">&gt;=</span> rightMax &#123;</span><br><span class="line">                    rightMax <span class="operator">=</span> height[right]</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result <span class="operator">+=</span> rightMax <span class="operator">-</span> height[right]</span><br><span class="line">                &#125;</span><br><span class="line">                right <span class="operator">-=</span> <span class="number">1</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-9"><a href="#结果-9" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 26 ms, 击败 100.00% 使用 Swift 的用户</p>
+<p>内存消耗 : 15.84 MB, 击败 7.33% 使用 Swift 的用户</p>
+<hr>
+<h2 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h2><figure class="highlight kotlin"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">trap</span><span class="params">(height: <span class="type">IntArray</span>)</span></span>: <span class="built_in">Int</span> &#123;</span><br><span class="line">        <span class="keyword">val</span> length = height.size</span><br><span class="line">        <span class="keyword">if</span> (length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> left = <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> right = length - <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> leftMax = <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> rightMax = <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[left] &gt;= leftMax) &#123;</span><br><span class="line">                    leftMax = height[left]</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += leftMax - height[left]</span><br><span class="line">                &#125;</span><br><span class="line">                left++</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[right] &gt;= rightMax) &#123;</span><br><span class="line">                    rightMax = height[right]</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += rightMax - height[right]</span><br><span class="line">                &#125;</span><br><span class="line">                right--</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-10"><a href="#结果-10" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 189 ms, 击败 98.29% 使用 Kotlin 的用户</p>
+<p>内存消耗 : 39.59 MB, 击败 43.59% 使用 Kotlin 的用户</p>
+<hr>
+<h2 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h2><figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="built_in">int</span> trap(<span class="built_in">List</span>&lt;<span class="built_in">int</span>&gt; height) &#123;</span><br><span class="line">    <span class="keyword">if</span> (height.length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">int</span> left = <span class="number">0</span>, right = height.length - <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">int</span> leftMax = <span class="number">0</span>, rightMax = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">      <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[left] &gt;= leftMax) &#123;</span><br><span class="line">          leftMax = height[left];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          result += leftMax - height[left];</span><br><span class="line">        &#125;</span><br><span class="line">        left++;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[right] &gt;= rightMax) &#123;</span><br><span class="line">          rightMax = height[right];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          result += rightMax - height[right];</span><br><span class="line">        &#125;</span><br><span class="line">        right--;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-11"><a href="#结果-11" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 284 ms, 击败 88.89% 使用 Dart 的用户</p>
+<p>内存消耗 : 148.19 MB, 击败 100.00% 使用 Dart 的用户</p>
+<hr>
+<h2 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">trap</span><span class="params">(height []<span class="type">int</span>)</span></span> <span class="type">int</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(height) &lt; <span class="number">3</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">    left, right := <span class="number">0</span>, <span class="built_in">len</span>(height)<span class="number">-1</span></span><br><span class="line">    leftMax, rightMax := <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">    result := <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> left &lt; right &#123;</span><br><span class="line">        <span class="keyword">if</span> height[left] &lt; height[right] &#123;</span><br><span class="line">            <span class="keyword">if</span> height[left] &gt;= leftMax &#123;</span><br><span class="line">                leftMax = height[left]</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += leftMax - height[left]</span><br><span class="line">            &#125;</span><br><span class="line">            left++</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> height[right] &gt;= rightMax &#123;</span><br><span class="line">                rightMax = height[right]</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += rightMax - height[right]</span><br><span class="line">            &#125;</span><br><span class="line">            right--</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-12"><a href="#结果-12" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 10 ms, 击败 41.46% 使用 Go 的用户</p>
+<p>内存消耗 : 5.18 MB, 击败 99.69% 使用 Go 的用户</p>
+<hr>
+<h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment"># <span class="doctag">@param</span> &#123;Integer[]&#125; height</span></span><br><span class="line"><span class="comment"># <span class="doctag">@return</span> &#123;Integer&#125;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">trap</span>(<span class="params">height</span>)</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span> <span class="keyword">if</span> height.length &lt; <span class="number">3</span></span><br><span class="line">  left = <span class="number">0</span></span><br><span class="line">  right = height.length - <span class="number">1</span></span><br><span class="line">  left_max = <span class="number">0</span></span><br><span class="line">  right_max = <span class="number">0</span></span><br><span class="line">  result = <span class="number">0</span></span><br><span class="line">  <span class="keyword">while</span> left &lt; right</span><br><span class="line">    <span class="keyword">if</span> height[left] &lt; height[right]</span><br><span class="line">      <span class="keyword">if</span> height[left] &gt;= left_max</span><br><span class="line">        left_max = height[left]</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">        result += left_max - height[left]</span><br><span class="line">      <span class="keyword">end</span></span><br><span class="line">      left += <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      <span class="keyword">if</span> height[right] &gt;= right_max</span><br><span class="line">        right_max = height[right]</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">        result += right_max - height[right]</span><br><span class="line">      <span class="keyword">end</span></span><br><span class="line">      right -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  result</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-13"><a href="#结果-13" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 61 ms, 击败 % 使用 Ruby 的用户</p>
+<p>内存消耗 : 207.34 MB, 击败 % 使用 Ruby 的用户</p>
+<hr>
+<h2 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h2><figure class="highlight scala"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">object</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">trap</span></span>(height: <span class="type">Array</span>[<span class="type">Int</span>]): <span class="type">Int</span> = &#123;</span><br><span class="line">    <span class="keyword">if</span> (height.length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">      <span class="number">0</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">var</span> left = <span class="number">0</span></span><br><span class="line">      <span class="keyword">var</span> right = height.length - <span class="number">1</span></span><br><span class="line">      <span class="keyword">var</span> leftMax = <span class="number">0</span></span><br><span class="line">      <span class="keyword">var</span> rightMax = <span class="number">0</span></span><br><span class="line">      <span class="keyword">var</span> result = <span class="number">0</span></span><br><span class="line">      <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height(left) &lt; height(right)) &#123;</span><br><span class="line">          <span class="keyword">if</span> (height(left) &gt;= leftMax) &#123;</span><br><span class="line">            leftMax = height(left)</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            result += leftMax - height(left)</span><br><span class="line">          &#125;</span><br><span class="line">          left += <span class="number">1</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="keyword">if</span> (height(right) &gt;= rightMax) &#123;</span><br><span class="line">            rightMax = height(right)</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            result += rightMax - height(right)</span><br><span class="line">          &#125;</span><br><span class="line">          right -= <span class="number">1</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      result</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-14"><a href="#结果-14" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 548 ms, 击败 81.82% 使用 Scala 的用户</p>
+<p>内存消耗 : 56.33 MB, 击败 90.91% 使用 Scala 的用户</p>
+<hr>
+<h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">impl</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">trap</span>(height: <span class="type">Vec</span>&lt;<span class="type">i32</span>&gt;) <span class="punctuation">-&gt;</span> <span class="type">i32</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> height.<span class="title function_ invoke__">len</span>() &lt; <span class="number">3</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">left</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">right</span> = height.<span class="title function_ invoke__">len</span>() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">left_max</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">right_max</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">result</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> left &lt; right &#123;</span><br><span class="line">            <span class="keyword">if</span> height[left] &lt; height[right] &#123;</span><br><span class="line">                <span class="keyword">if</span> height[left] &gt;= left_max &#123;</span><br><span class="line">                    left_max = height[left];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += left_max - height[left];</span><br><span class="line">                &#125;</span><br><span class="line">                left += <span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> height[right] &gt;= right_max &#123;</span><br><span class="line">                    right_max = height[right];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += right_max - height[right];</span><br><span class="line">                &#125;</span><br><span class="line">                right -= <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 Rust 的用户</p>
+<p>内存消耗 : 2.10 MB, 击败 92.50% 使用 Rust 的用户</p>
 <hr>
 <h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><p>暂时未解决</p>
 <figure class="highlight scheme"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
@@ -6979,151 +7124,6 @@ int main() &#123;
 
 <h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 4 ms, 击败 89.19% 使用 Rust 的用户</p>
 <p>内存消耗 : 2.98 MB, 击败 49.38% 使用 Rust 的用户</p>
-<hr>
-<h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><p>暂时未解决</p>
-<figure class="highlight scheme"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-16"><a href="#结果-16" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Racket 的用户</p>
-<p>内存消耗 :  MB, 击败 % 使用 Racket 的用户</p>
-<hr>
-<h2 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h2><p>暂时未解决</p>
-<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-17"><a href="#结果-17" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Erlang 的用户</p>
-<p>内存消耗 :  MB, 击败 % 使用 Erlang 的用户</p>
-<hr>
-<h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><p>暂时未解决</p>
-<figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-18"><a href="#结果-18" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Elixir 的用户</p>
-<p>内存消耗 :  MB, 击败 % 使用 Elixir 的用户</p>
-<hr>
-]]></content>
-      <categories>
-        <category>语言</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>LeetCode</tag>
-        <tag>C++</tag>
-        <tag>Java</tag>
-        <tag>Python</tag>
-        <tag>Python3</tag>
-        <tag>C</tag>
-        <tag>C#</tag>
-        <tag>JavaScript</tag>
-        <tag>TypeScript</tag>
-        <tag>PHP</tag>
-        <tag>Swift</tag>
-        <tag>Kotlin</tag>
-        <tag>Dart</tag>
-        <tag>Go</tag>
-        <tag>Ruby</tag>
-        <tag>Scala</tag>
-        <tag>Rust</tag>
-        <tag>Racket</tag>
-        <tag>Erlang</tag>
-        <tag>Elixir</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>力扣00042.接雨水</title>
-    <url>/zh-CN/ba41afd51b99/</url>
-    <content><![CDATA[<hr>
-<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。</p>
-<h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><img src="/zh-CN/ba41afd51b99/202002120001.png" class="" title="示例1">
-
-<blockquote>
-<p>输入：height &#x3D; [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出：6<br>解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 </p>
-</blockquote>
-<h2 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h2><blockquote>
-<p>输入：height &#x3D; [4,2,0,3,2,5]<br>输出：9</p>
-</blockquote>
-<h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><ul>
-<li>n &#x3D;&#x3D; height.length</li>
-<li>$1 &lt;&#x3D; n &lt;&#x3D; 2 * 10^4$</li>
-<li>$0 &lt;&#x3D; height[i] &lt;&#x3D; 10^5$</li>
-</ul>
-<hr>
-<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">trap</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; height)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (height.<span class="built_in">size</span>() &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> left = <span class="number">0</span>, right = height.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> left_max = <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                    left_max = height[left];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += left_max - height[left];</span><br><span class="line">                &#125;</span><br><span class="line">                left++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                    right_max = height[right];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += right_max - height[right];</span><br><span class="line">                &#125;</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 15 ms, 击败 50.80% 使用 C++ 的用户</p>
-<p>内存消耗 : 21.66 MB, 击败 17.09% 使用 C++ 的用户</p>
-<hr>
-<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">trap</span><span class="params">(<span class="type">int</span>[] height)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (height.length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> <span class="number">0</span>, right = height.length - <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">left_max</span> <span class="operator">=</span> <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                    left_max = height[left];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += left_max - height[left];</span><br><span class="line">                &#125;</span><br><span class="line">                left++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                    right_max = height[right];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += right_max - height[right];</span><br><span class="line">                &#125;</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 Java 的用户</p>
-<p>内存消耗 : 45.56 MB, 击败 5.11% 使用 Java 的用户</p>
-<hr>
-<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">trap</span>(<span class="params">self, height</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type height: List[int]</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(height) &lt; <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(height) - <span class="number">1</span></span><br><span class="line">        left_max, right_max = <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="keyword">if</span> height[left] &lt; height[right]:</span><br><span class="line">                <span class="keyword">if</span> height[left] &gt;= left_max:</span><br><span class="line">                    left_max = height[left]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    result += left_max - height[left]</span><br><span class="line">                left += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> height[right] &gt;= right_max:</span><br><span class="line">                    right_max = height[right]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    result += right_max - height[right]</span><br><span class="line">                right -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 18 ms, 击败 99.40% 使用 Python 的用户</p>
-<p>内存消耗 : 12.68 MB, 击败 91.49% 使用 Python 的用户</p>
-<hr>
-<h2 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">trap</span>(<span class="params">self, height: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(height) &lt; <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(height) - <span class="number">1</span></span><br><span class="line">        left_max, right_max = <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="keyword">if</span> height[left] &lt; height[right]:</span><br><span class="line">                <span class="keyword">if</span> height[left] &gt;= left_max:</span><br><span class="line">                    left_max = height[left]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    result += left_max - height[left]</span><br><span class="line">                left += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> height[right] &gt;= right_max:</span><br><span class="line">                    right_max = height[right]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    result += right_max - height[right]</span><br><span class="line">                right -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 47 ms, 击败 94.36% 使用 Python3 的用户</p>
-<p>内存消耗 : 17.77 MB, 击败 74.44% 使用 Python3 的用户</p>
-<hr>
-<h2 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">trap</span><span class="params">(<span class="type">int</span>* height, <span class="type">int</span> heightSize)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (heightSize &lt; <span class="number">3</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> left = <span class="number">0</span>, right = heightSize - <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> left_max = <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                left_max = height[left];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += left_max - height[left];</span><br><span class="line">            &#125;</span><br><span class="line">            left++;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                right_max = height[right];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += right_max - height[right];</span><br><span class="line">            &#125;</span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-4"><a href="#结果-4" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 9 ms, 击败 69.17% 使用 C 的用户</p>
-<p>内存消耗 : 6.44 MB, 击败 99.08% 使用 C 的用户</p>
-<hr>
-<h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="built_in">int</span> <span class="title">Trap</span>(<span class="params"><span class="built_in">int</span>[] height</span>)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (height.Length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">int</span> left = <span class="number">0</span>, right = height.Length - <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">int</span> left_max = <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                    left_max = height[left];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += left_max - height[left];</span><br><span class="line">                &#125;</span><br><span class="line">                left++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                    right_max = height[right];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += right_max - height[right];</span><br><span class="line">                &#125;</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-5"><a href="#结果-5" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 76 ms, 击败 95.76% 使用 C# 的用户</p>
-<p>内存消耗 : 44.57 MB, 击败 26.25% 使用 C# 的用户</p>
-<hr>
-<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number[]</span>&#125; <span class="variable">height</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> trap = <span class="keyword">function</span>(<span class="params">height</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (height.<span class="property">length</span> &lt; <span class="number">3</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> left = <span class="number">0</span>, right = height.<span class="property">length</span> - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">let</span> left_max = <span class="number">0</span>, right_max = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                left_max = height[left];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += left_max - height[left];</span><br><span class="line">            &#125;</span><br><span class="line">            left++;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                right_max = height[right];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += right_max - height[right];</span><br><span class="line">            &#125;</span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-6"><a href="#结果-6" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 52 ms, 击败 99.07% 使用 JavaScript 的用户</p>
-<p>内存消耗 : 50.02 MB, 击败 25.70% 使用 JavaScript 的用户</p>
-<hr>
-<h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">trap</span>(<span class="params">height: <span class="built_in">number</span>[]</span>): <span class="built_in">number</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (height.<span class="property">length</span> &lt; <span class="number">3</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">left</span>: <span class="built_in">number</span> = <span class="number">0</span>, <span class="attr">right</span>: <span class="built_in">number</span> = height.<span class="property">length</span> - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">left_max</span>: <span class="built_in">number</span> = <span class="number">0</span>, <span class="attr">right_max</span>: <span class="built_in">number</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">result</span>: <span class="built_in">number</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &gt;= left_max) &#123;</span><br><span class="line">                left_max = height[left];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += left_max - height[left];</span><br><span class="line">            &#125;</span><br><span class="line">            left++;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[right] &gt;= right_max) &#123;</span><br><span class="line">                right_max = height[right];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += right_max - height[right];</span><br><span class="line">            &#125;</span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-7"><a href="#结果-7" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 70 ms, 击败 72.92% 使用 TypeScript 的用户</p>
-<p>内存消耗 : 52.29 MB, 击败 29.22% 使用 TypeScript 的用户</p>
-<hr>
-<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> Integer[] $height</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> Integer</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">trap</span>(<span class="params"><span class="variable">$height</span></span>) </span>&#123;</span><br><span class="line">        <span class="variable">$length</span> = <span class="title function_ invoke__">count</span>(<span class="variable">$height</span>);</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$length</span> &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable">$left</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="variable">$right</span> = <span class="variable">$length</span> - <span class="number">1</span>;</span><br><span class="line">        <span class="variable">$left_max</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="variable">$right_max</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="variable">$result</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (<span class="variable">$left</span> &lt; <span class="variable">$right</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="variable">$height</span>[<span class="variable">$left</span>] &lt; <span class="variable">$height</span>[<span class="variable">$right</span>]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (<span class="variable">$height</span>[<span class="variable">$left</span>] &gt;= <span class="variable">$left_max</span>) &#123;</span><br><span class="line">                    <span class="variable">$left_max</span> = <span class="variable">$height</span>[<span class="variable">$left</span>];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="variable">$result</span> += <span class="variable">$left_max</span> - <span class="variable">$height</span>[<span class="variable">$left</span>];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="variable">$left</span>++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (<span class="variable">$height</span>[<span class="variable">$right</span>] &gt;= <span class="variable">$right_max</span>) &#123;</span><br><span class="line">                    <span class="variable">$right_max</span> = <span class="variable">$height</span>[<span class="variable">$right</span>];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="variable">$result</span> += <span class="variable">$right_max</span> - <span class="variable">$height</span>[<span class="variable">$right</span>];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="variable">$right</span>--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$result</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-8"><a href="#结果-8" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 30 ms, 击败 65.31% 使用 PHP 的用户</p>
-<p>内存消耗 : 21.50 MB, 击败 79.59% 使用 PHP 的用户</p>
-<hr>
-<h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">func</span> <span class="title function_">trap</span>(<span class="keyword">_</span> <span class="params">height</span>: [<span class="type">Int</span>]) -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> length <span class="operator">=</span> height.count</span><br><span class="line">        <span class="keyword">guard</span> length <span class="operator">&gt;=</span> <span class="number">3</span> <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> left <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> right <span class="operator">=</span> length <span class="operator">-</span> <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> leftMax <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> rightMax <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> result <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> left <span class="operator">&lt;</span> right &#123;</span><br><span class="line">            <span class="keyword">if</span> height[left] <span class="operator">&lt;</span> height[right] &#123;</span><br><span class="line">                <span class="keyword">if</span> height[left] <span class="operator">&gt;=</span> leftMax &#123;</span><br><span class="line">                    leftMax <span class="operator">=</span> height[left]</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result <span class="operator">+=</span> leftMax <span class="operator">-</span> height[left]</span><br><span class="line">                &#125;</span><br><span class="line">                left <span class="operator">+=</span> <span class="number">1</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> height[right] <span class="operator">&gt;=</span> rightMax &#123;</span><br><span class="line">                    rightMax <span class="operator">=</span> height[right]</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result <span class="operator">+=</span> rightMax <span class="operator">-</span> height[right]</span><br><span class="line">                &#125;</span><br><span class="line">                right <span class="operator">-=</span> <span class="number">1</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-9"><a href="#结果-9" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 26 ms, 击败 100.00% 使用 Swift 的用户</p>
-<p>内存消耗 : 15.84 MB, 击败 7.33% 使用 Swift 的用户</p>
-<hr>
-<h2 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h2><figure class="highlight kotlin"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">trap</span><span class="params">(height: <span class="type">IntArray</span>)</span></span>: <span class="built_in">Int</span> &#123;</span><br><span class="line">        <span class="keyword">val</span> length = height.size</span><br><span class="line">        <span class="keyword">if</span> (length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> left = <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> right = length - <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> leftMax = <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> rightMax = <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[left] &gt;= leftMax) &#123;</span><br><span class="line">                    leftMax = height[left]</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += leftMax - height[left]</span><br><span class="line">                &#125;</span><br><span class="line">                left++</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (height[right] &gt;= rightMax) &#123;</span><br><span class="line">                    rightMax = height[right]</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += rightMax - height[right]</span><br><span class="line">                &#125;</span><br><span class="line">                right--</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-10"><a href="#结果-10" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 189 ms, 击败 98.29% 使用 Kotlin 的用户</p>
-<p>内存消耗 : 39.59 MB, 击败 43.59% 使用 Kotlin 的用户</p>
-<hr>
-<h2 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h2><figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="built_in">int</span> trap(<span class="built_in">List</span>&lt;<span class="built_in">int</span>&gt; height) &#123;</span><br><span class="line">    <span class="keyword">if</span> (height.length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">int</span> left = <span class="number">0</span>, right = height.length - <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">int</span> leftMax = <span class="number">0</span>, rightMax = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">      <span class="keyword">if</span> (height[left] &lt; height[right]) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[left] &gt;= leftMax) &#123;</span><br><span class="line">          leftMax = height[left];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          result += leftMax - height[left];</span><br><span class="line">        &#125;</span><br><span class="line">        left++;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (height[right] &gt;= rightMax) &#123;</span><br><span class="line">          rightMax = height[right];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          result += rightMax - height[right];</span><br><span class="line">        &#125;</span><br><span class="line">        right--;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-11"><a href="#结果-11" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 284 ms, 击败 88.89% 使用 Dart 的用户</p>
-<p>内存消耗 : 148.19 MB, 击败 100.00% 使用 Dart 的用户</p>
-<hr>
-<h2 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">trap</span><span class="params">(height []<span class="type">int</span>)</span></span> <span class="type">int</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(height) &lt; <span class="number">3</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">    left, right := <span class="number">0</span>, <span class="built_in">len</span>(height)<span class="number">-1</span></span><br><span class="line">    leftMax, rightMax := <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">    result := <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> left &lt; right &#123;</span><br><span class="line">        <span class="keyword">if</span> height[left] &lt; height[right] &#123;</span><br><span class="line">            <span class="keyword">if</span> height[left] &gt;= leftMax &#123;</span><br><span class="line">                leftMax = height[left]</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += leftMax - height[left]</span><br><span class="line">            &#125;</span><br><span class="line">            left++</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> height[right] &gt;= rightMax &#123;</span><br><span class="line">                rightMax = height[right]</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result += rightMax - height[right]</span><br><span class="line">            &#125;</span><br><span class="line">            right--</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-12"><a href="#结果-12" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 10 ms, 击败 41.46% 使用 Go 的用户</p>
-<p>内存消耗 : 5.18 MB, 击败 99.69% 使用 Go 的用户</p>
-<hr>
-<h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment"># <span class="doctag">@param</span> &#123;Integer[]&#125; height</span></span><br><span class="line"><span class="comment"># <span class="doctag">@return</span> &#123;Integer&#125;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">trap</span>(<span class="params">height</span>)</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span> <span class="keyword">if</span> height.length &lt; <span class="number">3</span></span><br><span class="line">  left = <span class="number">0</span></span><br><span class="line">  right = height.length - <span class="number">1</span></span><br><span class="line">  left_max = <span class="number">0</span></span><br><span class="line">  right_max = <span class="number">0</span></span><br><span class="line">  result = <span class="number">0</span></span><br><span class="line">  <span class="keyword">while</span> left &lt; right</span><br><span class="line">    <span class="keyword">if</span> height[left] &lt; height[right]</span><br><span class="line">      <span class="keyword">if</span> height[left] &gt;= left_max</span><br><span class="line">        left_max = height[left]</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">        result += left_max - height[left]</span><br><span class="line">      <span class="keyword">end</span></span><br><span class="line">      left += <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      <span class="keyword">if</span> height[right] &gt;= right_max</span><br><span class="line">        right_max = height[right]</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">        result += right_max - height[right]</span><br><span class="line">      <span class="keyword">end</span></span><br><span class="line">      right -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  result</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-13"><a href="#结果-13" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 61 ms, 击败 % 使用 Ruby 的用户</p>
-<p>内存消耗 : 207.34 MB, 击败 % 使用 Ruby 的用户</p>
-<hr>
-<h2 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h2><figure class="highlight scala"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">object</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">trap</span></span>(height: <span class="type">Array</span>[<span class="type">Int</span>]): <span class="type">Int</span> = &#123;</span><br><span class="line">    <span class="keyword">if</span> (height.length &lt; <span class="number">3</span>) &#123;</span><br><span class="line">      <span class="number">0</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">var</span> left = <span class="number">0</span></span><br><span class="line">      <span class="keyword">var</span> right = height.length - <span class="number">1</span></span><br><span class="line">      <span class="keyword">var</span> leftMax = <span class="number">0</span></span><br><span class="line">      <span class="keyword">var</span> rightMax = <span class="number">0</span></span><br><span class="line">      <span class="keyword">var</span> result = <span class="number">0</span></span><br><span class="line">      <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">        <span class="keyword">if</span> (height(left) &lt; height(right)) &#123;</span><br><span class="line">          <span class="keyword">if</span> (height(left) &gt;= leftMax) &#123;</span><br><span class="line">            leftMax = height(left)</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            result += leftMax - height(left)</span><br><span class="line">          &#125;</span><br><span class="line">          left += <span class="number">1</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="keyword">if</span> (height(right) &gt;= rightMax) &#123;</span><br><span class="line">            rightMax = height(right)</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            result += rightMax - height(right)</span><br><span class="line">          &#125;</span><br><span class="line">          right -= <span class="number">1</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      result</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-14"><a href="#结果-14" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 548 ms, 击败 81.82% 使用 Scala 的用户</p>
-<p>内存消耗 : 56.33 MB, 击败 90.91% 使用 Scala 的用户</p>
-<hr>
-<h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">impl</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">trap</span>(height: <span class="type">Vec</span>&lt;<span class="type">i32</span>&gt;) <span class="punctuation">-&gt;</span> <span class="type">i32</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> height.<span class="title function_ invoke__">len</span>() &lt; <span class="number">3</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">left</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">right</span> = height.<span class="title function_ invoke__">len</span>() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">left_max</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">right_max</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">result</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> left &lt; right &#123;</span><br><span class="line">            <span class="keyword">if</span> height[left] &lt; height[right] &#123;</span><br><span class="line">                <span class="keyword">if</span> height[left] &gt;= left_max &#123;</span><br><span class="line">                    left_max = height[left];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += left_max - height[left];</span><br><span class="line">                &#125;</span><br><span class="line">                left += <span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> height[right] &gt;= right_max &#123;</span><br><span class="line">                    right_max = height[right];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    result += right_max - height[right];</span><br><span class="line">                &#125;</span><br><span class="line">                right -= <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 Rust 的用户</p>
-<p>内存消耗 : 2.10 MB, 击败 92.50% 使用 Rust 的用户</p>
 <hr>
 <h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><p>暂时未解决</p>
 <figure class="highlight scheme"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
@@ -12949,6 +12949,37 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
+    <title>iPhone SE（A13，2020年）</title>
+    <url>/zh-CN/2e753a1d6c75/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div id="biaoti">
+  <p>iPhone SE</p>
+  <p>称心称手，超值入手。</p>
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/2e753a1d6c75/202004240001.png" class="" title="iPhone SE（A13，2020年）">
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>电子产品</category>
+      </categories>
+      <tags>
+        <tag>Apple</tag>
+        <tag>iPhone</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>立夏</title>
     <url>/zh-CN/0413915a6189/</url>
     <content><![CDATA[<hr>
@@ -13175,37 +13206,6 @@ int main() &#123;
       <tags>
         <tag>Apple</tag>
         <tag>WWDC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iPhone SE（A13，2020年）</title>
-    <url>/zh-CN/2e753a1d6c75/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div id="biaoti">
-  <p>iPhone SE</p>
-  <p>称心称手，超值入手。</p>
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/2e753a1d6c75/202004240001.png" class="" title="iPhone SE（A13，2020年）">
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>电子产品</category>
-      </categories>
-      <tags>
-        <tag>Apple</tag>
-        <tag>iPhone</tag>
       </tags>
   </entry>
   <entry>
@@ -13486,6 +13486,48 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
+    <title>Apple Watch Series 6（S6，2020年）和 Apple Watch SE（S5，2020年）</title>
+    <url>/zh-CN/15287cf621fb/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div id="biaoti">
+  <p>Apple Watch Series 6</p>
+  <p>健康的未来，</p>
+  <p>现在戴上。</p>
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/15287cf621fb/202009200001.png" class="" title="Apple Watch Series 6（S6，2020年）">
+</div>
+
+<div id="biaoti">
+  <p>Apple Watch SE</p>
+  <p>事事拿手，</p>
+  <p>轻松入手。</p>
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/15287cf621fb/202009200002.png" class="" title="Apple Watch SE（S5，2020年）">
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>电子产品</category>
+      </categories>
+      <tags>
+        <tag>Apple</tag>
+        <tag>Apple Watch</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Apple 特别活动</title>
     <url>/zh-CN/356f4b5adf57/</url>
     <content><![CDATA[<hr>
@@ -13537,48 +13579,6 @@ int main() &#123;
       <tags>
         <tag>Apple</tag>
         <tag>Apple Event</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Apple Watch Series 6（S6，2020年）和 Apple Watch SE（S5，2020年）</title>
-    <url>/zh-CN/15287cf621fb/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div id="biaoti">
-  <p>Apple Watch Series 6</p>
-  <p>健康的未来，</p>
-  <p>现在戴上。</p>
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/15287cf621fb/202009200001.png" class="" title="Apple Watch Series 6（S6，2020年）">
-</div>
-
-<div id="biaoti">
-  <p>Apple Watch SE</p>
-  <p>事事拿手，</p>
-  <p>轻松入手。</p>
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/15287cf621fb/202009200002.png" class="" title="Apple Watch SE（S5，2020年）">
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>电子产品</category>
-      </categories>
-      <tags>
-        <tag>Apple</tag>
-        <tag>Apple Watch</tag>
       </tags>
   </entry>
   <entry>
@@ -13847,36 +13847,6 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
-    <title>立冬</title>
-    <url>/zh-CN/922aa34a3c34/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div id="biaoti">
-  <p>立冬</p>
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/922aa34a3c34/202011070001.webp" class="" title="节气">
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>节气</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>立冬</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Apple 特别活动</title>
     <url>/zh-CN/a6fe6e2c94a4/</url>
     <content><![CDATA[<hr>
@@ -13916,6 +13886,36 @@ int main() &#123;
       <tags>
         <tag>Apple</tag>
         <tag>Apple Event</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>立冬</title>
+    <url>/zh-CN/922aa34a3c34/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div id="biaoti">
+  <p>立冬</p>
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/922aa34a3c34/202011070001.webp" class="" title="节气">
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>节气</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>立冬</tag>
       </tags>
   </entry>
   <entry>
@@ -14048,6 +14048,36 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
+    <title>小雪</title>
+    <url>/zh-CN/b44c75fa8786/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div id="biaoti">
+  <p>小雪</p>
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/b44c75fa8786/202011220001.webp" class="" title="节气">
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>节气</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>小雪</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Taylor Swift folklore the long pond studio sessions（from the Disney+ special）[deluxe edition]</title>
     <url>/zh-CN/8ac0af8cb0f2/</url>
     <content><![CDATA[<hr>
@@ -14091,36 +14121,6 @@ int main() &#123;
       <tags>
         <tag>日常</tag>
         <tag>大雪</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小雪</title>
-    <url>/zh-CN/b44c75fa8786/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div id="biaoti">
-  <p>小雪</p>
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/b44c75fa8786/202011220001.webp" class="" title="节气">
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>节气</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>小雪</tag>
       </tags>
   </entry>
   <entry>
@@ -15899,36 +15899,6 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
-    <title>AirPods Pro 虎年限量款</title>
-    <url>/zh-CN/3b22efa0d7a9/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/3b22efa0d7a9/202201040001.png" class="" title="Apple">
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/3b22efa0d7a9/202201040002.png" class="" title="AirPods Pro 虎年限量款">
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>电子产品</category>
-      </categories>
-      <tags>
-        <tag>Apple</tag>
-        <tag>AirPods</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>元旦</title>
     <url>/zh-CN/d608fc129257/</url>
     <content><![CDATA[<hr>
@@ -15956,6 +15926,36 @@ int main() &#123;
       <tags>
         <tag>日常</tag>
         <tag>元旦</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AirPods Pro 虎年限量款</title>
+    <url>/zh-CN/3b22efa0d7a9/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/3b22efa0d7a9/202201040001.png" class="" title="Apple">
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/3b22efa0d7a9/202201040002.png" class="" title="AirPods Pro 虎年限量款">
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>电子产品</category>
+      </categories>
+      <tags>
+        <tag>Apple</tag>
+        <tag>AirPods</tag>
       </tags>
   </entry>
   <entry>
@@ -17113,6 +17113,23 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
+    <title>暗影火炬城</title>
+    <url>/zh-CN/42cc0660bc83/</url>
+    <content><![CDATA[<hr>
+<h1 id="游戏介绍"><a href="#游戏介绍" class="headerlink" title="游戏介绍"></a>游戏介绍</h1><h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><h2 id="正面"><a href="#正面" class="headerlink" title="正面"></a>正面</h2><h2 id="侧面"><a href="#侧面" class="headerlink" title="侧面"></a>侧面</h2><h2 id="背面"><a href="#背面" class="headerlink" title="背面"></a>背面</h2><hr>
+]]></content>
+      <categories>
+        <category>游戏</category>
+      </categories>
+      <tags>
+        <tag>主机</tag>
+        <tag>实体</tag>
+        <tag>SONY</tag>
+        <tag>PlayStation</tag>
+        <tag>光盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>iPhone 14 Plus（A15，2022年）</title>
     <url>/zh-CN/4b35bb2dcad0/</url>
     <content><![CDATA[<hr>
@@ -17263,23 +17280,6 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
-    <title>暗影火炬城</title>
-    <url>/zh-CN/9c5999699ce1/</url>
-    <content><![CDATA[<hr>
-<h1 id="游戏介绍"><a href="#游戏介绍" class="headerlink" title="游戏介绍"></a>游戏介绍</h1><h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><h2 id="正面"><a href="#正面" class="headerlink" title="正面"></a>正面</h2><h2 id="侧面"><a href="#侧面" class="headerlink" title="侧面"></a>侧面</h2><h2 id="背面"><a href="#背面" class="headerlink" title="背面"></a>背面</h2><hr>
-]]></content>
-      <categories>
-        <category>游戏</category>
-      </categories>
-      <tags>
-        <tag>主机</tag>
-        <tag>实体</tag>
-        <tag>SONY</tag>
-        <tag>PlayStation</tag>
-        <tag>光盘</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>立冬</title>
     <url>/zh-CN/0d29c3a1584c/</url>
     <content><![CDATA[<hr>
@@ -17307,36 +17307,6 @@ int main() &#123;
       <tags>
         <tag>日常</tag>
         <tag>立冬</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小雪</title>
-    <url>/zh-CN/2e7e584da713/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div id="biaoti">
-  <p>小雪</p>
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/2e7e584da713/202211220001.webp" class="" title="节气">
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>节气</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>小雪</tag>
       </tags>
   </entry>
   <entry>
@@ -17369,6 +17339,36 @@ int main() &#123;
       <tags>
         <tag>日常</tag>
         <tag>生日</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小雪</title>
+    <url>/zh-CN/2e7e584da713/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div id="biaoti">
+  <p>小雪</p>
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/2e7e584da713/202211220001.webp" class="" title="节气">
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>节气</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>小雪</tag>
       </tags>
   </entry>
   <entry>
@@ -17813,6 +17813,36 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
+    <title>惊蛰</title>
+    <url>/zh-CN/1357008c12ac/</url>
+    <content><![CDATA[<hr>
+<style>
+  #biaoti {
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+  }
+</style>
+
+<div id="biaoti">
+  <p>惊蛰</p>
+</div>
+
+<div style="text-align:center;">
+  <img src="/zh-CN/1357008c12ac/202303060001.webp" class="" title="节气">
+</div>
+
+<hr>
+]]></content>
+      <categories>
+        <category>节气</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>惊蛰</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>iPhone 14 Plus（A15，明黄，2023年）和 iPhone 14（A15，明黄，2023年）</title>
     <url>/zh-CN/4b23784b0d56/</url>
     <content><![CDATA[<hr>
@@ -17856,36 +17886,6 @@ int main() &#123;
       <tags>
         <tag>日常</tag>
         <tag>IMAX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>惊蛰</title>
-    <url>/zh-CN/1357008c12ac/</url>
-    <content><![CDATA[<hr>
-<style>
-  #biaoti {
-    text-align: center;
-    padding: 20px;
-    font-size: 48px;
-  }
-</style>
-
-<div id="biaoti">
-  <p>惊蛰</p>
-</div>
-
-<div style="text-align:center;">
-  <img src="/zh-CN/1357008c12ac/202303060001.webp" class="" title="节气">
-</div>
-
-<hr>
-]]></content>
-      <categories>
-        <category>节气</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>惊蛰</tag>
       </tags>
   </entry>
   <entry>
@@ -18011,6 +18011,22 @@ int main() &#123;
       </tags>
   </entry>
   <entry>
+    <title>银河护卫队3</title>
+    <url>/zh-CN/17b1b23e5a34/</url>
+    <content><![CDATA[<hr>
+<h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　历经磨难与考验，银河护卫队总算在虚无之地暂时安顿下来。可就在某一天，不速之客亚当术士（威尔·保尔特 Will Poulter 饰）的闯入不仅打破了这里的安宁与祥和，更将一场生死危机带到这群好朋友中间。战斗中，火箭浣熊（布莱德利·库珀 Bradley Cooper 配音）身负重伤，奄奄一息。为了拯救好友的生命，星爵（克里斯·帕拉特 Chris Pratt 饰）和星云（凯伦·吉兰 Karen Gillan 饰）、毁灭者（戴夫·巴蒂斯塔 Dave Bautista 饰）、螳螂女（庞·克莱门捷夫 Pom Klementieff 饰）、格鲁特（范·迪塞尔 Vin Diesel 配音）卡魔拉（佐伊·索尔达娜 Zoe Saldana 饰）前往创造了火箭的奥果公司寻找起死回生的办法。</p>
+<p>　　然而在那个诡异的世界，他们意外发现了火箭浣熊不为人知的悲惨过往……</p>
+<hr>
+]]></content>
+      <categories>
+        <category>电影</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>IMAX</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>谷雨</title>
     <url>/zh-CN/2eb7f6a31a08/</url>
     <content><![CDATA[<hr>
@@ -18038,22 +18054,6 @@ int main() &#123;
       <tags>
         <tag>日常</tag>
         <tag>谷雨</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>银河护卫队3</title>
-    <url>/zh-CN/17b1b23e5a34/</url>
-    <content><![CDATA[<hr>
-<h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　历经磨难与考验，银河护卫队总算在虚无之地暂时安顿下来。可就在某一天，不速之客亚当术士（威尔·保尔特 Will Poulter 饰）的闯入不仅打破了这里的安宁与祥和，更将一场生死危机带到这群好朋友中间。战斗中，火箭浣熊（布莱德利·库珀 Bradley Cooper 配音）身负重伤，奄奄一息。为了拯救好友的生命，星爵（克里斯·帕拉特 Chris Pratt 饰）和星云（凯伦·吉兰 Karen Gillan 饰）、毁灭者（戴夫·巴蒂斯塔 Dave Bautista 饰）、螳螂女（庞·克莱门捷夫 Pom Klementieff 饰）、格鲁特（范·迪塞尔 Vin Diesel 配音）卡魔拉（佐伊·索尔达娜 Zoe Saldana 饰）前往创造了火箭的奥果公司寻找起死回生的办法。</p>
-<p>　　然而在那个诡异的世界，他们意外发现了火箭浣熊不为人知的悲惨过往……</p>
-<hr>
-]]></content>
-      <categories>
-        <category>电影</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-        <tag>IMAX</tag>
       </tags>
   </entry>
   <entry>
@@ -18359,6 +18359,23 @@ int main() &#123;
       <tags>
         <tag>日常</tag>
         <tag>夏至</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>神都不良探</title>
+    <url>/zh-CN/61e8f1bed470/</url>
+    <content><![CDATA[<hr>
+<h1 id="游戏介绍"><a href="#游戏介绍" class="headerlink" title="游戏介绍"></a>游戏介绍</h1><h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><h2 id="正面"><a href="#正面" class="headerlink" title="正面"></a>正面</h2><h2 id="侧面"><a href="#侧面" class="headerlink" title="侧面"></a>侧面</h2><h2 id="背面"><a href="#背面" class="headerlink" title="背面"></a>背面</h2><hr>
+]]></content>
+      <categories>
+        <category>游戏</category>
+      </categories>
+      <tags>
+        <tag>主机</tag>
+        <tag>实体</tag>
+        <tag>SONY</tag>
+        <tag>PlayStation</tag>
+        <tag>光盘</tag>
       </tags>
   </entry>
   <entry>

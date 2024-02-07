@@ -362,6 +362,15 @@
   </url>
   
   <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/61e8f1bed470/</loc>
+    
+    <lastmod>2023-06-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcalfred.com/zh-CN/ec4aa3299640/</loc>
     
     <lastmod>2023-06-21</lastmod>
@@ -722,15 +731,6 @@
   </url>
   
   <url>
-    <loc>https://blog.mhxcalfred.com/zh-CN/9c5999699ce1/</loc>
-    
-    <lastmod>2022-10-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.mhxcalfred.com/zh-CN/28da358b5b75/</loc>
     
     <lastmod>2022-10-26</lastmod>
@@ -770,6 +770,15 @@
     <loc>https://blog.mhxcalfred.com/zh-CN/4b35bb2dcad0/</loc>
     
     <lastmod>2022-10-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/42cc0660bc83/</loc>
+    
+    <lastmod>2022-09-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3363,6 +3372,13 @@
   </url>
   
   <url>
+    <loc>https://blog.mhxcalfred.com/tags/iPhone/</loc>
+    <lastmod>2024-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcalfred.com/tags/%E7%AB%8B%E5%A4%8F/</loc>
     <lastmod>2024-02-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -3399,13 +3415,6 @@
   
   <url>
     <loc>https://blog.mhxcalfred.com/tags/WWDC/</loc>
-    <lastmod>2024-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/iPhone/</loc>
     <lastmod>2024-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3468,14 +3477,14 @@
   </url>
   
   <url>
-    <loc>https://blog.mhxcalfred.com/tags/Apple-Event/</loc>
+    <loc>https://blog.mhxcalfred.com/tags/Apple-Watch/</loc>
     <lastmod>2024-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.mhxcalfred.com/tags/Apple-Watch/</loc>
+    <loc>https://blog.mhxcalfred.com/tags/Apple-Event/</loc>
     <lastmod>2024-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
