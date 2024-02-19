@@ -7,15 +7,15 @@ Allow: /anniversary/
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
+Allow: /page/
+Allow: /zh-CN/
 
+User-agent: *
 Disallow: /vendors/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /image/
 Disallow: /js/
-Disallow: /page/
-Disallow: /zh-CN/
-Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: https://blog.mhxcalfred.com/sitemap.xml
