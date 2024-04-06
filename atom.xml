@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2024-03-29T13:04:00.000Z</updated>
+  <updated>2024-04-19T13:59:33.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>清明</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/a2cf4f584d04/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/a2cf4f584d04/</id>
+    <published>2024-04-04T07:02:03.000Z</published>
+    <updated>2024-04-19T13:59:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>清明</p></div><div style="text-align:center;">  <img src="/zh-CN/a2cf4f584d04/202404040001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、清明&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="春分" scheme="https://blog.mhxcalfred.com/tags/%E6%98%A5%E5%88%86/"/>
+    
+  </entry>
   
   <entry>
     <title>哥斯拉大战金刚2：帝国崛起</title>
@@ -468,33 +491,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="大雪" scheme="https://blog.mhxcalfred.com/tags/%E5%A4%A7%E9%9B%AA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SONY 次世代 PlayStation（轻薄版）上市</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/b5b44f2ba419/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/b5b44f2ba419/</id>
-    <published>2023-12-01T03:15:00.000Z</published>
-    <updated>2023-12-01T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="主机介绍"><a href="#主机介绍" class="headerlink" title="主机介绍"></a>主机介绍</h1><p>与前机型相比，PlayStation 5（轻薄版）体积减少了30% 以上，重量也分别减轻了18% 和24%。主机盖分成四片独立面板，顶部采用亮面外观，底部则仍保持雾面设计。如购买PlayStation 5（轻薄版）数字版，可在日后加购专用超高清蓝光光驱。</p><h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><img src="/zh-CN/b5b44f2ba419/202312010001.png" class="" title="PlayStation 5（轻薄版）"><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;主机、国行、SONY、PlayStation&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://blog.mhxcalfred.com/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    
-    <category term="主机" scheme="https://blog.mhxcalfred.com/tags/%E4%B8%BB%E6%9C%BA/"/>
-    
-    <category term="国行" scheme="https://blog.mhxcalfred.com/tags/%E5%9B%BD%E8%A1%8C/"/>
-    
-    <category term="SONY" scheme="https://blog.mhxcalfred.com/tags/SONY/"/>
-    
-    <category term="PlayStation" scheme="https://blog.mhxcalfred.com/tags/PlayStation/"/>
     
   </entry>
   
