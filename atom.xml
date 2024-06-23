@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2024-06-10T17:00:00.000Z</updated>
+  <updated>2024-07-06T14:19:49.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>夏至</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/e79f405773f9/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/e79f405773f9/</id>
+    <published>2024-06-20T20:50:46.000Z</published>
+    <updated>2024-07-06T14:19:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>夏至</p></div><div style="text-align:center;">  <img src="/zh-CN/e79f405773f9/202406210001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、夏至&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="夏至" scheme="https://blog.mhxcalfred.com/tags/%E5%A4%8F%E8%87%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>Apple 2024 全球开发者大会</title>
@@ -468,29 +491,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="惊蛰" scheme="https://blog.mhxcalfred.com/tags/%E6%83%8A%E8%9B%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>元宵节</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/40802232cfec/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/40802232cfec/</id>
-    <published>2024-02-23T16:00:00.000Z</published>
-    <updated>2024-02-23T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>元宵节快乐</p></div><div style="text-align:center;">  <img src="/zh-CN/40802232cfec/202402240001.jpg" class="" title="纪念日"></div><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、元宵节&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="纪念日" scheme="https://blog.mhxcalfred.com/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="元宵节" scheme="https://blog.mhxcalfred.com/tags/%E5%85%83%E5%AE%B5%E8%8A%82/"/>
     
   </entry>
   
