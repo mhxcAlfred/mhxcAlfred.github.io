@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2024-07-16T03:15:00.000Z</updated>
+  <updated>2024-08-07T00:09:01.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>大暑</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/f92a647e8111/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/f92a647e8111/</id>
+    <published>2024-07-22T07:44:11.000Z</published>
+    <updated>2024-08-07T00:09:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>大暑</p></div><div style="text-align:center;">  <img src="/zh-CN/f92a647e8111/202407220001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、大暑&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="大暑" scheme="https://blog.mhxcalfred.com/tags/%E5%A4%A7%E6%9A%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HomePod mini（午夜色，2024年）</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/fd857e31eb41/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/fd857e31eb41/</id>
+    <published>2024-07-17T03:15:00.000Z</published>
+    <updated>2024-07-17T03:15:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>HomePod mini</p>  <p></p></div><div style="text-align:center;">  <img src="/zh-CN/fd857e31eb41/202407170001.png" class="" title="HomePod mini（午夜色，2024年）"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;Apple、HomePod&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="电子产品" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81/"/>
+    
+    
+    <category term="Apple" scheme="https://blog.mhxcalfred.com/tags/Apple/"/>
+    
+    <category term="HomePod" scheme="https://blog.mhxcalfred.com/tags/HomePod/"/>
+    
+  </entry>
   
   <entry>
     <title>新宝可梦随乐拍</title>
@@ -236,16 +282,16 @@
   </entry>
   
   <entry>
-    <title>iPad Pro（M4，2024年）和 iPad Air（M2，2024年）</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/226ab51d5c40/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/226ab51d5c40/</id>
+    <title>iPad Pro（M4，2024年）、iPad Air（M2，2024年）和 Apple Pencil Pro（2024年）</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/9fe6afc99abd/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/9fe6afc99abd/</id>
     <published>2024-05-15T01:35:00.000Z</published>
     <updated>2024-05-15T01:35:00.000Z</updated>
     
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>iPad Pro</p>  <p>磅礴的薄</p></div><div style="text-align:center;">  <img src="/zh-CN/226ab51d5c40/202405150001.png" class="" title="iPad Pro（M4，2024年）"></div><div id="biaoti">  <p>iPad Air</p>  <p>好轻新</p></div><div style="text-align:center;">  <img src="/zh-CN/226ab51d5c40/202405150002.png" class="" title="iPad Air（M2，2024年）"></div><hr>]]></content>
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>iPad Pro</p>  <p>磅礴的薄</p></div><div style="text-align:center;">  <img src="/zh-CN/9fe6afc99abd/202405150001.png" class="" title="iPad Pro（M4，2024年）"></div><div id="biaoti">  <p>iPad Air</p>  <p>好轻新</p></div><div style="text-align:center;">  <img src="/zh-CN/9fe6afc99abd/202405150002.png" class="" title="iPad Air（M2，2024年）"></div><div id="biaoti">  <p>Apple Pencil Pro</p>  <p>随心想起，随笔记下。</p></div><div style="text-align:center;">  <img src="/zh-CN/9fe6afc99abd/202405150003.png" class="" title="Apple Pencil Pro（2024年）"></div><hr>]]></content>
     
     
-    <summary type="html">&lt;center&gt;Apple、iPad&lt;/center&gt;</summary>
+    <summary type="html">&lt;center&gt;Apple、iPad、Pencil&lt;/center&gt;</summary>
     
     
     
@@ -255,6 +301,8 @@
     <category term="Apple" scheme="https://blog.mhxcalfred.com/tags/Apple/"/>
     
     <category term="iPad" scheme="https://blog.mhxcalfred.com/tags/iPad/"/>
+    
+    <category term="Pencil" scheme="https://blog.mhxcalfred.com/tags/Pencil/"/>
     
   </entry>
   
@@ -445,58 +493,6 @@
     <category term="Apple" scheme="https://blog.mhxcalfred.com/tags/Apple/"/>
     
     <category term="Retail" scheme="https://blog.mhxcalfred.com/tags/Retail/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>地平线 西之绝境</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/42ce955d2ea7/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/42ce955d2ea7/</id>
-    <published>2024-03-21T03:15:00.000Z</published>
-    <updated>2024-03-21T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="游戏介绍"><a href="#游戏介绍" class="headerlink" title="游戏介绍"></a>游戏介绍</h1><h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><h2 id="正面"><a href="#正面" class="headerlink" title="正面"></a>正面</h2><h2 id="侧面"><a href="#侧面" class="headerlink" title="侧面"></a>侧面</h2><h2 id="背面"><a href="#背面" class="headerlink" title="背面"></a>背面</h2><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;主机、SONY、PlayStation、实体、光盘&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://blog.mhxcalfred.com/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    
-    <category term="主机" scheme="https://blog.mhxcalfred.com/tags/%E4%B8%BB%E6%9C%BA/"/>
-    
-    <category term="实体" scheme="https://blog.mhxcalfred.com/tags/%E5%AE%9E%E4%BD%93/"/>
-    
-    <category term="SONY" scheme="https://blog.mhxcalfred.com/tags/SONY/"/>
-    
-    <category term="PlayStation" scheme="https://blog.mhxcalfred.com/tags/PlayStation/"/>
-    
-    <category term="光盘" scheme="https://blog.mhxcalfred.com/tags/%E5%85%89%E7%9B%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>春分</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/441df4525591/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/441df4525591/</id>
-    <published>2024-03-20T03:06:12.000Z</published>
-    <updated>2024-04-04T07:02:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>春分</p></div><div style="text-align:center;">  <img src="/zh-CN/441df4525591/202403200001.webp" class="" title="节气"></div><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、春分&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="春分" scheme="https://blog.mhxcalfred.com/tags/%E6%98%A5%E5%88%86/"/>
     
   </entry>
   
