@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2024-09-07T03:11:06.000Z</updated>
+  <updated>2024-09-22T12:43:27.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>白露</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/4e58d8f441a7/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/4e58d8f441a7/</id>
+    <published>2024-09-07T03:11:06.000Z</published>
+    <updated>2024-09-22T12:43:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>白露</p></div><div style="text-align:center;">  <img src="/zh-CN/4e58d8f441a7/202409070001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、白露&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="白露" scheme="https://blog.mhxcalfred.com/tags/%E7%99%BD%E9%9C%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>处暑</title>
@@ -464,29 +487,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="谷雨" scheme="https://blog.mhxcalfred.com/tags/%E8%B0%B7%E9%9B%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Taylor Swift THE TORTURED POETS DEPARTMENT THE ANTHOLOGY</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/6c8d701b0989/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/6c8d701b0989/</id>
-    <published>2024-04-19T04:13:00.000Z</published>
-    <updated>2024-04-19T04:13:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="专辑介绍"><a href="#专辑介绍" class="headerlink" title="专辑介绍"></a>专辑介绍</h1><p>“苦难诗社”耕耘两年，启封时而幽默、时而心碎的旷野人生。</p><h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><h2 id="正面"><a href="#正面" class="headerlink" title="正面"></a>正面</h2><h2 id="侧面"><a href="#侧面" class="headerlink" title="侧面"></a>侧面</h2><h2 id="背面"><a href="#背面" class="headerlink" title="背面"></a>背面</h2><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;Taylor Swift、Apple Music&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="音乐" scheme="https://blog.mhxcalfred.com/categories/%E9%9F%B3%E4%B9%90/"/>
-    
-    
-    <category term="Apple Music" scheme="https://blog.mhxcalfred.com/tags/Apple-Music/"/>
-    
-    <category term="Taylor Swift" scheme="https://blog.mhxcalfred.com/tags/Taylor-Swift/"/>
     
   </entry>
   
