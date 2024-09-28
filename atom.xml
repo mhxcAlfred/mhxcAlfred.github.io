@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2024-09-25T00:32:00.000Z</updated>
+  <updated>2024-09-27T12:49:00.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>变形金刚：起源</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/0b5605b3f907/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/0b5605b3f907/</id>
+    <published>2024-09-27T11:05:00.000Z</published>
+    <updated>2024-09-27T12:49:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　故事发生在变形金刚的母星塞伯坦，聚焦变形金刚的青年时代，讲述汽车人领袖擎天柱（克里斯·海姆斯沃斯 Chris Hemsworth 配音）与霸天虎领袖威震天（布莱恩·泰里·亨利 Brian Tyree Henry 配音）从手足走向反目的故事，打响旷日持久的塞伯坦之战。</p><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、IMAX&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="电影" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%BD%B1/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
+    
+  </entry>
   
   <entry>
     <title>AirPods Max（H1，USB-C，2024年）和 AirPods 4（H2，2024年）</title>
@@ -462,29 +485,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>芒种</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/3efe98474ba1/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/3efe98474ba1/</id>
-    <published>2024-06-05T04:09:10.000Z</published>
-    <updated>2024-06-20T20:50:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>芒种</p></div><div style="text-align:center;">  <img src="/zh-CN/3efe98474ba1/202406050001.webp" class="" title="节气"></div><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、芒种&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="芒种" scheme="https://blog.mhxcalfred.com/tags/%E8%8A%92%E7%A7%8D/"/>
     
   </entry>
   
