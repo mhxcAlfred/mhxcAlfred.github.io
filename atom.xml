@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2024-09-27T12:49:00.000Z</updated>
+  <updated>2024-10-22T22:14:32.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>寒露</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/7375503d874e/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/7375503d874e/</id>
+    <published>2024-10-07T18:59:43.000Z</published>
+    <updated>2024-10-22T22:14:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>寒露</p></div><div style="text-align:center;">  <img src="/zh-CN/7375503d874e/202410080001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、寒露&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="寒露" scheme="https://blog.mhxcalfred.com/tags/%E5%AF%92%E9%9C%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>变形金刚：起源</title>
@@ -92,7 +115,7 @@
     <published>2024-09-22T12:43:27.000Z</published>
     <updated>2024-10-07T18:59:43.000Z</updated>
     
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>秋分</p></div><div style="text-align:center;">  </div><hr>]]></content>
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>秋分</p></div><div style="text-align:center;">  <img src="/zh-CN/5ab9a104c539/202409220001.webp" class="" title="节气"></div><hr>]]></content>
     
     
     <summary type="html">&lt;center&gt;日常、秋分&lt;/center&gt;</summary>
@@ -462,29 +485,6 @@
     <category term="Apple" scheme="https://blog.mhxcalfred.com/tags/Apple/"/>
     
     <category term="WWDC" scheme="https://blog.mhxcalfred.com/tags/WWDC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>疯狂的麦克斯：狂暴女神</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/c6b7bc5f611a/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/c6b7bc5f611a/</id>
-    <published>2024-06-06T16:00:00.000Z</published>
-    <updated>2024-06-06T18:29:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　影片讲述了复仇女神弗瑞奥萨（安雅·泰勒-乔伊 Anya Taylor-Joy 饰）惊心动魄的成长史。年轻的弗瑞奥萨从原本的家园被掠走，落入军阀狄门特斯（克里斯·海姆斯沃斯 Chris Hemsworth 饰）领导的帮派手中，在穿过荒原时，他们来到不死老乔（拉黑·休姆 Lachy Hulme 饰）所掌管的堡垒。在两位暴君争夺统治地位的同时，弗瑞奥萨必须在重重考验中活下来，并想方设法寻找回家的路；她也逐渐成长为利落酷飒的狂暴女神。</p><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、IMAX&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="电影" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%BD%B1/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
     
   </entry>
   
