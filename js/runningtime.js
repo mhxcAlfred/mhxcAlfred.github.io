@@ -16,7 +16,7 @@
     minutes = ("0" + minutes).slice(-2);
     seconds = ("0" + seconds).slice(-2);
     
-    document.getElementById("timeDate").innerHTML = "本站已安全运行 " + days + " 天 ";
+    document.getElementById("timeDate").innerHTML = "本站已悄然运行 " + days + " 天 ";
     document.getElementById("times").innerHTML = hours + " 小时 " + minutes + " 分 " + seconds + " 秒";
   }
   

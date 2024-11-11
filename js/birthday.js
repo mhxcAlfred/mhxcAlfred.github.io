@@ -16,8 +16,8 @@
     minutes = ("0" + minutes).slice(-2);
     seconds = ("0" + seconds).slice(-2);
 
-    document.getElementById("btimeDate").innerHTML = "本人已生活 " + days + " 天 ";
-    document.getElementById("btimes").innerHTML = hours + " 小时 " + minutes + " 分 " + seconds + " 秒";
+    document.getElementById("btimeDate").innerHTML = "本人至今已走过 " + days + " 天 ";
+    document.getElementById("btimes").innerHTML = hours + " 小时 " + minutes + " 分 " + seconds + " 秒" + " 的时光";
   }
   
   update();
