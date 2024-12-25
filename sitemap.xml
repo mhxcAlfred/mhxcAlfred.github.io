@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://blog.mhxcalfred.com/zh-CN/de6d14d1d01e/</loc>
+    
+    <lastmod>2024-12-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcalfred.com/zh-CN/33c158a5ceed/</loc>
     
     <lastmod>2024-12-21</lastmod>
@@ -6642,6 +6651,13 @@
   </url>
   
   <url>
+    <loc>https://blog.mhxcalfred.com/tags/TV-Tokyo/</loc>
+    <lastmod>2024-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mhxcalfred.com/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2024-12-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -6671,13 +6687,6 @@
   
   <url>
     <loc>https://blog.mhxcalfred.com/tags/Disney-Plus/</loc>
-    <lastmod>2024-12-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mhxcalfred.com/tags/TV-Tokyo/</loc>
     <lastmod>2024-12-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -7350,6 +7359,20 @@
   
   <url>
     <loc>https://blog.mhxcalfred.com/tags/OKX/</loc>
+    <lastmod>2024-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/%E5%8F%B7%E7%A0%81/</loc>
+    <lastmod>2024-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mhxcalfred.com/tags/Hushed/</loc>
     <lastmod>2024-12-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
