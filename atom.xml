@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-01-04T01:27:00.000Z</updated>
+  <updated>2025-01-19T19:59:52.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小寒</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/b533c0f40c0c/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/b533c0f40c0c/</id>
+    <published>2025-01-05T02:32:31.000Z</published>
+    <updated>2025-01-19T19:59:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>小寒</p></div><div style="text-align:center;">  <img src="/zh-CN/b533c0f40c0c/202501050001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、小寒&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="小寒" scheme="https://blog.mhxcalfred.com/tags/%E5%B0%8F%E5%AF%92/"/>
+    
+  </entry>
   
   <entry>
     <title>AirPods 4 蛇年特别款 (支持主动降噪)</title>
@@ -460,29 +483,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>孤独的美食家 第十一季 第七集 岛根县出云市煎饺与白饭</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/585083254776/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/585083254776/</id>
-    <published>2024-11-14T07:15:00.000Z</published>
-    <updated>2024-11-14T07:44:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　乘务员川端明日香在机场待命期间被同事邀请一起吃饭，却突然接到通知要去出云。工作结束后，饥肠辘辘的川端在当地找到了一家挂着“饺子”红灯笼的小店。井之头五郎也在出云出现，共同探索当地美食。</p><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、TV Tokyo&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="剧集" scheme="https://blog.mhxcalfred.com/categories/%E5%89%A7%E9%9B%86/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="TV Tokyo" scheme="https://blog.mhxcalfred.com/tags/TV-Tokyo/"/>
     
   </entry>
   
