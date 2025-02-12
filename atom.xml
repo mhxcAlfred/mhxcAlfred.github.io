@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-02-18T10:06:18.000Z</updated>
+  <updated>2025-02-11T16:00:00.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>元宵节</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/7a75c12c9a19/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/7a75c12c9a19/</id>
+    <published>2025-02-11T16:00:00.000Z</published>
+    <updated>2025-02-11T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>元宵节快乐</p></div><div style="text-align:center;">  <img src="/zh-CN/7a75c12c9a19/202502120001.jpg" class="" title="纪念日"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、元宵节&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="纪念日" scheme="https://blog.mhxcalfred.com/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="元宵节" scheme="https://blog.mhxcalfred.com/tags/%E5%85%83%E5%AE%B5%E8%8A%82/"/>
+    
+  </entry>
   
   <entry>
     <title>立春</title>
@@ -460,29 +483,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="小雪" scheme="https://blog.mhxcalfred.com/tags/%E5%B0%8F%E9%9B%AA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>哈利·波特与死亡圣器（上）</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/6f1cc7acef17/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/6f1cc7acef17/</id>
-    <published>2024-11-21T16:00:00.000Z</published>
-    <updated>2024-11-21T18:26:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　邓不利多死后，伏地魔（Ralph Fiennes 饰）与食死徒入侵魔法学校，魔法部也被伏地魔的爪牙操控，邪恶的阴云笼罩魔法世界上空。在哈利·波特（丹尼尔·雷德克里夫 Daniel Radcliffe 饰）17岁生日之际，凤凰社成员及一众好友护送他回到了凤凰社的据点陋居，然而这立即遭到食死徒毁灭性地打击。哈利和罗恩（鲁伯特·格林特 Rupert Grint 饰）、赫敏（爱玛·沃特森 Emma Watson 饰）侥幸逃亡，并且按照邓不利多的嘱托继续寻找伏地魔的魂器。死亡的威胁时刻逡巡左右，他们还要面对友情的考验。在寻找摧毁魂器方法的过程中，死亡圣器的面纱也渐渐揭开。<br>　　与此同时，为了置哈利于死地，伏地魔也在寻找最后一件死亡圣器。最后的决战即将到来……</p><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、IMAX&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="电影" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%BD%B1/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
     
   </entry>
   
