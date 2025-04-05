@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-04-04T12:48:21.000Z</updated>
+  <updated>2025-04-19T19:55:45.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>清明</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/4cf285e950fb/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/4cf285e950fb/</id>
+    <published>2025-04-04T12:48:21.000Z</published>
+    <updated>2025-04-19T19:55:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>清明</p></div><div style="text-align:center;">  <img src="/zh-CN/4cf285e950fb/202504040001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、清明&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="清明" scheme="https://blog.mhxcalfred.com/tags/%E6%B8%85%E6%98%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>春分</title>
@@ -460,29 +483,6 @@
     <category term="Dupay" scheme="https://blog.mhxcalfred.com/tags/Dupay/"/>
     
     <category term="OKX" scheme="https://blog.mhxcalfred.com/tags/OKX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>猎人克莱文</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/16b7c83869c8/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/16b7c83869c8/</id>
-    <published>2024-12-14T01:10:00.000Z</published>
-    <updated>2024-12-14T03:17:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　少年谢尔盖·克拉维诺夫（亚伦·泰勒-约翰逊 饰）的父亲（罗素·克劳 饰）崇尚“强者为王”，对后代施行野蛮残酷的狼性教育，而在一次狩猎之中，经历野生雄狮袭击的谢尔盖被父亲抛弃。他在濒死之际意外因为狮子血液而产生变异，成为拥有超常力量的猎人克莱文，从此踏上向父亲的复仇之路，而犀牛人的出现，似乎也预示了更大的阴谋。</p><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、IMAX&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="电影" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%BD%B1/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
     
   </entry>
   
