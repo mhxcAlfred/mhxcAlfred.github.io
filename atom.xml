@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-04-10T18:18:00.000Z</updated>
+  <updated>2025-05-05T05:56:57.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谷雨</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/de1345ad8668/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/de1345ad8668/</id>
+    <published>2025-04-19T19:55:45.000Z</published>
+    <updated>2025-05-05T05:56:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>谷雨</p></div><div style="text-align:center;">  <img src="/zh-CN/de1345ad8668/202504200001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、谷雨&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="谷雨" scheme="https://blog.mhxcalfred.com/tags/%E8%B0%B7%E9%9B%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>速度与激情7</title>
@@ -454,29 +477,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="冬至" scheme="https://blog.mhxcalfred.com/tags/%E5%86%AC%E8%87%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>狮子王：木法沙传奇</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/6a5fa1dcac6f/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/6a5fa1dcac6f/</id>
-    <published>2024-12-19T16:00:00.000Z</published>
-    <updated>2024-12-19T17:59:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　回溯传奇狮王辛巴父亲“木法沙”的荣耀之路，揭秘他与迪士尼经典反派“刀疤”（塔卡）之间不为人知的羁绊。一次非凡的相遇，一场改变命运的冒险，当荣耀大地上的一切回到起点，是殊途同归还是背道而驰？这对“狮兄弟”的未来将如何展开？</p><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、IMAX&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="电影" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%BD%B1/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
     
   </entry>
   
