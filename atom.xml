@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-07-22T13:29:11.000Z</updated>
+  <updated>2025-07-11T08:25:00.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>超人</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/b7282dbe7869/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/b7282dbe7869/</id>
+    <published>2025-07-11T06:15:00.000Z</published>
+    <updated>2025-07-11T08:25:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　导演詹姆斯·古恩这次带来了一个前所未见的超人故事：聚焦英雄的成长烦恼，展现超人在力量与责任之间的艰难抉择。</p><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、IMAX&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="电影" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%BD%B1/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
+    
+  </entry>
   
   <entry>
     <title>小暑</title>
@@ -450,29 +473,6 @@
     <category term="Apple" scheme="https://blog.mhxcalfred.com/tags/Apple/"/>
     
     <category term="iPhone" scheme="https://blog.mhxcalfred.com/tags/iPhone/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>雨水</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/3d70c0f1bfff/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/3d70c0f1bfff/</id>
-    <published>2025-02-18T10:06:18.000Z</published>
-    <updated>2024-03-05T08:07:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>雨水</p></div><div style="text-align:center;">  <img src="/zh-CN/3d70c0f1bfff/202502180001.webp" class="" title="节气"></div><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、雨水&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="雨水" scheme="https://blog.mhxcalfred.com/tags/%E9%9B%A8%E6%B0%B4/"/>
     
   </entry>
   
