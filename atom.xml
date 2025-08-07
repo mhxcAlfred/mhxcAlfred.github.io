@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-07-24T17:55:00.000Z</updated>
+  <updated>2025-08-22T20:33:35.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>立秋</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/be6b0620bf8e/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/be6b0620bf8e/</id>
+    <published>2025-08-07T05:51:19.000Z</published>
+    <updated>2025-08-22T20:33:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>立秋</p></div><div style="text-align:center;">  <img src="/zh-CN/be6b0620bf8e/202508070001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、立秋&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="立秋" scheme="https://blog.mhxcalfred.com/tags/%E7%AB%8B%E7%A7%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>神奇4侠：初露锋芒</title>
@@ -456,29 +479,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="春分" scheme="https://blog.mhxcalfred.com/tags/%E6%98%A5%E5%88%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MacBook Air（M4，2025年）和 Mac Studio（M4 Max，M3 Ultra，2025年）</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/7c07849c286a/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/7c07849c286a/</id>
-    <published>2025-03-13T00:12:00.000Z</published>
-    <updated>2025-03-13T00:12:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>MacBook Air</p>  <p>身轻身手快</p></div><div style="text-align:center;">  <img src="/zh-CN/7c07849c286a/202503130001.png" class="" title="MacBook Air（M4，2025年）"></div><div id="biaoti">  <p>Mac Studio</p>  <p>硬核加载</p></div><div style="text-align:center;">  <img src="/zh-CN/7c07849c286a/202503130002.png" class="" title="Mac Studio（M4 Max，M3 Ultra，2025年）"></div><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;Apple、Mac&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="电子产品" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81/"/>
-    
-    
-    <category term="Apple" scheme="https://blog.mhxcalfred.com/tags/Apple/"/>
-    
-    <category term="Mac" scheme="https://blog.mhxcalfred.com/tags/Mac/"/>
     
   </entry>
   
