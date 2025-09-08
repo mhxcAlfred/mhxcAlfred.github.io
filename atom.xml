@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-09-07T08:51:41.000Z</updated>
+  <updated>2025-09-22T18:19:04.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>白露</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/b11924d26cd5/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/b11924d26cd5/</id>
+    <published>2025-09-07T08:51:41.000Z</published>
+    <updated>2025-09-22T18:19:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>白露</p></div><div style="text-align:center;">  <img src="/zh-CN/b11924d26cd5/202509070001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、白露&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="白露" scheme="https://blog.mhxcalfred.com/tags/%E7%99%BD%E9%9C%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>处暑</title>
@@ -456,29 +479,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="立夏" scheme="https://blog.mhxcalfred.com/tags/%E7%AB%8B%E5%A4%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>雷霆特工队</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/c85ddc8d47c8/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/c85ddc8d47c8/</id>
-    <published>2025-04-30T03:45:00.000Z</published>
-    <updated>2025-04-30T05:52:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　《雷霆特攻队*》中集结了一支颠覆传统的反英雄团队——“二代黑寡妇”叶莲娜、“冬兵”巴基、“红色守卫”阿列克谢、“幽灵”、“模仿大师”和“美国密探”约翰·沃克。在发现陷入了瓦伦蒂娜设置的死亡陷阱后，这群已不抱有幻想的弃儿必须开始一项危险的任务，迫使他们面对各自最黑暗的过往。这个混乱的“最低配”团队是否会一盘散沙内部瓦解，还是会在为时已晚之前及时完成救赎并团结起来呢？</p><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、IMAX&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="电影" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%BD%B1/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
     
   </entry>
   
