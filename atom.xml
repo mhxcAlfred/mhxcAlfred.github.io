@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-09-24T00:40:00.000Z</updated>
+  <updated>2025-10-23T03:50:39.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>寒露</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/d613ac7aba65/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/d613ac7aba65/</id>
+    <published>2025-10-08T00:40:57.000Z</published>
+    <updated>2025-10-23T03:50:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>寒露</p></div><div style="text-align:center;">  <img src="/zh-CN/d613ac7aba65/202510080001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、寒露&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="寒露" scheme="https://blog.mhxcalfred.com/tags/%E5%AF%92%E9%9C%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>AirPods Pro 3（H2，2025年）</title>
@@ -456,35 +479,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="夏至" scheme="https://blog.mhxcalfred.com/tags/%E5%A4%8F%E8%87%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>黑神话：悟空</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/9bab5c982290/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/9bab5c982290/</id>
-    <published>2025-06-18T03:15:00.000Z</published>
-    <updated>2025-06-18T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="游戏介绍"><a href="#游戏介绍" class="headerlink" title="游戏介绍"></a>游戏介绍</h1><h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><h2 id="正面"><a href="#正面" class="headerlink" title="正面"></a>正面</h2><h2 id="侧面"><a href="#侧面" class="headerlink" title="侧面"></a>侧面</h2><h2 id="背面"><a href="#背面" class="headerlink" title="背面"></a>背面</h2><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;主机、SONY、PlayStation、实体、光盘&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://blog.mhxcalfred.com/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    
-    <category term="主机" scheme="https://blog.mhxcalfred.com/tags/%E4%B8%BB%E6%9C%BA/"/>
-    
-    <category term="实体" scheme="https://blog.mhxcalfred.com/tags/%E5%AE%9E%E4%BD%93/"/>
-    
-    <category term="SONY" scheme="https://blog.mhxcalfred.com/tags/SONY/"/>
-    
-    <category term="PlayStation" scheme="https://blog.mhxcalfred.com/tags/PlayStation/"/>
-    
-    <category term="光盘" scheme="https://blog.mhxcalfred.com/tags/%E5%85%89%E7%9B%98/"/>
     
   </entry>
   
