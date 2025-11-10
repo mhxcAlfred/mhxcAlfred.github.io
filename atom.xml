@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-10-30T00:06:00.000Z</updated>
+  <updated>2025-11-22T01:35:18.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>立冬</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/15c57049c5ec/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/15c57049c5ec/</id>
+    <published>2025-11-07T04:03:48.000Z</published>
+    <updated>2025-11-22T01:35:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>立冬</p></div><div style="text-align:center;">  <img src="/zh-CN/15c57049c5ec/202511070001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、立冬&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="立冬" scheme="https://blog.mhxcalfred.com/tags/%E7%AB%8B%E5%86%AC/"/>
+    
+  </entry>
   
   <entry>
     <title>潘玮柏 狂爱</title>
@@ -448,29 +471,6 @@
     <updated>2025-08-16T02:00:00.000Z</updated>
     
     <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>Apple 前海壹方城</p>  <p>这方来逐浪</p></div><div style="text-align:center;">  <img src="/zh-CN/c9a212830cdf/202508160001.png" class="" title="Apple 前海壹方城"></div><div style="text-align:center;">  <img src="/zh-CN/c9a212830cdf/202508160002.png" class="" title="Apple_Uniwalk_Qianhai_Wallpaper_Mac"></div><div style="text-align:center;">  <img src="/zh-CN/c9a212830cdf/202508160003.png" class="" title="Apple_Uniwalk_Qianhai_Wallpaper_iPhone"></div><div style="text-align:center;">  <img src="/zh-CN/c9a212830cdf/202508160004.png" class="" title="Apple_Uniwalk_Qianhai_Wallpaper_iPad"></div><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;Apple、Retail&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="零售店" scheme="https://blog.mhxcalfred.com/categories/%E9%9B%B6%E5%94%AE%E5%BA%97/"/>
-    
-    
-    <category term="Apple" scheme="https://blog.mhxcalfred.com/tags/Apple/"/>
-    
-    <category term="Retail" scheme="https://blog.mhxcalfred.com/tags/Retail/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Apple 百年城</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/f216bfc5a1c4/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/f216bfc5a1c4/</id>
-    <published>2025-08-09T12:00:00.000Z</published>
-    <updated>2025-08-09T12:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>Apple 百年城</p>  <p>已关闭</p>  <p>20151024-20250809</p></div><div style="text-align:center;">  <img src="/zh-CN/f216bfc5a1c4/202508090001.png" class="" title="Apple 百年城"></div><hr>]]></content>
     
     
     <summary type="html">&lt;center&gt;Apple、Retail&lt;/center&gt;</summary>
