@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2025-12-19T03:53:00.000Z</updated>
+  <updated>2026-01-05T08:22:53.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>冬至</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/d354749ba3e3/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/d354749ba3e3/</id>
+    <published>2025-12-21T15:02:48.000Z</published>
+    <updated>2026-01-05T08:22:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>冬至</p></div><div style="text-align:center;">  <img src="/zh-CN/d354749ba3e3/202512210001.webp" class="" title="节气"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、冬至&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="节气" scheme="https://blog.mhxcalfred.com/categories/%E8%8A%82%E6%B0%94/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="冬至" scheme="https://blog.mhxcalfred.com/tags/%E5%86%AC%E8%87%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>阿凡达：火与烬</title>
@@ -460,29 +483,6 @@
     <category term="Apple Music" scheme="https://blog.mhxcalfred.com/tags/Apple-Music/"/>
     
     <category term="Taylor Swift" scheme="https://blog.mhxcalfred.com/tags/Taylor-Swift/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AirPods Pro 3（H2，2025年）</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/9675917ae4e1/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/9675917ae4e1/</id>
-    <published>2025-09-24T00:40:00.000Z</published>
-    <updated>2025-09-24T00:40:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>AirPods Pro 3</p></div><div style="text-align:center;">  <img src="/zh-CN/9675917ae4e1/202509240001.png" class="" title="AirPods Pro 3（H2，2025年）"></div><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;Apple、AirPods&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="电子产品" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81/"/>
-    
-    
-    <category term="Apple" scheme="https://blog.mhxcalfred.com/tags/Apple/"/>
-    
-    <category term="AirPods" scheme="https://blog.mhxcalfred.com/tags/AirPods/"/>
     
   </entry>
   
