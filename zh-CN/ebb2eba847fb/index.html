@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-_mhxcAlfred.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-_mhxcAlfred.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-_mhxcAlfred.png">
+  <link rel="mask-icon" href="/images/logo-_mhxcAlfred.svg" color="#222">
+  <link rel="manifest" href="/images/manifest.json">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.mhxcalfred.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"github","dark":"github-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"language":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":true,"preload":true}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="表格、代码块、删除线、任务列表、表情符号、公式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown 扩展语法">
+<meta property="og:url" content="https://blog.mhxcalfred.com/zh-CN/ebb2eba847fb/">
+<meta property="og:site_name" content="胡心小筑">
+<meta property="og:description" content="表格、代码块、删除线、任务列表、表情符号、公式">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-11-21T03:15:00.000Z">
+<meta property="article:modified_time" content="2019-11-21T03:15:00.000Z">
+<meta property="article:author" content="_mhxcAlfred">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.mhxcalfred.com/zh-CN/ebb2eba847fb/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.mhxcalfred.com/zh-CN/ebb2eba847fb/","path":"zh-CN/ebb2eba847fb/","title":"Markdown 扩展语法"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Markdown 扩展语法 | 胡心小筑</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js" defer></script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="胡心小筑" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">胡心小筑</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">随笔   |   札记</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E8%A7%88"><span class="nav-number">1.</span> <span class="nav-text">总览</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.1.</span> <span class="nav-text">表格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E6%9E%9C"><span class="nav-number">1.1.2.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"><span class="nav-number">1.1.3.</span> <span class="nav-text">最佳实践</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="nav-number">1.2.</span> <span class="nav-text">代码块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E6%9E%9C-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="nav-number">1.3.</span> <span class="nav-text">删除线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E6%9E%9C-2"><span class="nav-number">1.3.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8"><span class="nav-number">1.4.</span> <span class="nav-text">任务列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-3"><span class="nav-number">1.4.1.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E6%9E%9C-3"><span class="nav-number">1.4.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7"><span class="nav-number">1.5.</span> <span class="nav-text">表情符号</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-4"><span class="nav-number">1.5.1.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E6%9E%9C-4"><span class="nav-number">1.5.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AC%E5%BC%8F"><span class="nav-number">1.6.</span> <span class="nav-text">公式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-5"><span class="nav-number">1.6.1.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%88%E6%9E%9C-5"><span class="nav-number">1.6.2.</span> <span class="nav-text">效果</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="_mhxcAlfred"
+      src="/images/logo-_mhxcAlfred.svg">
+  <p class="site-author-name" itemprop="name">_mhxcAlfred</p>
+  <div class="site-description" itemprop="description">好学若饥，谦卑若愚</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">862</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">114</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.mhxcalfred.com/zh-CN/ebb2eba847fb/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo-_mhxcAlfred.svg">
+      <meta itemprop="name" content="_mhxcAlfred">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡心小筑">
+      <meta itemprop="description" content="好学若饥，谦卑若愚">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Markdown 扩展语法 | 胡心小筑">
+      <meta itemprop="description" content="&lt;center&gt;表格、代码块、删除线、任务列表、表情符号、公式&lt;&#x2F;center&gt;">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Markdown 扩展语法
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019年11月21日 第47周 第325天 星期四 11:15:00" itemprop="dateCreated datePublished" datetime="2019-11-21T11:15:00+08:00">2019年11月21日 第47周 第325天 星期四</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">教程</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description"><center>表格、代码块、删除线、任务列表、表情符号、公式</center></div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><hr>
+<h1 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h1><blockquote>
+<p>即便 John Gruber 的原始设计文档中所列出的 Markdown 基本语法 已经囊括了许多满足日常所需的元素，但对于某些人来说仍然不够。这就是 Markdown 扩展语法出现的缘由。</p>
+</blockquote>
+<blockquote>
+<p>一些个人和组织通过添加表格（tables）、代码块（code blocks）、语法高亮、将 URL 自动转换为链接和脚注（footnotes）等额外的元素来扩展 Markdown 的基本语法。这些额外添加的元素可以通过使用构建于 Markdown 之上的轻量级标记语言或通过向兼容的 Markdown 解析器添加扩展来启用这些新元素。</p>
+</blockquote>
+<hr>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><blockquote>
+<p>如需添加表格，请使用三个或更多个连字符（ — ）来为每个列创建表头，并使用管道符（ | ）来分隔每个列。为兼容考虑，你还应该在行的两侧添加管道符。</p>
+</blockquote>
+<blockquote>
+<p>通过在标题行中的连字符（ hyphens ）的左侧或右侧或两侧添加冒号（ : ），可以将对应列中的文本向左或向右或居中对齐。</p>
+</blockquote>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p><code>|First Header | Second Header | Third Header|</code><br><code>|:----------- | :-----------: | -----------:|</code><br><code>|Content Cell | Content Cell  | Content Cell|</code><br><code>|Content Cell | Content Cell  | Content Cell|</code></p>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><table>
+<thead>
+<tr>
+<th align="left">First Header</th>
+<th align="center">Second Header</th>
+<th align="right">Third Header</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Content Cell</td>
+<td align="center">Content Cell</td>
+<td align="right">Content Cell</td>
+</tr>
+<tr>
+<td align="left">Content Cell</td>
+<td align="center">Content Cell</td>
+<td align="right">Content Cell</td>
+</tr>
+</tbody></table>
+<h3 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h3><blockquote>
+<p>你可以为表格中的文本设置格式。例如，可以添加 链接（ links ）、代码（ code ）（注意，只能为单词或短语添加反引号 ( &#96; ) ，不能添加 代码块（ code blocks ））以及 强调（ emphasis ）。</p>
+</blockquote>
+<blockquote>
+<p>不支持的格式包括标题（ headings ）、块引用（ blockquotes ）、列表（ lists ）、水平分割线（ horizontal rules ）、图片（ images ）或 HTML 标记。</p>
+</blockquote>
+<hr>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><blockquote>
+<p>Markdown 的基本语法允许你通过缩进四个空格或一个制表符来创建 代码块 。如果你觉得不方便，可以试试围栏代码块（ fenced code blocks ）。根据 Markdown 解析器或编辑器的不同，代码块的前后可以使用三个反引号（ &#96;&#96;&#96; ）或三个波浪号（ ~~~ ）来标记围栏代码块。</p>
+</blockquote>
+<blockquote>
+<p>许多 Markdown 解析器都支持围栏代码块的语法高亮功能。此功能允许你为编写代码所用的编程语言添加带颜色的语法高亮显示。如需添加语法高亮，请在围栏代码块前的反引号旁指定所用的编程语言。</p>
+</blockquote>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><p><code>~~~C</code><br><code>#include &lt;stdio.h&gt;</code><br><code>int main() {</code><br><code>        // 打印 Hello, World!</code><br><code>        printf(&quot;Hello, World!\n&quot;);</code><br><code>        return 0;</code><br><code>}</code><br><code>~~~</code>  </p>
+<h3 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 打印 Hello, World!</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello, World!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><blockquote>
+<p>你可以贯穿单词的中心放一条横线从而删除这些单词。其效果看起来是这样的： <del>这样</del> 。此功能允许你标记某些单词是错误的，不应该出现在文档中。在单词前面和后面分别放置两个波浪号（ ~~ ） 来表示删除这些单词。</p>
+</blockquote>
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h3><p><code>~~这是删除的文字~~</code></p>
+<h3 id="效果-2"><a href="#效果-2" class="headerlink" title="效果"></a>效果</h3><p><del>这是删除的文字</del></p>
+<hr>
+<h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><blockquote>
+<p>任务列表（task lists 或者 checklists）允许你创建带有复选框的项目列表。在支持任务列表的 Markdown 应用程序中，复选框将显示在内容旁边。要创建任务列表，请在任务列表项前面添加破折号（-）和中间带空格的方括号（[ ]）。要选中复选框，请在方括号中间添加一个 x ，即（[\x]）。</p>
+</blockquote>
+<h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h3><p><code>- [x] 复选1</code><br><code>- [x] 复选2</code><br><code>- [ ] 复选3</code></p>
+<h3 id="效果-3"><a href="#效果-3" class="headerlink" title="效果"></a>效果</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> 复选1</li>
+<li><input checked="" disabled="" type="checkbox"> 复选2</li>
+<li><input disabled="" type="checkbox"> 复选3</li>
+</ul>
+<hr>
+<h2 id="表情符号"><a href="#表情符号" class="headerlink" title="表情符号"></a>表情符号</h2><blockquote>
+<p>有两种方式可以将表情符号添加到 Markdown 文档中：将表情符号复制并粘贴到 Markdown 格式的文本中。</p>
+</blockquote>
+<blockquote>
+<p>在大多数情况下，你可以简单地从 Emojipedia 等来源复制表情符号，然后将其粘贴到文档中。许多 Markdown 应用程序就会自动以 Markdown 格式的文本来显示表情符号。从 Markdown 应用程序导出的 HTML 和 PDF 文件也是可以显示表情符号的。</p>
+</blockquote>
+<h3 id="示例-4"><a href="#示例-4" class="headerlink" title="示例"></a>示例</h3><p><code>这是个表情: ❤️</code></p>
+<h3 id="效果-4"><a href="#效果-4" class="headerlink" title="效果"></a>效果</h3><p>这是个表情: ❤️</p>
+<hr>
+<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h3 id="示例-5"><a href="#示例-5" class="headerlink" title="示例"></a>示例</h3><p><code>$$</code><br><code>e=mc^2</code><br><code>$$</code></p>
+<p><code>$$</code><br><code>\frac{\partial u}{\partial t}</code><br><code>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +</code><br><code>\frac{\partial^2 u}{\partial y^2} +</code><br><code>\frac{\partial^2 u}{\partial z^2}\right)</code><br><code>$$</code></p>
+<p><code>$$</code><br><code>cos 2\theta = \cos^2 \theta - \sin^2 \theta = 2 \cos^2 \theta - 1</code><br><code>$$</code></p>
+<p><code>$$</code><br><code>\begin{aligned}</code><br><code>\dot{x} &amp; = \sigma(y-x) \\\\</code><br><code>\dot{y} &amp; = \rho x - y - xz \\\\</code><br><code>\dot{z} &amp; = -\beta z + xy</code><br><code>\end{aligned}</code><br><code>$$</code></p>
+<p><code>$$</code><br><code>\begin{aligned}</code><br><code>a &amp;= b + c \\\\</code><br><code>&amp;= d + e + f + g \\\\</code><br><code>&amp;= h + i</code><br><code>\end{aligned}</code><br><code>$$</code></p>
+<h3 id="效果-5"><a href="#效果-5" class="headerlink" title="效果"></a>效果</h3><p>$$<br>e&#x3D;mc^2<br>$$</p>
+<p>$$<br>\frac{\partial u}{\partial t}<br>&#x3D; h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)<br>$$</p>
+<p>$$<br>cos 2\theta &#x3D; \cos^2 \theta - \sin^2 \theta &#x3D; 2 \cos^2 \theta - 1<br>$$</p>
+<p>$$<br>\begin{aligned}<br>\dot{x} &amp; &#x3D; \sigma(y-x) \\<br>\dot{y} &amp; &#x3D; \rho x - y - xz \\<br>\dot{z} &amp; &#x3D; -\beta z + xy<br>\end{aligned}<br>$$</p>
+<p>$$<br>\begin{aligned}<br>a &amp;&#x3D; b + c \\<br>  &amp;&#x3D; d + e + f + g \\<br>  &amp;&#x3D; h + i<br>\end{aligned}<br>$$</p>
+<hr>
+
+    </div>
+       	<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:36px;">本文结束</div>
+        <div style="text-align:center;color: #ccc;font-size:36px;"><i class="fa fa-heart"></i>    <i class="fa fa-heart"></i>    <i class="fa fa-heart"></i></div>
+        <div style="text-align:center;color: #ccc;font-size:36px;">感谢您的阅读</i></div>
+    
+</div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>_mhxcAlfred
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.mhxcalfred.com/zh-CN/ebb2eba847fb/" title="Markdown 扩展语法">https://blog.mhxcalfred.com/zh-CN/ebb2eba847fb/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/zh-CN/37eb8784fd5f/" rel="prev" title="Markdown 基本语法">
+                  <i class="fa fa-angle-left"></i> Markdown 基本语法
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/zh-CN/32d6f2935659/" rel="next" title="孤独的美食家 第八季 第八集 鸟取县鸟取市的鲣鱼和荷尔蒙面">
+                  孤独的美食家 第八季 第八集 鸟取县鸟取市的鲣鱼和荷尔蒙面 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2019 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">_mhxcAlfred</span>
+  </div>
+  <div class="powered-by">
+    <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+    <span class="post-meta-item"></span>
+    <a target="_blank" rel="noopener" href="https://theme-next.js.org/muse/">NexT</a>
+    <span class="post-meta-item"></span>
+    <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">Gitalk</a>
+  </div>
+  <div>
+    <span class="post-meta-item">
+      <span>全站共 </span>
+        <span class="post-count"> 273k </span>
+      <span> 字</span>
+    </span>
+  </div>
+
+  <div>
+      <span class="post-meta-item" id="busuanzi_container_site_uv">
+        <span>承蒙 </span>
+        <span class="site-uv" title="总访客量">
+          <span id="busuanzi_value_site_uv"></span>
+        </span>
+        <span> 位朋友</span>
+      </span>
+  </div>
+
+  <div>
+      <span class="post-meta-item" id="busuanzi_container_site_pv">
+        <span>造访 </span>
+        <span class="site-pv" title="总访问量">
+          <span id="busuanzi_value_site_pv"></span>
+        </span>
+        <span> 次</span>
+      </span>
+  </div>
+  <div>
+    <span class="post-meta-item">
+      <span id="timeDate">载入天数...</span>
+      <span id="times">载入时分秒...</span>
+      <script src="/js/runningtime.js"></script>
+    </span>
+  </div>
+
+  <div>
+    <span class="post-meta-item">
+      <a href="/anniversary/">
+        <span id="btimeDate">载入天数...</span>
+        <span id="btimes">载入时分秒...</span>
+        <script src="/js/birthday.js"></script>
+      </a>
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+
+  <a href="https://github.com/mhxcAlfred" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"mhxcAlfred","repo":"mhxcAlfred.github.io","client_id":"ed1d5b5225a64329828a","client_secret":"3ecc2eb93f4014269b489d6d8daf4d0ba3f96abd","admin_user":"mhxcAlfred","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","body":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"fd5a594ac26bf9cd4745c2674da6b35f"}</script>
+<script src="/js/third-party/comments/gitalk.js" defer></script>
+
+
+  <script>
+    window.addEventListener('load', function() {
+      // ���������
+      var clickLove = document.createElement('script');
+      clickLove.src = "/js/clicklove.js";
+      clickLove.type = "text/javascript";
+      document.body.appendChild(clickLove);
+
+      // ҳ�涯̬�������������豸����
+      if(window.innerWidth > 768){
+        var canvasNest = document.createElement('script');
+        canvasNest.src = "/js/canvas-nest.min.js";
+        canvasNest.type = "text/javascript";
+        canvasNest.setAttribute('color', '2,129,249'); // ������ɫ
+        document.body.appendChild(canvasNest);
+      }
+    });
+  </script>
+</body>
+</html>

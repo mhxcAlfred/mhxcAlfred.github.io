@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-_mhxcAlfred.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-_mhxcAlfred.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-_mhxcAlfred.png">
+  <link rel="mask-icon" href="/images/logo-_mhxcAlfred.svg" color="#222">
+  <link rel="manifest" href="/images/manifest.json">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.mhxcalfred.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"github","dark":"github-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"language":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":true,"preload":true}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="两两交换链表中的节点、递归、链表、中等">
+<meta property="og:type" content="article">
+<meta property="og:title" content="力扣00024.两两交换链表中的节点">
+<meta property="og:url" content="https://blog.mhxcalfred.com/zh-CN/9623394395b7/">
+<meta property="og:site_name" content="胡心小筑">
+<meta property="og:description" content="两两交换链表中的节点、递归、链表、中等">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.mhxcalfred.com/zh-CN/9623394395b7/201912300001.jpg">
+<meta property="article:published_time" content="2019-12-30T03:15:00.000Z">
+<meta property="article:modified_time" content="2019-12-30T03:15:00.000Z">
+<meta property="article:author" content="_mhxcAlfred">
+<meta property="article:tag" content="C">
+<meta property="article:tag" content="C#">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="Dart">
+<meta property="article:tag" content="Elixir">
+<meta property="article:tag" content="Erlang">
+<meta property="article:tag" content="Go">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Kotlin">
+<meta property="article:tag" content="LeetCode">
+<meta property="article:tag" content="PHP">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Python3">
+<meta property="article:tag" content="Racket">
+<meta property="article:tag" content="Ruby">
+<meta property="article:tag" content="Rust">
+<meta property="article:tag" content="Scala">
+<meta property="article:tag" content="Swift">
+<meta property="article:tag" content="TypeScript">
+<meta property="article:tag" content="算法">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.mhxcalfred.com/zh-CN/9623394395b7/201912300001.jpg">
+
+
+<link rel="canonical" href="https://blog.mhxcalfred.com/zh-CN/9623394395b7/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.mhxcalfred.com/zh-CN/9623394395b7/","path":"zh-CN/9623394395b7/","title":"力扣00024.两两交换链表中的节点"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>力扣00024.两两交换链表中的节点 | 胡心小筑</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js" defer></script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="胡心小筑" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">胡心小筑</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">随笔   |   札记</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-1%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">示例 1：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-2%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">示例 2：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-3%EF%BC%9A"><span class="nav-number">1.3.</span> <span class="nav-text">示例 3：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA%EF%BC%9A"><span class="nav-number">1.4.</span> <span class="nav-text">提示：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#C"><span class="nav-number">2.1.</span> <span class="nav-text">C++</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C"><span class="nav-number">2.1.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java"><span class="nav-number">2.2.</span> <span class="nav-text">Java</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python"><span class="nav-number">2.3.</span> <span class="nav-text">Python</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-2"><span class="nav-number">2.3.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python3"><span class="nav-number">2.4.</span> <span class="nav-text">Python3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-3"><span class="nav-number">2.4.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-1"><span class="nav-number">2.5.</span> <span class="nav-text">C</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-4"><span class="nav-number">2.5.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-2"><span class="nav-number">2.6.</span> <span class="nav-text">C#</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-5"><span class="nav-number">2.6.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript"><span class="nav-number">2.7.</span> <span class="nav-text">JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-6"><span class="nav-number">2.7.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TypeScript"><span class="nav-number">2.8.</span> <span class="nav-text">TypeScript</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-7"><span class="nav-number">2.8.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP"><span class="nav-number">2.9.</span> <span class="nav-text">PHP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-8"><span class="nav-number">2.9.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Swift"><span class="nav-number">2.10.</span> <span class="nav-text">Swift</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-9"><span class="nav-number">2.10.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Kotlin"><span class="nav-number">2.11.</span> <span class="nav-text">Kotlin</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-10"><span class="nav-number">2.11.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dart"><span class="nav-number">2.12.</span> <span class="nav-text">Dart</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-11"><span class="nav-number">2.12.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Go"><span class="nav-number">2.13.</span> <span class="nav-text">Go</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-12"><span class="nav-number">2.13.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ruby"><span class="nav-number">2.14.</span> <span class="nav-text">Ruby</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-13"><span class="nav-number">2.14.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Scala"><span class="nav-number">2.15.</span> <span class="nav-text">Scala</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-14"><span class="nav-number">2.15.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rust"><span class="nav-number">2.16.</span> <span class="nav-text">Rust</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-15"><span class="nav-number">2.16.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Racket"><span class="nav-number">2.17.</span> <span class="nav-text">Racket</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-16"><span class="nav-number">2.17.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Erlang"><span class="nav-number">2.18.</span> <span class="nav-text">Erlang</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-17"><span class="nav-number">2.18.1.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Elixir"><span class="nav-number">2.19.</span> <span class="nav-text">Elixir</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C-18"><span class="nav-number">2.19.1.</span> <span class="nav-text">结果</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="_mhxcAlfred"
+      src="/images/logo-_mhxcAlfred.svg">
+  <p class="site-author-name" itemprop="name">_mhxcAlfred</p>
+  <div class="site-description" itemprop="description">好学若饥，谦卑若愚</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">862</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">114</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.mhxcalfred.com/zh-CN/9623394395b7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo-_mhxcAlfred.svg">
+      <meta itemprop="name" content="_mhxcAlfred">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡心小筑">
+      <meta itemprop="description" content="好学若饥，谦卑若愚">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="力扣00024.两两交换链表中的节点 | 胡心小筑">
+      <meta itemprop="description" content="&lt;center&gt;两两交换链表中的节点、递归、链表、中等&lt;&#x2F;center&gt;">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          力扣00024.两两交换链表中的节点
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019年12月30日 第01周 第364天 星期一 11:15:00" itemprop="dateCreated datePublished" datetime="2019-12-30T11:15:00+08:00">2019年12月30日 第01周 第364天 星期一</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AF%AD%E8%A8%80/" itemprop="url" rel="index"><span itemprop="name">语言</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description"><center>两两交换链表中的节点、递归、链表、中等</center></div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><hr>
+<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。</p>
+<h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><img src="/zh-CN/9623394395b7/201912300001.jpg" class="" title="示例1">
+
+<blockquote>
+<p>输入：head &#x3D; [1,2,3,4]<br>输出：[2,1,4,3]</p>
+</blockquote>
+<h2 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h2><blockquote>
+<p>输入：head &#x3D; []<br>输出：[]</p>
+</blockquote>
+<h2 id="示例-3："><a href="#示例-3：" class="headerlink" title="示例 3："></a>示例 3：</h2><blockquote>
+<p>输入：head &#x3D; [1]<br>输出：[1]</p>
+</blockquote>
+<h2 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h2><ul>
+<li>链表中节点的数目在范围 [0, 100] 内</li>
+<li>0 &lt;&#x3D; Node.val &lt;&#x3D; 100</li>
+</ul>
+<hr>
+<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode() : val(0), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">swapPairs</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        ListNode* dummy = <span class="keyword">new</span> <span class="built_in">ListNode</span>(<span class="number">0</span>);</span><br><span class="line">        dummy-&gt;next = head;</span><br><span class="line">        ListNode* current = dummy;</span><br><span class="line">        <span class="keyword">while</span> (current-&gt;next &amp;&amp; current-&gt;next-&gt;next) &#123;</span><br><span class="line">            ListNode* node1 = current-&gt;next;</span><br><span class="line">            ListNode* node2 = current-&gt;next-&gt;next;</span><br><span class="line">            current-&gt;next = node2;</span><br><span class="line">            node1-&gt;next = node2-&gt;next;</span><br><span class="line">            node2-&gt;next = node1;</span><br><span class="line">            current = node1;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dummy-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 C++ 的用户</p>
+<p>内存消耗 : 9.32 MB, 击败 5.03% 使用 C++ 的用户</p>
+<hr>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode() &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val) &#123; this.val = val; &#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> ListNode <span class="title function_">swapPairs</span><span class="params">(ListNode head)</span> &#123;</span><br><span class="line">        <span class="type">ListNode</span> <span class="variable">dummy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ListNode</span>(<span class="number">0</span>);</span><br><span class="line">        dummy.next = head;</span><br><span class="line">        <span class="type">ListNode</span> <span class="variable">current</span> <span class="operator">=</span> dummy;</span><br><span class="line">        <span class="keyword">while</span> (current.next != <span class="literal">null</span> &amp;&amp; current.next.next != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="type">ListNode</span> <span class="variable">node1</span> <span class="operator">=</span> current.next;</span><br><span class="line">            <span class="type">ListNode</span> <span class="variable">node2</span> <span class="operator">=</span> current.next.next;</span><br><span class="line">            current.next = node2;</span><br><span class="line">            node1.next = node2.next;</span><br><span class="line">            node2.next = node1;</span><br><span class="line">            current = node1;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dummy.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 Java 的用户</p>
+<p>内存消耗 : 40.38 MB, 击败 5.18% 使用 Java 的用户</p>
+<hr>
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, next=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.next = next</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">swapPairs</span>(<span class="params">self, head</span>):</span><br><span class="line">        dummy = ListNode(<span class="number">0</span>)</span><br><span class="line">        dummy.<span class="built_in">next</span> = head</span><br><span class="line">        current = dummy</span><br><span class="line">        <span class="keyword">while</span> current.<span class="built_in">next</span> <span class="keyword">and</span> current.<span class="built_in">next</span>.<span class="built_in">next</span>:</span><br><span class="line">            node1 = current.<span class="built_in">next</span></span><br><span class="line">            node2 = current.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">            current.<span class="built_in">next</span> = node2</span><br><span class="line">            node1.<span class="built_in">next</span> = node2.<span class="built_in">next</span></span><br><span class="line">            node2.<span class="built_in">next</span> = node1</span><br><span class="line">            current = node1</span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="built_in">next</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 14 ms, 击败 75.45% 使用 Python 的用户</p>
+<p>内存消耗 : 11.44 MB, 击败 97.48% 使用 Python 的用户</p>
+<hr>
+<h2 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, val=0, next=None):</span></span><br><span class="line"><span class="comment">#         self.val = val</span></span><br><span class="line"><span class="comment">#         self.next = next</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">swapPairs</span>(<span class="params">self, head: <span class="type">Optional</span>[ListNode]</span>) -&gt; <span class="type">Optional</span>[ListNode]:</span><br><span class="line">        dummy = ListNode(<span class="number">0</span>)</span><br><span class="line">        dummy.<span class="built_in">next</span> = head</span><br><span class="line">        current = dummy</span><br><span class="line">        <span class="keyword">while</span> current.<span class="built_in">next</span> <span class="keyword">and</span> current.<span class="built_in">next</span>.<span class="built_in">next</span>:</span><br><span class="line">            node1 = current.<span class="built_in">next</span></span><br><span class="line">            node2 = current.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">            current.<span class="built_in">next</span> = node2</span><br><span class="line">            node1.<span class="built_in">next</span> = node2.<span class="built_in">next</span></span><br><span class="line">            node2.<span class="built_in">next</span> = node1</span><br><span class="line">            current = node1</span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="built_in">next</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 33 ms, 击败 90.27% 使用 Python3 的用户</p>
+<p>内存消耗 : 16.45 MB, 击败 30.15% 使用 Python3 的用户</p>
+<hr>
+<h2 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     struct ListNode *next;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">struct</span> ListNode* <span class="title function_">swapPairs</span><span class="params">(<span class="keyword">struct</span> ListNode* head)</span> &#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">ListNode</span>* <span class="title">dummy</span> =</span> (<span class="keyword">struct</span> ListNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> ListNode));</span><br><span class="line">    dummy-&gt;next = head;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">ListNode</span>* <span class="title">current</span> =</span> dummy;</span><br><span class="line">    <span class="keyword">while</span> (current-&gt;next &amp;&amp; current-&gt;next-&gt;next) &#123;</span><br><span class="line">        <span class="class"><span class="keyword">struct</span> <span class="title">ListNode</span>* <span class="title">node1</span> =</span> current-&gt;next;</span><br><span class="line">        <span class="class"><span class="keyword">struct</span> <span class="title">ListNode</span>* <span class="title">node2</span> =</span> current-&gt;next-&gt;next;</span><br><span class="line">        current-&gt;next = node2;</span><br><span class="line">        node1-&gt;next = node2-&gt;next;</span><br><span class="line">        node2-&gt;next = node1;</span><br><span class="line">        current = node1;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dummy-&gt;next;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-4"><a href="#结果-4" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 C 的用户</p>
+<p>内存消耗 : 5.71 MB, 击败 95.91% 使用 C 的用户</p>
+<hr>
+<h2 id="C-2"><a href="#C-2" class="headerlink" title="C#"></a>C#</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     public int val;</span></span><br><span class="line"><span class="comment"> *     public ListNode next;</span></span><br><span class="line"><span class="comment"> *     public ListNode(int val=0, ListNode next=null) &#123;</span></span><br><span class="line"><span class="comment"> *         this.val = val;</span></span><br><span class="line"><span class="comment"> *         this.next = next;</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">SwapPairs</span>(<span class="params">ListNode head</span>)</span> &#123;</span><br><span class="line">        ListNode dummy = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">        dummy.next = head;</span><br><span class="line">        ListNode current = dummy;</span><br><span class="line">        <span class="keyword">while</span> (current.next != <span class="literal">null</span> &amp;&amp; current.next.next != <span class="literal">null</span>) &#123;</span><br><span class="line">            ListNode node1 = current.next;</span><br><span class="line">            ListNode node2 = current.next.next;</span><br><span class="line">            current.next = node2;</span><br><span class="line">            node1.next = node2.next;</span><br><span class="line">            node2.next = node1;</span><br><span class="line">            current = node1;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dummy.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-5"><a href="#结果-5" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 57 ms, 击败 88.57% 使用 C# 的用户</p>
+<p>内存消耗 : 39.66 MB, 击败 5.71% 使用 C# 的用户</p>
+<hr>
+<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * function ListNode(val, next) &#123;</span></span><br><span class="line"><span class="comment"> *     this.val = (val===undefined ? 0 : val)</span></span><br><span class="line"><span class="comment"> *     this.next = (next===undefined ? null : next)</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">ListNode</span>&#125; <span class="variable">head</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">ListNode</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> swapPairs = <span class="keyword">function</span>(<span class="params">head</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> dummy = <span class="keyword">new</span> <span class="title class_">ListNode</span>(<span class="number">0</span>);</span><br><span class="line">    dummy.<span class="property">next</span> = head;</span><br><span class="line">    <span class="keyword">let</span> current = dummy;</span><br><span class="line">    <span class="keyword">while</span> (current.<span class="property">next</span> &amp;&amp; current.<span class="property">next</span>.<span class="property">next</span>) &#123;</span><br><span class="line">        <span class="keyword">let</span> node1 = current.<span class="property">next</span>;</span><br><span class="line">        <span class="keyword">let</span> node2 = current.<span class="property">next</span>.<span class="property">next</span>;</span><br><span class="line">        current.<span class="property">next</span> = node2;</span><br><span class="line">        node1.<span class="property">next</span> = node2.<span class="property">next</span>;</span><br><span class="line">        node2.<span class="property">next</span> = node1;</span><br><span class="line">        current = node1;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dummy.<span class="property">next</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-6"><a href="#结果-6" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 37 ms, 击败 100.00% 使用 JavaScript 的用户</p>
+<p>内存消耗 : 49.33 MB, 击败 5.29% 使用 JavaScript 的用户</p>
+<hr>
+<h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     val: number</span></span><br><span class="line"><span class="comment"> *     next: ListNode | null</span></span><br><span class="line"><span class="comment"> *     constructor(val?: number, next?: ListNode | null) &#123;</span></span><br><span class="line"><span class="comment"> *         this.val = (val===undefined ? 0 : val)</span></span><br><span class="line"><span class="comment"> *         this.next = (next===undefined ? null : next)</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">swapPairs</span>(<span class="params"><span class="attr">head</span>: <span class="title class_">ListNode</span> | <span class="literal">null</span></span>): <span class="title class_">ListNode</span> | <span class="literal">null</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">dummy</span>: <span class="title class_">ListNode</span> = <span class="keyword">new</span> <span class="title class_">ListNode</span>(<span class="number">0</span>);</span><br><span class="line">    dummy.<span class="property">next</span> = head;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">current</span>: <span class="title class_">ListNode</span> | <span class="literal">null</span> = dummy;</span><br><span class="line">    <span class="keyword">while</span> (current?.<span class="property">next</span> &amp;&amp; current?.<span class="property">next</span>?.<span class="property">next</span>) &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="attr">node1</span>: <span class="title class_">ListNode</span> | <span class="literal">null</span> = current.<span class="property">next</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="attr">node2</span>: <span class="title class_">ListNode</span> | <span class="literal">null</span> = current.<span class="property">next</span>.<span class="property">next</span>;</span><br><span class="line">        <span class="keyword">if</span> (node1 &amp;&amp; node2) &#123;</span><br><span class="line">            current.<span class="property">next</span> = node2;</span><br><span class="line">            node1.<span class="property">next</span> = node2.<span class="property">next</span>;</span><br><span class="line">            node2.<span class="property">next</span> = node1;</span><br><span class="line">            current = node1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dummy.<span class="property">next</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-7"><a href="#结果-7" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 60 ms, 击败 86.10% 使用 TypeScript 的用户</p>
+<p>内存消耗 : 51.79 MB, 击败 5.02% 使用 TypeScript 的用户</p>
+<hr>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a singly-linked list.</span></span><br><span class="line"><span class="comment"> * class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     public $val = 0;</span></span><br><span class="line"><span class="comment"> *     public $next = null;</span></span><br><span class="line"><span class="comment"> *     function __construct($val = 0, $next = null) &#123;</span></span><br><span class="line"><span class="comment"> *         $this-&gt;val = $val;</span></span><br><span class="line"><span class="comment"> *         $this-&gt;next = $next;</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> ListNode $head</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> ListNode</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">swapPairs</span>(<span class="params"><span class="variable">$head</span></span>) </span>&#123;</span><br><span class="line">        <span class="variable">$dummy</span> = <span class="keyword">new</span> <span class="title class_">ListNode</span>(<span class="number">0</span>);</span><br><span class="line">        <span class="variable">$dummy</span>-&gt;next = <span class="variable">$head</span>;</span><br><span class="line">        <span class="variable">$current</span> = <span class="variable">$dummy</span>;</span><br><span class="line">        <span class="keyword">while</span> (<span class="variable">$current</span>-&gt;next &amp;&amp; <span class="variable">$current</span>-&gt;next-&gt;next) &#123;</span><br><span class="line">            <span class="variable">$node1</span> = <span class="variable">$current</span>-&gt;next;</span><br><span class="line">            <span class="variable">$node2</span> = <span class="variable">$current</span>-&gt;next-&gt;next;</span><br><span class="line">            <span class="variable">$current</span>-&gt;next = <span class="variable">$node2</span>;</span><br><span class="line">            <span class="variable">$node1</span>-&gt;next = <span class="variable">$node2</span>-&gt;next;</span><br><span class="line">            <span class="variable">$node2</span>-&gt;next = <span class="variable">$node1</span>;</span><br><span class="line">            <span class="variable">$current</span> = <span class="variable">$node1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$dummy</span>-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-8"><a href="#结果-8" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 11 ms, 击败 16.67% 使用 PHP 的用户</p>
+<p>内存消耗 : 19.93 MB, 击败 5.55% 使用 PHP 的用户</p>
+<hr>
+<h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     public var val: Int</span></span><br><span class="line"><span class="comment"> *     public var next: ListNode?</span></span><br><span class="line"><span class="comment"> *     public init() &#123; self.val = 0; self.next = nil; &#125;</span></span><br><span class="line"><span class="comment"> *     public init(_ val: Int) &#123; self.val = val; self.next = nil; &#125;</span></span><br><span class="line"><span class="comment"> *     public init(_ val: Int, _ next: ListNode?) &#123; self.val = val; self.next = next; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">func</span> <span class="title function_">swapPairs</span>(<span class="keyword">_</span> <span class="params">head</span>: <span class="type">ListNode</span>?) -&gt; <span class="type">ListNode</span>? &#123;</span><br><span class="line">        <span class="keyword">let</span> dummy <span class="operator">=</span> <span class="type">ListNode</span>(<span class="number">0</span>)</span><br><span class="line">        dummy.next <span class="operator">=</span> head</span><br><span class="line">        <span class="keyword">var</span> current: <span class="type">ListNode</span>? <span class="operator">=</span> dummy</span><br><span class="line">        <span class="keyword">while</span> current<span class="operator">?</span>.next <span class="operator">!=</span> <span class="literal">nil</span> <span class="operator">&amp;&amp;</span> current<span class="operator">?</span>.next<span class="operator">?</span>.next <span class="operator">!=</span> <span class="literal">nil</span> &#123;</span><br><span class="line">            <span class="keyword">let</span> node1 <span class="operator">=</span> current<span class="operator">?</span>.next</span><br><span class="line">            <span class="keyword">let</span> node2 <span class="operator">=</span> current<span class="operator">?</span>.next<span class="operator">?</span>.next</span><br><span class="line">            current<span class="operator">?</span>.next <span class="operator">=</span> node2</span><br><span class="line">            node1<span class="operator">?</span>.next <span class="operator">=</span> node2<span class="operator">?</span>.next</span><br><span class="line">            node2<span class="operator">?</span>.next <span class="operator">=</span> node1</span><br><span class="line">            current <span class="operator">=</span> node1</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dummy.next</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-9"><a href="#结果-9" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 Swift 的用户</p>
+<p>内存消耗 : 15.22 MB, 击败 20.67% 使用 Swift 的用户</p>
+<hr>
+<h2 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Example:</span></span><br><span class="line"><span class="comment"> * var li = ListNode(5)</span></span><br><span class="line"><span class="comment"> * var v = li.`val`</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * class ListNode(var `val`: Int) &#123;</span></span><br><span class="line"><span class="comment"> *     var next: ListNode? = null</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">swapPairs</span><span class="params">(head: <span class="type">ListNode</span>?)</span></span>: ListNode? &#123;</span><br><span class="line">        <span class="keyword">val</span> dummy = ListNode(<span class="number">0</span>)</span><br><span class="line">        dummy.next = head</span><br><span class="line">        <span class="keyword">var</span> current: ListNode? = dummy</span><br><span class="line">        <span class="keyword">while</span> (current?.next != <span class="literal">null</span> &amp;&amp; current.next?.next != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="keyword">val</span> node1 = current.next</span><br><span class="line">            <span class="keyword">val</span> node2 = current.next?.next</span><br><span class="line">            current.next = node2</span><br><span class="line">            node1?.next = node2?.next</span><br><span class="line">            node2?.next = node1</span><br><span class="line">            current = node1</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dummy.next</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-10"><a href="#结果-10" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 138 ms, 击败 81.08% 使用 Kotlin 的用户</p>
+<p>内存消耗 : 33.44 MB, 击败 32.43% 使用 Kotlin 的用户</p>
+<hr>
+<h2 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"><span class="language-markdown">/**</span></span></span><br><span class="line"><span class="language-markdown"><span class="comment"> <span class="emphasis">*</span></span> Definition for singly-linked <span class="language-markdown"><span class="emphasis">list.</span></span></span></span><br><span class="line"><span class="emphasis"><span class="language-markdown"><span class="comment"> *</span> class ListNode &#123;</span></span></span><br><span class="line"><span class="language-markdown"><span class="comment"><span class="bullet"> *</span>   int val;</span></span></span><br><span class="line"><span class="language-markdown"><span class="comment"><span class="bullet"> *</span>   ListNode? next;</span></span></span><br><span class="line"><span class="language-markdown"><span class="comment"><span class="bullet"> *</span>   ListNode([this.val = 0, this.next]);</span></span></span><br><span class="line"><span class="language-markdown"><span class="comment"><span class="bullet"> *</span> &#125;</span></span></span><br><span class="line"><span class="language-markdown"><span class="comment"> <span class="emphasis">*/</span></span></span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  ListNode? swapPairs(ListNode? head) &#123;</span><br><span class="line">    ListNode? tail = head;</span><br><span class="line">    <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (tail == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">      &#125;</span><br><span class="line">      tail = tail.next;</span><br><span class="line">    &#125;</span><br><span class="line">    ListNode? pre;</span><br><span class="line">    ListNode? cur = head;</span><br><span class="line">    <span class="keyword">while</span> (cur != tail) &#123;</span><br><span class="line">      ListNode? temp = cur?.next;</span><br><span class="line">      cur?.next = pre;</span><br><span class="line">      pre = cur;</span><br><span class="line">      cur = temp;</span><br><span class="line">    &#125;</span><br><span class="line">    head?.next = swapPairs(tail);</span><br><span class="line">    <span class="keyword">return</span> pre;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-11"><a href="#结果-11" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 302 ms, 击败 22.22% 使用 Dart 的用户</p>
+<p>内存消耗 : 147.56 MB, 击败 55.56% 使用 Dart 的用户</p>
+<hr>
+<h2 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * type ListNode struct &#123;</span></span><br><span class="line"><span class="comment"> *     Val int</span></span><br><span class="line"><span class="comment"> *     Next *ListNode</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">swapPairs</span><span class="params">(head *ListNode)</span></span> *ListNode &#123;</span><br><span class="line">	dummy := &amp;ListNode&#123;Val: <span class="number">0</span>, Next: head&#125;</span><br><span class="line">	current := dummy</span><br><span class="line">	<span class="keyword">for</span> current.Next != <span class="literal">nil</span> &amp;&amp; current.Next.Next != <span class="literal">nil</span> &#123;</span><br><span class="line">		node1 := current.Next</span><br><span class="line">		node2 := current.Next.Next</span><br><span class="line">		current.Next = node2</span><br><span class="line">		node1.Next = node2.Next</span><br><span class="line">		node2.Next = node1</span><br><span class="line">		current = node1</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> dummy.Next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-12"><a href="#结果-12" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 Go 的用户</p>
+<p>内存消耗 : 1.97 MB, 击败 26.06% 使用 Go 的用户</p>
+<hr>
+<h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode</span></span><br><span class="line"><span class="comment">#     attr_accessor :val, :next</span></span><br><span class="line"><span class="comment">#     def initialize(val = 0, _next = nil)</span></span><br><span class="line"><span class="comment">#         <span class="doctag">@val</span> = val</span></span><br><span class="line"><span class="comment">#         <span class="doctag">@next</span> = _next</span></span><br><span class="line"><span class="comment">#     end</span></span><br><span class="line"><span class="comment"># end</span></span><br><span class="line"><span class="comment"># <span class="doctag">@param</span> &#123;ListNode&#125; head</span></span><br><span class="line"><span class="comment"># <span class="doctag">@return</span> &#123;ListNode&#125;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">swap_pairs</span>(<span class="params">head</span>)</span><br><span class="line">  dummy = <span class="title class_">ListNode</span>.new(<span class="number">0</span>)</span><br><span class="line">  dummy.<span class="keyword">next</span> = head</span><br><span class="line">  current = dummy</span><br><span class="line">  <span class="keyword">while</span> current.<span class="keyword">next</span> &amp;&amp; current.<span class="keyword">next</span>.<span class="keyword">next</span></span><br><span class="line">    node1 = current.<span class="keyword">next</span></span><br><span class="line">    node2 = current.<span class="keyword">next</span>.<span class="keyword">next</span></span><br><span class="line">    current.<span class="keyword">next</span> = node2</span><br><span class="line">    node1.<span class="keyword">next</span> = node2.<span class="keyword">next</span></span><br><span class="line">    node2.<span class="keyword">next</span> = node1</span><br><span class="line">    current = node1</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  dummy.<span class="keyword">next</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-13"><a href="#结果-13" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 47 ms, 击败 100.00% 使用 Ruby 的用户</p>
+<p>内存消耗 : 206.64 MB, 击败 -% 使用 Ruby 的用户</p>
+<hr>
+<h2 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * class ListNode(_x: Int = 0, _next: ListNode = null) &#123;</span></span><br><span class="line"><span class="comment"> *   var next: ListNode = _next</span></span><br><span class="line"><span class="comment"> *   var x: Int = _x</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">object</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">swapPairs</span></span>(head: <span class="type">ListNode</span>): <span class="type">ListNode</span> = &#123;</span><br><span class="line">    <span class="keyword">if</span> (head == <span class="literal">null</span> || head.next == <span class="literal">null</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> head</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">val</span> t1 = head.next</span><br><span class="line">    <span class="keyword">val</span> t2 = head.next.next</span><br><span class="line">    t1.next = head</span><br><span class="line">    head.next = swapPairs(t2)</span><br><span class="line">    t1</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-14"><a href="#结果-14" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 460 ms, 击败 85.71% 使用 Scala 的用户</p>
+<p>内存消耗 : 56.41 MB, 击败 14.29% 使用 Scala 的用户</p>
+<hr>
+<h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Definition for singly-linked list.</span></span><br><span class="line"><span class="comment">// #[derive(PartialEq, Eq, Clone, Debug)]</span></span><br><span class="line"><span class="comment">// pub struct ListNode &#123;</span></span><br><span class="line"><span class="comment">//   pub val: i32,</span></span><br><span class="line"><span class="comment">//   pub next: Option&lt;Box&lt;ListNode&gt;&gt;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// impl ListNode &#123;</span></span><br><span class="line"><span class="comment">//   #[inline]</span></span><br><span class="line"><span class="comment">//   fn new(val: i32) -&gt; Self &#123;</span></span><br><span class="line"><span class="comment">//     ListNode &#123;</span></span><br><span class="line"><span class="comment">//       next: None,</span></span><br><span class="line"><span class="comment">//       val</span></span><br><span class="line"><span class="comment">//     &#125;</span></span><br><span class="line"><span class="comment">//   &#125;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"><span class="keyword">impl</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">swap_pairs</span>(head: <span class="type">Option</span>&lt;<span class="type">Box</span>&lt;ListNode&gt;&gt;) <span class="punctuation">-&gt;</span> <span class="type">Option</span>&lt;<span class="type">Box</span>&lt;ListNode&gt;&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">let</span> <span class="variable">Some</span>(<span class="keyword">mut</span> node) = head &#123;</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">let</span> <span class="variable">Some</span>(<span class="keyword">mut</span> next) = node.next.<span class="title function_ invoke__">take</span>() &#123;</span><br><span class="line">                node.next = <span class="keyword">Self</span>::<span class="title function_ invoke__">swap_pairs</span>(next.next.<span class="title function_ invoke__">take</span>());</span><br><span class="line">                next.next = <span class="title function_ invoke__">Some</span>(node);</span><br><span class="line">                <span class="title function_ invoke__">Some</span>(next)</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="title function_ invoke__">Some</span>(node)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="literal">None</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-15"><a href="#结果-15" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 0 ms, 击败 100.00% 使用 Rust 的用户</p>
+<p>内存消耗 : 2.15 MB, 击败 21.54% 使用 Rust 的用户</p>
+<hr>
+<h2 id="Racket"><a href="#Racket" class="headerlink" title="Racket"></a>Racket</h2><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">; Definition for singly-linked list:</span></span><br><span class="line"><span class="comment">#|</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">; val : integer?</span></span><br><span class="line"><span class="comment">; next : (or/c list-node? #f)</span></span><br><span class="line"><span class="comment">(struct list-node</span></span><br><span class="line"><span class="comment">  (val next) #:mutable #:transparent)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">; constructor</span></span><br><span class="line"><span class="comment">(define (make-list-node [val 0])</span></span><br><span class="line"><span class="comment">  (list-node val #f))</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">|#</span></span><br><span class="line"></span><br><span class="line">(<span class="name"><span class="built_in">define</span></span> (<span class="name">swap-pairs</span> head)</span><br><span class="line">  (<span class="name"><span class="built_in">cond</span></span></span><br><span class="line">    ((<span class="name"><span class="built_in">or</span></span> (<span class="name"><span class="built_in">not</span></span> head) (<span class="name"><span class="built_in">not</span></span> (<span class="name">list-node?</span> head)) (<span class="name"><span class="built_in">not</span></span> (<span class="name">list-node?</span> (<span class="name">list-node-next</span> head))))</span><br><span class="line">     head)</span><br><span class="line">    (<span class="name"><span class="built_in">else</span></span></span><br><span class="line">     (<span class="name"><span class="built_in">let</span></span> ((<span class="name">node1</span> head)</span><br><span class="line">           (<span class="name">node2</span> (<span class="name">list-node-next</span> head))</span><br><span class="line">           (<span class="name">rest</span> (<span class="name">list-node-next</span> (<span class="name">list-node-next</span> head))))</span><br><span class="line">       (<span class="name">set-list-node-next!</span> node1 (<span class="name">swap-pairs</span> rest))</span><br><span class="line">       (<span class="name">set-list-node-next!</span> node2 node1)</span><br><span class="line">       node2))))</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-16"><a href="#结果-16" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 175 ms, 击败 100.00% 使用 Racket 的用户</p>
+<p>内存消耗 : 98.80 MB, 击败 100.00% 使用 Racket 的用户</p>
+<hr>
+<h2 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h2><figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%% Definition for singly-linked list.</span></span><br><span class="line"><span class="comment">%%</span></span><br><span class="line"><span class="comment">%% -record(list_node, &#123;val = 0 :: integer(),</span></span><br><span class="line"><span class="comment">%%                     next = null :: &#x27;null&#x27; | #list_node&#123;&#125;&#125;).</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">-spec</span> swap_pairs<span class="params">(Head :: #list_node&#123;&#125; | null)</span> -&gt; #list_node&#123;&#125; | null.</span><br><span class="line"><span class="function"><span class="title">swap_pairs</span><span class="params">(Head)</span> <span class="title">when</span> H<span class="title">ead</span> =:= <span class="title">null</span> -&gt;</span> null;</span><br><span class="line"><span class="function"><span class="title">swap_pairs</span><span class="params">(Head)</span> <span class="title">when</span> <span class="title">is_record</span><span class="params">(Head, list_node)</span> -&gt;</span> </span><br><span class="line">    <span class="keyword">case</span> Head#list_node.next <span class="keyword">of</span></span><br><span class="line">        null -&gt; Head;</span><br><span class="line">        Next -&gt; </span><br><span class="line">            NewNext = swap_pairs(Next#list_node.next),</span><br><span class="line">            NewHead = Head#list_node&#123;next = NewNext&#125;,</span><br><span class="line">            Next#list_node&#123;next = NewHead&#125;</span><br><span class="line">    <span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-17"><a href="#结果-17" class="headerlink" title="结果"></a>结果</h3><p>执行用时 : 222 ms, 击败 -% 使用 Erlang 的用户</p>
+<p>内存消耗 : 59.48 MB, 击败 -% 使用 Erlang 的用户</p>
+<hr>
+<h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><p>暂时未解决</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="结果-18"><a href="#结果-18" class="headerlink" title="结果"></a>结果</h3><p>执行用时 :  ms, 击败 % 使用 Elixir 的用户</p>
+<p>内存消耗 :  MB, 击败 % 使用 Elixir 的用户</p>
+<hr>
+
+    </div>
+       	<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:36px;">本文结束</div>
+        <div style="text-align:center;color: #ccc;font-size:36px;"><i class="fa fa-heart"></i>    <i class="fa fa-heart"></i>    <i class="fa fa-heart"></i></div>
+        <div style="text-align:center;color: #ccc;font-size:36px;">感谢您的阅读</i></div>
+    
+</div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>_mhxcAlfred
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.mhxcalfred.com/zh-CN/9623394395b7/" title="力扣00024.两两交换链表中的节点">https://blog.mhxcalfred.com/zh-CN/9623394395b7/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 算法</a>
+              <a href="/tags/LeetCode/" rel="tag"><i class="fa fa-tag"></i> LeetCode</a>
+              <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
+              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+              <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+              <a href="/tags/Python3/" rel="tag"><i class="fa fa-tag"></i> Python3</a>
+              <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C</a>
+              <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C#</a>
+              <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
+              <a href="/tags/TypeScript/" rel="tag"><i class="fa fa-tag"></i> TypeScript</a>
+              <a href="/tags/PHP/" rel="tag"><i class="fa fa-tag"></i> PHP</a>
+              <a href="/tags/Swift/" rel="tag"><i class="fa fa-tag"></i> Swift</a>
+              <a href="/tags/Kotlin/" rel="tag"><i class="fa fa-tag"></i> Kotlin</a>
+              <a href="/tags/Dart/" rel="tag"><i class="fa fa-tag"></i> Dart</a>
+              <a href="/tags/Go/" rel="tag"><i class="fa fa-tag"></i> Go</a>
+              <a href="/tags/Ruby/" rel="tag"><i class="fa fa-tag"></i> Ruby</a>
+              <a href="/tags/Scala/" rel="tag"><i class="fa fa-tag"></i> Scala</a>
+              <a href="/tags/Rust/" rel="tag"><i class="fa fa-tag"></i> Rust</a>
+              <a href="/tags/Racket/" rel="tag"><i class="fa fa-tag"></i> Racket</a>
+              <a href="/tags/Erlang/" rel="tag"><i class="fa fa-tag"></i> Erlang</a>
+              <a href="/tags/Elixir/" rel="tag"><i class="fa fa-tag"></i> Elixir</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/zh-CN/1d5801d3fbb8/" rel="prev" title="食戟之灵 第四季 神之皿 第十二集 新生『远月十杰』">
+                  <i class="fa fa-angle-left"></i> 食戟之灵 第四季 神之皿 第十二集 新生『远月十杰』
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/zh-CN/55d70033c857/" rel="next" title="力扣00025.K 个一组翻转链表">
+                  力扣00025.K 个一组翻转链表 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2019 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">_mhxcAlfred</span>
+  </div>
+  <div class="powered-by">
+    <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+    <span class="post-meta-item"></span>
+    <a target="_blank" rel="noopener" href="https://theme-next.js.org/muse/">NexT</a>
+    <span class="post-meta-item"></span>
+    <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">Gitalk</a>
+  </div>
+  <div>
+    <span class="post-meta-item">
+      <span>全站共 </span>
+        <span class="post-count"> 273k </span>
+      <span> 字</span>
+    </span>
+  </div>
+
+  <div>
+      <span class="post-meta-item" id="busuanzi_container_site_uv">
+        <span>承蒙 </span>
+        <span class="site-uv" title="总访客量">
+          <span id="busuanzi_value_site_uv"></span>
+        </span>
+        <span> 位朋友</span>
+      </span>
+  </div>
+
+  <div>
+      <span class="post-meta-item" id="busuanzi_container_site_pv">
+        <span>造访 </span>
+        <span class="site-pv" title="总访问量">
+          <span id="busuanzi_value_site_pv"></span>
+        </span>
+        <span> 次</span>
+      </span>
+  </div>
+  <div>
+    <span class="post-meta-item">
+      <span id="timeDate">载入天数...</span>
+      <span id="times">载入时分秒...</span>
+      <script src="/js/runningtime.js"></script>
+    </span>
+  </div>
+
+  <div>
+    <span class="post-meta-item">
+      <a href="/anniversary/">
+        <span id="btimeDate">载入天数...</span>
+        <span id="btimes">载入时分秒...</span>
+        <script src="/js/birthday.js"></script>
+      </a>
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+
+  <a href="https://github.com/mhxcAlfred" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"mhxcAlfred","repo":"mhxcAlfred.github.io","client_id":"ed1d5b5225a64329828a","client_secret":"3ecc2eb93f4014269b489d6d8daf4d0ba3f96abd","admin_user":"mhxcAlfred","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","body":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"b34bf67929ff0bd1e9136f26581c6ae2"}</script>
+<script src="/js/third-party/comments/gitalk.js" defer></script>
+
+
+  <script>
+    window.addEventListener('load', function() {
+      // ���������
+      var clickLove = document.createElement('script');
+      clickLove.src = "/js/clicklove.js";
+      clickLove.type = "text/javascript";
+      document.body.appendChild(clickLove);
+
+      // ҳ�涯̬�������������豸����
+      if(window.innerWidth > 768){
+        var canvasNest = document.createElement('script');
+        canvasNest.src = "/js/canvas-nest.min.js";
+        canvasNest.type = "text/javascript";
+        canvasNest.setAttribute('color', '2,129,249'); // ������ɫ
+        document.body.appendChild(canvasNest);
+      }
+    });
+  </script>
+</body>
+</html>

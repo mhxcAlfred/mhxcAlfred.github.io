@@ -1,0 +1,34 @@
+# hexo robots.txt
+
+# 禁止百度蜘蛛抓取
+User-agent: Baiduspider
+Disallow: /
+
+# 允许其他搜索引擎抓取主要页面
+User-agent: *
+Allow: /
+
+# 允许的关键路径
+Allow: /404/
+Allow: /about/
+Allow: /anniversary/
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /page/
+Allow: /zh-CN/
+
+# 禁止搜索引擎抓取的目录（无SEO价值）
+Disallow: /vendors/	# 第三方库
+Disallow: /fancybox/	# 图片插件
+Disallow: /fonts/		# 字体文件
+Disallow: /image/		# 静态图片资源（不想被索引）
+Disallow: /downloads/	# 如果有下载目录，可屏蔽
+Disallow: /tmp/		# 临时目录（可选）
+
+# 不屏蔽 CSS / JS，让 Google 能完整渲染网页
+# Disallow: /css/
+# Disallow: /js/
+
+# 提供 Sitemap 方便搜索引擎发现内容
+Sitemap: https://blog.mhxcalfred.com/sitemap.xml
