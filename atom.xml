@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2026-02-18T15:51:39.000Z</updated>
+  <updated>2026-02-16T12:00:00.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>除夕</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/c1ec2d5959a9/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/c1ec2d5959a9/</id>
+    <published>2026-02-16T12:00:00.000Z</published>
+    <updated>2026-02-16T12:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>除夕快乐</p></div><div style="text-align:center;">  <img src="/zh-CN/c1ec2d5959a9/202602160001.png" class="" title="马年大吉"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、除夕&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="纪念日" scheme="https://blog.mhxcalfred.com/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="除夕" scheme="https://blog.mhxcalfred.com/tags/%E9%99%A4%E5%A4%95/"/>
+    
+  </entry>
   
   <entry>
     <title>立春</title>
@@ -456,33 +479,6 @@
     <category term="Apple Music" scheme="https://blog.mhxcalfred.com/tags/Apple-Music/"/>
     
     <category term="潘玮柏" scheme="https://blog.mhxcalfred.com/tags/%E6%BD%98%E7%8E%AE%E6%9F%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SONY 次世代 PlayStation（Pro）上市</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/f8ceb214d894/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/f8ceb214d894/</id>
-    <published>2025-10-29T03:15:00.000Z</published>
-    <updated>2025-10-29T03:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="主机介绍"><a href="#主机介绍" class="headerlink" title="主机介绍"></a>主机介绍</h1><p>借助PS5 Pro主机，来自全球的优秀游戏创作者们可以通过进阶光线追踪、适用于4K电视的明快锐利图像清晰度，和高帧率游戏体验等令人难以置信的功能，来增强他们的游戏，为玩家们提供前所未有的游戏体验！</p><h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><img src="/zh-CN/f8ceb214d894/202510290001.png" class="" title="PlayStation 5（Pro）"><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;主机、国行、SONY、PlayStation&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="游戏" scheme="https://blog.mhxcalfred.com/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    
-    <category term="主机" scheme="https://blog.mhxcalfred.com/tags/%E4%B8%BB%E6%9C%BA/"/>
-    
-    <category term="国行" scheme="https://blog.mhxcalfred.com/tags/%E5%9B%BD%E8%A1%8C/"/>
-    
-    <category term="SONY" scheme="https://blog.mhxcalfred.com/tags/SONY/"/>
-    
-    <category term="PlayStation" scheme="https://blog.mhxcalfred.com/tags/PlayStation/"/>
     
   </entry>
   
