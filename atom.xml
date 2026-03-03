@@ -6,7 +6,7 @@
   <link href="https://blog.mhxcalfred.com/atom.xml" rel="self"/>
   
   <link href="https://blog.mhxcalfred.com/"/>
-  <updated>2026-03-05T13:58:43.000Z</updated>
+  <updated>2026-03-02T16:00:00.000Z</updated>
   <id>https://blog.mhxcalfred.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>元宵节</title>
+    <link href="https://blog.mhxcalfred.com/zh-CN/2dcd758b0c44/"/>
+    <id>https://blog.mhxcalfred.com/zh-CN/2dcd758b0c44/</id>
+    <published>2026-03-02T16:00:00.000Z</published>
+    <updated>2026-03-02T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr><style>  #biaoti {    text-align: center;    padding: 20px;    font-size: 48px;  }</style><div id="biaoti">  <p>元宵节快乐</p></div><div style="text-align:center;">  <img src="/zh-CN/2dcd758b0c44/202603030001.jpg" class="" title="纪念日"></div><hr>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;日常、元宵节&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="纪念日" scheme="https://blog.mhxcalfred.com/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
+    
+    
+    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="元宵节" scheme="https://blog.mhxcalfred.com/tags/%E5%85%83%E5%AE%B5%E8%8A%82/"/>
+    
+  </entry>
   
   <entry>
     <title>雨水</title>
@@ -456,29 +479,6 @@
     <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="立冬" scheme="https://blog.mhxcalfred.com/tags/%E7%AB%8B%E5%86%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>铁血战士：杀戮之地</title>
-    <link href="https://blog.mhxcalfred.com/zh-CN/c405930ae0f7/"/>
-    <id>https://blog.mhxcalfred.com/zh-CN/c405930ae0f7/</id>
-    <published>2025-11-06T16:05:00.000Z</published>
-    <updated>2025-11-06T17:53:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h1 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h1><p>　　被部落放逐的年轻铁血战士戴克（迪米特里乌斯·舒斯特-科洛阿玛坦吉 饰），深入一片连宇宙顶级猎手都闻风丧胆的险恶之地。在那里，他将与维兰德-汤谷公司制造的仿生人希雅（艾丽·范宁 饰）意外结盟，这位仅存上半身的仿生人，与他共同踏上寻找终极对手的冒险征途。<br>　　当“菜鸟”铁血初次狩猎便陷入最严酷的试炼，一步行差踏错即刻坠入无可挽回的深渊，唯有浴血厮杀，才能在绝境中争得一线生机。而这场终极较量也将颠覆铁血战士的狩猎法则——生存并非胜利的终点，而是通往更残酷考验的开始。</p><hr>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;日常、IMAX&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="电影" scheme="https://blog.mhxcalfred.com/categories/%E7%94%B5%E5%BD%B1/"/>
-    
-    
-    <category term="日常" scheme="https://blog.mhxcalfred.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-    <category term="IMAX" scheme="https://blog.mhxcalfred.com/tags/IMAX/"/>
     
   </entry>
   
